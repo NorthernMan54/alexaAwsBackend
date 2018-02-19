@@ -1,0 +1,4 @@
+put homebridgeWeb.zip
+put ../pubDeploy.sh
+put ../startup
+put ../passwordAwsWebsite

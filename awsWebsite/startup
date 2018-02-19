@@ -1,0 +1,5 @@
+#! /bin/sh
+
+. ../passwordAwsWebsite
+
+DEBUG=* node index.js
