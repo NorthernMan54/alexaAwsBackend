@@ -2,4 +2,6 @@
 
 . ../passwordAwsWebsite
 
+pkill node
+
 DEBUG=* node index.js

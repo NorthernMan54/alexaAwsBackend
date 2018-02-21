@@ -351,6 +351,8 @@ app.post('/newuser', function(req, res) {
 
         var mqttPass = "PBKDF2$sha256$901$" + account.salt + "$" + account.hash;
 
+
+
         Account.update({
             username: account.username
           }, {
@@ -554,6 +556,12 @@ app.post('/auth/finish', function(req, res, next) {
       if (user) {
         console.log(user.username);
         req.user = user;
+        measurement.send({
+          t: 'event',
+          ec: 'command',
+          ea: 'linked',
+          uid: user.username
+        });
         next();
       } else if (!error) {
         console.log("not authed");
