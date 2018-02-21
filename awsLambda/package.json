@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "package": "zip -r -u homebridgeLambda.zip index.js node_modules",
-    "publish": "aws lambda update-function-code --function-name AlexaHome --zip-file fileb://homebridgeLambda.zip"
+    "publish": "aws lambda update-function-code --function-name AlexaHome --zip-file fileb://homebridgeLambda.zip;aws lambda update-function-code --function-name AlexaHome --zip-file fileb://homebridgeLambda.zip --region eu-west-1"
   },
   "author": "NorthernMan54",
   "license": "Apache-2.0",

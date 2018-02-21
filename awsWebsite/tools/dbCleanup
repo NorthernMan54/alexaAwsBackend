@@ -1,0 +1,9 @@
+use users
+db.accesstokens.remove({})
+db.accounts.remove({})
+db.applications.remove({})
+db.counters.remove({})
+db.grantcodes.remove({})
+db.lostpasswords.remove({})
+db.refreshtokens.remove({})
+db.topics.remove({})
