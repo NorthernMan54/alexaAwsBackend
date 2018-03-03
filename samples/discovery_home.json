@@ -4,353 +4,10 @@
             "namespace": "Alexa.Discovery",
             "name": "Discover.Response",
             "payloadVersion": "3",
-            "messageId": "745a0a13-9546-4249-a670-c64bd9c5464a"
+            "messageId": "00910027-f8c9-4e4c-9afb-28a5aa0665e8"
         },
         "payload": {
             "endpoints": [
-                {
-                    "endpointId": "MTkyLjE2OC4xLjIyNjo1MTgyNixhaWQ6IDIsaWlkOiAyMQ==",
-                    "friendlyName": "Temperature",
-                    "description": "Howard Temperature Temperature Sensor",
-                    "manufacturerName": "Bosch",
-                    "displayCategories": [
-                        "THERMOSTAT"
-                    ],
-                    "cookie": {
-                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":2,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.TemperatureSensor",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "temperature"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "MTkyLjE2OC4xLjIyNjo1MTgyNixhaWQ6IDMsaWlkOiAxMA==",
-                    "friendlyName": "Master Bedroom",
-                    "description": "Howard Master Bedroom Switch",
-                    "manufacturerName": "Default-Manufacturer",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 3, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 3, \"iid\": 10, \"value\": 0 }",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":3,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "MTkyLjE2OC4xLjIyNjo1MTgyNixhaWQ6IDQsaWlkOiAxMQ==",
-                    "friendlyName": "Fireplace",
-                    "description": "Howard Fireplace Fan",
-                    "manufacturerName": "NorthernMan54",
-                    "displayCategories": [
-                        "LIGHT"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 4, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 4, \"iid\": 10, \"value\": 0 }",
-                        "SetPowerLevel": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 4, \"iid\": 11 }",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":4,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":4,\"iid\":11}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerLevelController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerLevel"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "MTkyLjE2OC4xLjIyNjo1MTgyNixhaWQ6IDUsaWlkOiAyNA==",
-                    "friendlyName": "TV",
-                    "description": "Howard TV Switch",
-                    "manufacturerName": "NorthernMan54",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 5, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 5, \"iid\": 10, \"value\": 0 }",
-                        "SetPowerLevel": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 5, \"iid\": 24 }",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":5,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":5,\"iid\":24}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerLevelController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerLevel"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "MTkyLjE2OC4xLjIyNjo1MTgyNixhaWQ6IDYsaWlkOiAxMQ==",
-                    "friendlyName": "Outlet Two",
-                    "description": "Howard Outlet Two Outlet",
-                    "manufacturerName": "ECO Plugs",
-                    "displayCategories": [
-                        "SMARTPLUG"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 6, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 6, \"iid\": 10, \"value\": 0 }",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":6,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "MTkyLjE2OC4xLjIyNjo1MTgyNixhaWQ6IDcsaWlkOiAxMQ==",
-                    "friendlyName": "Fan",
-                    "description": "Howard Fan Outlet",
-                    "manufacturerName": "ECO Plugs",
-                    "displayCategories": [
-                        "SMARTPLUG"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 7, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 7, \"iid\": 10, \"value\": 0 }",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":7,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "MTkyLjE2OC4xLjIyNjo1MTgyNixhaWQ6IDgsaWlkOiAxMQ==",
-                    "friendlyName": "Office",
-                    "description": "Howard Office Outlet",
-                    "manufacturerName": "ECO Plugs",
-                    "displayCategories": [
-                        "SMARTPLUG"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 8, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 8, \"iid\": 10, \"value\": 0 }",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":8,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "MTkyLjE2OC4xLjIyNjo1MTgyNixhaWQ6IDksaWlkOiAxMQ==",
-                    "friendlyName": "Outlet One",
-                    "description": "Howard Outlet One Outlet",
-                    "manufacturerName": "ECO Plugs",
-                    "displayCategories": [
-                        "SMARTPLUG"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 9, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 9, \"iid\": 10, \"value\": 0 }",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":9,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "MTkyLjE2OC4xLjIyNjo1MTgyNixhaWQ6IDExLGlpZDogMTE=",
-                    "friendlyName": "Test",
-                    "description": "Howard Test Outlet",
-                    "manufacturerName": "ECO Plugs",
-                    "displayCategories": [
-                        "SMARTPLUG"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 11, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 11, \"iid\": 10, \"value\": 0 }",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":11,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
                 {
                     "endpointId": "MTkyLjE2OC4xLjQ6NTE4MjYsYWlkOiAyLGlpZDogMTI=",
                     "friendlyName": "Front Porch",
@@ -1102,7 +759,7 @@
                     "description": "Penny Temperature Temperature Sensor",
                     "manufacturerName": "NorthernMan54",
                     "displayCategories": [
-                        "THERMOSTAT"
+                        "TEMPERATURE_SENSOR"
                     ],
                     "cookie": {
                         "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"192.168.1.4\",\"port\":51826,\"aid\":21,\"iid\":10}]"
@@ -1170,7 +827,7 @@
                     "description": "Penny Cold Cellar Temperature Sensor",
                     "manufacturerName": "MCUIOT",
                     "displayCategories": [
-                        "THERMOSTAT"
+                        "TEMPERATURE_SENSOR"
                     ],
                     "cookie": {
                         "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"192.168.1.4\",\"port\":51826,\"aid\":23,\"iid\":10}]"
@@ -1203,7 +860,7 @@
                     "description": "Penny Front Porch Temperature Sensor",
                     "manufacturerName": "MCUIOT",
                     "displayCategories": [
-                        "THERMOSTAT"
+                        "TEMPERATURE_SENSOR"
                     ],
                     "cookie": {
                         "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"192.168.1.4\",\"port\":51826,\"aid\":24,\"iid\":10}]"
@@ -1236,7 +893,7 @@
                     "description": "Penny Office Temperature Sensor",
                     "manufacturerName": "MCUIOT",
                     "displayCategories": [
-                        "THERMOSTAT"
+                        "TEMPERATURE_SENSOR"
                     ],
                     "cookie": {
                         "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"192.168.1.4\",\"port\":51826,\"aid\":26,\"iid\":10}]"
@@ -1405,6 +1062,349 @@
                                 "supported": [
                                     {
                                         "name": "powerLevel"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "MTkyLjE2OC4xLjIyNjo1MTgyNixhaWQ6IDIsaWlkOiAyMQ==",
+                    "friendlyName": "Temperature",
+                    "description": "Howard Temperature Temperature Sensor",
+                    "manufacturerName": "Bosch",
+                    "displayCategories": [
+                        "TEMPERATURE_SENSOR"
+                    ],
+                    "cookie": {
+                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":2,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.TemperatureSensor",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "temperature"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "MTkyLjE2OC4xLjIyNjo1MTgyNixhaWQ6IDMsaWlkOiAxMA==",
+                    "friendlyName": "Master Bedroom",
+                    "description": "Howard Master Bedroom Switch",
+                    "manufacturerName": "Default-Manufacturer",
+                    "displayCategories": [
+                        "SWITCH"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 3, \"iid\": 10, \"value\": 1 }",
+                        "TurnOff": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 3, \"iid\": 10, \"value\": 0 }",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":3,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "MTkyLjE2OC4xLjIyNjo1MTgyNixhaWQ6IDQsaWlkOiAxMQ==",
+                    "friendlyName": "Fireplace",
+                    "description": "Howard Fireplace Fan",
+                    "manufacturerName": "NorthernMan54",
+                    "displayCategories": [
+                        "LIGHT"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 4, \"iid\": 10, \"value\": 1 }",
+                        "TurnOff": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 4, \"iid\": 10, \"value\": 0 }",
+                        "SetPowerLevel": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 4, \"iid\": 11 }",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":4,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":4,\"iid\":11}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerLevelController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerLevel"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "MTkyLjE2OC4xLjIyNjo1MTgyNixhaWQ6IDUsaWlkOiAyNA==",
+                    "friendlyName": "TV",
+                    "description": "Howard TV Switch",
+                    "manufacturerName": "NorthernMan54",
+                    "displayCategories": [
+                        "SWITCH"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 5, \"iid\": 10, \"value\": 1 }",
+                        "TurnOff": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 5, \"iid\": 10, \"value\": 0 }",
+                        "SetPowerLevel": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 5, \"iid\": 24 }",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":5,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":5,\"iid\":24}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerLevelController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerLevel"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "MTkyLjE2OC4xLjIyNjo1MTgyNixhaWQ6IDYsaWlkOiAxMQ==",
+                    "friendlyName": "Outlet Two",
+                    "description": "Howard Outlet Two Outlet",
+                    "manufacturerName": "ECO Plugs",
+                    "displayCategories": [
+                        "SMARTPLUG"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 6, \"iid\": 10, \"value\": 1 }",
+                        "TurnOff": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 6, \"iid\": 10, \"value\": 0 }",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":6,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "MTkyLjE2OC4xLjIyNjo1MTgyNixhaWQ6IDcsaWlkOiAxMQ==",
+                    "friendlyName": "Fan",
+                    "description": "Howard Fan Outlet",
+                    "manufacturerName": "ECO Plugs",
+                    "displayCategories": [
+                        "SMARTPLUG"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 7, \"iid\": 10, \"value\": 1 }",
+                        "TurnOff": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 7, \"iid\": 10, \"value\": 0 }",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":7,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "MTkyLjE2OC4xLjIyNjo1MTgyNixhaWQ6IDgsaWlkOiAxMQ==",
+                    "friendlyName": "Office",
+                    "description": "Howard Office Outlet",
+                    "manufacturerName": "ECO Plugs",
+                    "displayCategories": [
+                        "SMARTPLUG"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 8, \"iid\": 10, \"value\": 1 }",
+                        "TurnOff": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 8, \"iid\": 10, \"value\": 0 }",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":8,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "MTkyLjE2OC4xLjIyNjo1MTgyNixhaWQ6IDksaWlkOiAxMQ==",
+                    "friendlyName": "Outlet One",
+                    "description": "Howard Outlet One Outlet",
+                    "manufacturerName": "ECO Plugs",
+                    "displayCategories": [
+                        "SMARTPLUG"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 9, \"iid\": 10, \"value\": 1 }",
+                        "TurnOff": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 9, \"iid\": 10, \"value\": 0 }",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":9,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "MTkyLjE2OC4xLjIyNjo1MTgyNixhaWQ6IDExLGlpZDogMTE=",
+                    "friendlyName": "Test",
+                    "description": "Howard Test Outlet",
+                    "manufacturerName": "ECO Plugs",
+                    "displayCategories": [
+                        "SMARTPLUG"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 11, \"iid\": 10, \"value\": 1 }",
+                        "TurnOff": "{ \"host\": \"192.168.1.226\", \"port\": 51826, \"aid\": 11, \"iid\": 10, \"value\": 0 }",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"192.168.1.226\",\"port\":51826,\"aid\":11,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
                                     }
                                 ],
                                 "proactivelyReported": false,
