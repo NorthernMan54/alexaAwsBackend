@@ -1,42 +1,43 @@
-# Privacy Statement url
+# Datenschutzerklärung URL
 
 https://homebridge.cloudwatch.net/about
 
-# Terms of Use URL
+# Nutzungsbedingungen URL
 
 
 
-# Testing Instructions
+# Test Anleitung
 
-When linking the skill,please use the login and the password
+Wenn der Skill verknüpft wird, verwende bitte den Benutzernamen X und das Passwort Z.
 
-This account is tied to an outlet in my house that you can turn on and off.
+Dieser Account ist mit einer Steckdose in meinem Haus verbunden, die du ein- und ausschalten kannst.
 
-Alexa, turn on test light
-Alexa, turn off test light
+Alexa, schalte das "Test Light" an (this might need a name that works in a couple of languages like "Alexa, turn off Test" would be "Alexa, schalte Test aus")
 
-# Short Skill Description
+Alexa, schalte das "Test Light" aus (same)
 
-Use your Alexa to control your HomeBridge controlled devices.
 
-# Full Skill Description
+# Kurze Zusammenfassung des Skills
 
-This skill enable access to your HomeBridge controlled devices from your Amazon Alexa.  For details on homebridge please see https://github.com/nfarina/homebridge.
+Nutze Alexa, um deine Homebridge-Geräte mit deiner Sprache zu steuern (added "with you voise").
 
-For details on enabling your Amazon Alexa to control you homebridge devices and installing the required homebridge plugin, please see https://github.com/NorthernMan54/homebridge-alexa.
+# Beschreibung des Skills
 
-Supported homebridge devices include:
+Dieser Skill erlaubt es, Geräte, die in deiner Homebridge konfiguriert sind, mit Amazon Alexa zu steuern. Für weitere Informationen zu Homebridge siehe https://github.com/nfarina/homebridge.
 
-Lights, Outlets, Switches, Fans, and Temperature Sensors.
+Unterstützte Homebridge-Geräte sind:
 
-# Example Phrases
+Lampen, Steckdosen, Schalter, Ventilatoren und Temperatur Sensoren.
 
-Alexa, turn on Living Room Lamp
 
-Alexa, set Living Room Lamp to 50 percent
+# Beispiele 
 
-Alexa, turn off Living Room Lamp
+Alexa, schalte die Wohnzimmerlampe ein
+
+Alexa, setzte die Wohnzimmerlampe auf 50%
+
+Alexa, schalte die Wohnzimmerlampe ein
 
 # Keywords
 
-homebridge, homekit
+homebridge, homekit, alexa(?)
