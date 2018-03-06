@@ -558,7 +558,7 @@ app.post('/auth/finish', function(req, res, next) {
         req.user = user;
         measurement.send({
           t: 'event',
-          ec: 'command',
+          ec: 'System',
           ea: 'linked',
           uid: user.username
         });
@@ -613,14 +613,20 @@ mqttClient.on('message', function(topic, message) {
         // should really parse uid out of topic
         measurement.send({
           t: 'event',
-          ec: 'command',
-          ea: 'complete',
+          ec: payload.event.header.namespace,
+          ea: payload.event.header.name,
           uid: waiting.user
         });
       }
     }
   } catch (err) {
     console.log("Processing Error", err);
+    measurement.send({
+      t: 'event',
+      ec: 'error',
+      ea: 'timeout',
+      uid: waiting.user
+    });
   }
 });
 
@@ -638,7 +644,7 @@ var timeout = setInterval(function() {
         delete onGoingCommands[keys[key]];
         measurement.send({
           t: 'event',
-          ec: 'command',
+          ec: 'error',
           ea: 'timeout',
           uid: waiting.user
         });
@@ -654,7 +660,7 @@ app.post('/api/v2/messages',
   function(req, res, next) {
     measurement.send({
       e: 'event',
-      ec: 'command',
+      ec: req.body.directive.header.namespace,
       ea: req.body.directive.header.name,
       uid: req.user.username
     });
