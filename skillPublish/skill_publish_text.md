@@ -8,12 +8,11 @@ https://homebridge.cloudwatch.net/about
 
 # Testing Instructions
 
-When linking the skill,please use the login and the password
+When linking the skill, please use the login and the password
 
-This account is tied to an outlet in my house that you can turn on and off.
+amazonTest
 
-Alexa, turn on test light
-Alexa, turn off test light
+This account is tied to my home system, and has control of all the devices, so please try to limit your tests to the Basement Stair light.  I want to avoid bothering the family too much when your testing.
 
 # Short Skill Description
 
@@ -23,7 +22,7 @@ Use your Alexa to control your HomeBridge controlled devices.
 
 This skill enable access to your HomeBridge controlled devices from your Amazon Alexa.  For details on homebridge please see https://github.com/nfarina/homebridge.
 
-For details on enabling your Amazon Alexa to control you homebridge devices and installing the required homebridge plugin, please see https://github.com/NorthernMan54/homebridge-alexa.
+For details on enabling your Amazon Alexa to control you homebridge devices and installing the required homebridge plugin homebridge-alexa, please see https://github.com/NorthernMan54/homebridge-alexa.
 
 Supported homebridge devices include:
 
