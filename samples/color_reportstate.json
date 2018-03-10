@@ -1,0 +1,23 @@
+{
+  "context": {
+    "properties": [{
+      "namespace": "Alexa.ColorController",
+      "name": "color",
+      "timeOfSample": "2018-03-10T15:06:01.625Z",
+      "uncertaintyInMilliseconds": 500
+    }]
+  },
+  "event": {
+    "header": {
+      "namespace": "Alexa",
+      "name": "Response",
+      "payloadVersion": "3",
+      "messageId": "b0dbe84a-913d-485c-ac87-407dc07fd829",
+      "correlationToken": "AAAAAAAAAAD4tXCH2gkhyx4B8ZKLImkwBAIAAAAAAAA2H7IaWebwNavKy/tVo1dFYx3lHN8ZSDKA+lWVHpH4a675v0YwJIzkwM4sghaDW3VHUiYMiZkX681QhWTpDsTxSJiRtpW75aTwKsuoJuA+Mzzmn+BtR28wvqpkzRien0cDHuPJYCWIPEKfTpOPh4BM5F46S7CFm8Ts601lEFvW9EyOBTdodn40pu0jenfcG3STfndmtr8hWYXWV9xoJ5ev2l+7DmE6u2y1dILlZVFrprzXAbea6A5rDoSsDy3lS83OWTnOJWS06iyrYTK3ZyPvu5CGSxk6RPgv9d3/hHhYJWuR4ZwpqHHblPHlnUxkvATR461ZN18nmTSxKBCukNo3gMpRibV0DlcnyCOVw2BsFVC0utTgUohmr9LXoRukTWCYL5d0B5gMxW03TyR4e+Fc1b8r5HNi6U0cJLohApauSyQC7Ur/gFK1gLp410ybUkz3DsbPVOG6EXaWHKWkzTBLR2Et9hQ72hH8Jl6EoP8dQIhHkBGfXoeTJ3DUA4kio2jShKEImVF3Zv6dZ+jufc3HnIs+h2EMUk1bm9YAz4VE5soKKROzVe0K4DE92eh9cKUZ+1wCuOTRGDcl25+xQ38qa1j9KzB3Cbdlh8lP8sti96n3vxF69RhkqkDZcRV2PTJlMPFw/TfWqqZMs81pK6CRIccsZbxX0Xo/D2odOha3XDaVC+c="
+    },
+    "endpoint": {
+      "endpointId": "MTkyLjE2OC4xLjIzMTo1MTgyNixhaWQ6IDIsaWlkOiAxMw=="
+    },
+    "payload": {}
+  }
+}
