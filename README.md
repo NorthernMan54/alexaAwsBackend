@@ -43,6 +43,22 @@ Moved to https://github.com/NorthernMan54/homebridge-alexa/issues/47
 
 * Followed this - https://developer.amazon.com/blogs/post/Tx1UE9W1NQ0GYII/Publishing-Your-Skill-Code-to-Lambda-via-the-Command-Line-Interface
 
+1 - Name - AlexaHome
+2 - Runtime - NodeJS 6.10
+3 - Role - Choose existing
+4 - Existing Role - lamba_basic_execution
+Create function
+5 - Add trigger - Alexa Smart Home
+6 - Application ID - Copy from Alexa config
+save
+7 - Timeout - 10 Seconds
+
+9 - Add ARN to Alexa Skill config
+
+
+
+
+
 ## aws LightSail web website
 
 * Selected Ubuntu OS image, and installed nodejs
