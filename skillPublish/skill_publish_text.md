@@ -14,11 +14,11 @@ amazonTest
 
 This account is tied to my home system, and has control of all the devices, so please try to limit your tests to the Basement Stair light.  I want to avoid bothering the family too much when your testing.
 
-# Short Skill Description
+## Short Skill Description
 
 Use your Alexa to control your HomeBridge controlled devices.
 
-# Full Skill Description
+## Full Skill Description
 
 This skill enable access to your HomeBridge controlled devices from your Amazon Alexa.  For details on homebridge please see https://github.com/nfarina/homebridge.
 
@@ -28,7 +28,7 @@ Supported homebridge devices include:
 
 Lights, Outlets, Switches, Fans, and Temperature Sensors.
 
-# Example Phrases
+## Example Phrases
 
 Alexa, turn on Living Room Lamp
 
@@ -38,7 +38,7 @@ Alexa, turn off Living Room Lamp
 
 # Keywords
 
-homebridge, homekit
+homebridge
 
 # Datenschutzerklärung URL
 
@@ -48,7 +48,7 @@ https://homebridge.cloudwatch.net/about
 
 German Translation from Chrisx9
 
-# Test Anleitung
+## Test Anleitung
 
 Wenn der Skill verknüpft wird, verwende bitte den Benutzernamen X und das Passwort Z.
 
@@ -59,11 +59,11 @@ Alexa, schalte das "Test Light" an (this might need a name that works in a coupl
 Alexa, schalte das "Test Light" aus (same)
 
 
-# Kurze Zusammenfassung des Skills
+## Kurze Zusammenfassung des Skills
 
 Nutze Alexa, um deine Homebridge-Geräte mit deiner Sprache zu steuern (added "with you voise").
 
-# Beschreibung des Skills
+## Beschreibung des Skills
 
 Dieser Skill erlaubt es, Geräte, die in deiner Homebridge konfiguriert sind, mit Amazon Alexa zu steuern. Für weitere Informationen zu Homebridge siehe https://github.com/nfarina/homebridge.
 
@@ -72,7 +72,7 @@ Unterstützte Homebridge-Geräte sind:
 Lampen, Steckdosen, Schalter, Ventilatoren und Temperatur Sensoren.
 
 
-# Beispiele
+## Beispiele
 
 Alexa, schalte die Wohnzimmerlampe ein
 
@@ -82,4 +82,28 @@ Alexa, schalte die Wohnzimmerlampe aus
 
 # Keywords
 
-homebridge, homekit, alexa(?)
+homebridge
+
+# French provided by Google Translate
+
+## Short Skill Description
+
+Utilisez votre Alexa pour parler à vos appareils contrôlés par HomeBridge.
+
+## Full Skill Description
+
+Cette compétence permet d'accéder à vos appareils contrôlés par HomeBridge à partir de votre Amazon Alexa. Pour plus de détails sur homebridge s'il vous plaît voir https://github.com/nfarina/homebridge.
+
+Pour plus de détails sur l'activation de votre Amazon Alexa pour contrôler vos appareils homebridge et l'installation du plug-in homebridge requis homebridge-alexa, veuillez consulter https://github.com/NorthernMan54/homebridge-alexa.
+
+Les appareils Homebridge pris en charge comprennent:
+
+Lumières, prises, interrupteurs, ventilateurs et capteurs de température.
+
+## Examples
+
+Alexa, allume la lampe de salon
+
+Alexa, règle la lampe de salon à 50 %
+
+Alexa, éteins la lampe de salon
