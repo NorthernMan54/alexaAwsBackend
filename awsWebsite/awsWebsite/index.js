@@ -161,7 +161,7 @@ Account.findOne({
               },
               function(err, count) {
                 if (err) {
-                  console.log("DB Error:",err);
+                  console.log("DB Error:", err);
                 }
               }
             );
@@ -334,7 +334,7 @@ app.post('/newuser', function(req, res) {
     mqttPass: "foo"
   }), req.body.password, function(err, account) {
     if (err) {
-      console.log("DB Error:",err);
+      console.log("DB Error:", err);
       return res.status(400).send(err.message);
     }
 
@@ -367,7 +367,7 @@ app.post('/newuser', function(req, res) {
           },
           function(err, count) {
             if (err) {
-              console.log("DB Error:",err);
+              console.log("DB Error:", err);
             }
           }
         );
@@ -402,7 +402,7 @@ app.get('/changePassword/:key', function(req, res, next) {
           lostPassword.remove();
           res.redirect('/changePassword');
         } else {
-          console.log("DB Error:",err);
+          console.log("DB Error:", err);
           res.redirect('/');
         }
       })
@@ -440,7 +440,7 @@ app.post('/changePassword', ensureAuthenticated, function(req, res, next) {
         });
       });
     } else {
-      console.log("DB Error:",err);
+      console.log("DB Error:", err);
       res.status(400).send("Problem setting new password");
     }
   });
@@ -486,7 +486,7 @@ app.get('/auth/start', function(req, res, next) {
   console.log(req.headers);
   if (req.query.response_type === undefined) {
     res.end();
-//    res.status(400).send("Bad request");
+    //    res.status(400).send("Bad request");
     next(new Error("Bad request"));
   } else {
     next();
@@ -636,7 +636,9 @@ mqttClient.on('message', function(topic, message) {
       ds: 'message',
       ec: 'message',
       ea: 'error',
-      geoid: 'Amazon'
+      geoid: 'Amazon',
+      el: err.message,
+      uid: 'System'
     });
   }
 });
@@ -739,8 +741,11 @@ app.get('/admin/users',
   function(req, res) {
     if (req.user.username === mqtt_user) {
       Account.find({}, function(error, data) {
-        var transform = {"<>":"div","html":"<tr><td>${username}</td><td>${created}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td></tr>"};
-        res.send("<table border='1'>"+json2html.transform(data,transform)+"</table>");
+        var transform = {
+          "<>": "div",
+          "html": "<tr><td>${username}</td><td>${created}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td></tr>"
+        };
+        res.send("<table border='1'>" + json2html.transform(data, transform) + "</table>");
       });
     } else {
       res.status(401).send();
@@ -889,13 +894,15 @@ function lastUsedAlexa(username) {
       $set: {
         lastUsedAlexa: new Date()
       },
-      $inc: { alexaCount: 1 }
+      $inc: {
+        alexaCount: 1
+      }
     }, {
       multi: false
     },
     function(err, count) {
       if (err) {
-        console.log("DB Error:",err);
+        console.log("DB Error:", err);
       }
     }
   );
@@ -915,7 +922,7 @@ function lastUsedWebsite(username) {
     },
     function(err, count) {
       if (err) {
-        console.log("DB Error:",err);
+        console.log("DB Error:", err);
       }
     }
   );
