@@ -31,6 +31,8 @@ console.log(mqtt_url);
 var googleAnalyicsTID = process.env.GOOGLE_ANALYTICS_TID;
 var measurement = new Measurement(googleAnalyicsTID);
 
+var brokerMonitor = require('./lib/broker-monitor.js');
+
 var mqttClient;
 
 var mqttOptions = {
@@ -376,8 +378,10 @@ app.post('/newuser', function(req, res) {
       console.log("created new user %s", req.body.username);
       measurement.send({
         t: 'event',
-        ec: 'System',
+        ds: 'web',
+        ec: 'web',
         ea: 'NewUser',
+        el: req.body.username,
         uid: req.body.username
       });
       res.status(201).send();
@@ -558,8 +562,10 @@ app.post('/auth/finish', function(req, res, next) {
         req.user = user;
         measurement.send({
           t: 'event',
-          ec: 'System',
-          ea: 'linked',
+          ds: 'web',
+          ec: 'web',
+          ea: 'Linked',
+          el: user.username,
           uid: user.username
         });
         next();
@@ -613,8 +619,11 @@ mqttClient.on('message', function(topic, message) {
         // should really parse uid out of topic
         measurement.send({
           t: 'event',
-          ec: payload.event.header.namespace,
+          ds: 'message',
+          ec: 'message',
           ea: payload.event.header.name,
+          el: waiting.user,
+          sc: 'end',
           uid: waiting.user
         });
       }
@@ -623,8 +632,11 @@ mqttClient.on('message', function(topic, message) {
     console.log("Processing Error", err);
     measurement.send({
       t: 'event',
-      ec: 'error',
-      ea: 'timeout',
+      ds: 'message',
+      ec: 'message',
+      ea: 'error',
+      el: waiting.user,
+      sc: 'end',
       uid: waiting.user
     });
   }
@@ -644,8 +656,11 @@ var timeout = setInterval(function() {
         delete onGoingCommands[keys[key]];
         measurement.send({
           t: 'event',
-          ec: 'error',
+          ds: 'message',
+          ec: 'message',
           ea: 'timeout',
+          el: waiting.user,
+          sc: 'end',
           uid: waiting.user
         });
       }
@@ -660,8 +675,11 @@ app.post('/api/v2/messages',
   function(req, res, next) {
     measurement.send({
       e: 'event',
-      ec: req.body.directive.header.namespace,
+      ds: 'message',
+      ec: 'message',
       ea: req.body.directive.header.name,
+      el: req.user.username,
+      sc: 'start',
       uid: req.user.username
     });
     var topic = "command/" + req.user.username + "/1";
