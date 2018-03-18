@@ -51,7 +51,7 @@ try {
           geoid: 'Amazon',
           uid: 'System'
         });
-        console.log("MESSAGE",message.toString());
+        //console.log("MESSAGE",message.toString());
         break;
       case "$SYS/broker/log/N":
         //process.stdout.write(".");
