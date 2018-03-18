@@ -621,9 +621,10 @@ mqttClient.on('message', function(topic, message) {
           t: 'event',
           ds: 'message',
           ec: 'message',
-          ea: payload.event.header.name,
+          ea: ( payload.context.properties[0].name ? "Response."+payload.context.properties[0].name : payload.event.header.name),
           el: waiting.user,
           sc: 'end',
+          geoid: 'Amazon',
           uid: waiting.user
         });
       }
@@ -635,9 +636,7 @@ mqttClient.on('message', function(topic, message) {
       ds: 'message',
       ec: 'message',
       ea: 'error',
-      el: waiting.user,
-      sc: 'end',
-      uid: waiting.user
+      geoid: 'Amazon'
     });
   }
 });
@@ -658,9 +657,10 @@ var timeout = setInterval(function() {
           t: 'event',
           ds: 'message',
           ec: 'message',
-          ea: 'timeout',
+          ea: 'Timeout',
           el: waiting.user,
           sc: 'end',
+          geoid: 'Amazon',
           uid: waiting.user
         });
       }
@@ -680,6 +680,7 @@ app.post('/api/v2/messages',
       ea: req.body.directive.header.name,
       el: req.user.username,
       sc: 'start',
+      geoid: 'Amazon',
       uid: req.user.username
     });
     var topic = "command/" + req.user.username + "/1";
