@@ -621,7 +621,7 @@ mqttClient.on('message', function(topic, message) {
           t: 'event',
           ds: 'message',
           ec: 'message',
-          ea: ( payload.context.properties[0].name ? "Response."+payload.context.properties[0].name : payload.event.header.name),
+          ea: payload.event.header.name,
           el: waiting.user,
           sc: 'end',
           geoid: 'Amazon',
