@@ -1,76 +1,96 @@
-var Tail = require('tail').Tail;
+var mqtt = require('mqtt');
 var Measurement = require('./googleMeasurement.js');
 
 var googleAnalyicsTID = process.env.GOOGLE_ANALYTICS_TID;
 var measurement = new Measurement(googleAnalyicsTID);
 
-var options = {
-  fromBeginning: false,         // Set to true for testing with a static file
-  follow: true
+var mqtt_url = (process.env.MQTT_URL || 'mqtt://localhost:1883');
+var mqtt_user = (process.env.MQTT_USER || 'mqtt_user');
+var mqtt_password = (process.env.MQTT_PASSWORD || 'mqtt_pass');
+console.log(mqtt_url);
+
+var mqttClient;
+
+var mqttOptions = {
+  reconnectPeriod: 3000,
+  keepAlive: 10,
+  clean: true,
+  clientId: 'webApp_' + Math.random().toString(16).substr(2, 8)
+};
+
+if (mqtt_user) {
+  mqttOptions.username = mqtt_user;
+  mqttOptions.password = mqtt_password;
 }
 
+mqttClient = mqtt.connect(mqtt_url, mqttOptions);
+
+mqttClient.on('error', function(err) {});
+
+mqttClient.on('reconnect', function() {
+
+});
+
+mqttClient.on('connect', function() {
+  mqttClient.subscribe('$SYS/broker/log/N');
+});
+
 try {
-var tail = new Tail("/var/log/mosquitto/mosquitto.log", options);
+  mqttClient.on('message', function(topic, message) {
+    console.log(message.toString());
+    process.stdout.write(".");
+    var line = message.toString().split(":")[1];
 
-tail.on("error", function(err) {
-  console.log('ERROR: ', err);
-});
+    if (!line)
+      line = data;
 
-tail.on("line", function(data) {
-  //console.log(data);
-  process.stdout.write(".");
-  var line = data.split(":")[1];
+    if (line.startsWith(" New client connected from")) {
+      //console.log(line);
+      var fields = line.split(" ");
 
-  if (!line)
-    line = data;
+      measurement.send({
+        t: 'event',
+        ds: 'broker',
+        ec: 'broker',
+        ea: 'Connect',
+        el: fields[7],
+        sc: 'start',
+        uid: fields[7],
+        uip: fields[5]
+      });
+      //console.log("Connected uid=%s, ip=%s",fields[7],fields[5]);
+    } else if (line.startsWith(' Socket error on client')) {
+      //console.log(line);
+      var fields = line.split(' ');
+      //console.log("Socket Error uid=%s",fields[5]);
+      measurement.send({
+        t: 'event',
+        ds: 'broker',
+        ec: 'broker',
+        ea: 'Disconnect',
+        el: fields[5].split(',')[0],
+        sc: 'end',
+        uid: fields[5].split(',')[0]
+      });
+    } else if (line.startsWith(" Client")) {
+      //console.log(line);
+      var fields = line.split(" ");
+      //console.log("Timeout uid=%s",fields[2]);
+      measurement.send({
+        t: 'event',
+        ds: 'broker',
+        ec: 'broker',
+        ea: 'Timeout',
+        el: fields[2],
+        sc: 'end',
+        uid: fields[2]
+      });
+    } else {
+      //console.log("Unhandled ", line);
+    }
 
-  if (line.startsWith(" New client connected from")) {
-    //console.log(line);
-    var fields = line.split(" ");
+  });
 
-    measurement.send({
-      t: 'event',
-      ds: 'broker',
-      ec: 'broker',
-      ea: 'Connect',
-      el: fields[7],
-      sc: 'start',
-      uid: fields[7],
-      uip: fields[5]
-    });
-    //console.log("Connected uid=%s, ip=%s",fields[7],fields[5]);
-  } else if (line.startsWith(" Socket error on client")) {
-    //console.log(line);
-    var fields = line.split(" ");
-    //console.log("Socket Error uid=%s",fields[5]);
-    measurement.send({
-      t: 'event',
-      ds: 'broker',
-      ec: 'broker',
-      ea: 'Disconnect',
-      el: fields[5],
-      sc: 'end',
-      uid: fields[5]
-    });
-  } else if (line.startsWith(" Client")) {
-    //console.log(line);
-    var fields = line.split(" ");
-    //console.log("Timeout uid=%s",fields[2]);
-    measurement.send({
-      t: 'event',
-      ds: 'broker',
-      ec: 'broker',
-      ea: 'Timeout',
-      el: fields[2],
-      sc: 'end',
-      uid: fields[2]
-    });
-  } else {
-    //console.log("Unhandled ", line);
-  }
-
-});
-
-} catch ( err ) {
+} catch (err) {
   console.log('ERROR: ', err);
 }
