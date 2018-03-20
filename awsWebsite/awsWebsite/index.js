@@ -382,6 +382,7 @@ app.post('/newuser', function(req, res) {
         ec: 'web',
         ea: 'NewUser',
         el: req.body.username,
+        geoid: 'Amazon',
         uid: req.body.username
       });
       res.status(201).send();
@@ -566,6 +567,7 @@ app.post('/auth/finish', function(req, res, next) {
           ec: 'web',
           ea: 'Linked',
           el: user.username,
+          geoid: 'Amazon',
           uid: user.username
         });
         next();
