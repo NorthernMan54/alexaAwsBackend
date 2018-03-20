@@ -38,7 +38,7 @@ mqttClient.on('connect', function() {
 
 try {
   mqttClient.on('message', function(topic, message) {
-    console.log(topic, message.toString());
+    //console.log(topic, message.toString());
     switch (topic) {
       case "$SYS/broker/clients/connected":
         measurement.send({
