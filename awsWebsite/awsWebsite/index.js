@@ -610,10 +610,10 @@ var onGoingCommands = {};
 mqttClient.on('message', function(topic, message) {
   try {
     if (topic.startsWith('response/')) {
-      console.log("mqtt response: raw ", topic, message.toString());
+      console.log("mqtt response: ", topic, message.toString());
       var payload = JSON.parse(message.toString());
       var waiting = onGoingCommands[payload.event.header.messageId];
-      console.log("mqtt response: msgId ", payload.event.header.messageId);
+      //console.log("mqtt response: msgId ", payload.event.header.messageId);
       if (waiting) {
         //        console.log("mqtt response: " + JSON.stringify(payload, null, " "));
         waiting.res.send(payload);
