@@ -124,6 +124,14 @@ sudo certbot certonly
 From https://docs.bitnami.com/google/how-to/generate-install-lets-encrypt-ssl/
 ```
 
+## Enable storage of more logs ##
+
+```
+sudo mkdir /var/log/journal
+sudo systemd-tmpfiles --create --prefix /var/log/journal
+sudo systemctl restart systemd-journald
+```
+
 ## Local version of awsWebsite
 
 ```
