@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,10 +15,29 @@
 
   <link rel="stylesheet" href="/css/basic.css">
 
+  <!-- Google Analytics -->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-113193152-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- End Google Analytics -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 </head>
+
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
@@ -34,18 +54,22 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li <% if (locals.home) {%>class="active"<% } %>><a href="/">Home</a></li>
+          <li <% if (locals.home) {%>class="active"
+            <% } %>><a href="/">Home</a></li>
 
-          <li <% if (locals.about) {%>class="active"<% } %>><a href="/about">About</a></li>
+          <li <% if (locals.about) {%>class="active"
+            <% } %>><a href="/about">About</a></li>
         </ul>
-      </div><!--/.nav-collapse -->
+      </div>
+      <!--/.nav-collapse -->
     </div>
   </nav>
   <div class="container login">
     <% if (user) { %>
-      <a href="/logout">Logout</a> - <%= user.username %>
-    <% } else { %>
-      <a href="/login">Login</a> or <a href="/newuser">Register</a>
-    <% } %>
+      <a href="/logout">Logout</a> -
+      <%= user.username %>
+        <% } else { %>
+          <a href="/login">Login</a> or <a href="/newuser">Register</a>
+          <% } %>
   </div>
   <div class="container main">
