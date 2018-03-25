@@ -378,7 +378,6 @@ app.post('/newuser', function(req, res) {
       console.log("created new user %s", req.body.username);
       measurement.send({
         t: 'event',
-        ds: 'app',
         ec: 'web',
         ea: 'NewUser',
         el: req.body.username,
@@ -563,7 +562,6 @@ app.post('/auth/finish', function(req, res, next) {
         req.user = user;
         measurement.send({
           t: 'event',
-          ds: 'app',
           ec: 'web',
           ea: 'Linked',
           el: user.username,
@@ -621,7 +619,6 @@ mqttClient.on('message', function(topic, message) {
         // should really parse uid out of topic
         measurement.send({
           t: 'event',
-          ds: 'app',
           ec: 'message',
           ea: payload.event.header.name,
           el: waiting.user,
@@ -635,7 +632,6 @@ mqttClient.on('message', function(topic, message) {
     console.log("Processing Error", err);
     measurement.send({
       t: 'event',
-      ds: 'app',
       ec: 'message',
       ea: 'error',
       geoid: 'Amazon',
@@ -659,7 +655,6 @@ var timeout = setInterval(function() {
         delete onGoingCommands[keys[key]];
         measurement.send({
           t: 'event',
-          ds: 'app',
           ec: 'message',
           ea: 'Timeout',
           el: waiting.user,
@@ -679,7 +674,6 @@ app.post('/api/v2/messages',
   function(req, res, next) {
     measurement.send({
       t: 'event',
-      ds: 'app',
       ec: 'message',
       ea: req.body.directive.header.name,
       el: req.user.username,
