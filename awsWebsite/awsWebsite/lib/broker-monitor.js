@@ -43,11 +43,11 @@ try {
       case "$SYS/broker/clients/connected":
         measurement.send({
           t: 'event',
-          ds: 'broker',
+
           ec: 'broker',
           ea: 'Status.connected',
           ev: message.toString(),
-          el: message.toString(),
+
           geoid: 'Amazon',
           uid: 'System'
         });
@@ -66,7 +66,7 @@ try {
 
           measurement.send({
             t: 'event',
-            ds: 'broker',
+
             ec: 'broker',
             ea: 'Connect',
             el: fields[7],
@@ -81,7 +81,7 @@ try {
           //console.log("Socket Error uid=%s",fields[5]);
           measurement.send({
             t: 'event',
-            ds: 'broker',
+
             ec: 'broker',
             ea: 'Disconnect',
             el: fields[5].split(',')[0],
@@ -95,7 +95,7 @@ try {
           //console.log("Timeout uid=%s",fields[2]);
           measurement.send({
             t: 'event',
-            ds: 'broker',
+
             ec: 'broker',
             ea: 'Timeout',
             el: fields[2],
