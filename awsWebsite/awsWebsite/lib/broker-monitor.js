@@ -86,7 +86,6 @@ try {
             ea: 'Disconnect',
             el: fields[5].split(',')[0],
             sc: 'end',
-            geoid: 'Amazon',
             uid: fields[5].split(',')[0]
           });
         } else if (line.startsWith(" Client")) {
@@ -100,7 +99,6 @@ try {
             ea: 'Timeout',
             el: fields[2],
             sc: 'end',
-            geoid: 'Amazon',
             uid: fields[2]
           });
         } else {
