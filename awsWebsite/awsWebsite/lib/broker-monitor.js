@@ -47,7 +47,7 @@ try {
           ec: 'broker',
           ea: 'Status.connected',
           ev: message.toString(),
-
+          el: message.toString(),
           geoid: 'Amazon',
           uid: 'System'
         });
