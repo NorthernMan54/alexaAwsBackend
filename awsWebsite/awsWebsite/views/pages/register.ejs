@@ -1,5 +1,7 @@
 <% include ../fragments/header.ejs %>
   <div class="container main-content">
+    <h2>Before Registering</h2>
+    <p>Please note you must have <a href="https://github.com/nfarina/homebridge">HomeBridge</a> installed and running, and have installed the <a href="https://github.com/NorthernMan54/homebridge-alexa">homebridge-alexa</a> plugin. To setup this service, please follow the instructions <a href="https://github.com/NorthernMan54/homebridge-alexa">here</a></p>
     <div id="register">
       <label style="width: 75px" for="username">Username:</label>
       <input type="text" onchange="validate()" id="username"/>
@@ -12,7 +14,7 @@
       <label style="width: 75px" for="password">Password:</label>
       <input type="password" id="password"/>
       <div id="pwq" class="pwq"></div>
-      
+
       <p>Please enter password again</p>
       <label style="width: 75px" for="passwordAgain">Password:</label>
       <input type="password" id="passwordAgain"/>
@@ -26,8 +28,8 @@
         var userChange = function(){
           var u = user.value.trim();
           if (u.length != 0) {
-            if (u.indexOf('#') != -1 || 
-                u.indexOf('+') != -1 || 
+            if (u.indexOf('#') != -1 ||
+                u.indexOf('+') != -1 ||
                 u.indexOf('/') != -1 ||
                 u.indexOf('$') == 0) {
               document.getElementById('usrValid').style.background = 'red';
@@ -135,7 +137,7 @@
       				alert(xhr.responseText);
       			}
       		}
-      		
+
       		xhr.send(params);
       	};
 

@@ -31,6 +31,8 @@ console.log(mqtt_url);
 var googleAnalyicsTID = process.env.GOOGLE_ANALYTICS_TID;
 var measurement = new Measurement(googleAnalyicsTID);
 
+var brokerMonitor = require('./lib/broker-monitor.js');
+
 var mqttClient;
 
 var mqttOptions = {
@@ -159,7 +161,7 @@ Account.findOne({
               },
               function(err, count) {
                 if (err) {
-                  console.log("DB Error:",err);
+                  console.log("DB Error:", err);
                 }
               }
             );
@@ -332,7 +334,7 @@ app.post('/newuser', function(req, res) {
     mqttPass: "foo"
   }), req.body.password, function(err, account) {
     if (err) {
-      console.log("DB Error:",err);
+      console.log("DB Error:", err);
       return res.status(400).send(err.message);
     }
 
@@ -365,7 +367,7 @@ app.post('/newuser', function(req, res) {
           },
           function(err, count) {
             if (err) {
-              console.log("DB Error:",err);
+              console.log("DB Error:", err);
             }
           }
         );
@@ -376,8 +378,10 @@ app.post('/newuser', function(req, res) {
       console.log("created new user %s", req.body.username);
       measurement.send({
         t: 'event',
-        ec: 'System',
+        ec: 'web',
         ea: 'NewUser',
+        el: req.body.username,
+        geoid: 'Amazon',
         uid: req.body.username
       });
       res.status(201).send();
@@ -398,7 +402,7 @@ app.get('/changePassword/:key', function(req, res, next) {
           lostPassword.remove();
           res.redirect('/changePassword');
         } else {
-          console.log("DB Error:",err);
+          console.log("DB Error:", err);
           res.redirect('/');
         }
       })
@@ -436,7 +440,7 @@ app.post('/changePassword', ensureAuthenticated, function(req, res, next) {
         });
       });
     } else {
-      console.log("DB Error:",err);
+      console.log("DB Error:", err);
       res.status(400).send("Problem setting new password");
     }
   });
@@ -482,7 +486,7 @@ app.get('/auth/start', function(req, res, next) {
   console.log(req.headers);
   if (req.query.response_type === undefined) {
     res.end();
-//    res.status(400).send("Bad request");
+    //    res.status(400).send("Bad request");
     next(new Error("Bad request"));
   } else {
     next();
@@ -558,8 +562,10 @@ app.post('/auth/finish', function(req, res, next) {
         req.user = user;
         measurement.send({
           t: 'event',
-          ec: 'System',
-          ea: 'linked',
+          ec: 'web',
+          ea: 'Linked',
+          el: user.username,
+          geoid: 'Amazon',
           uid: user.username
         });
         next();
@@ -602,10 +608,10 @@ var onGoingCommands = {};
 mqttClient.on('message', function(topic, message) {
   try {
     if (topic.startsWith('response/')) {
-      console.log("mqtt response: raw ", topic, message.toString());
+      console.log("mqtt response: ", topic, message.toString());
       var payload = JSON.parse(message.toString());
       var waiting = onGoingCommands[payload.event.header.messageId];
-      console.log("mqtt response: msgId ", payload.event.header.messageId);
+      //console.log("mqtt response: msgId ", payload.event.header.messageId);
       if (waiting) {
         //        console.log("mqtt response: " + JSON.stringify(payload, null, " "));
         waiting.res.send(payload);
@@ -613,8 +619,11 @@ mqttClient.on('message', function(topic, message) {
         // should really parse uid out of topic
         measurement.send({
           t: 'event',
-          ec: payload.event.header.namespace,
+          ec: 'message',
           ea: payload.event.header.name,
+          el: waiting.user,
+          sc: 'end',
+          geoid: 'Amazon',
           uid: waiting.user
         });
       }
@@ -623,9 +632,11 @@ mqttClient.on('message', function(topic, message) {
     console.log("Processing Error", err);
     measurement.send({
       t: 'event',
-      ec: 'error',
-      ea: 'timeout',
-      uid: waiting.user
+      ec: 'message',
+      ea: 'error',
+      geoid: 'Amazon',
+      el: err.message,
+      uid: 'System'
     });
   }
 });
@@ -644,8 +655,11 @@ var timeout = setInterval(function() {
         delete onGoingCommands[keys[key]];
         measurement.send({
           t: 'event',
-          ec: 'error',
-          ea: 'timeout',
+          ec: 'message',
+          ea: 'Timeout',
+          el: waiting.user,
+          sc: 'end',
+          geoid: 'Amazon',
           uid: waiting.user
         });
       }
@@ -659,9 +673,12 @@ app.post('/api/v2/messages',
   }),
   function(req, res, next) {
     measurement.send({
-      e: 'event',
-      ec: req.body.directive.header.namespace,
+      t: 'event',
+      ec: 'message',
       ea: req.body.directive.header.name,
+      el: req.user.username,
+      sc: 'start',
+      geoid: 'Amazon',
       uid: req.user.username
     });
     var topic = "command/" + req.user.username + "/1";
@@ -720,8 +737,11 @@ app.get('/admin/users',
   function(req, res) {
     if (req.user.username === mqtt_user) {
       Account.find({}, function(error, data) {
-        var transform = {"<>":"div","html":"<tr><td>${username}</td><td>${created}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td></tr>"};
-        res.send("<table border='1'>"+json2html.transform(data,transform)+"</table>");
+        var transform = {
+          "<>": "div",
+          "html": "<tr><td>${username}</td><td>${created}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td></tr>"
+        };
+        res.send("<table border='1'>" + json2html.transform(data, transform) + "</table>");
       });
     } else {
       res.status(401).send();
@@ -870,13 +890,15 @@ function lastUsedAlexa(username) {
       $set: {
         lastUsedAlexa: new Date()
       },
-      $inc: { alexaCount: 1 }
+      $inc: {
+        alexaCount: 1
+      }
     }, {
       multi: false
     },
     function(err, count) {
       if (err) {
-        console.log("DB Error:",err);
+        console.log("DB Error:", err);
       }
     }
   );
@@ -896,7 +918,7 @@ function lastUsedWebsite(username) {
     },
     function(err, count) {
       if (err) {
-        console.log("DB Error:",err);
+        console.log("DB Error:", err);
       }
     }
   );
