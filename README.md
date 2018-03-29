@@ -97,6 +97,9 @@ cp mosquitto/conf/mosquitto.conf /etc/mosquitto/conf.d/mosquitto.conf
 ## Apache SSL Config
 
 * Registered IP Address at freeDNS - homebridge.cloudwatch.net
+
+1. Followed the instructions here http://freedns.afraid.org/scripts/afraid.aws.sh.txt, but used this script as it worked better.  http://freedns.afraid.org/scripts/update.sh.txt
+
 * Create SSL at Let's Encrypt
 
 This is wrong
