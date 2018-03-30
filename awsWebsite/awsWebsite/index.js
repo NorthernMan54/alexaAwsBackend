@@ -9,15 +9,16 @@ var express = require('express');
 var session = require('express-session');
 var passport = require('passport');
 var mongoose = require('mongoose');
+var json2html = require('node-json2html');
 var bodyParser = require('body-parser');
+var oauthServer = require('./lib/oauth.js');
 var Measurement = require('./lib/googleMeasurement.js');
 var cookieParser = require('cookie-parser');
 var BasicStrategy = require('passport-http').BasicStrategy;
 var LocalStrategy = require('passport-local').Strategy;
 var PassportOAuthBearer = require('passport-http-bearer');
-var json2html = require('node-json2html');
 
-var oauthServer = require('./lib/oauth.js');
+
 
 var port = (process.env.VCAP_APP_PORT || process.env.PORT || 3000);
 var host = (process.env.VCAP_APP_HOST || '0.0.0.0');
@@ -626,6 +627,7 @@ mqttClient.on('message', function(topic, message) {
           geoid: 'Amazon',
           uid: waiting.user
         });
+        lastBrokerResponse(waiting.user);
       }
     }
   } catch (err) {
@@ -739,9 +741,27 @@ app.get('/admin/users',
       Account.find({}, function(error, data) {
         var transform = {
           "<>": "div",
-          "html": "<tr><td>${username}</td><td>${created}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td></tr>"
+          "html": "<tr><td>${username}</td><td>${created}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td><td>${lastUsedBroker}</td><td>${brokerCount}</td></tr>"
         };
-        res.send("<table border='1'>" + json2html.transform(data, transform) + "</table>");
+        res.send("<a href="
+          usage.csv " download="
+          usage.csv ">Download the data</a><table border='1'>" + json2html.transform(data, transform) + "</table>");
+      });
+    } else {
+      res.status(401).send();
+    }
+  });
+
+app.get('/usage.csv',
+  ensureAuthenticated,
+  function(req, res) {
+    if (req.user.username === mqtt_user) {
+      Account.find({}, function(error, data) {
+        var transform = {
+          "<>": "div",
+          "html": "\"${username}\",\"${created}\",\"${lastUsedAlexa}\",\"${alexaCount}\",\"${lastUsedBroker}\",\"${brokerCount}\""
+        };
+        res.send(json2html.transform(data, transform));
       });
     } else {
       res.status(401).send();
@@ -902,7 +922,27 @@ function lastUsedAlexa(username) {
       }
     }
   );
+}
 
+function lastBrokerResponse(username) {
+  Account.update({
+      username: username
+    }, {
+      $set: {
+        lastUsedBroker: new Date()
+      },
+      $inc: {
+        brokerCount: 1
+      }
+    }, {
+      multi: false
+    },
+    function(err, count) {
+      if (err) {
+        console.log("DB Error:", err);
+      }
+    }
+  );
 }
 
 function lastUsedWebsite(username) {

@@ -16,6 +16,10 @@ var Account = new Schema({
         return new Date();
     }},
     alexaCount: { type: Number, default: 0},
+    lastUsedBroker: { type: Date, default: function(){
+        return new Date();
+    }},
+    brokerCount: { type: Number, default: 0},
     lastUsedWebsite: { type: Date, default: function(){
         return new Date();
     }}
