@@ -62,12 +62,11 @@ try {
           line = data;
 
         if (line.startsWith(" New client connected from")) {
-          //console.log(line);
+          //New client connected from ##.##.##.## as NNN (c1, k60, u'NNN').
           var fields = line.split(" ");
 
           measurement.send({
             t: 'event',
-
             ec: 'broker',
             ea: 'Connect',
             el: fields[7],
@@ -75,8 +74,18 @@ try {
             uid: fields[7],
             uip: fields[5]
           });
-          //console.log("Connected uid=%s, ip=%s",fields[7],fields[5]);
-        } else if (line.startsWith(' Socket error on client')) {
+        } else if (line.startsWith(' New connection from')) {
+          //New connection from ##.##.##.## on port 1883.
+          var fields = line.split(' ');
+          measurement.send({
+            t: 'event',
+            ec: 'broker',
+            ea: 'New.connection',
+            el: fields[4].split(',')[0],
+            uip: fields[4].split(',')[0],
+            uid: 'System'
+          });
+        }else if (line.startsWith(' Socket error on client')) {
           //console.log(line);
           var fields = line.split(' ');
           //console.log("Socket Error uid=%s",fields[5]);
@@ -87,6 +96,7 @@ try {
             ea: 'Socket.error',
             el: fields[5].split(',')[0],
             sc: 'end',
+            geoid: 'Amazon',
             uid: fields[5].split(',')[0]
           });
         } else if (line.includes("has exceeded timeout")) {
@@ -96,11 +106,11 @@ try {
           //console.log("Timeout uid=%s",fields[2]);
           measurement.send({
             t: 'event',
-
             ec: 'broker',
             ea: 'Timeout',
             el: fields[2],
             sc: 'end',
+            geoid: 'Amazon',
             uid: fields[2]
           });
         } else if (line.includes("already connected")) {
@@ -110,7 +120,6 @@ try {
           //console.log("Timeout uid=%s",fields[2]);
           measurement.send({
             t: 'event',
-
             ec: 'broker',
             ea: 'Already.connected',
             el: fields[2],
