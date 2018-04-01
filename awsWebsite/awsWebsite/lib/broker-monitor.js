@@ -32,7 +32,7 @@ mqttClient.on('reconnect', function() {
 });
 
 mqttClient.on('connect', function() {
-  mqttClient.subscribe('$SYS/broker/log/N');
+  mqttClient.subscribe('$SYS/broker/log/#');
   mqttClient.subscribe('$SYS/broker/clients/connected');
 });
 
@@ -54,6 +54,7 @@ try {
         //console.log("MESSAGE",message.toString());
         break;
       case "$SYS/broker/log/N":
+      case "$SYS/broker/log/E":
         //process.stdout.write(".");
         var line = message.toString().split(":")[1];
 
@@ -83,12 +84,13 @@ try {
             t: 'event',
 
             ec: 'broker',
-            ea: 'Disconnect',
+            ea: 'Socket.error',
             el: fields[5].split(',')[0],
             sc: 'end',
             uid: fields[5].split(',')[0]
           });
-        } else if (line.startsWith(" Client")) {
+        } else if (line.includes("has exceeded timeout")) {
+          // Client NNNNNN has exceeded timeout, disconnecting
           //console.log(line);
           var fields = line.split(" ");
           //console.log("Timeout uid=%s",fields[2]);
@@ -101,7 +103,21 @@ try {
             sc: 'end',
             uid: fields[2]
           });
-        } else {
+        } else if (line.includes("already connected")) {
+          // Client NNNNNN already connected, closing old connection.
+          //console.log(line);
+          var fields = line.split(" ");
+          //console.log("Timeout uid=%s",fields[2]);
+          measurement.send({
+            t: 'event',
+
+            ec: 'broker',
+            ea: 'Already.connected',
+            el: fields[2],
+            sc: 'end',
+            uid: fields[2]
+          });
+        }  else {
           //console.log("Unhandled ", line);
         }
         break;
