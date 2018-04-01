@@ -10,6 +10,7 @@ unzip ../homebridgeWeb.zip
 npm install
 pkill node
 echo
-echo "========================== Starting Server ============================="
+echo "========================== Systemctl Starting Server ============================="
 echo
-../startup
+# ../startup
+sudo journalctl -f -o cat -u homebridge

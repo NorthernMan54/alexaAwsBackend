@@ -18,6 +18,8 @@ var BasicStrategy = require('passport-http').BasicStrategy;
 var LocalStrategy = require('passport-local').Strategy;
 var PassportOAuthBearer = require('passport-http-bearer');
 
+const Json2csvParser = require('json2csv').Parser;
+
 
 
 var port = (process.env.VCAP_APP_PORT || process.env.PORT || 3000);
@@ -743,9 +745,7 @@ app.get('/admin/users',
           "<>": "div",
           "html": "<tr><td>${username}</td><td>${created}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td><td>${lastUsedBroker}</td><td>${brokerCount}</td></tr>"
         };
-        res.send("<a href="
-          usage.csv " download="
-          usage.csv ">Download the data</a><table border='1'>" + json2html.transform(data, transform) + "</table>");
+        res.send("<a href=\"/usage.csv\" download=\"/usage.csv\">Download the data</a><table border='1'>" + json2html.transform(data, transform) + "</table>");
       });
     } else {
       res.status(401).send();
@@ -757,11 +757,16 @@ app.get('/usage.csv',
   function(req, res) {
     if (req.user.username === mqtt_user) {
       Account.find({}, function(error, data) {
-        var transform = {
-          "<>": "div",
-          "html": "\"${username}\",\"${created}\",\"${lastUsedAlexa}\",\"${alexaCount}\",\"${lastUsedBroker}\",\"${brokerCount}\""
-        };
-        res.send(json2html.transform(data, transform));
+        try {
+          const fields = ['username', 'lastUsedWebsite', 'brokerCount', 'lastUsedBroker', 'alexaCount', 'lastUsedAlexa', 'created'];
+          const opts = {
+            fields
+          };
+          const parser = new Json2csvParser(opts);
+          res.send(parser.parse(data));
+        } catch (err) {
+          console.error(err);
+        }
       });
     } else {
       res.status(401).send();
