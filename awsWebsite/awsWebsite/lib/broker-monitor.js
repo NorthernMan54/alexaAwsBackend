@@ -124,6 +124,7 @@ try {
             ea: 'Already.connected',
             el: fields[2],
             sc: 'end',
+            geoid: 'Amazon',
             uid: fields[2]
           });
         }  else {
