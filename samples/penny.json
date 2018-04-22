@@ -1,25 +1,3 @@
-"Front Porch", "Testing Front Porch Light", "Heyu", "StdLM A1", "Alexa, turn on Front Porch; Alexa, turn off Front Porch; Alexa, turn Front Porch to 50; Alexa, dim/brighten Front Porch; Alexa, dim/brighten Front Porch 20"
-"Garden Path", "Testing Garden Path Outlet", "Heyu", "StdAM A2", "Alexa, turn on Garden Path; Alexa, turn off Garden Path"
-"Side Door", "Testing Side Door Light", "Heyu", "StdLM A3", "Alexa, turn on Side Door; Alexa, turn off Side Door; Alexa, turn Side Door to 50; Alexa, dim/brighten Side Door; Alexa, dim/brighten Side Door 20"
-"Rear Door", "Testing Rear Door Light", "Heyu", "SL2LM A4", "Alexa, turn on Rear Door; Alexa, turn off Rear Door; Alexa, turn Rear Door to 50; Alexa, dim/brighten Rear Door; Alexa, dim/brighten Rear Door 20"
-"Family room Pot lights", "Testing Family room Pot lights Light", "Heyu", "SL2LM A5", "Alexa, turn on Family room Pot lights; Alexa, turn off Family room Pot lights; Alexa, turn Family room Pot lights to 50; Alexa, dim/brighten Family room Pot lights; Alexa, dim/brighten Family room Pot lights 20"
-"Family room Lamp", "Testing Family room Lamp Light", "Heyu", "StdLM A6", "Alexa, turn on Family room Lamp; Alexa, turn off Family room Lamp; Alexa, turn Family room Lamp to 50; Alexa, dim/brighten Family room Lamp; Alexa, dim/brighten Family room Lamp 20"
-"Family room outlet", "Testing Family room outlet Outlet", "Heyu", "StdAM A7", "Alexa, turn on Family room outlet; Alexa, turn off Family room outlet"
-"Front Door", "Testing Front Door Light", "Heyu", "SL2LM A8", "Alexa, turn on Front Door; Alexa, turn off Front Door; Alexa, turn Front Door to 50; Alexa, dim/brighten Front Door; Alexa, dim/brighten Front Door 20"
-"Basement Stair", "Testing Basement Stair Light", "Heyu", "SL2LM A9", "Alexa, turn on Basement Stair; Alexa, turn off Basement Stair; Alexa, turn Basement Stair to 50; Alexa, dim/brighten Basement Stair; Alexa, dim/brighten Basement Stair 20"
-"Kitchen Counter", "Testing Kitchen Counter Light", "Heyu", "StdLM A11", "Alexa, turn on Kitchen Counter; Alexa, turn off Kitchen Counter; Alexa, turn Kitchen Counter to 50; Alexa, dim/brighten Kitchen Counter; Alexa, dim/brighten Kitchen Counter 20"
-"Living Room Lamp", "Testing Living Room Lamp Light", "Heyu", "StdLM A13", "Alexa, turn on Living Room Lamp; Alexa, turn off Living Room Lamp; Alexa, turn Living Room Lamp to 50; Alexa, dim/brighten Living Room Lamp; Alexa, dim/brighten Living Room Lamp 20"
-"Staircase Lamp", "Testing Staircase Lamp Outlet", "Heyu", "StdAM A14", "Alexa, turn on Staircase Lamp; Alexa, turn off Staircase Lamp"
-"Powder Room", "Testing Powder Room Light", "Heyu", "StdLM A15", "Alexa, turn on Powder Room; Alexa, turn off Powder Room; Alexa, turn Powder Room to 50; Alexa, dim/brighten Powder Room; Alexa, dim/brighten Powder Room 20"
-"Garage Outlet", "Testing Garage Outlet Outlet", "Heyu", "StdAM A16", "Alexa, turn on Garage Outlet; Alexa, turn off Garage Outlet"
-"Stereo", "Testing Stereo Outlet", "Heyu", "StdAM B9", "Alexa, turn on Stereo; Alexa, turn off Stereo"
-"All Devices", "Testing All Devices Switch", "Heyu", "Macro-allon A", "Alexa, turn on All Devices; Alexa, turn off All Devices"
-"All Lights", "Testing All Lights Switch", "Heyu", "Macro-lightson A", "Alexa, turn on All Lights; Alexa, turn off All Lights"
-"Basement", "Testing Basement Temperature Sensor", "NorthernMan54", "dht22", "Alexa, what is the temperature in the Basement"
-"MCUIOT Reset Switch", "Testing MCUIOT Reset Switch Switch", "MCUIOT", "MCUIOT Reset Switch", "Alexa, turn on MCUIOT Reset Switch; Alexa, turn off MCUIOT Reset Switch"
-"Cold Cellar", "Testing Cold Cellar Temperature Sensor", "MCUIOT", "BME", "Alexa, what is the temperature in the Cold Cellar"
-"Front Porch", "Testing Front Porch Temperature Sensor", "MCUIOT", "BME", "Alexa, what is the temperature in the Front Porch"
-"Inside", "Testing Inside Temperature Sensor", "MCUIOT", "BME-GD", "Alexa, what is the temperature in the Inside"
 
 -----------------------------------------------------------
 
@@ -914,6 +892,41 @@
                                 "supported": [
                                     {
                                         "name": "temperature"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDMxLGlpZDogMTM=",
+                    "friendlyName": "Garage Door",
+                    "description": "Testing Garage Door Garage Door",
+                    "manufacturerName": "MCUIOT",
+                    "displayCategories": [
+                        "LIGHT"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 31, \"iid\": 11, \"value\": 0 }",
+                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 31, \"iid\": 11, \"value\": 1 }",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":31,\"iid\":11}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
                                     }
                                 ],
                                 "proactivelyReported": false,

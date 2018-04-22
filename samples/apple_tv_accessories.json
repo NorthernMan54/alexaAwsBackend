@@ -1,0 +1,1565 @@
+{
+  "accessories": [{
+    "aid": 1,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Nick Farina",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Homebridge",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Maggie-Dev",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "CC:22:3D:F3:CE:35",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "0.4.38",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 2000000008,
+      "type": "49FB9D4D-0FEA-4BF1-8FA6-E7B18AB86DCE",
+      "characteristics": [{
+        "iid": 9,
+        "type": "77474A2F-FA98-485E-97BE-4762458774D8",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "State",
+        "maxValue": 1,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 10,
+        "type": "FD9FE4CC-D06F-4FFE-96C6-595D464E1026",
+        "perms": ["pr", "ev"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Version"
+      }, {
+        "iid": 11,
+        "type": "5819A4C2-E1B0-4C9D-B761-3EB1AFF43073",
+        "perms": ["pr", "pw", "ev"],
+        "format": "data",
+        "value": null,
+        "description": "Control Point"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 19,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "dht22",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "dht22",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Test Temp",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Maggie.local-Test Temp",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "0.1.22",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "0000008A-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Test Temp",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000011-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 20.4,
+        "description": "Current Temperature",
+        "unit": "celsius",
+        "maxValue": 100,
+        "minValue": -100,
+        "minStep": 0.1
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 11,
+      "type": "00000082-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 12,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Test Temp",
+        "description": "Name"
+      }, {
+        "iid": 13,
+        "type": "00000010-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 47,
+        "description": "Current Relative Humidity",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 14,
+      "type": "E863F007-079E-48FF-8F27-9C2605A29F52",
+      "characteristics": [{
+        "iid": 15,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Test Temp History",
+        "description": "Name"
+      }, {
+        "iid": 16,
+        "type": "E863F116-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pr", "ev", "hd"],
+        "format": "data",
+        "value": "7z0BAAAAAAD7joUgAwECAgIDAiwAwA8AAAAAAAAAAAEB",
+        "description": "S2R1"
+      }, {
+        "iid": 17,
+        "type": "E863F117-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pr", "ev", "hd"],
+        "format": "data",
+        "value": "EBgAAAA3NgEAB9wH5AQAABAZAAAAvTYBAAfeB8UFAAAQGgAAACE3AQAH4AdtBgAAEBsAAACFNwEAB+IHEQcAABAcAAAA6TcBAAfjB7kHAAAQHQAAAE04AQAH5QdhCAAAEB4AAACxOAEAB+cHBQkAABAfAAAABzoBAAfsB0ALAAAQIAAAAKM5AQAH6weXCgAAECEAAAA/OQEAB+kH8wkAABAiAAAAazoBAAfuB+gLAAA=",
+        "description": "S2R2"
+      }, {
+        "iid": 18,
+        "type": "E863F11C-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pw", "hd"],
+        "format": "data",
+        "description": "S2W1"
+      }, {
+        "iid": 19,
+        "type": "E863F121-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pw", "hd"],
+        "format": "data",
+        "description": "S2W2"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 2,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "MCUIOT",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "MCUIOT Reset Switch",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "MCUIOT Reset Switch",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "123456",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "MCUIOT Reset Switch",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 3,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "MCUIOT",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "BME",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "NODE-8F8FE",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Maggie-NODE-8F8FE",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "0.1.47",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "0000008A-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Cold Cellar",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000011-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 7.4,
+        "description": "Current Temperature",
+        "unit": "celsius",
+        "maxValue": 100,
+        "minValue": -100,
+        "minStep": 0.1
+      }, {
+        "iid": 11,
+        "type": "00000010-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 72,
+        "description": "Current Relative Humidity",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 12,
+        "type": "E863F10F-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 994,
+        "description": "Air Pressure",
+        "unit": "mbar",
+        "maxValue": 1200,
+        "minValue": 800,
+        "minStep": 1
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 13,
+      "type": "E863F007-079E-48FF-8F27-9C2605A29F52",
+      "characteristics": [{
+        "iid": 14,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "NODE-8F8FE History",
+        "description": "Name"
+      }, {
+        "iid": 15,
+        "type": "E863F116-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pr", "ev", "hd"],
+        "format": "data",
+        "value": "wFEBAAAAAAAqe4UgAwECAgIDAj8AwA8AAAAAAAAAAAEB",
+        "description": "S2R1"
+      }, {
+        "iid": 16,
+        "type": "E863F117-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pr", "ev", "hd"],
+        "format": "data",
+        "value": "EC0AAACkSQEAB7ICohzNJhAuAAAACEoBAAfuAisc1SYQLwAAAI5KAQAH5AJKHNUmEDAAAADySgEAB+MCVhzVJhAxAAAAVksBAAfkAnMc1iYQMgAAALpLAQAH5AJzHNYmEDMAAAAeTAEAB+QCcxzWJhA0AAAAgkwBAAfQAlsc1SYQNQAAADxOAQAHwgKxHNUm",
+        "description": "S2R2"
+      }, {
+        "iid": 17,
+        "type": "E863F11C-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pw", "hd"],
+        "format": "data",
+        "description": "S2W1"
+      }, {
+        "iid": 18,
+        "type": "E863F121-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pw", "hd"],
+        "format": "data",
+        "description": "S2W2"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 4,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "MCUIOT",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "BME",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "NODE-2BA4CB",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Maggie-NODE-2BA4CB",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "0.1.47",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "0000008A-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Front Yard",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000011-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 2.5,
+        "description": "Current Temperature",
+        "unit": "celsius",
+        "maxValue": 100,
+        "minValue": -100,
+        "minStep": 0.1
+      }, {
+        "iid": 11,
+        "type": "00000010-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 72,
+        "description": "Current Relative Humidity",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 12,
+        "type": "E863F10F-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 993,
+        "description": "Air Pressure",
+        "unit": "mbar",
+        "maxValue": 1200,
+        "minValue": 800,
+        "minStep": 1
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 13,
+      "type": "E863F007-079E-48FF-8F27-9C2605A29F52",
+      "characteristics": [{
+        "iid": 14,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "NODE-2BA4CB History",
+        "description": "Name"
+      }, {
+        "iid": 15,
+        "type": "E863F116-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pr", "ev", "hd"],
+        "format": "data",
+        "value": "wFEBAAAAAAAqe4UgAwECAgIDAj8AwA8AAAAAAAAAAAEB",
+        "description": "S2R1"
+      }, {
+        "iid": 16,
+        "type": "E863F117-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pr", "ev", "hd"],
+        "format": "data",
+        "value": "EC0AAACkSQEAB9IAkBrGJhAuAAAACEoBAAcNARsb0CYQLwAAAI5KAQAHDgEpG88mEDAAAADySgEABw0BHRvQJhAxAAAAVksBAAcEAT8b0CYQMgAAALpLAQAHBAE/G9AmEDMAAAAeTAEABwQBPxvQJhA0AAAAgkwBAAf+AKMb0CYQNQAAADxOAQAH+gDYG9Am",
+        "description": "S2R2"
+      }, {
+        "iid": 17,
+        "type": "E863F11C-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pw", "hd"],
+        "format": "data",
+        "description": "S2W1"
+      }, {
+        "iid": 18,
+        "type": "E863F121-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pw", "hd"],
+        "format": "data",
+        "description": "S2W2"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 5,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "MCUIOT",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "BME-GD NODE-DC4492GD",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "NODE-DC4492GD",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "http://NODE-DC4492.local.:80/",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000041-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Garage Door",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "0000000E-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 1,
+        "description": "Current Door State",
+        "valid-values": [0, 1, 2, 3, 4],
+        "maxValue": 4,
+        "minValue": 0
+      }, {
+        "iid": 11,
+        "type": "00000032-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "uint8",
+        "value": 1,
+        "description": "Target Door State",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 12,
+        "type": "00000024-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Obstruction Detected"
+      }, {
+        "iid": 13,
+        "type": "00000079-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Status Low Battery",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 6,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "MCUIOT",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "BME-GD",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "NODE-DC4492",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Maggie-NODE-DC4492",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "0.1.47",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "0000008A-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Inside",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000011-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 18.8,
+        "description": "Current Temperature",
+        "unit": "celsius",
+        "maxValue": 100,
+        "minValue": -100,
+        "minStep": 0.1
+      }, {
+        "iid": 11,
+        "type": "00000010-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 42,
+        "description": "Current Relative Humidity",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 12,
+        "type": "E863F10F-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 994,
+        "description": "Air Pressure",
+        "unit": "mbar",
+        "maxValue": 1200,
+        "minValue": 800,
+        "minStep": 1
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 13,
+      "type": "E863F007-079E-48FF-8F27-9C2605A29F52",
+      "characteristics": [{
+        "iid": 14,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "NODE-DC4492 History",
+        "description": "Name"
+      }, {
+        "iid": 15,
+        "type": "E863F116-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pr", "ev", "hd"],
+        "format": "data",
+        "value": "wFEBAAAAAAAqe4UgAwECAgIDAj8AwA8AAAAAAAAAAAEB",
+        "description": "S2R1"
+      }, {
+        "iid": 16,
+        "type": "E863F117-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pr", "ev", "hd"],
+        "format": "data",
+        "value": "EC0AAACkSQEAB2EH4BDQJhAuAAAACEoBAAdhB8EQ0SYQLwAAAI5KAQAHYQe/ENEmEDAAAADySgEAB2EHwBDRJhAxAAAAVksBAAdhB8AQ0SYQMgAAALpLAQAHYQfAENEmEDMAAAAeTAEAB2EHwBDRJhA0AAAAgkwBAAdhB7gQ0SYQNQAAADxOAQAHWAeuENIm",
+        "description": "S2R2"
+      }, {
+        "iid": 17,
+        "type": "E863F11C-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pw", "hd"],
+        "format": "data",
+        "description": "S2W1"
+      }, {
+        "iid": 18,
+        "type": "E863F121-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pw", "hd"],
+        "format": "data",
+        "description": "S2W2"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 8,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple TV",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Menu",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "c76e18f2-c42a-4578-89e2-9bc3cccfbc86",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Menu",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 9,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple TV",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "TV/Home",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "e2e48721-ac41-4127-af70-422c6fe635d4",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "TV/Home",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 10,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple TV",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Mic/Siri",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "4814b41a-0dbd-4e7a-a670-8b4966b7521f",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Mic/Siri",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 11,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple TV",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Play",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "494916ee-f8b4-4de8-a79b-d01f548a2b90",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Play",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 12,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple TV",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Pause",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "aabbe0fc-a8f4-4fe2-a0a4-d884a610621e",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Pause",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 13,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple TV",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Up",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "a526f117-b452-4738-8407-b9e896025713",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Up",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 14,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple TV",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Down",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "2b577032-3b8c-498d-aff0-e4745ce24d7c",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Down",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 15,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple TV",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Left",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "a7d6884b-5c48-4279-a319-25097a1f50a1",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Left",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 16,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple TV",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Right",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "c3ed18d1-8f8a-4855-8c62-0fcdb3b2e34e",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Right",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 17,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple TV",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Select",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1a9367e3-3bbd-4588-85a6-07fde770a5fe",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Select",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 18,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Apple TV",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Sleep",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "074a90a6-acf7-4145-9fa5-00aee040cc5f",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Sleep",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }]
+}

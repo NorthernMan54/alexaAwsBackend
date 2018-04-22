@@ -1,1212 +1,785 @@
+
+-----------------------------------------------------------
+
 {
-  "accessories": [{
-    "aid": 1,
-    "services": [{
-      "iid": 1,
-      "type": "0000003E-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 2,
-        "type": "00000014-0000-1000-8000-0026BB765291",
-        "perms": ["pw"],
-        "format": "bool",
-        "description": "Identify"
-      }, {
-        "iid": 3,
-        "type": "00000020-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Nick Farina",
-        "description": "Manufacturer"
-      }, {
-        "iid": 4,
-        "type": "00000021-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Homebridge",
-        "description": "Model"
-      }, {
-        "iid": 5,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "DanksStreet",
-        "description": "Name"
-      }, {
-        "iid": 6,
-        "type": "00000030-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "CC:22:3D:E3:CE:31",
-        "description": "Serial Number"
-      }, {
-        "iid": 7,
-        "type": "00000052-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "0.4.38",
-        "description": "Firmware Revision"
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 2000000008,
-      "type": "49FB9D4D-0FEA-4BF1-8FA6-E7B18AB86DCE",
-      "characteristics": [{
-        "iid": 9,
-        "type": "77474A2F-FA98-485E-97BE-4762458774D8",
-        "perms": ["pr", "ev"],
-        "format": "uint8",
-        "value": 0,
-        "description": "State",
-        "maxValue": 1,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 10,
-        "type": "FD9FE4CC-D06F-4FFE-96C6-595D464E1026",
-        "perms": ["pr", "ev"],
-        "format": "string",
-        "value": "1.0",
-        "description": "Version"
-      }, {
-        "iid": 11,
-        "type": "5819A4C2-E1B0-4C9D-B761-3EB1AFF43073",
-        "perms": ["pr", "pw", "ev"],
-        "format": "data",
-        "value": null,
-        "description": "Control Point"
-      }],
-      "primary": false,
-      "hidden": false
-    }]
-  }, {
-    "aid": 2,
-    "services": [{
-      "iid": 1,
-      "type": "0000003E-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 2,
-        "type": "00000014-0000-1000-8000-0026BB765291",
-        "perms": ["pw"],
-        "format": "bool",
-        "description": "Identify"
-      }, {
-        "iid": 3,
-        "type": "00000020-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "MiLight",
-        "description": "Manufacturer"
-      }, {
-        "iid": 4,
-        "type": "00000021-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "fullColor8Zone",
-        "description": "Model"
-      }, {
-        "iid": 5,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Kitchen Downlighters",
-        "description": "Name"
-      }, {
-        "iid": 6,
-        "type": "00000030-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "12345",
-        "description": "Serial Number"
-      }, {
-        "iid": 7,
-        "type": "00000052-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "1.0",
-        "description": "Firmware Revision"
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 8,
-      "type": "00000043-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 9,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Kitchen Downlighters",
-        "description": "Name"
-      }, {
-        "iid": 10,
-        "type": "00000025-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "bool",
-        "value": false,
-        "description": "On"
-      }, {
-        "iid": 11,
-        "type": "00000008-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "int",
-        "value": 0,
-        "description": "Brightness",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 12,
-        "type": "0000002F-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "float",
-        "value": 0,
-        "description": "Saturation",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 13,
-        "type": "00000013-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "float",
-        "value": 0,
-        "description": "Hue",
-        "unit": "arcdegrees",
-        "maxValue": 360,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 14,
-        "type": "000000CE-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "uint32",
-        "value": 153,
-        "description": "Color Temperature",
-        "maxValue": 370,
-        "minValue": 153,
-        "minStep": 1
-      }],
-      "primary": false,
-      "hidden": false
-    }]
-  }, {
-    "aid": 3,
-    "services": [{
-      "iid": 1,
-      "type": "0000003E-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 2,
-        "type": "00000014-0000-1000-8000-0026BB765291",
-        "perms": ["pw"],
-        "format": "bool",
-        "description": "Identify"
-      }, {
-        "iid": 3,
-        "type": "00000020-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "MiLight",
-        "description": "Manufacturer"
-      }, {
-        "iid": 4,
-        "type": "00000021-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "fullColor8Zone",
-        "description": "Model"
-      }, {
-        "iid": 5,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Kitchen Bulbs",
-        "description": "Name"
-      }, {
-        "iid": 6,
-        "type": "00000030-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "12345",
-        "description": "Serial Number"
-      }, {
-        "iid": 7,
-        "type": "00000052-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "1.0",
-        "description": "Firmware Revision"
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 8,
-      "type": "00000043-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 9,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Kitchen Bulbs",
-        "description": "Name"
-      }, {
-        "iid": 10,
-        "type": "00000025-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "bool",
-        "value": false,
-        "description": "On"
-      }, {
-        "iid": 11,
-        "type": "00000008-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "int",
-        "value": 0,
-        "description": "Brightness",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 12,
-        "type": "0000002F-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "float",
-        "value": 0,
-        "description": "Saturation",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 13,
-        "type": "00000013-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "float",
-        "value": 0,
-        "description": "Hue",
-        "unit": "arcdegrees",
-        "maxValue": 360,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 14,
-        "type": "000000CE-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "uint32",
-        "value": 153,
-        "description": "Color Temperature",
-        "maxValue": 370,
-        "minValue": 153,
-        "minStep": 1
-      }],
-      "primary": false,
-      "hidden": false
-    }]
-  }, {
-    "aid": 4,
-    "services": [{
-      "iid": 1,
-      "type": "0000003E-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 2,
-        "type": "00000014-0000-1000-8000-0026BB765291",
-        "perms": ["pw"],
-        "format": "bool",
-        "description": "Identify"
-      }, {
-        "iid": 3,
-        "type": "00000020-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "MiLight",
-        "description": "Manufacturer"
-      }, {
-        "iid": 4,
-        "type": "00000021-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "fullColor8Zone",
-        "description": "Model"
-      }, {
-        "iid": 5,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Bathroom",
-        "description": "Name"
-      }, {
-        "iid": 6,
-        "type": "00000030-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "12345",
-        "description": "Serial Number"
-      }, {
-        "iid": 7,
-        "type": "00000052-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "1.0",
-        "description": "Firmware Revision"
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 8,
-      "type": "00000043-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 9,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Bathroom",
-        "description": "Name"
-      }, {
-        "iid": 10,
-        "type": "00000025-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "bool",
-        "value": false,
-        "description": "On"
-      }, {
-        "iid": 11,
-        "type": "00000008-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "int",
-        "value": 0,
-        "description": "Brightness",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 12,
-        "type": "0000002F-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "float",
-        "value": 0,
-        "description": "Saturation",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 13,
-        "type": "00000013-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "float",
-        "value": 0,
-        "description": "Hue",
-        "unit": "arcdegrees",
-        "maxValue": 360,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 14,
-        "type": "000000CE-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "uint32",
-        "value": 153,
-        "description": "Color Temperature",
-        "maxValue": 370,
-        "minValue": 153,
-        "minStep": 1
-      }],
-      "primary": false,
-      "hidden": false
-    }]
-  }, {
-    "aid": 5,
-    "services": [{
-      "iid": 1,
-      "type": "0000003E-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 2,
-        "type": "00000014-0000-1000-8000-0026BB765291",
-        "perms": ["pw"],
-        "format": "bool",
-        "description": "Identify"
-      }, {
-        "iid": 3,
-        "type": "00000020-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "MiLight",
-        "description": "Manufacturer"
-      }, {
-        "iid": 4,
-        "type": "00000021-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "fullColor8Zone",
-        "description": "Model"
-      }, {
-        "iid": 5,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Bedside Downlighters",
-        "description": "Name"
-      }, {
-        "iid": 6,
-        "type": "00000030-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "12345",
-        "description": "Serial Number"
-      }, {
-        "iid": 7,
-        "type": "00000052-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "1.0",
-        "description": "Firmware Revision"
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 8,
-      "type": "00000043-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 9,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Bedside Downlighters",
-        "description": "Name"
-      }, {
-        "iid": 10,
-        "type": "00000025-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "bool",
-        "value": false,
-        "description": "On"
-      }, {
-        "iid": 11,
-        "type": "00000008-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "int",
-        "value": 0,
-        "description": "Brightness",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 12,
-        "type": "0000002F-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "float",
-        "value": 0,
-        "description": "Saturation",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 13,
-        "type": "00000013-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "float",
-        "value": 0,
-        "description": "Hue",
-        "unit": "arcdegrees",
-        "maxValue": 360,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 14,
-        "type": "000000CE-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "uint32",
-        "value": 153,
-        "description": "Color Temperature",
-        "maxValue": 370,
-        "minValue": 153,
-        "minStep": 1
-      }],
-      "primary": false,
-      "hidden": false
-    }]
-  }, {
-    "aid": 6,
-    "services": [{
-      "iid": 1,
-      "type": "0000003E-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 2,
-        "type": "00000014-0000-1000-8000-0026BB765291",
-        "perms": ["pw"],
-        "format": "bool",
-        "description": "Identify"
-      }, {
-        "iid": 3,
-        "type": "00000020-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "MiLight",
-        "description": "Manufacturer"
-      }, {
-        "iid": 4,
-        "type": "00000021-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "fullColor8Zone",
-        "description": "Model"
-      }, {
-        "iid": 5,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Bedside Lamps",
-        "description": "Name"
-      }, {
-        "iid": 6,
-        "type": "00000030-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "12345",
-        "description": "Serial Number"
-      }, {
-        "iid": 7,
-        "type": "00000052-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "1.0",
-        "description": "Firmware Revision"
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 8,
-      "type": "00000043-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 9,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Bedside Lamps",
-        "description": "Name"
-      }, {
-        "iid": 10,
-        "type": "00000025-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "bool",
-        "value": true,
-        "description": "On"
-      }, {
-        "iid": 11,
-        "type": "00000008-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "int",
-        "value": 0,
-        "description": "Brightness",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 12,
-        "type": "0000002F-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "float",
-        "value": 0,
-        "description": "Saturation",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 13,
-        "type": "00000013-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "float",
-        "value": 0,
-        "description": "Hue",
-        "unit": "arcdegrees",
-        "maxValue": 360,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 14,
-        "type": "000000CE-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "uint32",
-        "value": 153,
-        "description": "Color Temperature",
-        "maxValue": 370,
-        "minValue": 153,
-        "minStep": 1
-      }],
-      "primary": false,
-      "hidden": false
-    }]
-  }, {
-    "aid": 7,
-    "services": [{
-      "iid": 1,
-      "type": "0000003E-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 2,
-        "type": "00000014-0000-1000-8000-0026BB765291",
-        "perms": ["pw"],
-        "format": "bool",
-        "description": "Identify"
-      }, {
-        "iid": 3,
-        "type": "00000020-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "MiLight",
-        "description": "Manufacturer"
-      }, {
-        "iid": 4,
-        "type": "00000021-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "fullColor8Zone",
-        "description": "Model"
-      }, {
-        "iid": 5,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Guest Bathroom",
-        "description": "Name"
-      }, {
-        "iid": 6,
-        "type": "00000030-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "12345",
-        "description": "Serial Number"
-      }, {
-        "iid": 7,
-        "type": "00000052-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "1.0",
-        "description": "Firmware Revision"
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 8,
-      "type": "00000043-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 9,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Guest Bathroom",
-        "description": "Name"
-      }, {
-        "iid": 10,
-        "type": "00000025-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "bool",
-        "value": true,
-        "description": "On"
-      }, {
-        "iid": 11,
-        "type": "00000008-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "int",
-        "value": 0,
-        "description": "Brightness",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 12,
-        "type": "0000002F-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "float",
-        "value": 0,
-        "description": "Saturation",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 13,
-        "type": "00000013-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "float",
-        "value": 0,
-        "description": "Hue",
-        "unit": "arcdegrees",
-        "maxValue": 360,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 14,
-        "type": "000000CE-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "uint32",
-        "value": 153,
-        "description": "Color Temperature",
-        "maxValue": 370,
-        "minValue": 153,
-        "minStep": 1
-      }],
-      "primary": false,
-      "hidden": false
-    }]
-  }, {
-    "aid": 8,
-    "services": [{
-      "iid": 1,
-      "type": "0000003E-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 2,
-        "type": "00000014-0000-1000-8000-0026BB765291",
-        "perms": ["pw"],
-        "format": "bool",
-        "description": "Identify"
-      }, {
-        "iid": 3,
-        "type": "00000020-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "MiLight",
-        "description": "Manufacturer"
-      }, {
-        "iid": 4,
-        "type": "00000021-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "fullColor8Zone",
-        "description": "Model"
-      }, {
-        "iid": 5,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Workshop",
-        "description": "Name"
-      }, {
-        "iid": 6,
-        "type": "00000030-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "12345",
-        "description": "Serial Number"
-      }, {
-        "iid": 7,
-        "type": "00000052-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "1.0",
-        "description": "Firmware Revision"
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 8,
-      "type": "00000043-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 9,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Workshop",
-        "description": "Name"
-      }, {
-        "iid": 10,
-        "type": "00000025-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "bool",
-        "value": true,
-        "description": "On"
-      }, {
-        "iid": 11,
-        "type": "00000008-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "int",
-        "value": 0,
-        "description": "Brightness",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 12,
-        "type": "0000002F-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "float",
-        "value": 0,
-        "description": "Saturation",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 13,
-        "type": "00000013-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "float",
-        "value": 0,
-        "description": "Hue",
-        "unit": "arcdegrees",
-        "maxValue": 360,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 14,
-        "type": "000000CE-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "uint32",
-        "value": 153,
-        "description": "Color Temperature",
-        "maxValue": 370,
-        "minValue": 153,
-        "minStep": 1
-      }],
-      "primary": false,
-      "hidden": false
-    }]
-  }, {
-    "aid": 9,
-    "services": [{
-      "iid": 1,
-      "type": "0000003E-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 2,
-        "type": "00000014-0000-1000-8000-0026BB765291",
-        "perms": ["pw"],
-        "format": "bool",
-        "description": "Identify"
-      }, {
-        "iid": 3,
-        "type": "00000020-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "MiLight",
-        "description": "Manufacturer"
-      }, {
-        "iid": 4,
-        "type": "00000021-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "rgbw",
-        "description": "Model"
-      }, {
-        "iid": 5,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Kitchen LED Strips",
-        "description": "Name"
-      }, {
-        "iid": 6,
-        "type": "00000030-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "12345",
-        "description": "Serial Number"
-      }, {
-        "iid": 7,
-        "type": "00000052-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "1.0",
-        "description": "Firmware Revision"
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 8,
-      "type": "00000043-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 9,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Kitchen LED Strips",
-        "description": "Name"
-      }, {
-        "iid": 10,
-        "type": "00000025-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "bool",
-        "value": false,
-        "description": "On"
-      }, {
-        "iid": 11,
-        "type": "00000008-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "int",
-        "value": 0,
-        "description": "Brightness",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 12,
-        "type": "0000002F-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "float",
-        "value": 0,
-        "description": "Saturation",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 13,
-        "type": "00000013-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "float",
-        "value": 0,
-        "description": "Hue",
-        "unit": "arcdegrees",
-        "maxValue": 360,
-        "minValue": 0,
-        "minStep": 1
-      }],
-      "primary": false,
-      "hidden": false
-    }]
-  }, {
-    "aid": 10,
-    "services": [{
-      "iid": 1,
-      "type": "0000003E-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 2,
-        "type": "00000014-0000-1000-8000-0026BB765291",
-        "perms": ["pw"],
-        "format": "bool",
-        "description": "Identify"
-      }, {
-        "iid": 3,
-        "type": "00000020-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Broadlink",
-        "description": "Manufacturer"
-      }, {
-        "iid": 4,
-        "type": "00000021-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "RM Mini or Pro",
-        "description": "Model"
-      }, {
-        "iid": 5,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Learn",
-        "description": "Name"
-      }, {
-        "iid": 6,
-        "type": "00000030-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "619ae4e6-288d-4e1b-9703-04e6110642bd",
-        "description": "Serial Number"
-      }, {
-        "iid": 7,
-        "type": "00000052-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "1.0",
-        "description": "Firmware Revision"
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 8,
-      "type": "00000049-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 9,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Learn",
-        "description": "Name"
-      }, {
-        "iid": 10,
-        "type": "00000025-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "bool",
-        "value": false,
-        "description": "On"
-      }],
-      "primary": false,
-      "hidden": false
-    }]
-  }, {
-    "aid": 11,
-    "services": [{
-      "iid": 1,
-      "type": "0000003E-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 2,
-        "type": "00000014-0000-1000-8000-0026BB765291",
-        "perms": ["pw"],
-        "format": "bool",
-        "description": "Identify"
-      }, {
-        "iid": 3,
-        "type": "00000020-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Broadlink",
-        "description": "Manufacturer"
-      }, {
-        "iid": 4,
-        "type": "00000021-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "RM Mini or Pro",
-        "description": "Model"
-      }, {
-        "iid": 5,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Scan Frequency",
-        "description": "Name"
-      }, {
-        "iid": 6,
-        "type": "00000030-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "a7c4991c-f585-4ca7-9628-530c8daf2aa8",
-        "description": "Serial Number"
-      }, {
-        "iid": 7,
-        "type": "00000052-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "1.0",
-        "description": "Firmware Revision"
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 8,
-      "type": "00000049-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 9,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Scan Frequency",
-        "description": "Name"
-      }, {
-        "iid": 10,
-        "type": "00000025-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "bool",
-        "value": false,
-        "description": "On"
-      }],
-      "primary": false,
-      "hidden": false
-    }]
-  }, {
-    "aid": 12,
-    "services": [{
-      "iid": 1,
-      "type": "0000003E-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 2,
-        "type": "00000014-0000-1000-8000-0026BB765291",
-        "perms": ["pw"],
-        "format": "bool",
-        "description": "Identify"
-      }, {
-        "iid": 3,
-        "type": "00000020-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Broadlink",
-        "description": "Manufacturer"
-      }, {
-        "iid": 4,
-        "type": "00000021-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "RM Mini or Pro",
-        "description": "Model"
-      }, {
-        "iid": 5,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Curtains",
-        "description": "Name"
-      }, {
-        "iid": 6,
-        "type": "00000030-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "5a5d3c79-9bce-479b-acd6-aab799cba45f",
-        "description": "Serial Number"
-      }, {
-        "iid": 7,
-        "type": "00000052-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "1.0",
-        "description": "Firmware Revision"
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 8,
-      "type": "0000008C-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 9,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Curtains",
-        "description": "Name"
-      }, {
-        "iid": 10,
-        "type": "0000006D-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "ev"],
-        "format": "uint8",
-        "value": 0,
-        "description": "Current Position",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 11,
-        "type": "0000007C-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "pw", "ev"],
-        "format": "uint8",
-        "value": 0,
-        "description": "Target Position",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 12,
-        "type": "00000072-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "ev"],
-        "format": "uint8",
-        "value": 2,
-        "description": "Position State",
-        "valid-values": [0, 1, 2],
-        "maxValue": 2,
-        "minValue": 0
-      }],
-      "primary": false,
-      "hidden": false
-    }]
-  }]
+    "event": {
+        "header": {
+            "namespace": "Alexa.Discovery",
+            "name": "Discover.Response",
+            "payloadVersion": "3",
+            "messageId": "1bd5d003-31b9-476f-ad03-71d471922820"
+        },
+        "payload": {
+            "endpoints": [
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDIsaWlkOiAxNA==",
+                    "friendlyName": "Kitchen Downlighters",
+                    "description": "Testing Kitchen Downlighters Light",
+                    "manufacturerName": "MiLight",
+                    "displayCategories": [
+                        "LIGHT"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 10, \"value\": 1 }",
+                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 10, \"value\": 0 }",
+                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 11 }",
+                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 11 }",
+                        "IncreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 14 }",
+                        "DecreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 14 }",
+                        "SetColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 14 }",
+                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":2,\"iid\":13},\"saturation\":{\"aid\":2,\"iid\":12},\"brightness\":{\"aid\":2,\"iid\":11}}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":2,\"iid\":13},\"saturation\":{\"aid\":2,\"iid\":12},\"brightness\":{\"aid\":2,\"iid\":11}}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerLevelController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerLevel"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ColorTemperatureController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "colorTemperatureInKelvin"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ColorController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "color"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDMsaWlkOiAxNA==",
+                    "friendlyName": "Kitchen Bulbs",
+                    "description": "Testing Kitchen Bulbs Light",
+                    "manufacturerName": "MiLight",
+                    "displayCategories": [
+                        "LIGHT"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 3, \"iid\": 10, \"value\": 1 }",
+                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 3, \"iid\": 10, \"value\": 0 }",
+                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 3, \"iid\": 11 }",
+                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 3, \"iid\": 11 }",
+                        "IncreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 3, \"iid\": 14 }",
+                        "DecreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 3, \"iid\": 14 }",
+                        "SetColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 3, \"iid\": 14 }",
+                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":3,\"iid\":13},\"saturation\":{\"aid\":3,\"iid\":12},\"brightness\":{\"aid\":3,\"iid\":11}}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":3,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":3,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":3,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":3,\"iid\":13},\"saturation\":{\"aid\":3,\"iid\":12},\"brightness\":{\"aid\":3,\"iid\":11}}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerLevelController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerLevel"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ColorTemperatureController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "colorTemperatureInKelvin"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ColorController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "color"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDQsaWlkOiAxNA==",
+                    "friendlyName": "Bathroom",
+                    "description": "Testing Bathroom Light",
+                    "manufacturerName": "MiLight",
+                    "displayCategories": [
+                        "LIGHT"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 4, \"iid\": 10, \"value\": 1 }",
+                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 4, \"iid\": 10, \"value\": 0 }",
+                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 4, \"iid\": 11 }",
+                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 4, \"iid\": 11 }",
+                        "IncreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 4, \"iid\": 14 }",
+                        "DecreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 4, \"iid\": 14 }",
+                        "SetColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 4, \"iid\": 14 }",
+                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":4,\"iid\":13},\"saturation\":{\"aid\":4,\"iid\":12},\"brightness\":{\"aid\":4,\"iid\":11}}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":4,\"iid\":13},\"saturation\":{\"aid\":4,\"iid\":12},\"brightness\":{\"aid\":4,\"iid\":11}}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerLevelController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerLevel"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ColorTemperatureController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "colorTemperatureInKelvin"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ColorController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "color"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDUsaWlkOiAxNA==",
+                    "friendlyName": "Bedside Downlighters",
+                    "description": "Testing Bedside Downlighters Light",
+                    "manufacturerName": "MiLight",
+                    "displayCategories": [
+                        "LIGHT"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 10, \"value\": 1 }",
+                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 10, \"value\": 0 }",
+                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 11 }",
+                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 11 }",
+                        "IncreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 14 }",
+                        "DecreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 14 }",
+                        "SetColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 14 }",
+                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":5,\"iid\":13},\"saturation\":{\"aid\":5,\"iid\":12},\"brightness\":{\"aid\":5,\"iid\":11}}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":5,\"iid\":13},\"saturation\":{\"aid\":5,\"iid\":12},\"brightness\":{\"aid\":5,\"iid\":11}}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerLevelController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerLevel"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ColorTemperatureController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "colorTemperatureInKelvin"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ColorController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "color"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDYsaWlkOiAxNA==",
+                    "friendlyName": "Bedside Lamps",
+                    "description": "Testing Bedside Lamps Light",
+                    "manufacturerName": "MiLight",
+                    "displayCategories": [
+                        "LIGHT"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 6, \"iid\": 10, \"value\": 1 }",
+                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 6, \"iid\": 10, \"value\": 0 }",
+                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 6, \"iid\": 11 }",
+                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 6, \"iid\": 11 }",
+                        "IncreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 6, \"iid\": 14 }",
+                        "DecreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 6, \"iid\": 14 }",
+                        "SetColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 6, \"iid\": 14 }",
+                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":6,\"iid\":13},\"saturation\":{\"aid\":6,\"iid\":12},\"brightness\":{\"aid\":6,\"iid\":11}}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":6,\"iid\":13},\"saturation\":{\"aid\":6,\"iid\":12},\"brightness\":{\"aid\":6,\"iid\":11}}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerLevelController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerLevel"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ColorTemperatureController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "colorTemperatureInKelvin"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ColorController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "color"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDcsaWlkOiAxNA==",
+                    "friendlyName": "Guest Bathroom",
+                    "description": "Testing Guest Bathroom Light",
+                    "manufacturerName": "MiLight",
+                    "displayCategories": [
+                        "LIGHT"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 7, \"iid\": 10, \"value\": 1 }",
+                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 7, \"iid\": 10, \"value\": 0 }",
+                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 7, \"iid\": 11 }",
+                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 7, \"iid\": 11 }",
+                        "IncreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 7, \"iid\": 14 }",
+                        "DecreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 7, \"iid\": 14 }",
+                        "SetColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 7, \"iid\": 14 }",
+                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":7,\"iid\":13},\"saturation\":{\"aid\":7,\"iid\":12},\"brightness\":{\"aid\":7,\"iid\":11}}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":7,\"iid\":13},\"saturation\":{\"aid\":7,\"iid\":12},\"brightness\":{\"aid\":7,\"iid\":11}}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerLevelController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerLevel"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ColorTemperatureController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "colorTemperatureInKelvin"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ColorController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "color"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDgsaWlkOiAxNA==",
+                    "friendlyName": "Workshop",
+                    "description": "Testing Workshop Light",
+                    "manufacturerName": "MiLight",
+                    "displayCategories": [
+                        "LIGHT"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 8, \"iid\": 10, \"value\": 1 }",
+                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 8, \"iid\": 10, \"value\": 0 }",
+                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 8, \"iid\": 11 }",
+                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 8, \"iid\": 11 }",
+                        "IncreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 8, \"iid\": 14 }",
+                        "DecreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 8, \"iid\": 14 }",
+                        "SetColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 8, \"iid\": 14 }",
+                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":8,\"iid\":13},\"saturation\":{\"aid\":8,\"iid\":12},\"brightness\":{\"aid\":8,\"iid\":11}}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":8,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":8,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":8,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":8,\"iid\":13},\"saturation\":{\"aid\":8,\"iid\":12},\"brightness\":{\"aid\":8,\"iid\":11}}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerLevelController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerLevel"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ColorTemperatureController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "colorTemperatureInKelvin"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ColorController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "color"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDksaWlkOiAxMw==",
+                    "friendlyName": "Kitchen LED Strips",
+                    "description": "Testing Kitchen LED Strips Light",
+                    "manufacturerName": "MiLight",
+                    "displayCategories": [
+                        "LIGHT"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 9, \"iid\": 10, \"value\": 1 }",
+                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 9, \"iid\": 10, \"value\": 0 }",
+                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 9, \"iid\": 11 }",
+                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 9, \"iid\": 11 }",
+                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":9,\"iid\":13},\"saturation\":{\"aid\":9,\"iid\":12},\"brightness\":{\"aid\":9,\"iid\":11}}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":9,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":9,\"iid\":11},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":9,\"iid\":13},\"saturation\":{\"aid\":9,\"iid\":12},\"brightness\":{\"aid\":9,\"iid\":11}}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerLevelController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerLevel"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ColorController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "color"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDEwLGlpZDogMTA=",
+                    "friendlyName": "Learn",
+                    "description": "Testing Learn Switch",
+                    "manufacturerName": "Broadlink",
+                    "displayCategories": [
+                        "SWITCH"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 10, \"iid\": 10, \"value\": 1 }",
+                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 10, \"iid\": 10, \"value\": 0 }",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":10,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDExLGlpZDogMTA=",
+                    "friendlyName": "Scan Frequency",
+                    "description": "Testing Scan Frequency Switch",
+                    "manufacturerName": "Broadlink",
+                    "displayCategories": [
+                        "SWITCH"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 11, \"iid\": 10, \"value\": 1 }",
+                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 11, \"iid\": 10, \"value\": 0 }",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":11,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDEyLGlpZDogMTI=",
+                    "friendlyName": "Curtains",
+                    "description": "Testing Curtains Blinds",
+                    "manufacturerName": "Broadlink",
+                    "displayCategories": [
+                        "LIGHT"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 12, \"iid\": 11, \"value\": 100 }",
+                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 12, \"iid\": 11, \"value\": 0 }",
+                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 12, \"iid\": 11 }",
+                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 12, \"iid\": 11 }",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":12,\"iid\":11},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":12,\"iid\":11}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerLevelController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerLevel"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
 }
