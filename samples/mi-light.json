@@ -20,13 +20,13 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 10, \"value\": 0 }",
-                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 11 }",
-                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 11 }",
-                        "IncreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 14 }",
-                        "DecreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 14 }",
-                        "SetColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 14 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":10,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":11}",
+                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":11}",
+                        "IncreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":14}",
+                        "DecreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":14}",
+                        "SetColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":14}",
                         "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":2,\"iid\":13},\"saturation\":{\"aid\":2,\"iid\":12},\"brightness\":{\"aid\":2,\"iid\":11}}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":2,\"iid\":13},\"saturation\":{\"aid\":2,\"iid\":12},\"brightness\":{\"aid\":2,\"iid\":11}}]"
                     },
@@ -74,7 +74,7 @@
                                         "name": "colorTemperatureInKelvin"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         },
@@ -88,7 +88,7 @@
                                         "name": "color"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         }
@@ -103,13 +103,13 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 3, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 3, \"iid\": 10, \"value\": 0 }",
-                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 3, \"iid\": 11 }",
-                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 3, \"iid\": 11 }",
-                        "IncreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 3, \"iid\": 14 }",
-                        "DecreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 3, \"iid\": 14 }",
-                        "SetColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 3, \"iid\": 14 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":3,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":3,\"iid\":10,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":3,\"iid\":11}",
+                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":3,\"iid\":11}",
+                        "IncreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":3,\"iid\":14}",
+                        "DecreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":3,\"iid\":14}",
+                        "SetColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":3,\"iid\":14}",
                         "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":3,\"iid\":13},\"saturation\":{\"aid\":3,\"iid\":12},\"brightness\":{\"aid\":3,\"iid\":11}}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":3,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":3,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":3,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":3,\"iid\":13},\"saturation\":{\"aid\":3,\"iid\":12},\"brightness\":{\"aid\":3,\"iid\":11}}]"
                     },
@@ -157,7 +157,7 @@
                                         "name": "colorTemperatureInKelvin"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         },
@@ -171,7 +171,7 @@
                                         "name": "color"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         }
@@ -186,13 +186,13 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 4, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 4, \"iid\": 10, \"value\": 0 }",
-                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 4, \"iid\": 11 }",
-                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 4, \"iid\": 11 }",
-                        "IncreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 4, \"iid\": 14 }",
-                        "DecreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 4, \"iid\": 14 }",
-                        "SetColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 4, \"iid\": 14 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":10,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":11}",
+                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":11}",
+                        "IncreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":14}",
+                        "DecreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":14}",
+                        "SetColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":14}",
                         "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":4,\"iid\":13},\"saturation\":{\"aid\":4,\"iid\":12},\"brightness\":{\"aid\":4,\"iid\":11}}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":4,\"iid\":13},\"saturation\":{\"aid\":4,\"iid\":12},\"brightness\":{\"aid\":4,\"iid\":11}}]"
                     },
@@ -240,7 +240,7 @@
                                         "name": "colorTemperatureInKelvin"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         },
@@ -254,7 +254,7 @@
                                         "name": "color"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         }
@@ -269,13 +269,13 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 10, \"value\": 0 }",
-                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 11 }",
-                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 11 }",
-                        "IncreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 14 }",
-                        "DecreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 14 }",
-                        "SetColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 14 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":10,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":11}",
+                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":11}",
+                        "IncreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":14}",
+                        "DecreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":14}",
+                        "SetColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":14}",
                         "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":5,\"iid\":13},\"saturation\":{\"aid\":5,\"iid\":12},\"brightness\":{\"aid\":5,\"iid\":11}}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":5,\"iid\":13},\"saturation\":{\"aid\":5,\"iid\":12},\"brightness\":{\"aid\":5,\"iid\":11}}]"
                     },
@@ -323,7 +323,7 @@
                                         "name": "colorTemperatureInKelvin"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         },
@@ -337,7 +337,7 @@
                                         "name": "color"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         }
@@ -352,13 +352,13 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 6, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 6, \"iid\": 10, \"value\": 0 }",
-                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 6, \"iid\": 11 }",
-                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 6, \"iid\": 11 }",
-                        "IncreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 6, \"iid\": 14 }",
-                        "DecreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 6, \"iid\": 14 }",
-                        "SetColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 6, \"iid\": 14 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":10,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":11}",
+                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":11}",
+                        "IncreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":14}",
+                        "DecreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":14}",
+                        "SetColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":14}",
                         "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":6,\"iid\":13},\"saturation\":{\"aid\":6,\"iid\":12},\"brightness\":{\"aid\":6,\"iid\":11}}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":6,\"iid\":13},\"saturation\":{\"aid\":6,\"iid\":12},\"brightness\":{\"aid\":6,\"iid\":11}}]"
                     },
@@ -406,7 +406,7 @@
                                         "name": "colorTemperatureInKelvin"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         },
@@ -420,7 +420,7 @@
                                         "name": "color"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         }
@@ -435,13 +435,13 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 7, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 7, \"iid\": 10, \"value\": 0 }",
-                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 7, \"iid\": 11 }",
-                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 7, \"iid\": 11 }",
-                        "IncreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 7, \"iid\": 14 }",
-                        "DecreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 7, \"iid\": 14 }",
-                        "SetColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 7, \"iid\": 14 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":10,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":11}",
+                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":11}",
+                        "IncreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":14}",
+                        "DecreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":14}",
+                        "SetColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":14}",
                         "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":7,\"iid\":13},\"saturation\":{\"aid\":7,\"iid\":12},\"brightness\":{\"aid\":7,\"iid\":11}}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":7,\"iid\":13},\"saturation\":{\"aid\":7,\"iid\":12},\"brightness\":{\"aid\":7,\"iid\":11}}]"
                     },
@@ -489,7 +489,7 @@
                                         "name": "colorTemperatureInKelvin"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         },
@@ -503,7 +503,7 @@
                                         "name": "color"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         }
@@ -518,13 +518,13 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 8, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 8, \"iid\": 10, \"value\": 0 }",
-                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 8, \"iid\": 11 }",
-                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 8, \"iid\": 11 }",
-                        "IncreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 8, \"iid\": 14 }",
-                        "DecreaseColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 8, \"iid\": 14 }",
-                        "SetColorTemperature": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 8, \"iid\": 14 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":8,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":8,\"iid\":10,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":8,\"iid\":11}",
+                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":8,\"iid\":11}",
+                        "IncreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":8,\"iid\":14}",
+                        "DecreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":8,\"iid\":14}",
+                        "SetColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":8,\"iid\":14}",
                         "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":8,\"iid\":13},\"saturation\":{\"aid\":8,\"iid\":12},\"brightness\":{\"aid\":8,\"iid\":11}}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":8,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":8,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":8,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":8,\"iid\":13},\"saturation\":{\"aid\":8,\"iid\":12},\"brightness\":{\"aid\":8,\"iid\":11}}]"
                     },
@@ -572,7 +572,7 @@
                                         "name": "colorTemperatureInKelvin"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         },
@@ -586,7 +586,7 @@
                                         "name": "color"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         }
@@ -601,10 +601,10 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 9, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 9, \"iid\": 10, \"value\": 0 }",
-                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 9, \"iid\": 11 }",
-                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 9, \"iid\": 11 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":9,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":9,\"iid\":10,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":9,\"iid\":11}",
+                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":9,\"iid\":11}",
                         "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":9,\"iid\":13},\"saturation\":{\"aid\":9,\"iid\":12},\"brightness\":{\"aid\":9,\"iid\":11}}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":9,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":9,\"iid\":11},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":9,\"iid\":13},\"saturation\":{\"aid\":9,\"iid\":12},\"brightness\":{\"aid\":9,\"iid\":11}}]"
                     },
@@ -652,7 +652,7 @@
                                         "name": "color"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         }
@@ -667,8 +667,8 @@
                         "SWITCH"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 10, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 10, \"iid\": 10, \"value\": 0 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":10,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":10,\"iid\":10,\"value\":0}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":10,\"iid\":10}]"
                     },
                     "capabilities": [
@@ -702,8 +702,8 @@
                         "SWITCH"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 11, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 11, \"iid\": 10, \"value\": 0 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":11,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":11,\"iid\":10,\"value\":0}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":11,\"iid\":10}]"
                     },
                     "capabilities": [
@@ -737,10 +737,10 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 12, \"iid\": 11, \"value\": 100 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 12, \"iid\": 11, \"value\": 0 }",
-                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 12, \"iid\": 11 }",
-                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 12, \"iid\": 11 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":12,\"iid\":11,\"value\":100}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":12,\"iid\":11,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":12,\"iid\":11}",
+                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":12,\"iid\":11}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":12,\"iid\":11},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":12,\"iid\":11}]"
                     },
                     "capabilities": [

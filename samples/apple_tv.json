@@ -53,8 +53,8 @@
                         "SWITCH"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 10, \"value\": 0 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":10,\"value\":0}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":10}]"
                     },
                     "capabilities": [
@@ -154,8 +154,8 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 11, \"value\": 0 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 11, \"value\": 1 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":11,\"value\":0}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":11,\"value\":1}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":11}]"
                     },
                     "capabilities": [
@@ -214,17 +214,27 @@
                     ]
                 },
                 {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDgsaWlkOiAxMA==",
-                    "friendlyName": "Menu",
-                    "description": "Testing Menu Switch",
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDM0LGlpZDogMTA=",
+                    "friendlyName": "Family Room Apple TV",
+                    "description": "Testing Family Room Apple TV Apple TV",
                     "manufacturerName": "Apple",
                     "displayCategories": [
-                        "SWITCH"
+                        "TV"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 8, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 8, \"iid\": 10, \"value\": 0 }",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":8,\"iid\":10}]"
+                        "Pair": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":23,\"iid\":10,\"value\":1}",
+                        "Stop": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":24,\"iid\":10,\"value\":1}",
+                        "TV/Home": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":25,\"iid\":10,\"value\":1}",
+                        "Mic/Siri": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":26,\"iid\":10,\"value\":1}",
+                        "Play": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":27,\"iid\":10,\"value\":1}",
+                        "Pause": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":28,\"iid\":10,\"value\":1}",
+                        "Up": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":29,\"iid\":10,\"value\":1}",
+                        "Down": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":30,\"iid\":10,\"value\":1}",
+                        "Left": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":31,\"iid\":10,\"value\":1}",
+                        "Right": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":32,\"iid\":10,\"value\":1}",
+                        "Select": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":33,\"iid\":10,\"value\":1}",
+                        "Sleep": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":34,\"iid\":10,\"value\":1}",
+                        "ReportState": "[{\"interface\":\"Alexa.PlaybackController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":34,\"iid\":10}]"
                     },
                     "capabilities": [
                         {
@@ -234,367 +244,13 @@
                         },
                         {
                             "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
+                            "interface": "Alexa.PlaybackController",
                             "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDksaWlkOiAxMA==",
-                    "friendlyName": "TV/Home",
-                    "description": "Testing TV/Home Switch",
-                    "manufacturerName": "Apple",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 9, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 9, \"iid\": 10, \"value\": 0 }",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":9,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDEwLGlpZDogMTA=",
-                    "friendlyName": "Mic/Siri",
-                    "description": "Testing Mic/Siri Switch",
-                    "manufacturerName": "Apple",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 10, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 10, \"iid\": 10, \"value\": 0 }",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":10,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDExLGlpZDogMTA=",
-                    "friendlyName": "Play",
-                    "description": "Testing Play Switch",
-                    "manufacturerName": "Apple",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 11, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 11, \"iid\": 10, \"value\": 0 }",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":11,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDEyLGlpZDogMTA=",
-                    "friendlyName": "Pause",
-                    "description": "Testing Pause Switch",
-                    "manufacturerName": "Apple",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 12, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 12, \"iid\": 10, \"value\": 0 }",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":12,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDEzLGlpZDogMTA=",
-                    "friendlyName": "Up",
-                    "description": "Testing Up Switch",
-                    "manufacturerName": "Apple",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 13, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 13, \"iid\": 10, \"value\": 0 }",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":13,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDE0LGlpZDogMTA=",
-                    "friendlyName": "Down",
-                    "description": "Testing Down Switch",
-                    "manufacturerName": "Apple",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 14, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 14, \"iid\": 10, \"value\": 0 }",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":14,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDE1LGlpZDogMTA=",
-                    "friendlyName": "Left",
-                    "description": "Testing Left Switch",
-                    "manufacturerName": "Apple",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 15, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 15, \"iid\": 10, \"value\": 0 }",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":15,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDE2LGlpZDogMTA=",
-                    "friendlyName": "Right",
-                    "description": "Testing Right Switch",
-                    "manufacturerName": "Apple",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 16, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 16, \"iid\": 10, \"value\": 0 }",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":16,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDE3LGlpZDogMTA=",
-                    "friendlyName": "Select",
-                    "description": "Testing Select Switch",
-                    "manufacturerName": "Apple",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 17, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 17, \"iid\": 10, \"value\": 0 }",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":17,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDE4LGlpZDogMTA=",
-                    "friendlyName": "Sleep",
-                    "description": "Testing Sleep Switch",
-                    "manufacturerName": "Apple",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 18, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 18, \"iid\": 10, \"value\": 0 }",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":18,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
+                            "supportedOperations": [
+                                "Play",
+                                "Pause",
+                                "Stop"
+                            ]
                         }
                     ]
                 }

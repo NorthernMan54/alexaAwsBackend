@@ -20,10 +20,10 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 11, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 11, \"value\": 0 }",
-                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 12 }",
-                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 2, \"iid\": 12 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":11,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":11,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":12}",
+                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":12}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":11},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":12}]"
                     },
                     "capabilities": [
@@ -71,8 +71,8 @@
                         "SMARTPLUG"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 3, \"iid\": 11, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 3, \"iid\": 11, \"value\": 0 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":3,\"iid\":11,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":3,\"iid\":11,\"value\":0}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":3,\"iid\":11}]"
                     },
                     "capabilities": [
@@ -106,10 +106,10 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 4, \"iid\": 11, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 4, \"iid\": 11, \"value\": 0 }",
-                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 4, \"iid\": 12 }",
-                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 4, \"iid\": 12 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":11,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":11,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":12}",
+                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":12}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":11},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":12}]"
                     },
                     "capabilities": [
@@ -157,10 +157,10 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 11, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 11, \"value\": 0 }",
-                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 12 }",
-                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 5, \"iid\": 12 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":11,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":11,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":12}",
+                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":12}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":11},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":12}]"
                     },
                     "capabilities": [
@@ -208,10 +208,10 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 6, \"iid\": 11, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 6, \"iid\": 11, \"value\": 0 }",
-                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 6, \"iid\": 12 }",
-                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 6, \"iid\": 12 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":11,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":11,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":12}",
+                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":12}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":11},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":12}]"
                     },
                     "capabilities": [
@@ -259,10 +259,10 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 7, \"iid\": 11, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 7, \"iid\": 11, \"value\": 0 }",
-                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 7, \"iid\": 12 }",
-                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 7, \"iid\": 12 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":11,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":11,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":12}",
+                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":12}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":11},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":12}]"
                     },
                     "capabilities": [
@@ -310,8 +310,8 @@
                         "SMARTPLUG"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 8, \"iid\": 11, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 8, \"iid\": 11, \"value\": 0 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":8,\"iid\":11,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":8,\"iid\":11,\"value\":0}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":8,\"iid\":11}]"
                     },
                     "capabilities": [
@@ -345,10 +345,10 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 9, \"iid\": 11, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 9, \"iid\": 11, \"value\": 0 }",
-                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 9, \"iid\": 12 }",
-                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 9, \"iid\": 12 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":9,\"iid\":11,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":9,\"iid\":11,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":9,\"iid\":12}",
+                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":9,\"iid\":12}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":9,\"iid\":11},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":9,\"iid\":12}]"
                     },
                     "capabilities": [
@@ -396,10 +396,10 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 30, \"iid\": 11, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 30, \"iid\": 11, \"value\": 0 }",
-                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 30, \"iid\": 12 }",
-                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 30, \"iid\": 12 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":30,\"iid\":11,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":30,\"iid\":11,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":30,\"iid\":12}",
+                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":30,\"iid\":12}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":30,\"iid\":11},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":30,\"iid\":12}]"
                     },
                     "capabilities": [
@@ -447,10 +447,10 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 11, \"iid\": 11, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 11, \"iid\": 11, \"value\": 0 }",
-                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 11, \"iid\": 12 }",
-                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 11, \"iid\": 12 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":11,\"iid\":11,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":11,\"iid\":11,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":11,\"iid\":12}",
+                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":11,\"iid\":12}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":11,\"iid\":11},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":11,\"iid\":12}]"
                     },
                     "capabilities": [
@@ -498,10 +498,10 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 12, \"iid\": 11, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 12, \"iid\": 11, \"value\": 0 }",
-                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 12, \"iid\": 12 }",
-                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 12, \"iid\": 12 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":12,\"iid\":11,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":12,\"iid\":11,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":12,\"iid\":12}",
+                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":12,\"iid\":12}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":12,\"iid\":11},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":12,\"iid\":12}]"
                     },
                     "capabilities": [
@@ -549,8 +549,8 @@
                         "SMARTPLUG"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 13, \"iid\": 11, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 13, \"iid\": 11, \"value\": 0 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":13,\"iid\":11,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":13,\"iid\":11,\"value\":0}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":13,\"iid\":11}]"
                     },
                     "capabilities": [
@@ -584,10 +584,10 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 14, \"iid\": 11, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 14, \"iid\": 11, \"value\": 0 }",
-                        "AdjustPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 14, \"iid\": 12 }",
-                        "SetPowerLevel": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 14, \"iid\": 12 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":14,\"iid\":11,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":14,\"iid\":11,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":14,\"iid\":12}",
+                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":14,\"iid\":12}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":14,\"iid\":11},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":14,\"iid\":12}]"
                     },
                     "capabilities": [
@@ -635,8 +635,8 @@
                         "SMARTPLUG"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 15, \"iid\": 11, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 15, \"iid\": 11, \"value\": 0 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":15,\"iid\":11,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":15,\"iid\":11,\"value\":0}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":15,\"iid\":11}]"
                     },
                     "capabilities": [
@@ -670,8 +670,8 @@
                         "SMARTPLUG"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 18, \"iid\": 11, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 18, \"iid\": 11, \"value\": 0 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":18,\"iid\":11,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":18,\"iid\":11,\"value\":0}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":18,\"iid\":11}]"
                     },
                     "capabilities": [
@@ -705,8 +705,8 @@
                         "SWITCH"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 19, \"iid\": 11, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 19, \"iid\": 11, \"value\": 0 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":19,\"iid\":11,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":19,\"iid\":11,\"value\":0}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":19,\"iid\":11}]"
                     },
                     "capabilities": [
@@ -740,8 +740,8 @@
                         "SWITCH"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 20, \"iid\": 11, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 20, \"iid\": 11, \"value\": 0 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":20,\"iid\":11,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":20,\"iid\":11,\"value\":0}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":20,\"iid\":11}]"
                     },
                     "capabilities": [
@@ -808,8 +808,8 @@
                         "SWITCH"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 22, \"iid\": 10, \"value\": 1 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 22, \"iid\": 10, \"value\": 0 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":22,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":22,\"iid\":10,\"value\":0}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":22,\"iid\":10}]"
                     },
                     "capabilities": [
@@ -909,8 +909,8 @@
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 31, \"iid\": 11, \"value\": 0 }",
-                        "TurnOff": "{ \"host\": \"test\", \"port\": 12345, \"aid\": 31, \"iid\": 11, \"value\": 1 }",
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":31,\"iid\":11,\"value\":0}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":31,\"iid\":11,\"value\":1}",
                         "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":31,\"iid\":11}]"
                     },
                     "capabilities": [
