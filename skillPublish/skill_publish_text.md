@@ -107,3 +107,37 @@ Alexa, allume la lampe de salon
 Alexa, règle la lampe de salon à 50 %
 
 Alexa, éteins la lampe de salon
+
+# Japanese provided by Google Translate
+
+## Short Skill Description
+
+HomeBridgeで制御されるデバイスを制御するには、Alexaを使用します。
+
+## Full Skill Description
+
+このスキルにより、Amazon Alexaのホームブリッジ制御デバイスにアクセスできます。 ホームブリッジの詳細については、https://github.com/nfarina/homebridgeを参照してください。
+
+Amazon Alexaがホームブリッジデバイスを制御し、必要なホームブリッジプラグインhomebridge-alexaをインストールできるようにする詳細については、https://github.com/NorthernMan54/homebridge-alexaを参照してください。
+
+サポートされているホームブリッジデバイスには、
+
+ライト、アウトレット、スイッチ、ファン、および温度センサー。
+
+## Example Phrases
+
+アレクサ、リビングルームランプをオンにする
+
+アレクサ、リビングルームランプを50％に設定
+
+アレクサ、リビングルームランプを消す
+
+## Keywords
+
+homebridge
+
+## Privacy Statement url
+
+https://homebridge.cloudwatch.net/about
+
+## Terms of Use URL
