@@ -40,7 +40,7 @@ My inspiration for the design is based on the work done to create a Alexa Skill 
 
 # backlog
 
-Moved to https://github.com/NorthernMan54/homebridge-alexa/issues/47
+Moved to https://github.com/NorthernMan54/alexaAwsBackend/issues/6
 
 # Setup Development Toolchain
 
