@@ -99,6 +99,17 @@ sudo cp auth-plug.so /usr/lib/mosquitto-auth-plugin/auth-plugin.so
 
 cp mosquitto/conf/mosquitto.conf /etc/mosquitto/conf.d/mosquitto.conf
 
+### Growing over 1024 Users
+
+1. Added `ulimit -n 60000` to /etc/init.d/mosquitto
+
+2. Added to /etc/security/limits.conf
+
+```
+mosquitto 	hard	nofile 		10000000
+mosquitto 	soft	nofile 		10000000
+```
+
 ## Apache SSL Config
 
 * Registered IP Address at freeDNS - homebridge.cloudwatch.net
