@@ -36,4 +36,4 @@ This account is tied to my home system, and has control of all the devices, so p
 | French | Alexa, allume la lampe de salon | Alexa, règle la lampe de salon à 50 % | Alexa, éteins la lampe de salon |
 | Japanese | アレクサ、リビングルームランプをオンにする | アレクサ、リビングルームランプを50％に設定 | アレクサ、リビングルームランプを消す |
 | Italian | Alexa, accendi la lampada del soggiorno | Alexa, imposta la Lampada del soggiorno al 50 percento | Alexa, spegni la lampada del soggiorno |
-| Spanish | Alexa, enciende la lámpara de la sala de estar | Alexa, pon la lámpara de la sala de estar al 50 por ciento | Alexa, apaga la lámpara de la sala de estar |
+| Spanish | Alexa, enciende la lámpara del salón | Alexa, sube la lámpara del salón al 50 por ciento | Alexa, apaga la lámpara del salón |
