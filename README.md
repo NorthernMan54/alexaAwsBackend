@@ -116,6 +116,8 @@ mosquitto 	soft	nofile 		10000000
 
 1. Followed the instructions here http://freedns.afraid.org/scripts/afraid.aws.sh.txt, but used this script as it worked better.  http://freedns.afraid.org/scripts/update.sh.txt
 
+2. URL/hostname is coded in /etc/cron.d/afraid.aws.sh
+
 * Create SSL at Let's Encrypt
 
 This is wrong
@@ -157,6 +159,18 @@ sudo systemctl restart systemd-journald
 brew install mongo; brew services start mongodb
 brew install mosquitto; brew services start mosquitto
 ```
+
+# Amazon AWS Lambda function
+
+## Create AWS Lambda function
+
+1. Name - AlexaHome
+2. Version - Node.js 6.1.0
+3. Role - Choose an existing Role
+4. Existing Role - lambda_basic_execution
+5. Trigger - Alexa Smart Home
+
+
 # Credits
 
 * Ben Hardill - For the inspiration behind the design.
