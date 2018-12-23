@@ -61,19 +61,6 @@ mqttClient.on('connect', function() {
 });
 
 
-if (process.env.VCAP_SERVICES) {
-  var services = JSON.parse(process.env.VCAP_SERVICES);
-
-  for (serviceName in services) {
-    if (serviceName.match('^mongo')) {
-      var creds = services[serviceName][0]['credentials'];
-      mongo_url = creds.url;
-    } else {
-      console.log("no database found in vcap_services");
-    }
-  }
-}
-
 console.log(mongo_url);
 mongoose.Promise = global.Promise;
 var mongoose_options = {
@@ -175,14 +162,6 @@ Account.findOne({
 });
 
 var app_id = 'https://localhost:' + port;
-
-if (process.env.VCAP_APPLICATION) {
-  var application = JSON.parse(process.env.VCAP_APPLICATION);
-
-  var app_uri = application['application_uris'][0];
-
-  app_id = 'https://' + app_uri;
-}
 
 var cookieSecret = 'ihytsrf334';
 
@@ -702,6 +681,22 @@ app.get('/admin/services',
       res.status(401).send();
     }
   });
+
+app.get('/status',
+  ensureAuthenticated,
+  function(req, res) {
+    Account.findOne({
+      username: req.user.username
+    }, function(error, data) {
+      var transform = {
+        "<>": "div",
+        "html": "<tr><td>${username}</td><td>${created}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td><td>${lastUsedBroker}</td><td>${brokerCount}</td></tr>"
+      };
+      res.send("<a href=\"/usage.csv\" download=\"/usage.csv\">Download the data</a><table border='1'>" + json2html.transform(data, transform) + "</table>");
+    });
+
+  });
+
 
 app.get('/admin/users',
   ensureAuthenticated,
