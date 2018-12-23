@@ -1,7 +1,7 @@
 var uid = require('uid2');
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-var AutoIncrement = require('mongoose-sequence');
+const AutoIncrement = require('mongoose-sequence')(mongoose);
 
 var ApplicationSchema = new Schema({
 	title: { type: String, required: true },

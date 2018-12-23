@@ -1,15 +1,12 @@
 <% include ../fragments/header.ejs %>
   <div class="container main-content">
     <h2>Before Registering</h2>
-    <p>Please note you must have <a href="https://github.com/nfarina/homebridge">HomeBridge</a> installed and running, and have installed the <a href="https://github.com/NorthernMan54/homebridge-alexa">homebridge-alexa</a> plugin. To setup this service, please follow the instructions <a href="https://github.com/NorthernMan54/homebridge-alexa">here</a></p>
+    <p>Please note you must have <a href="https://homebridge.io/">HomeBridge</a> installed and running, and have installed the <a href="https://github.com/NorthernMan54/homebridge-alexa">homebridge-alexa</a> plugin. To setup this service, please follow the instructions <a href="https://github.com/NorthernMan54/homebridge-alexa">here</a></p>
     <div id="register">
       <label style="width: 75px" for="username">Username:</label>
       <input type="text" onchange="validate()" id="username"/>
       <span>(can contain any utf-8 chars except /, + or # and must not start with $)</span>
       <div id="usrValid" class="pwq"></div>
-      <label style="width: 75px" for="email">Email:</label>
-      <input type="email" id="email"/>
-      <span>(will only be used to send password resets and notices about the running of the service)</span>
       <br>
       <label style="width: 75px" for="password">Password:</label>
       <input type="password" id="password"/>
@@ -116,16 +113,8 @@
             return;
           }
 
-          var email = document.getElementById('email').value;
-          //need to try validate the email address here:
-          if (email.indexOf('@') == -1) {
-            alert("Please enter a valid email address");
-            return;
-          }
-
       		var params = "username=" + encodeURIComponent(username)
-            + "&password=" + encodeURIComponent(password)
-            + "&email=" + encodeURIComponent(email);
+            + "&password=" + encodeURIComponent(password);
       		xhr.open('POST', '/newUser',true);
       		xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
       		xhr.onreadystatechange = function () {

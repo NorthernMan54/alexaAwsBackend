@@ -1,4 +1,16 @@
+#!/usr/bin/env bash
+
+# Exit on command failure
+
+set -e
+
 cd awsWebsite
+echo
+echo "========================== Preparing to Publish ============================="
+echo
+npm version patch
+npm install
+npm audit
 echo
 echo "========================== Starting Packaging ============================="
 echo

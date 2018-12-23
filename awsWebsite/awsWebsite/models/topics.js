@@ -1,11 +1,11 @@
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-var AutoIncrement = require('mongoose-sequence');
+const AutoIncrement = require('mongoose-sequence')(mongoose);
 
 var Topics = new Schema({
-	_id: Number,
-	topics: {type: [String]}
-},{ _id: false });
+  _id: Number,
+  topics: {type: [String]}
+}, { _id: false });
 
 Topics.plugin(AutoIncrement, {inc_field: '_id'});
 

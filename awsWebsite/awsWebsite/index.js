@@ -20,8 +20,6 @@ var PassportOAuthBearer = require('passport-http-bearer');
 
 const Json2csvParser = require('json2csv').Parser;
 
-
-
 var port = (process.env.VCAP_APP_PORT || process.env.PORT || 3000);
 var host = (process.env.VCAP_APP_HOST || '0.0.0.0');
 var mongo_url = (process.env.MONGO_URL || 'mongodb://localhost/users');
@@ -333,7 +331,6 @@ app.get('/newuser', function(req, res) {
 app.post('/newuser', function(req, res) {
   Account.register(new Account({
     username: req.body.username,
-    email: req.body.email,
     mqttPass: "foo"
   }), req.body.password, function(err, account) {
     if (err) {
@@ -455,36 +452,6 @@ app.get('/lostPassword', function(req, res, next) {
   });
 });
 
-var sendemail = require('./lib/sendemail.js');
-var mailer = new sendemail();
-
-app.post('/lostPassword', function(req, res, next) {
-  var email = req.body.email;
-  Account.findOne({
-    email: email
-  }, function(error, user) {
-    if (!error) {
-      if (user) {
-        var lostPassword = new LostPassword({
-          user: user
-        });
-        console.log(lostPassword);
-        lostPassword.save(function(err) {
-          if (!err) {
-            res.status(200).send();
-          }
-          console.log(lostPassword.uuid);
-          console.log(lostPassword.user.username);
-          var body = mailer.buildLostPasswordBody(lostPassword.uuid, lostPassword.user.username);
-          mailer.send(email, 'homebridgeAlexa@gmail.com', 'Password Reset for homebridgeAlexa', body.text, body.html);
-        });
-      } else {
-        res.status(404).send("No user found with that email address");
-      }
-    }
-  });
-});
-
 app.get('/auth/start', function(req, res, next) {
   console.log(req.headers);
   if (req.query.response_type === undefined) {
@@ -574,7 +541,7 @@ app.post('/auth/finish', function(req, res, next) {
         next();
       } else if (!error) {
         console.log("not authed");
-        req.flash('error', 'Your email or password was incorrect. Please try again.');
+        req.flash('error', 'Your logon or password was incorrect. Please try again.');
         res.redirect(req.body['auth_url'])
       }
     })(req, res, next);
@@ -838,53 +805,6 @@ app.delete('/service/:id',
         }
       });
   });
-
-// Work around for not being able to access Mongo from container
-// app.post('/mqtt/auth',function(req,res){
-// 	var username = req.body.username;
-// 	var password = req.body.password;
-// 	var topic = req.body.topic;
-// 	var acc = req.body.acc;
-
-// 	passport.authenticate('local',function(err,user,info){
-// 		if (!err && user) {
-// 			return res.status(200).send();
-// 		} else {
-// 			return res.status(401).send();
-// 		}
-// 	})(req, res, function () {
-
-//     });
-// });
-
-// app.post('/mqtt/acl',function(req,res){
-// 	var username = req.body.username;
-// 	var clientid = req.body.clientid;
-// 	var topic = req.body.topic;
-// 	var acc = req.body.acc;
-
-// 	if (topic.indexOf(username+'/') === 0) {
-// 		res.status(200).send();
-// 	} else {
-// 		res.status(401).send();
-// 	}
-// });
-
-// app.post('/mqtt/superuser',function(req,res){
-// 	var username = req.body.username;
-// 	if (username === mqtt_user) {
-// 		res.status(200).send();
-// 	} else {
-// 		res.status(401).send();
-// 	}
-// });
-
-// app.get('/cleanDB', function(req,res){
-// 	Account.remove({});
-// 	Devices.remove({});
-// 	Topics.remove({});
-// 	res.send();
-// });
 
 var server = http.Server(app);
 if (app_id.match(/^https:\/\/localhost:/)) {
