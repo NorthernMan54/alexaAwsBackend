@@ -1,6 +1,6 @@
 <% include ../fragments/header.ejs %>
 <div class="container main-content">
-  <h1>Homebridge Smart Home Skill Linking Page
+  <img align="left" height="75" width="75" src="/images/HOMEBRIDGE 108.jpg" /><h1>Homebridge Smart Home Skill Linking Page
   </h1>
   <form action="/auth/finish" method="post">
     <input type="hidden" name="transaction_id" value="<%= transaction_id %>">
@@ -13,8 +13,8 @@
       <p>Amazon Alexa is requesting access to control and monitor your <a href="https://homebridge.io/">HomeBridge</a> installation with the
         <%= application.title %> plugin. This application will have the ability to monitor and control your Homebridge system including your lights, switches and sensors.</p>
       <ul>
-        <li>Setup of this service, requires setup of the <a href="https://github.com/NorthernMan54/homebridge-alexa">homebridge-alexa</a> plugin, and configuration of an account on this website.</li>
-        <li>If you have not setup the <a href="https://github.com/NorthernMan54/homebridge-alexa">homebridge-alexa</a> plugin yet, this needs to be completed before enabling the skill. Please complete this before enabling. Details are <a href="https://github.com/NorthernMan54/homebridge-alexa">here</a>.</li>
+        <li>Operation of this service, requires setup of <a href="https://homebridge.io/">HomeBridge</a>, the <a href="https://github.com/NorthernMan54/homebridge-alexa">homebridge-alexa</a> plugin, and configuration of an account on this website.</li>
+        <li>If you have not setup the <a href="https://github.com/NorthernMan54/homebridge-alexa">homebridge-alexa</a> plugin yet, this needs to be completed before enabling the skill. Please complete this before enabling. Details of installation and configuration are <a href="https://github.com/NorthernMan54/homebridge-alexa">here</a>.</li>
       </ul>
 
       <% if (user) { %>
