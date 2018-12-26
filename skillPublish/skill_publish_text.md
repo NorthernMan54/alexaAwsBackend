@@ -24,7 +24,7 @@
 
 # Privacy Statement url
 
-https://www.homebidge.ca/about
+https://www.homebridge.ca/about
 
 # Terms of Use URL
 
