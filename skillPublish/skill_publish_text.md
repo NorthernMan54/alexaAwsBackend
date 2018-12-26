@@ -1,20 +1,4 @@
-# Privacy Statement url
-
-https://homebridge.cloudwatch.net/about
-
-# Terms of Use URL
-
-# keywords
-
-homebridge
-
-# Testing Instructions
-
-When linking the skill, please use the login and the password
-
-amazonTest
-
-This account is tied to my home system, and has control of all the devices, so please try to limit your tests to the Basement Stair light.  I want to avoid bothering the family too much when your testing.
+# Store Preview
 
 ## Skill description
 
@@ -37,3 +21,21 @@ This account is tied to my home system, and has control of all the devices, so p
 | Japanese | アレクサ、リビングの電気をつけて | アレクサ、リビングの電気を50％に設定 | アレクサ、リビングの電気を消して |
 | Italian | Alexa, accendi la lampada del soggiorno | Alexa, imposta la Lampada del soggiorno al 50 percento | Alexa, spegni la lampada del soggiorno |
 | Spanish | Alexa, enciende la lámpara del salón | Alexa, sube la lámpara del salón al 50 por ciento | Alexa, apaga la lámpara del salón |
+
+# Privacy Statement url
+
+https://www.homebidge.ca/about
+
+# Terms of Use URL
+
+# keywords
+
+homebridge
+
+# Testing Instructions
+
+When linking the skill, please use the login and the password
+
+amazonTest
+
+This account is tied to my home system, and has control of all the devices, so please try to limit your tests to the Basement Stair light.  I want to avoid bothering the family too much when your testing.
