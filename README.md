@@ -60,6 +60,10 @@ save
 
 9 - Add ARN to Alexa Skill config
 
+** Environment Variables
+
+ENDPOINT - https://homebridge.cloudwatch.net/
+DEBUG - ( empty or true )
 
 
 
