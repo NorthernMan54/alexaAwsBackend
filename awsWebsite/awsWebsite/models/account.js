@@ -22,7 +22,12 @@ var Account = new Schema({
     brokerCount: { type: Number, default: 0},
     lastUsedWebsite: { type: Date, default: function(){
         return new Date();
-    }}
+    }},
+    access_token: String,
+    refresh_token: String,
+    token_expires: { type: Date, default: function(){
+        return new Date();
+    }} 
 });
 
 var options = {

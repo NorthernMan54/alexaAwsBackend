@@ -1,5 +1,6 @@
 var fs = require('fs');
 var url = require('url');
+var lwa = require('./lib/lwa.js');
 var mqtt = require('mqtt');
 var http = require('http');
 var https = require('https');
@@ -218,10 +219,10 @@ var accessTokenStrategy = new PassportOAuthBearer(function(token, done) {
   oauthModels.AccessToken.findOne({
     token: token
   }).populate('user').populate('grant').exec(function(error, token) {
-      if (!error && token && !token.grant) {
-        console.log("missing grant token: %j", token);
-			}
-		if (!error && token && token.active && token.grant && token.grant.active && token.user) {
+    if (!error && token && !token.grant) {
+      console.log("missing grant token: %j", token);
+    }
+    if (!error && token && token.active && token.grant && token.grant.active && token.user) {
       // console.log("Token is GOOD!");
       done(null, token.user, {
         scope: token.scope
@@ -536,6 +537,7 @@ app.post('/auth/exchange', function(req, res, next) {
   var appID = req.body['client_id'];
   var appSecret = req.body['client_secret'];
 
+  // console.log("Req: ", req.body);
   oauthModels.Application.findOne({
     oauth_id: appID,
     oauth_secret: appSecret
@@ -544,9 +546,11 @@ app.post('/auth/exchange', function(req, res, next) {
       req.appl = application;
       next();
     } else if (!error) {
+      // console.log("Error-1", appID, appSecret);
       error = new Error("There was no application with the Application ID and Secret you provided.");
       next(error);
     } else {
+      // console.log("Error-2", appID, appSecret);
       next(error);
     }
   });
@@ -631,22 +635,31 @@ app.post('/api/v2/messages',
       geoid: 'Amazon',
       uid: req.user.username
     });
-    var topic = "command/" + req.user.username + "/1";
-    //  delete req.body.directive.payload.scope;  // Remove scope from message
-    var message = JSON.stringify(req.body);
-    try {
-      console.log("MQTT Message", topic, message);
-      mqttClient.publish(topic, message);
-      lastUsedAlexa(req.user.username);
-    } catch (err) {
 
+    if (req.body.directive.header.namespace === "Alexa.Authorization") {
+      console.log("Auth:", req.body);
+      lwa.validate(req, function(reply) {
+        console.log("Reply-1:", reply);
+        res.send(reply);
+      });
+    } else {
+      var topic = "command/" + req.user.username + "/1";
+      //  delete req.body.directive.payload.scope;  // Remove scope from message
+      var message = JSON.stringify(req.body);
+      try {
+        console.log("MQTT Message", topic, message);
+        mqttClient.publish(topic, message);
+        lastUsedAlexa(req.user.username);
+      } catch (err) {
+
+      }
+      var command = {
+        user: req.user.username,
+        res: res,
+        timestamp: Date.now()
+      };
+      onGoingCommands[req.body.directive.header.messageId] = command;
     }
-    var command = {
-      user: req.user.username,
-      res: res,
-      timestamp: Date.now()
-    };
-    onGoingCommands[req.body.directive.header.messageId] = command;
   }
 );
 
