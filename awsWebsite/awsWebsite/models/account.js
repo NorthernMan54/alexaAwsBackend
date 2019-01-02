@@ -25,9 +25,8 @@ var Account = new Schema({
     }},
     access_token: String,
     refresh_token: String,
-    token_expires: { type: Date, default: function(){
-        return new Date();
-    }} 
+    region: String,
+    token_expires: { type: Number, default: 0 }
 });
 
 var options = {

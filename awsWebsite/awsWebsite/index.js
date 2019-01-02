@@ -637,9 +637,9 @@ app.post('/api/v2/messages',
     });
 
     if (req.body.directive.header.namespace === "Alexa.Authorization") {
-      console.log("Auth:", req.body);
+      // console.log("Auth:", req.body);
       lwa.validate(req, function(reply) {
-        console.log("Reply-1:", reply);
+        // console.log("Reply-1:", reply);
         res.send(reply);
       });
     } else {

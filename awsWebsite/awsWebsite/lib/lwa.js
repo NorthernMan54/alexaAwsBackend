@@ -6,7 +6,7 @@ module.exports = {
 };
 
 function validate(req, callback) {
-  console.log(req.body.directive.payload);
+  // console.log(req);
 
   var message = req.body;
   var body = "grant_type=authorization_code&code=" + message.directive.payload.grant.code + "&client_id=amzn1.application-oa2-client.8ff7ed85e0e1434f840a4f466ad34f7b&client_secret=60441f26e76a10e3d8a64945b7bd1284b24cd51d5b110b8a0c1be88ce72df7e0";
@@ -23,8 +23,8 @@ function validate(req, callback) {
     body: body
   }, function(err, response) {
     if (!err && response.statusCode === 200) {
-      console.log(err, response.body, response.statusCode);
-      updateToken(req.user.username, response.body);
+      // console.log(err, response.body, response.statusCode);
+      updateToken(req.user.username, req.get('user-agent'), JSON.parse(response.body));
       reply = {
         "event": {
           "header": {
@@ -73,27 +73,28 @@ function validate(req, callback) {
   });
 }
 
-function updateToken(username, message) {
-  console.log("Update", username, {
-    access_token: message.access_token,
-    refresh_token: message.refresh_token,
-    token_expires: new Date() + message.expires_in
-  });
+function updateToken(username, region, message) {
+  // console.log("Update", username, message, {
+  //  access_token: message.access_token,
+  //  refresh_token: message.refresh_token,
+  //  token_expires: new Date().getTime() / 1000 + message.expires_in
+  // });
   Account.update({
-    username: username
-  }, {
-    $set: {
-      access_token: message.access_token,
-      refresh_token: message.refresh_token,
-      token_expires: new Date() + message.expires_in
+      username: username
+    }, {
+      $set: {
+        access_token: message.access_token,
+        refresh_token: message.refresh_token,
+        region: region,
+        token_expires: new Date().getTime() / 1000 + message.expires_in
+      }
+    }, {
+      multi: false
+    },
+    function(err, count) {
+      if (err) {
+        console.log("DB Error:", err);
+      }
     }
-  }, {
-    multi: false
-  },
-  function(err, count) {
-    if (err) {
-      console.log("DB Error:", err);
-    }
-  }
   );
 }
