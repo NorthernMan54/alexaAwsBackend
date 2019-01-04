@@ -7,6 +7,7 @@ var https = require('https');
 var flash = require('connect-flash');
 var morgan = require('morgan');
 var express = require('express');
+var eventGW = require('./lib/eventGW.js');
 var session = require('express-session');
 var passport = require('passport');
 var mongoose = require('mongoose');
@@ -59,8 +60,9 @@ mqttClient.on('reconnect', function() {
 
 mqttClient.on('connect', function() {
   mqttClient.subscribe('response/#');
+  mqttClient.subscribe('presense/#');
+  mqttClient.subscribe('event/#');
 });
-
 
 console.log(mongo_url);
 mongoose.Promise = global.Promise;
@@ -275,10 +277,8 @@ app.get('/logout', function(req, res) {
   } else {
     res.redirect('/');
   }
-
 });
 
-//app.post('/login',passport.authenticate('local', { failureRedirect: '/login', successRedirect: '/2faCheck', failureFlash: true }));
 app.post('/login',
   passport.authenticate('local', {
     failureRedirect: '/login',
@@ -322,7 +322,8 @@ app.post('/newuser', function(req, res) {
       topics: [
         'command/' + account.username + '/#',
         'presence/' + account.username + '/#',
-        'response/' + account.username + '/#'
+        'response/' + account.username + '/#',
+        'event/' + account.username + '/#'
       ]
     });
     topics.save(function(err) {
@@ -332,8 +333,6 @@ app.post('/newuser', function(req, res) {
         var h = Buffer.from(account.hash, 'hex').toString(('base64'));
 
         var mqttPass = "PBKDF2$sha256$901$" + account.salt + "$" + account.hash;
-
-
 
         Account.update({
             username: account.username
@@ -366,10 +365,8 @@ app.post('/newuser', function(req, res) {
       });
       res.status(201).send();
     });
-
   });
 });
-
 
 app.get('/changePassword/:key', function(req, res, next) {
   var uuid = req.params.key;
@@ -560,11 +557,11 @@ var onGoingCommands = {};
 
 mqttClient.on('message', function(topic, message) {
   try {
+    console.log("mqtt response: ", topic, message.toString());
     if (topic.startsWith('response/')) {
-      console.log("mqtt response: ", topic, message.toString());
       var payload = JSON.parse(message.toString());
       var waiting = onGoingCommands[payload.event.header.messageId];
-      //console.log("mqtt response: msgId ", payload.event.header.messageId);
+      // console.log("mqtt response: msgId ", payload.event.header.messageId);
       if (waiting) {
         //        console.log("mqtt response: " + JSON.stringify(payload, null, " "));
         waiting.res.send(payload);
@@ -581,6 +578,36 @@ mqttClient.on('message', function(topic, message) {
         });
         lastBrokerResponse(waiting.user);
       }
+    } else if (topic.startsWith('event/')) {
+      var payload = JSON.parse(message.toString());
+      var user = topic.split("/")[1];
+      eventGW.send(user, payload);
+      // should really parse uid out of topic
+      measurement.send({
+        t: 'event',
+        ec: 'event',
+        ea: payload.event.header.name,
+        el: user,
+        sc: 'end',
+        geoid: 'Amazon',
+        uid: waiting.user
+      });
+      lastBrokerResponse(waiting.user);
+    } else if (topic.startsWith('presence/')) {
+      var payload = JSON.parse(message.toString());
+      var user = topic.split("/")[1];
+      presence(user, payload);
+      // should really parse uid out of topic
+      measurement.send({
+        t: 'event',
+        ec: 'presence',
+        ea: payload.event.header.name,
+        el: user,
+        sc: 'end',
+        geoid: 'Amazon',
+        uid: waiting.user
+      });
+      lastBrokerResponse(waiting.user);
     }
   } catch (err) {
     console.log("Processing Error", err);
