@@ -29,7 +29,7 @@ var mongo_url = (process.env.MONGO_URL || 'mongodb://localhost/users');
 var mqtt_url = (process.env.MQTT_URL || 'mqtt://localhost:1883');
 var mqtt_user = (process.env.MQTT_USER || 'mqtt_user');
 var mqtt_password = (process.env.MQTT_PASSWORD || 'mqtt_pass');
-console.log(mqtt_url);
+// console.log(mqtt_url);
 
 var googleAnalyicsTID = process.env.GOOGLE_ANALYTICS_TID;
 var measurement = new Measurement(googleAnalyicsTID);
@@ -111,7 +111,6 @@ var oauthModels = require('./models/oauth');
 var Devices = require('./models/devices');
 var Topics = require('./models/topics');
 var LostPassword = require('./models/lostPassword');
-
 
 Account.findOne({
   username: mqtt_user
@@ -583,16 +582,8 @@ mqttClient.on('message', function(topic, message) {
       var user = topic.split("/")[1];
       eventGW.send(user, payload);
       // should really parse uid out of topic
-      measurement.send({
-        t: 'event',
-        ec: 'event',
-        ea: payload.event.header.name,
-        el: user,
-        sc: 'end',
-        geoid: 'Amazon',
-        uid: waiting.user
-      });
-      lastBrokerResponse(waiting.user);
+
+      lastBrokerResponse(user);
     } else if (topic.startsWith('presence/')) {
       var payload = JSON.parse(message.toString());
       var user = topic.split("/")[1];
@@ -605,9 +596,9 @@ mqttClient.on('message', function(topic, message) {
         el: user,
         sc: 'end',
         geoid: 'Amazon',
-        uid: waiting.user
+        uid: user
       });
-      lastBrokerResponse(waiting.user);
+      lastBrokerResponse(user);
     }
   } catch (err) {
     console.log("Processing Error", err);
@@ -665,9 +656,11 @@ app.post('/api/v2/messages',
 
     if (req.body.directive.header.namespace === "Alexa.Authorization") {
       // console.log("Auth:", req.body);
-      lwa.validate(req, function(reply) {
+      lwa.validate(req, function(err, reply) {
         // console.log("Reply-1:", reply);
-        res.send(reply);
+        if (!err) {
+          res.send(reply);
+        }
       });
     } else {
       var topic = "command/" + req.user.username + "/1";

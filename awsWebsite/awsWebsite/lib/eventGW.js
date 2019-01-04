@@ -1,22 +1,30 @@
+
+var lwa = require('./lwa.js');
 var request = require('request');
 var Account = require('../models/account');
+var Measurement = require('./googleMeasurement.js');
+
+var googleAnalyicsTID = process.env.GOOGLE_ANALYTICS_TID;
+var measurement = new Measurement(googleAnalyicsTID);
 
 module.exports = {
   send: send
 };
 
 function send(user, message) {
+  // console.log(user, message);
   // console.log(req);
   // var body = "grant_type=authorization_code&code=" + message.directive.payload.grant.code + "&client_id=amzn1.application-oa2-client.8ff7ed85e0e1434f840a4f466ad34f7b&client_secret=60441f26e76a10e3d8a64945b7bd1284b24cd51d5b110b8a0c1be88ce72df7e0";
   retrieveToken(user, function(error, token) {
       if (error || !token.url) {
         // Error already logged
       } else {
-        message.endpoint.scope = {
+        // console.log("2", message.event.endpoint );
+        message.event.endpoint.scope = {
           "type": "BearerToken",
           "token": token.access_token
         };
-        console.log("Event: ", message);
+        console.log("Sending event: ", user);
         request({
           method: 'POST',
           url: token.url,
@@ -25,15 +33,56 @@ function send(user, message) {
           headers: {
             "Content-Type": "application/json"
           },
-          body: message
+          body: JSON.stringify(message)
         }, function(err, response) {
-          if (!err && response.statusCode === 200) {
+          if (!err && response.statusCode === 202) {
             // console.log(err, response.body, response.statusCode);
             // updateToken(req.user.username, req.get('user-agent'), JSON.parse(response.body));
-          } else if (!err && response.statusCode !== 200) {
-            console.log("Error: ", response.body, response.statusCode);
-          } else {
+            console.log("Event sent");
+            measurement.send({
+              t: 'event',
+              ec: 'event',
+              ea: message.event.header.name,
+              el: user,
+              sc: 'end',
+              geoid: 'Amazon',
+              uid: user
+            });
+          } else if (!err && response.statusCode === 401) {
+            console.log("Refresh Token required: ", response.body, response.statusCode);
+            lwa.refresh(user, token);
+            measurement.send({
+              t: 'event',
+              ec: 'event',
+              ea: 'tokenRefresh',
+              el: user,
+              sc: 'end',
+              geoid: 'Amazon',
+              uid: user
+            });
+          } else if (!err && response.statusCode) {
+            console.log("eventGW Error: ", response.body, response.statusCode);
+            // lwa.refresh(user, token);
+            measurement.send({
+              t: 'event',
+              ec: 'event',
+              ea: 'status.' + response.statusCode,
+              el: user,
+              sc: 'end',
+              geoid: 'Amazon',
+              uid: user
+            });
+          }else {
             console.log("Error: ", err);
+            measurement.send({
+              t: 'event',
+              ec: 'event',
+              ea: 'Error',
+              el: user,
+              sc: 'end',
+              geoid: 'Amazon',
+              uid: user
+            });
           }
         }); // end of request
       } // end of if else {
@@ -47,10 +96,10 @@ function retrieveToken(username, callback) {
     username: username
   }, function(error, data) {
     if (error) {
-      console.log("Error: ", error);
+      console.log("retrieveToken Error: ", error);
       callback(error, null);
     } else {
-      console.log("Result: ", data.username, data.region);
+      // console.log("retrieveToken Result: ", data.username, data);
       // Determine region
       var url = "";
       switch (data.region) {
@@ -64,7 +113,16 @@ function retrieveToken(username, callback) {
           url = "https://api.eu.amazonalexa.com/v3/events";
           break;
         default:
-          console.log("Error: Unknown region", data.region);
+          console.log("eventGW Error: Unknown region", data.region);
+          measurement.send({
+            t: 'event',
+            ec: 'event',
+            ea: 'Error.region',
+            el: user,
+            sc: 'end',
+            geoid: 'Amazon',
+            uid: user
+          });
       }
       callback(null, {
         "access_token": data.access_token,

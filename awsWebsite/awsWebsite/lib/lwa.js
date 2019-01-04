@@ -2,33 +2,28 @@ var request = require('request');
 var Account = require('../models/account');
 
 module.exports = {
-  validate: validate
+  validate: validate,
+  refresh: refresh
 };
 
+function refresh(user, token) {
+  console.log("refresh: ", user, token);
+  _accessTokenRequest(user, token.region, 'grant_type=refresh_token&refresh_token=' + token.refresh_token, function(err, response) {
+    //
+    console.log("tokenRefresh: ", err, response.statusCode, response.body);
+    // callback(err, response);
+  });
+}
+
 function validate(req, callback) {
-  // console.log(req);
-
-  var message = req.body;
-  var body = "grant_type=authorization_code&code=" + message.directive.payload.grant.code + "&client_id=amzn1.application-oa2-client.8ff7ed85e0e1434f840a4f466ad34f7b&client_secret=60441f26e76a10e3d8a64945b7bd1284b24cd51d5b110b8a0c1be88ce72df7e0";
-  var reply;
-
-  request({
-    method: 'POST',
-    url: 'https://api.amazon.com/auth/o2/token',
-    timeout: 7000,
-    maxAttempts: 1, // (default) try 5 times
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
-    },
-    body: body
-  }, function(err, response) {
+  //
+  _accessTokenRequest(req.user.username, req.get('user-agent'), 'grant_type=authorization_code&code=' + req.body.directive.payload.grant.code, function(err, response) {
+    var reply = "";
     if (!err && response.statusCode === 200) {
-      // console.log(err, response.body, response.statusCode);
-      updateToken(req.user.username, req.get('user-agent'), JSON.parse(response.body));
       reply = {
         "event": {
           "header": {
-            "messageId": message.directive.header.messageId,
+            "messageId": req.body.directive.header.messageId,
             "namespace": "Alexa.Authorization",
             "name": "AcceptGrant.Response",
             "payloadVersion": "3"
@@ -41,7 +36,7 @@ function validate(req, callback) {
       reply = {
         "event": {
           "header": {
-            "messageId": message.directive.header.messageId,
+            "messageId": req.body.directive.header.messageId,
             "namespace": "Alexa.Authorization",
             "name": "ErrorResponse",
             "payloadVersion": "3"
@@ -57,7 +52,7 @@ function validate(req, callback) {
       reply = {
         "event": {
           "header": {
-            "messageId": message.directive.header.messageId,
+            "messageId": req.body.directive.header.messageId,
             "namespace": "Alexa.Authorization",
             "name": "ErrorResponse",
             "payloadVersion": "3"
@@ -69,7 +64,34 @@ function validate(req, callback) {
         }
       };
     }
-    callback(reply);
+    console.log("validate: ", err, reply);
+    callback(err, reply);
+  });
+}
+
+function _accessTokenRequest(username, region, tokenRequest, callback) {
+  // console.log(req);
+  // tokenRequest:
+  // Refresh Token - grant_type=refresh_token&refresh_token=Atzr|IQEBLzAtAhRPpMJxdwVz2Nn6f2y-tpJX2DeX...
+  // Access Token - grant_type=authorization_code&code=SplxlOBezQQYbYS6WxSbIA
+
+  var body = tokenRequest + "&client_id=amzn1.application-oa2-client.8ff7ed85e0e1434f840a4f466ad34f7b&client_secret=60441f26e76a10e3d8a64945b7bd1284b24cd51d5b110b8a0c1be88ce72df7e0";
+
+  request({
+    method: 'POST',
+    url: 'https://api.amazon.com/auth/o2/token',
+    timeout: 7000,
+    maxAttempts: 1, // (default) try 5 times
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
+    },
+    body: body
+  }, function(err, response) {
+    if (!err && response.statusCode === 200) {
+      // console.log(err, response.body, response.statusCode);
+      updateToken(username, region, JSON.parse(response.body));
+    }
+    callback(err, response);
   });
 }
 
