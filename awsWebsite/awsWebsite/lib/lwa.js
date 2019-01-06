@@ -117,7 +117,10 @@ function tokenRequest(username, region, tokenRequest, callback) {
   // Refresh Token - grant_type=refresh_token&refresh_token=Atzr|IQEBLzAtAhRPpMJxdwVz2Nn6f2y-tpJX2DeX...
   // Access Token - grant_type=authorization_code&code=SplxlOBezQQYbYS6WxSbIA
 
-  var body = tokenRequest + "&client_id=amzn1.application-oa2-client.8ff7ed85e0e1434f840a4f466ad34f7b&client_secret=60441f26e76a10e3d8a64945b7bd1284b24cd51d5b110b8a0c1be88ce72df7e0";
+  var clientId = process.env.EVENT_CLIENT_ID;
+  var clientSecret = process.env.EVENT_CLIENT_SECRET;
+
+  var body = tokenRequest + "&client_id=" + clientId + "&client_secret=" + clientSecret;
 
   request({
     method: 'POST',
