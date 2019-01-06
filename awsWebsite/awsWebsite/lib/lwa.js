@@ -3,21 +3,64 @@ var Account = require('../models/account');
 
 module.exports = {
   retrieve: retrieve,
-  refresh: refresh
+  getAccessToken: getAccessToken
 };
 
-function refresh(user, token) {
-  console.log("refresh: ", user, token);
-  _tokenRequest(user, token.region, 'grant_type=refresh_token&refresh_token=' + token.refresh_token, function(err, response) {
+function getAccessToken(username, callback) {
+  // get Event GW access token for a user
+  // returns object containing token, and url
+
+  Account.findOne({
+    username: username
+  }, {
+    'username': 1,
+    'access_token': 1,
+    'refresh_token': 1,
+    'region': 1,
+    'token_expires': 1
+  }, function(error, data) {
+    if (error) {
+      console.log("getAccessToken Error: ", error);
+      callback(error, null);
+    } else {
+      console.log("retrieveToken Result: ", data.username, data);
+      // Determine region
+      // token_expires: new Date().getTime() / 1000 + message.expires_in
+      if (data.token_expires < new Date().getTime() / 1000) {
+        // Token is expired, need to refresh_token
+        refreshExpired(username, data, callback);
+      } else {
+        callback(null, {
+          "access_token": data.access_token,
+          "refresh_token": data.refresh_token,
+          "url": getEventUrl(data.region)
+        });
+      }
+    }
+  });
+}
+
+function refreshExpired(username, token, callback) {
+  console.log("Access Token Expired, refreshing: ", username);
+  tokenRequest(username, token.region, 'grant_type=refresh_token&refresh_token=' + token.refresh_token, function(err, response) {
     //
-    console.log("tokenRefresh: ", err, response.statusCode, response.body);
-    // callback(err, response);
+    console.log("tokenRefresh: ", username, err, response.statusCode);
+    if (err) {
+      callback(err);
+    } else {
+      var body = JSON.parse(response.body);
+      callback(null, {
+        "access_token": body.access_token,
+        "refresh_token": body.refresh_token,
+        "url": getEventUrl(token.region)
+      });
+    }
   });
 }
 
 function retrieve(req, callback) {
   //
-  _tokenRequest(req.user.username, req.get('user-agent'), 'grant_type=authorization_code&code=' + req.body.directive.payload.grant.code, function(err, response) {
+  tokenRequest(req.user.username, req.get('user-agent'), 'grant_type=authorization_code&code=' + req.body.directive.payload.grant.code, function(err, response) {
     var reply = "";
     if (!err && response.statusCode === 200) {
       reply = {
@@ -69,7 +112,7 @@ function retrieve(req, callback) {
   });
 }
 
-function _tokenRequest(username, region, tokenRequest, callback) {
+function tokenRequest(username, region, tokenRequest, callback) {
   // tokenRequest:
   // Refresh Token - grant_type=refresh_token&refresh_token=Atzr|IQEBLzAtAhRPpMJxdwVz2Nn6f2y-tpJX2DeX...
   // Access Token - grant_type=authorization_code&code=SplxlOBezQQYbYS6WxSbIA
@@ -88,13 +131,13 @@ function _tokenRequest(username, region, tokenRequest, callback) {
   }, function(err, response) {
     if (!err && response.statusCode === 200) {
       // console.log(err, response.body, response.statusCode);
-      updateToken(username, region, JSON.parse(response.body));
+      _updateToken(username, region, JSON.parse(response.body));
     }
     callback(err, response);
   });
 }
 
-function updateToken(username, region, message) {
+function _updateToken(username, region, message) {
   // console.log("Update", username, message, {
   //  access_token: message.access_token,
   //  refresh_token: message.refresh_token,
@@ -118,4 +161,22 @@ function updateToken(username, region, message) {
       }
     }
   );
+}
+
+function getEventUrl(region) {
+  var url = "";
+  switch (region) {
+    case "us-east-1":
+      url = "https://api.amazonalexa.com/v3/events";
+      break;
+    case "us-west-2":
+      url = "https://api.fe.amazonalexa.com/v3/events";
+      break;
+    case "eu-west-1":
+      url = "https://api.eu.amazonalexa.com/v3/events";
+      break;
+    default:
+      console.log("lwa Error: Unknown region", region);
+  }
+  return url;
 }
