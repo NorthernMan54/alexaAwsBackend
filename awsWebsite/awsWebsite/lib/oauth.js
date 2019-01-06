@@ -44,7 +44,9 @@ server.exchange(oauth2orize.exchange.code({
 				if (token) {
 					OAuth.RefreshToken.findOne({application:application, user: grant.user},function(error, refreshToken){
 						if (refreshToken){
+							console.log("Expires-2: ", token.expires);
 							var expires = Math.round((token.expires - (new Date().getTime()))/1000);
+							console.log("Expires-3: ", expires);
 							done(null,token.token, refreshToken.token,{token_type: 'Bearer', expires_in: expires});
 							console.log("sent expires_in: " + expires);
 						} else {
@@ -108,7 +110,9 @@ server.exchange(oauth2orize.exchange.refreshToken({
 					});
 
 					newToken.save(function(error){
+						console.log("Expires: ", newToken.expires);
 						var expires = Math.round((newToken.expires - (new Date().getTime()))/1000);
+						console.log("Expires-1: ", expires);
 						if (!error) {
 							done(null, newToken.token, refresh.token, {token_type: 'Bearer', expires_in: expires, scope: newToken.scope});
 						} else {

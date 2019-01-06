@@ -122,6 +122,8 @@ function tokenRequest(username, region, tokenRequest, callback) {
 
   var body = tokenRequest + "&client_id=" + clientId + "&client_secret=" + clientSecret;
 
+  // console.log("tokenRequest: ", username, body);
+
   request({
     method: 'POST',
     url: 'https://api.amazon.com/auth/o2/token',
@@ -153,7 +155,7 @@ function _updateToken(username, region, message) {
         access_token: message.access_token,
         refresh_token: message.refresh_token,
         region: region,
-        token_expires: new Date().getTime() / 1000 + message.expires_in
+        token_expires: new Date().getTime() / 1000 + (message.expires_in - 60)
       }
     }, {
       multi: false

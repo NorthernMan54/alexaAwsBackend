@@ -19,8 +19,18 @@ function send(user, message) {
   // console.log(req);
   // var body = "grant_type=authorization_code&code=" + message.directive.payload.grant.code + "&client_id=amzn1.application-oa2-client.8ff7ed85e0e1434f840a4f466ad34f7b&client_secret=60441f26e76a10e3d8a64945b7bd1284b24cd51d5b110b8a0c1be88ce72df7e0";
   lwa.getAccessToken(user, function(error, token) {
-      if (error || !token.url) {
+      if (error || !token.url || !token.access_token) {
         // Error already logged
+        console.log("eventGW Error sending event: ", user, token.url, token.access_token);
+        measurement.send({
+          t: 'event',
+          ec: 'event',
+          ea: 'eventGW Error',
+          el: user,
+          sc: 'end',
+          geoid: 'Amazon',
+          uid: user
+        });
       } else {
         // console.log("2", message.event.endpoint );
         message.event.endpoint.scope = {
@@ -41,7 +51,7 @@ function send(user, message) {
           if (!err && response.statusCode === 202) {
             // console.log(err, response.body, response.statusCode);
             // updateToken(req.user.username, req.get('user-agent'), JSON.parse(response.body));
-            console.log("Event sent");
+            console.log("Event sent", user);
             measurement.send({
               t: 'event',
               ec: 'event',
