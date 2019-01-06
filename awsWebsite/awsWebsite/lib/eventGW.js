@@ -1,4 +1,8 @@
-
+// Design
+//
+// index.js-mqtt/event==>eventGW.send(user,message)==>retrieveToken(user)
+// callback()==> post to eventGW 202=ok 401=old token
+//
 var lwa = require('./lwa.js');
 var request = require('request');
 var Account = require('../models/account');
@@ -72,7 +76,7 @@ function send(user, message) {
               geoid: 'Amazon',
               uid: user
             });
-          }else {
+          } else {
             console.log("Error: ", err);
             measurement.send({
               t: 'event',
@@ -101,6 +105,11 @@ function retrieveToken(username, callback) {
     } else {
       // console.log("retrieveToken Result: ", data.username, data);
       // Determine region
+      // token_expires: new Date().getTime() / 1000 + message.expires_in
+      if (data.region < new Date().getTime() / 1000) {
+        // Token is expired, need to refresh_token
+        lwa.refresh(user, data);
+      }
       var url = "";
       switch (data.region) {
         case "us-east-1":

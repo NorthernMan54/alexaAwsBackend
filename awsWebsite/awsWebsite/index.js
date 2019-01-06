@@ -656,7 +656,7 @@ app.post('/api/v2/messages',
 
     if (req.body.directive.header.namespace === "Alexa.Authorization") {
       // console.log("Auth:", req.body);
-      lwa.validate(req, function(err, reply) {
+      lwa.retrieve(req, function(err, reply) {
         // console.log("Reply-1:", reply);
         if (!err) {
           res.send(reply);

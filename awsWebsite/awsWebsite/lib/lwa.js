@@ -2,22 +2,22 @@ var request = require('request');
 var Account = require('../models/account');
 
 module.exports = {
-  validate: validate,
+  retrieve: retrieve,
   refresh: refresh
 };
 
 function refresh(user, token) {
   console.log("refresh: ", user, token);
-  _accessTokenRequest(user, token.region, 'grant_type=refresh_token&refresh_token=' + token.refresh_token, function(err, response) {
+  _tokenRequest(user, token.region, 'grant_type=refresh_token&refresh_token=' + token.refresh_token, function(err, response) {
     //
     console.log("tokenRefresh: ", err, response.statusCode, response.body);
     // callback(err, response);
   });
 }
 
-function validate(req, callback) {
+function retrieve(req, callback) {
   //
-  _accessTokenRequest(req.user.username, req.get('user-agent'), 'grant_type=authorization_code&code=' + req.body.directive.payload.grant.code, function(err, response) {
+  _tokenRequest(req.user.username, req.get('user-agent'), 'grant_type=authorization_code&code=' + req.body.directive.payload.grant.code, function(err, response) {
     var reply = "";
     if (!err && response.statusCode === 200) {
       reply = {
@@ -69,8 +69,7 @@ function validate(req, callback) {
   });
 }
 
-function _accessTokenRequest(username, region, tokenRequest, callback) {
-  // console.log(req);
+function _tokenRequest(username, region, tokenRequest, callback) {
   // tokenRequest:
   // Refresh Token - grant_type=refresh_token&refresh_token=Atzr|IQEBLzAtAhRPpMJxdwVz2Nn6f2y-tpJX2DeX...
   // Access Token - grant_type=authorization_code&code=SplxlOBezQQYbYS6WxSbIA
