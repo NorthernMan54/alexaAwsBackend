@@ -2,6 +2,7 @@ var oauth2orize = require('oauth2orize');
 var OAuth = require('../models/oauth');
 
 var server = oauth2orize.createServer();
+const expires_in = 60*10; // Measured in seconds
 
 server.grant(oauth2orize.grant.code({
 	scopeSeparator: [ ' ', ',' ]
@@ -41,14 +42,18 @@ server.exchange(oauth2orize.exchange.code({
 		if (grant && grant.active && grant.application == application.id) {
 
 			OAuth.AccessToken.findOne({application:application, user: grant.user, active: true}, function(error,token){
-				if (token) {
+				if (token && token.active) {
+					// console.log("Access-token", token.active);
+					// console.log("Access-token -2", token.active);
 					OAuth.RefreshToken.findOne({application:application, user: grant.user},function(error, refreshToken){
 						if (refreshToken){
-							console.log("Expires-2: ", token.expires);
 							var expires = Math.round((token.expires - (new Date().getTime()))/1000);
-							console.log("Expires-3: ", expires);
+							expires = ( expires < expires_in ? expires : expires_in );
 							done(null,token.token, refreshToken.token,{token_type: 'Bearer', expires_in: expires});
-							console.log("sent expires_in: " + expires);
+							var today = new Date();
+							token.expires = new Date(today.getTime() + ( expires < expires_in ? expires : expires_in ) * 1000);
+							token.save();
+							console.log("sent expires_in: ", expires, token.expires);
 						} else {
 							// Shouldn't get here unless there is an error as there
 							// should be a refresh token if there is an access token
@@ -56,15 +61,18 @@ server.exchange(oauth2orize.exchange.code({
 						}
 					});
 				} else if (!error) {
+					var today = new Date();
 					var token = new OAuth.AccessToken({
 						application: grant.application,
 						user: grant.user,
 						grant: grant,
-						scope: grant.scope
+						scope: grant.scope,
+						expires: new Date(today.getTime() + expires_in * 1000)
 					});
 
 					token.save(function(error){
 						var expires = Math.round((token.expires - (new Date().getTime()))/1000);
+						// console.log("Expires-4: ", expires);
 						//delete old refreshToken or reuse?
 						OAuth.RefreshToken.findOne({application:application, user: grant.user},function(error, refreshToken){
 							if (refreshToken) {
@@ -97,22 +105,24 @@ server.exchange(oauth2orize.exchange.code({
 server.exchange(oauth2orize.exchange.refreshToken({
 	userProperty: 'appl'
 }, function(application, token, scope, done){
-	console.log("Yay!");
+	console.log("Refresh!");
 	OAuth.RefreshToken.findOne({token: token}, function(error, refresh){
 		if (refresh && refresh.application == application.id) {
 			OAuth.GrantCode.findOne({},function(error, grant){
 				if (grant && grant.active && grant.application == application.id){
+					var today = new Date();
 					var newToken = new OAuth.AccessToken({
 						application: refresh.application,
 						user: refresh.user,
 						grant: grant,
-						scope: grant.scope
+						scope: grant.scope,
+						expires: new Date(today.getTime() + expires_in * 1000)
 					});
 
 					newToken.save(function(error){
-						console.log("Expires: ", newToken.expires);
+						// console.log("Expires: ", newToken.expires);
 						var expires = Math.round((newToken.expires - (new Date().getTime()))/1000);
-						console.log("Expires-1: ", expires);
+						// console.log("Expires-1: ", expires);
 						if (!error) {
 							done(null, newToken.token, refresh.token, {token_type: 'Bearer', expires_in: expires, scope: newToken.scope});
 						} else {

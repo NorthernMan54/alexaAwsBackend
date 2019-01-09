@@ -23,10 +23,7 @@ var Account = new Schema({
     lastUsedWebsite: { type: Date, default: function(){
         return new Date();
     }},
-    access_token: String,
-    refresh_token: String,
-    region: String,
-    token_expires: { type: Number, default: 0 }
+
 });
 
 var options = {

@@ -3,7 +3,7 @@
 // index.js-mqtt/event==>eventGW.send(user,message)==>retrieveToken(user)
 // callback()==> post to eventGW 202=ok 401=old token
 //
-var lwa = require('./lwa.js');
+var oauthClient = require('./oauthClient.js');
 var request = require('request');
 var Measurement = require('./googleMeasurement.js');
 
@@ -18,7 +18,7 @@ function send(user, message) {
   // console.log(user, message);
   // console.log(req);
   // var body = "grant_type=authorization_code&code=" + message.directive.payload.grant.code + "&client_id=amzn1.application-oa2-client.8ff7ed85e0e1434f840a4f466ad34f7b&client_secret=60441f26e76a10e3d8a64945b7bd1284b24cd51d5b110b8a0c1be88ce72df7e0";
-  lwa.getAccessToken(user, function(error, token) {
+  oauthClient.getAccessToken(user, function(error, token) {
       if (error || !token.url || !token.access_token) {
         // Error already logged
         console.log("eventGW Error sending event: ", user, token.url, token.access_token);
@@ -63,7 +63,7 @@ function send(user, message) {
             });
           } else if (!err && response.statusCode === 401) {
             console.log("Refresh Token required: ", response.body, response.statusCode);
-            lwa.refresh(user, token);
+            oauthClient.refresh(user, token);
             measurement.send({
               t: 'event',
               ec: 'event',
@@ -75,7 +75,7 @@ function send(user, message) {
             });
           } else if (!err && response.statusCode) {
             console.log("eventGW Error: ", response.body, response.statusCode);
-            // lwa.refresh(user, token);
+            // oauthClient.refresh(user, token);
             measurement.send({
               t: 'event',
               ec: 'event',

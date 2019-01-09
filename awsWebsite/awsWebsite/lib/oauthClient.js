@@ -1,5 +1,6 @@
 var request = require('request');
-var Account = require('../models/account');
+//var Account = require('../models/account');
+var oauthClient = require('../models/oauthClient');
 
 module.exports = {
   retrieve: retrieve,
@@ -10,7 +11,7 @@ function getAccessToken(username, callback) {
   // get Event GW access token for a user
   // returns object containing token, and url
 
-  Account.findOne({
+  oauthClient.findOne({
     username: username
   }, {
     'username': 1,
@@ -148,7 +149,7 @@ function _updateToken(username, region, message) {
   //  refresh_token: message.refresh_token,
   //  token_expires: new Date().getTime() / 1000 + message.expires_in
   // });
-  Account.update({
+  oauthClient.save({
       username: username
     }, {
       $set: {

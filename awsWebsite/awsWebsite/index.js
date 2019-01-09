@@ -1,6 +1,5 @@
 var fs = require('fs');
 var url = require('url');
-var lwa = require('./lib/lwa.js');
 var mqtt = require('mqtt');
 var http = require('http');
 var https = require('https');
@@ -15,6 +14,7 @@ var json2html = require('node-json2html');
 var bodyParser = require('body-parser');
 var oauthServer = require('./lib/oauth.js');
 var Measurement = require('./lib/googleMeasurement.js');
+var oauthClient = require('./lib/oauthClient.js');
 var cookieParser = require('cookie-parser');
 var BasicStrategy = require('passport-http').BasicStrategy;
 var LocalStrategy = require('passport-local').Strategy;
@@ -220,6 +220,7 @@ var accessTokenStrategy = new PassportOAuthBearer(function(token, done) {
   oauthModels.AccessToken.findOne({
     token: token
   }).populate('user').populate('grant').exec(function(error, token) {
+    // console.log("Passport: ", token);
     if (!error && token && !token.grant) {
       console.log("missing grant token: %j", token);
     }
@@ -229,7 +230,7 @@ var accessTokenStrategy = new PassportOAuthBearer(function(token, done) {
         scope: token.scope
       });
     } else if (!error) {
-      // console.log("TOKEN PROBLEM");
+      // console.log("TOKEN PROBLEM", token.active );
       done(null, false);
     } else {
       // console.log("TOKEN PROBLEM 2");
@@ -656,7 +657,7 @@ app.post('/api/v2/messages',
 
     if (req.body.directive.header.namespace === "Alexa.Authorization") {
       // console.log("Auth:", req.body);
-      lwa.retrieve(req, function(err, reply) {
+      oauthClient.retrieve(req, function(err, reply) {
         // console.log("Reply-1:", reply);
         if (!err) {
           res.send(reply);
