@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var ClientTokenSchema = new Schema({
-  username: String,
+  user: { type: Schema.Types.ObjectId, ref: 'Account' },
   access_token: String,
   refresh_token: String,
   region: String,

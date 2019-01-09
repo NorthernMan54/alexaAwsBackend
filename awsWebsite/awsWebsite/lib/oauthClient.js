@@ -1,5 +1,5 @@
 var request = require('request');
-//var Account = require('../models/account');
+// var Account = require('../models/account');
 var oauthClient = require('../models/oauthClient');
 
 module.exports = {
@@ -60,7 +60,7 @@ function refreshExpired(username, token, callback) {
 }
 
 function retrieve(req, callback) {
-  //
+  // Retrieve refresh and access token from Amazon Login With Alexa Service
   tokenRequest(req.user.username, req.get('user-agent'), 'grant_type=authorization_code&code=' + req.body.directive.payload.grant.code, function(err, response) {
     var reply = "";
     if (!err && response.statusCode === 200) {

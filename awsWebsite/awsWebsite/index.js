@@ -194,7 +194,7 @@ app.use(passport.session());
 
 function requireHTTPS(req, res, next) {
   if (req.get('X-Forwarded-Proto') === 'http') {
-    //FYI this should work for local development as well
+    // FYI this should work for local development as well
     var url = 'https://' + req.get('host');
     if (req.get('host') === 'localhost') {
       url += ':' + port;
