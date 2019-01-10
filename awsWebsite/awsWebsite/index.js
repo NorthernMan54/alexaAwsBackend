@@ -3,6 +3,7 @@ var url = require('url');
 var mqtt = require('mqtt');
 var http = require('http');
 var https = require('https');
+var usage = require('./lib/usage.js');
 var flash = require('connect-flash');
 var morgan = require('morgan');
 var express = require('express');
@@ -286,7 +287,7 @@ app.post('/login',
     session: true
   }),
   function(req, res) {
-    lastUsedWebsite(req.user.username);
+    usage.lastUsedWebsite(req.user.username);
     if (req.query.next) {
       res.reconnect(req.query.next);
     } else {
@@ -576,7 +577,7 @@ mqttClient.on('message', function(topic, message) {
           geoid: 'Amazon',
           uid: waiting.user
         });
-        lastBrokerResponse(waiting.user);
+        usage.lastUsedBroker(waiting.user);
       }
     } else if (topic.startsWith('event/')) {
       var payload = JSON.parse(message.toString());
@@ -584,7 +585,7 @@ mqttClient.on('message', function(topic, message) {
       eventGW.send(user, payload);
       // should really parse uid out of topic
 
-      lastBrokerResponse(user);
+      usage.lastUsedBroker(user);
     } else if (topic.startsWith('presence/')) {
       var payload = JSON.parse(message.toString());
       var user = topic.split("/")[1];
@@ -599,7 +600,7 @@ mqttClient.on('message', function(topic, message) {
         geoid: 'Amazon',
         uid: user
       });
-      lastBrokerResponse(user);
+      usage.lastUsedBroker(user);
     }
   } catch (err) {
     console.log("Processing Error", err);
@@ -670,7 +671,7 @@ app.post('/api/v2/messages',
       try {
         console.log("MQTT Message", topic, message);
         mqttClient.publish(topic, message);
-        lastUsedAlexa(req.user.username);
+        usage.lastUsedBroker(req.user.username);
       } catch (err) {
 
       }
@@ -844,7 +845,6 @@ if (app_id.match(/^https:\/\/localhost:/)) {
   server = https.createServer(options, app);
 }
 
-
 server.listen(port, host, function() {
   console.log('App listening on  %s:%d!', host, port);
   console.log("App_ID -> %s", app_id);
@@ -852,69 +852,4 @@ server.listen(port, host, function() {
   setTimeout(function() {
 
   }, 5000);
-
-
-
 });
-
-function lastUsedAlexa(username) {
-  Account.update({
-      username: username
-    }, {
-      $set: {
-        lastUsedAlexa: new Date()
-      },
-      $inc: {
-        alexaCount: 1
-      }
-    }, {
-      multi: false
-    },
-    function(err, count) {
-      if (err) {
-        console.log("DB Error:", err);
-      }
-    }
-  );
-}
-
-function lastBrokerResponse(username) {
-  Account.update({
-      username: username
-    }, {
-      $set: {
-        lastUsedBroker: new Date()
-      },
-      $inc: {
-        brokerCount: 1
-      }
-    }, {
-      multi: false
-    },
-    function(err, count) {
-      if (err) {
-        console.log("DB Error:", err);
-      }
-    }
-  );
-}
-
-function lastUsedWebsite(username) {
-
-  Account.update({
-      username: username
-    }, {
-      $set: {
-        lastUsedWebsite: new Date()
-      }
-    }, {
-      multi: false
-    },
-    function(err, count) {
-      if (err) {
-        console.log("DB Error:", err);
-      }
-    }
-  );
-
-}
