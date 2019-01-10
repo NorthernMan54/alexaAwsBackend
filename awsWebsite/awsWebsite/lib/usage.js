@@ -4,69 +4,89 @@ var Account = require('../models/account');
 module.exports = {
   lastUsedAlexa: lastUsedAlexa,
   lastUsedBroker: lastUsedBroker,
-  lastUsedWebsite: lastUsedWebsite
+  lastUsedWebsite: lastUsedWebsite,
+  lastEvent: lastEvent
 };
 
-
-function lastUsedAlexa(username) {
-  Account.update({
-      username: username
-    }, {
-      $set: {
-        lastUsedAlexa: new Date()
-      },
-      $inc: {
-        alexaCount: 1
-      }
-    }, {
-      multi: false
-    },
-    function(err, count) {
-      if (err) {
-        console.log("DB Error:", err);
-      }
+function lastEvent(username) {
+  getRecord(username, function(error, usage) {
+    if (!error) {
+      usage.lastEvent = new Date();
+      usage.eventCount = usage.eventCount + 1;
+      usage.save();
+    } else {
+      // Error
     }
-  );
+  });
 }
 
-function lastBrokerResponse(username) {
-  Account.update({
-      username: username
-    }, {
-      $set: {
-        lastUsedBroker: new Date()
-      },
-      $inc: {
-        brokerCount: 1
-      }
-    }, {
-      multi: false
-    },
-    function(err, count) {
-      if (err) {
-        console.log("DB Error:", err);
-      }
+function lastUsedAlexa(username) {
+  getRecord(username, function(error, usage) {
+    if (!error) {
+      usage.lastUsedAlexa = new Date();
+      usage.alexaCount = usage.alexaCount + 1;
+      usage.save();
+    } else {
+      // Error
     }
-  );
+  });
+}
+
+function lastUsedBroker(username) {
+  getRecord(username, function(error, usage) {
+    if (!error) {
+      usage.lastUsedBroker = new Date();
+      usage.brokerCount = usage.brokerCount + 1;
+      usage.save();
+    } else {
+      // Error
+    }
+  });
 }
 
 function lastUsedWebsite(username) {
-
-  Account.update({
-      username: username
-    }, {
-      $set: {
-        lastUsedWebsite: new Date()
-      }
-    }, {
-      multi: false
-    },
-    function(err, count) {
-      if (err) {
-        console.log("DB Error:", err);
-      }
+  getRecord(username, function(error, usage) {
+    if (!error) {
+      usage.lastUsedWebsite = new Date();
+      usage.save();
+    } else {
+      // Error
     }
-  );
+  });
+}
+
+function getRecord(username, callback) {
+  getUserID(username, function(error, user) {
+    if (!error) {
+      Usage.findOne({
+        user: user
+      }, function(error, usage) {
+        if (error) {
+          console.log("getUsage Error: ", error);
+          callback(error, null);
+        } else if (user) {
+          // lookup access token for user
+          callback(null, usage);
+        } else {
+          // Usage record not found
+          // Initial population from legacy record
+          var usage = new Usage({
+            user: user,
+            created: user.created,
+            lastUsedAlexa: user.lastUsedAlexa,
+            alexaCount: user.alexaCount,
+            lastUsedBroker: user.lastUsedBroker,
+            brokerCount: user.brokerCount,
+            lastUsedWebsite: user.lastUsedWebsite
+          });
+          callback(null, usage);
+        }
+      });
+    } else {
+      // Error
+      callback(error, null);
+    }
+  });
 }
 
 function getUserID(username, callback) {
@@ -75,7 +95,7 @@ function getUserID(username, callback) {
   Account.findOne({
     username: username
   }, function(error, user) {
-    if (error) {
+    if (error || !user) {
       console.log("getUser Error: ", error);
       callback(error, null);
     } else {
