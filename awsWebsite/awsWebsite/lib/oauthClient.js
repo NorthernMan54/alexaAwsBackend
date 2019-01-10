@@ -1,6 +1,7 @@
 var request = require('request');
 // var Account = require('../models/account');
-var oauthClient = require('../models/oauthClient');
+var OauthClient = require('../models/oauthClient');
+var Account = require('../models/account');
 
 module.exports = {
   retrieve: retrieve,
@@ -10,33 +11,35 @@ module.exports = {
 function getAccessToken(username, callback) {
   // get Event GW access token for a user
   // returns object containing token, and url
-
-  oauthClient.findOne({
+  Account.findOne({
     username: username
-  }, {
-    'username': 1,
-    'access_token': 1,
-    'refresh_token': 1,
-    'region': 1,
-    'token_expires': 1
-  }, function(error, data) {
+  }, function(error, user) {
     if (error) {
-      console.log("getAccessToken Error: ", error);
+      console.log("getUser Error: ", error);
       callback(error, null);
     } else {
-      console.log("retrieveToken Result: ", data.username, data);
-      // Determine region
-      // token_expires: new Date().getTime() / 1000 + message.expires_in
-      if (data.token_expires < new Date().getTime() / 1000) {
-        // Token is expired, need to refresh_token
-        refreshExpired(username, data, callback);
-      } else {
-        callback(null, {
-          "access_token": data.access_token,
-          "refresh_token": data.refresh_token,
-          "url": getEventUrl(data.region)
-        });
-      }
+      // lookup access token for user
+      OauthClient.findOne({
+          user: user
+        }, function(error, data) {
+          if (error) {
+            console.log("getAccessToken Error: ", error);
+            callback(error, null);
+          } else {
+            console.log("retrieveToken Result: ", user.username, data);
+            if (data.token_expires < new Date()) {
+              // Token is expired, need to refresh_token
+              refreshExpired(username, data, callback);
+            } else {
+              callback(null, {
+                "access_token": data.access_token,
+                "refresh_token": data.refresh_token,
+                "url": getEventUrl(data.region)
+              });
+            }
+          }
+        } // End of function
+      );
     }
   });
 }
@@ -144,29 +147,51 @@ function tokenRequest(username, region, tokenRequest, callback) {
 }
 
 function _updateToken(username, region, message) {
-  // console.log("Update", username, message, {
-  //  access_token: message.access_token,
-  //  refresh_token: message.refresh_token,
-  //  token_expires: new Date().getTime() / 1000 + message.expires_in
-  // });
-  oauthClient.save({
-      username: username
-    }, {
-      $set: {
-        access_token: message.access_token,
-        refresh_token: message.refresh_token,
-        region: region,
-        token_expires: new Date().getTime() / 1000 + (message.expires_in - 60)
-      }
-    }, {
-      multi: false
-    },
-    function(err, count) {
-      if (err) {
-        console.log("DB Error:", err);
-      }
+  Account.findOne({
+    username: username
+  }, function(error, user) {
+    if (!error && user) {
+      // User account found
+      OauthClient.findOne({
+        user: user
+      }, function(error, token) {
+        if (!error && token) {
+          // Update OauthClient Record
+          token.access_token = message.access_token;
+          token.refresh_token = message.refresh_token;
+          token.region = region;
+          // Expiry token 60 seconds early
+          token.token_expires = (new Date().getTime() / 1000 + (message.expires_in - 60)) * 1000;
+          token.save(function(error) {
+            if (error) {
+              console.log("ERROR: update Token", error);
+            }
+          });
+          console.log("Token expires update", message.expires_in, token.token_expires);
+          console.log("Token", token);
+        } else if (!error) {
+          // Create new OauthClient Records
+          var token = new OauthClient({
+            user: user,
+            access_token: message.access_token,
+            refresh_token: message.refresh_token,
+            region: region,
+            token_expires: (new Date().getTime() / 1000 + (message.expires_in - 60)) * 1000
+          });
+          token.save(function(error) {
+            if (error) {
+              console.log("ERROR: new Token", error);
+            }
+          });
+          console.log("Token expires save", message.expires_in, token.token_expires);
+        } else {
+          console.log("ERROR: _updateToken OauthClient.", error);
+        }
+      });
+    } else {
+      console.log("ERROR: _updateToken failed account not found. ", username);
     }
-  );
+  });
 }
 
 function getEventUrl(region) {

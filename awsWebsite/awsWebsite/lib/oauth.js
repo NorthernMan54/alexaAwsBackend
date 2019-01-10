@@ -40,11 +40,10 @@ server.exchange(oauth2orize.exchange.code({
 }, function(application, code, redirectURI, done) {
 	OAuth.GrantCode.findOne({ code: code }, function(error, grant) {
 		if (grant && grant.active && grant.application == application.id) {
-
-			OAuth.AccessToken.findOne({application:application, user: grant.user, active: true}, function(error,token){
-				if (token && token.active) {
-					// console.log("Access-token", token.active);
-					// console.log("Access-token -2", token.active);
+			var now = (new Date().getTime());
+			OAuth.AccessToken.findOne({application:application, user: grant.user, expires: {$gt: now}}, function(error,token){
+				console.log("Token: ", token);
+				if (token) {
 					OAuth.RefreshToken.findOne({application:application, user: grant.user},function(error, refreshToken){
 						if (refreshToken){
 							var expires = Math.round((token.expires - (new Date().getTime()))/1000);
@@ -55,8 +54,6 @@ server.exchange(oauth2orize.exchange.code({
 							token.save();
 							console.log("sent expires_in: ", expires, token.expires);
 						} else {
-							// Shouldn't get here unless there is an error as there
-							// should be a refresh token if there is an access token
 							done(error);
 						}
 					});

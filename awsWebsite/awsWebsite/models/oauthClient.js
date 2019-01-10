@@ -1,19 +1,20 @@
 const mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var ClientTokenSchema = new Schema({
-  user: { type: Schema.Types.ObjectId, ref: 'Account' },
+var OauthClient = new Schema({
+  user: {
+    type: Schema.Types.ObjectId,
+    ref: 'Account'
+  },
   access_token: String,
   refresh_token: String,
   region: String,
   token_expires: {
-    type: Number,
-    default: 0
+    type: Date,
+    default: function() {
+      return new Date(0);
+    }
   }
 });
 
-var ClientToken = mongoose.model('ClientToken', ClientTokenSchema);
-
-module.exports = {
-  ClientToken: ClientToken
-};
+module.exports = mongoose.model('OauthClient', OauthClient);
