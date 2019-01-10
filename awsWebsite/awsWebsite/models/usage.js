@@ -9,7 +9,7 @@ var Usage = new Schema({
   created: {
     type: Date,
     default: function() {
-      return new Date(0);
+      return new Date();
     }
   },
   lastUsedAlexa: {
