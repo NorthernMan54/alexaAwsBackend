@@ -558,7 +558,7 @@ var onGoingCommands = {};
 
 mqttClient.on('message', function(topic, message) {
   try {
-    console.log("mqtt response: ", topic, message.toString());
+    console.log("mqtt message: ", topic, message.toString());
     if (topic.startsWith('response/')) {
       var payload = JSON.parse(message.toString());
       var waiting = onGoingCommands[payload.event.header.messageId];
@@ -585,11 +585,11 @@ mqttClient.on('message', function(topic, message) {
       eventGW.send(user, payload);
       // should really parse uid out of topic
 
-      usage.lastUsedBroker(user);
+      usage.lastEvent(user);
     } else if (topic.startsWith('presence/')) {
       var payload = JSON.parse(message.toString());
       var user = topic.split("/")[1];
-      presence(user, payload);
+      usage.presence(user, payload);
       // should really parse uid out of topic
       measurement.send({
         t: 'event',
@@ -600,7 +600,7 @@ mqttClient.on('message', function(topic, message) {
         geoid: 'Amazon',
         uid: user
       });
-      usage.lastUsedBroker(user);
+      // usage.lastUsedBroker(user);
     }
   } catch (err) {
     console.log("Processing Error", err);
@@ -671,7 +671,7 @@ app.post('/api/v2/messages',
       try {
         console.log("MQTT Message", topic, message);
         mqttClient.publish(topic, message);
-        usage.lastUsedBroker(req.user.username);
+        // usage.lastUsedBroker(req.user.username);
       } catch (err) {
 
       }
@@ -681,6 +681,10 @@ app.post('/api/v2/messages',
         timestamp: Date.now()
       };
       onGoingCommands[req.body.directive.header.messageId] = command;
+
+      if (req.body.directive.header.namespace === "Alexa.Discovery") {
+        cleanUpTopics(req.user.username);
+      }
     }
   }
 );
@@ -853,3 +857,43 @@ server.listen(port, host, function() {
 
   }, 5000);
 });
+
+function cleanUpTopics(username) {
+  // Add additional event topics to existing users when discovering devices
+
+  Account.findOne({
+    username: username
+  }, function(error, account) {
+    if (!error) {
+      Topics.findOne({
+        _id: account.topics
+      }, function(error, topics) {
+        if (!error && topics && topics.topics.length < 4) {
+          // populate topics
+          console.log("Topics", account.username, topics);
+          console.log("Topics-1", topics.topics);
+          console.log("Topics-1", topics.topics.length);
+          topics.topics = [
+            'command/' + account.username + '/#',
+            'presence/' + account.username + '/#',
+            'response/' + account.username + '/#',
+            'event/' + account.username + '/#'
+          ];
+          topics.save(function(error) {
+            if (!error) {
+              console.log("Topics Saved");
+            } else {
+              console.log("save Topics Error", error);
+            }
+          });
+        } else if (error) {
+          console.log("find Topics Error", error);
+        } else {
+          // No need to update
+        }
+      });
+    } else {
+      console.log("find User Error", error);
+    }
+  });
+}
