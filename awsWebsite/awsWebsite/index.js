@@ -870,9 +870,7 @@ function cleanUpTopics(username) {
       }, function(error, topics) {
         if (!error && topics && topics.topics.length < 4) {
           // populate topics
-          console.log("Topics", account.username, topics);
-          console.log("Topics-1", topics.topics);
-          console.log("Topics-1", topics.topics.length);
+          console.log("Updating Topics", account.username);
           topics.topics = [
             'command/' + account.username + '/#',
             'presence/' + account.username + '/#',
@@ -881,7 +879,7 @@ function cleanUpTopics(username) {
           ];
           topics.save(function(error) {
             if (!error) {
-              console.log("Topics Saved");
+              console.log("Topics Saved", account.username);
             } else {
               console.log("save Topics Error", error);
             }
