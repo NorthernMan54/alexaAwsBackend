@@ -53,14 +53,6 @@ var RefreshTokenSchema = new Schema({
 	application: { type: Schema.Types.ObjectId, ref: 'Application' }
 });
 
-var RefreshTokenSchema = new Schema({
-	token: { type: String, unique: true, default: function(){
-		return uid(124);
-	}},
-	user: { type: Schema.Types.ObjectId, ref: 'Account' },
-	application: { type: Schema.Types.ObjectId, ref: 'Application' }
-});
-
 ApplicationSchema.plugin(AutoIncrement, {inc_field: 'oauth_id'});
 
 var Application = mongoose.model('Application', ApplicationSchema);
