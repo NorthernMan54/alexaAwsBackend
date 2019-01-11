@@ -554,6 +554,10 @@ app.post('/auth/exchange', function(req, res, next) {
   });
 }, oauthServer.token(), oauthServer.errorHandler());
 
+//
+// Start of mqtt message handler
+//
+
 var onGoingCommands = {};
 
 mqttClient.on('message', function(topic, message) {
@@ -640,6 +644,10 @@ var timeout = setInterval(function() {
     }
   }
 }, 500);
+
+//
+// Start of Alexa message handler
+//
 
 app.post('/api/v2/messages',
   passport.authenticate('bearer', {
