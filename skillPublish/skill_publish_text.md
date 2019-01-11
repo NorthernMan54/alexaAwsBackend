@@ -19,7 +19,7 @@
 | German | Alexa, schalte die Wohnzimmerlampe ein | Alexa, setzte die Wohnzimmerlampe auf 50% | Alexa, schalte die Wohnzimmerlampe aus |
 | French | Alexa, allume la lampe de salon | Alexa, règle la lampe de salon à 50 % | Alexa, éteins la lampe de salon |
 | Japanese | アレクサ、リビングの電気をつけて | アレクサ、リビングの電気を50％に設定 | アレクサ、リビングの電気を消して |
-| Italian | Alexa, accendi la lampada del soggiorno | Alexa, imposta la Lampada del soggiorno al 50 percento | Alexa, spegni la lampada del soggiorno |
+| Italian | Alexa, accendi la lampada del soggiorno | Alexa, imposta la lampada del soggiorno al 50 per cento | Alexa, spegni la lampada del soggiorno |
 | Spanish | Alexa, enciende la lámpara del salón | Alexa, sube la lámpara del salón al 50 por ciento | Alexa, apaga la lámpara del salón |
 
 # Privacy Statement url
