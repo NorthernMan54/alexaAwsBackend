@@ -12,229 +12,27 @@
         "payload": {
             "endpoints": [
                 {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDE5LGlpZDogMTA=",
-                    "friendlyName": "Test Temp",
-                    "description": "Testing Test Temp Temperature Sensor",
-                    "manufacturerName": "dht22",
-                    "displayCategories": [
-                        "TEMPERATURE_SENSOR"
-                    ],
-                    "cookie": {
-                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"test\",\"port\":\"12345\",\"aid\":19,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.TemperatureSensor",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "temperature"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDIsaWlkOiAxMA==",
-                    "friendlyName": "MCUIOT Reset Switch",
-                    "description": "Testing MCUIOT Reset Switch Switch",
-                    "manufacturerName": "MCUIOT",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":10,\"value\":1}",
-                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":10,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDMsaWlkOiAxMg==",
-                    "friendlyName": "Cold Cellar",
-                    "description": "Testing Cold Cellar Temperature Sensor",
-                    "manufacturerName": "MCUIOT",
-                    "displayCategories": [
-                        "TEMPERATURE_SENSOR"
-                    ],
-                    "cookie": {
-                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"test\",\"port\":\"12345\",\"aid\":3,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.TemperatureSensor",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "temperature"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDQsaWlkOiAxMg==",
-                    "friendlyName": "Front Yard",
-                    "description": "Testing Front Yard Temperature Sensor",
-                    "manufacturerName": "MCUIOT",
-                    "displayCategories": [
-                        "TEMPERATURE_SENSOR"
-                    ],
-                    "cookie": {
-                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.TemperatureSensor",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "temperature"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDUsaWlkOiAxMw==",
-                    "friendlyName": "Garage Door",
-                    "description": "Testing Garage Door Garage Door",
-                    "manufacturerName": "MCUIOT",
-                    "displayCategories": [
-                        "LIGHT"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":11,\"value\":0}",
-                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":11,\"value\":1}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":11}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDYsaWlkOiAxMg==",
-                    "friendlyName": "Inside",
-                    "description": "Testing Inside Temperature Sensor",
-                    "manufacturerName": "MCUIOT",
-                    "displayCategories": [
-                        "TEMPERATURE_SENSOR"
-                    ],
-                    "cookie": {
-                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.TemperatureSensor",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "temperature"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDM0LGlpZDogMTA=",
-                    "friendlyName": "Family Room Apple TV",
-                    "description": "Testing Family Room Apple TV Apple TV",
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDEzLGlpZDogMTA=",
+                    "friendlyName": "TV",
+                    "description": "Testing TV Apple TV",
                     "manufacturerName": "Apple",
                     "displayCategories": [
                         "TV"
                     ],
                     "cookie": {
-                        "Pair": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":23,\"iid\":10,\"value\":1}",
-                        "Stop": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":24,\"iid\":10,\"value\":1}",
-                        "TV/Home": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":25,\"iid\":10,\"value\":1}",
-                        "Mic/Siri": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":26,\"iid\":10,\"value\":1}",
-                        "Play": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":27,\"iid\":10,\"value\":1}",
-                        "Pause": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":28,\"iid\":10,\"value\":1}",
-                        "Up": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":29,\"iid\":10,\"value\":1}",
-                        "Down": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":30,\"iid\":10,\"value\":1}",
-                        "Left": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":31,\"iid\":10,\"value\":1}",
-                        "Right": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":32,\"iid\":10,\"value\":1}",
-                        "Select": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":33,\"iid\":10,\"value\":1}",
-                        "Sleep": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":34,\"iid\":10,\"value\":1}",
-                        "ReportState": "[{\"interface\":\"Alexa.PlaybackController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":34,\"iid\":10}]"
+                        "Pair": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":2,\"iid\":10,\"value\":1}",
+                        "Stop": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":3,\"iid\":10,\"value\":1}",
+                        "TV/Home": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":4,\"iid\":10,\"value\":1}",
+                        "Mic/Siri": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":5,\"iid\":10,\"value\":1}",
+                        "Play": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":6,\"iid\":10,\"value\":1}",
+                        "Pause": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":7,\"iid\":10,\"value\":1}",
+                        "Up": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":8,\"iid\":10,\"value\":1}",
+                        "Down": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":9,\"iid\":10,\"value\":1}",
+                        "Left": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":10,\"iid\":10,\"value\":1}",
+                        "Right": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":11,\"iid\":10,\"value\":1}",
+                        "Select": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":12,\"iid\":10,\"value\":1}",
+                        "Sleep": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":13,\"iid\":10,\"value\":1}",
+                        "ReportState": "[{\"interface\":\"Alexa.PlaybackController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":13,\"iid\":10}]"
                     },
                     "capabilities": [
                         {
@@ -251,6 +49,146 @@
                                 "Pause",
                                 "Stop"
                             ]
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDE0LGlpZDogMTA=",
+                    "friendlyName": "Rugby",
+                    "description": "Testing Rugby Switch",
+                    "manufacturerName": "Apple",
+                    "displayCategories": [
+                        "SWITCH"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":14,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":14,\"iid\":10,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":14,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDE1LGlpZDogMTA=",
+                    "friendlyName": "Plex For Mel",
+                    "description": "Testing Plex For Mel Switch",
+                    "manufacturerName": "Apple",
+                    "displayCategories": [
+                        "SWITCH"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":15,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":15,\"iid\":10,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":15,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDE2LGlpZDogMTA=",
+                    "friendlyName": "Plex For James",
+                    "description": "Testing Plex For James Switch",
+                    "manufacturerName": "Apple",
+                    "displayCategories": [
+                        "SWITCH"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":16,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":16,\"iid\":10,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":16,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDE3LGlpZDogMTA=",
+                    "friendlyName": "Freeview",
+                    "description": "Testing Freeview Switch",
+                    "manufacturerName": "Apple",
+                    "displayCategories": [
+                        "SWITCH"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":17,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":17,\"iid\":10,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":17,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
                         }
                     ]
                 }

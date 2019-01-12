@@ -1,3 +1,4 @@
+Alexa Message Validation Passed!
 
 -----------------------------------------------------------
 
@@ -83,7 +84,7 @@
                     "description": "Testing Dyson Pure Cool Link Fan Fan",
                     "manufacturerName": "Default-Manufacturer",
                     "displayCategories": [
-                        "LIGHT"
+                        "OTHER"
                     ],
                     "cookie": {
                         "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":166,\"iid\":32,\"value\":1}",

@@ -1,3 +1,4 @@
+Alexa Message Validation Passed!
 
 -----------------------------------------------------------
 
@@ -171,6 +172,138 @@
                                     }
                                 ],
                                 "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDE0NyxpaWQ6IDE2",
+                    "friendlyName": "Events-Kalender",
+                    "description": "Testing Events-Kalender Contact Sensor",
+                    "manufacturerName": "Michael Froehlich",
+                    "displayCategories": [
+                        "CONTACT_SENSOR"
+                    ],
+                    "cookie": {
+                        "ReportState": "[{\"interface\":\"Alexa.ContactSensor\",\"host\":\"test\",\"port\":\"12345\",\"aid\":147,\"iid\":16}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ContactSensor",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "detectionState"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDE0NyxpaWQ6IDE5",
+                    "friendlyName": "Event-1",
+                    "description": "Testing Event-1 Contact Sensor",
+                    "manufacturerName": "Michael Froehlich",
+                    "displayCategories": [
+                        "CONTACT_SENSOR"
+                    ],
+                    "cookie": {
+                        "ReportState": "[{\"interface\":\"Alexa.ContactSensor\",\"host\":\"test\",\"port\":\"12345\",\"aid\":147,\"iid\":19}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ContactSensor",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "detectionState"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDE0NyxpaWQ6IDIy",
+                    "friendlyName": "Event-2",
+                    "description": "Testing Event-2 Contact Sensor",
+                    "manufacturerName": "Michael Froehlich",
+                    "displayCategories": [
+                        "CONTACT_SENSOR"
+                    ],
+                    "cookie": {
+                        "ReportState": "[{\"interface\":\"Alexa.ContactSensor\",\"host\":\"test\",\"port\":\"12345\",\"aid\":147,\"iid\":22}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ContactSensor",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "detectionState"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDE0NyxpaWQ6IDI1",
+                    "friendlyName": "Event-3",
+                    "description": "Testing Event-3 Contact Sensor",
+                    "manufacturerName": "Michael Froehlich",
+                    "displayCategories": [
+                        "CONTACT_SENSOR"
+                    ],
+                    "cookie": {
+                        "ReportState": "[{\"interface\":\"Alexa.ContactSensor\",\"host\":\"test\",\"port\":\"12345\",\"aid\":147,\"iid\":25}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ContactSensor",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "detectionState"
+                                    }
+                                ],
+                                "proactivelyReported": true,
                                 "retrievable": true
                             }
                         }
@@ -1502,8 +1635,8 @@
                         "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":161,\"iid\":10,\"value\":0}",
                         "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":161,\"iid\":11}",
                         "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":161,\"iid\":11}",
-                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":161,\"iid\":12},\"saturation\":{\"aid\":161,\"iid\":13},\"brightness\":{\"aid\":161,\"iid\":11}}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":161,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":161,\"iid\":11},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":161,\"iid\":12},\"saturation\":{\"aid\":161,\"iid\":13},\"brightness\":{\"aid\":161,\"iid\":11}}]"
+                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":161,\"iid\":12},\"saturation\":{\"aid\":161,\"iid\":13},\"brightness\":{\"aid\":161,\"iid\":11},\"on\":{\"aid\":161,\"iid\":10}}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":161,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":161,\"iid\":11},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":161,\"iid\":12},\"saturation\":{\"aid\":161,\"iid\":13},\"brightness\":{\"aid\":161,\"iid\":11},\"on\":{\"aid\":161,\"iid\":10}}]"
                     },
                     "capabilities": [
                         {
@@ -1568,8 +1701,8 @@
                         "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":162,\"iid\":10,\"value\":0}",
                         "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":162,\"iid\":11}",
                         "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":162,\"iid\":11}",
-                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":162,\"iid\":12},\"saturation\":{\"aid\":162,\"iid\":13},\"brightness\":{\"aid\":162,\"iid\":11}}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":162,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":162,\"iid\":11},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":162,\"iid\":12},\"saturation\":{\"aid\":162,\"iid\":13},\"brightness\":{\"aid\":162,\"iid\":11}}]"
+                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":162,\"iid\":12},\"saturation\":{\"aid\":162,\"iid\":13},\"brightness\":{\"aid\":162,\"iid\":11},\"on\":{\"aid\":162,\"iid\":10}}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":162,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":162,\"iid\":11},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":162,\"iid\":12},\"saturation\":{\"aid\":162,\"iid\":13},\"brightness\":{\"aid\":162,\"iid\":11},\"on\":{\"aid\":162,\"iid\":10}}]"
                     },
                     "capabilities": [
                         {
@@ -1634,8 +1767,8 @@
                         "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":163,\"iid\":10,\"value\":0}",
                         "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":163,\"iid\":11}",
                         "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":163,\"iid\":11}",
-                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":163,\"iid\":12},\"saturation\":{\"aid\":163,\"iid\":13},\"brightness\":{\"aid\":163,\"iid\":11}}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":163,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":163,\"iid\":11},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":163,\"iid\":12},\"saturation\":{\"aid\":163,\"iid\":13},\"brightness\":{\"aid\":163,\"iid\":11}}]"
+                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":163,\"iid\":12},\"saturation\":{\"aid\":163,\"iid\":13},\"brightness\":{\"aid\":163,\"iid\":11},\"on\":{\"aid\":163,\"iid\":10}}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":163,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":163,\"iid\":11},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":163,\"iid\":12},\"saturation\":{\"aid\":163,\"iid\":13},\"brightness\":{\"aid\":163,\"iid\":11},\"on\":{\"aid\":163,\"iid\":10}}]"
                     },
                     "capabilities": [
                         {
@@ -1700,8 +1833,8 @@
                         "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":164,\"iid\":10,\"value\":0}",
                         "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":164,\"iid\":11}",
                         "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":164,\"iid\":11}",
-                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":164,\"iid\":12},\"saturation\":{\"aid\":164,\"iid\":13},\"brightness\":{\"aid\":164,\"iid\":11}}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":164,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":164,\"iid\":11},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":164,\"iid\":12},\"saturation\":{\"aid\":164,\"iid\":13},\"brightness\":{\"aid\":164,\"iid\":11}}]"
+                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":164,\"iid\":12},\"saturation\":{\"aid\":164,\"iid\":13},\"brightness\":{\"aid\":164,\"iid\":11},\"on\":{\"aid\":164,\"iid\":10}}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":164,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":164,\"iid\":11},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":164,\"iid\":12},\"saturation\":{\"aid\":164,\"iid\":13},\"brightness\":{\"aid\":164,\"iid\":11},\"on\":{\"aid\":164,\"iid\":10}}]"
                     },
                     "capabilities": [
                         {
@@ -1922,8 +2055,8 @@
                         "IncreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":168,\"iid\":12}",
                         "DecreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":168,\"iid\":12}",
                         "SetColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":168,\"iid\":12}",
-                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":168,\"iid\":13},\"saturation\":{\"aid\":168,\"iid\":14},\"brightness\":{\"aid\":168,\"iid\":11}}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":168,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":168,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":168,\"iid\":12},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":168,\"iid\":13},\"saturation\":{\"aid\":168,\"iid\":14},\"brightness\":{\"aid\":168,\"iid\":11}}]"
+                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":168,\"iid\":13},\"saturation\":{\"aid\":168,\"iid\":14},\"brightness\":{\"aid\":168,\"iid\":11},\"on\":{\"aid\":168,\"iid\":10}}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":168,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":168,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":168,\"iid\":12},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":168,\"iid\":13},\"saturation\":{\"aid\":168,\"iid\":14},\"brightness\":{\"aid\":168,\"iid\":11},\"on\":{\"aid\":168,\"iid\":10}}]"
                     },
                     "capabilities": [
                         {
@@ -2005,8 +2138,8 @@
                         "IncreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":169,\"iid\":12}",
                         "DecreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":169,\"iid\":12}",
                         "SetColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":169,\"iid\":12}",
-                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":169,\"iid\":13},\"saturation\":{\"aid\":169,\"iid\":14},\"brightness\":{\"aid\":169,\"iid\":11}}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":169,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":169,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":169,\"iid\":12},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":169,\"iid\":13},\"saturation\":{\"aid\":169,\"iid\":14},\"brightness\":{\"aid\":169,\"iid\":11}}]"
+                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":169,\"iid\":13},\"saturation\":{\"aid\":169,\"iid\":14},\"brightness\":{\"aid\":169,\"iid\":11},\"on\":{\"aid\":169,\"iid\":10}}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":169,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":169,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":169,\"iid\":12},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":169,\"iid\":13},\"saturation\":{\"aid\":169,\"iid\":14},\"brightness\":{\"aid\":169,\"iid\":11},\"on\":{\"aid\":169,\"iid\":10}}]"
                     },
                     "capabilities": [
                         {
@@ -2088,8 +2221,8 @@
                         "IncreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":170,\"iid\":12}",
                         "DecreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":170,\"iid\":12}",
                         "SetColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":170,\"iid\":12}",
-                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":170,\"iid\":13},\"saturation\":{\"aid\":170,\"iid\":14},\"brightness\":{\"aid\":170,\"iid\":11}}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":170,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":170,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":170,\"iid\":12},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":170,\"iid\":13},\"saturation\":{\"aid\":170,\"iid\":14},\"brightness\":{\"aid\":170,\"iid\":11}}]"
+                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":170,\"iid\":13},\"saturation\":{\"aid\":170,\"iid\":14},\"brightness\":{\"aid\":170,\"iid\":11},\"on\":{\"aid\":170,\"iid\":10}}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":170,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":170,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":170,\"iid\":12},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":170,\"iid\":13},\"saturation\":{\"aid\":170,\"iid\":14},\"brightness\":{\"aid\":170,\"iid\":11},\"on\":{\"aid\":170,\"iid\":10}}]"
                     },
                     "capabilities": [
                         {
@@ -2171,8 +2304,8 @@
                         "IncreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":171,\"iid\":12}",
                         "DecreaseColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":171,\"iid\":12}",
                         "SetColorTemperature": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":171,\"iid\":12}",
-                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":171,\"iid\":13},\"saturation\":{\"aid\":171,\"iid\":14},\"brightness\":{\"aid\":171,\"iid\":11}}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":171,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":171,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":171,\"iid\":12},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":171,\"iid\":13},\"saturation\":{\"aid\":171,\"iid\":14},\"brightness\":{\"aid\":171,\"iid\":11}}]"
+                        "SetColor": "{\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":171,\"iid\":13},\"saturation\":{\"aid\":171,\"iid\":14},\"brightness\":{\"aid\":171,\"iid\":11},\"on\":{\"aid\":171,\"iid\":10}}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":171,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":171,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":171,\"iid\":12},{\"interface\":\"Alexa.ColorController\",\"host\":\"test\",\"port\":\"12345\",\"hue\":{\"aid\":171,\"iid\":13},\"saturation\":{\"aid\":171,\"iid\":14},\"brightness\":{\"aid\":171,\"iid\":11},\"on\":{\"aid\":171,\"iid\":10}}]"
                     },
                     "capabilities": [
                         {
