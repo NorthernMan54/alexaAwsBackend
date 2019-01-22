@@ -67,7 +67,7 @@ function getRecord(username, callback) {
           callback(error, null);
         } else if (usage) {
           // lookup access token for user
-          console.log("Usage: ", usage);
+          // console.log("Usage: ", usage);
           callback(null, usage);
         } else {
           // Usage record not found
