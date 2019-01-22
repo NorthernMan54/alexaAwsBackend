@@ -2,7 +2,7 @@ var oauth2orize = require('oauth2orize');
 var OAuth = require('../models/oauth');
 
 var server = oauth2orize.createServer();
-const expires_in = 60*10; // Measured in seconds
+const expires_in = 60*60*24*7; // Measured in seconds
 
 server.grant(oauth2orize.grant.code({
 	scopeSeparator: [ ' ', ',' ]
