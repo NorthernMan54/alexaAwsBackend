@@ -679,7 +679,7 @@ app.post('/api/v2/messages',
       try {
         console.log("MQTT Message", topic, message);
         mqttClient.publish(topic, message);
-        // usage.lastUsedBroker(req.user.username);
+        usage.lastUsedAlexa(req.user.username);
       } catch (err) {
 
       }
