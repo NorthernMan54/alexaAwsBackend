@@ -43,7 +43,7 @@
         "type": "00000052-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "0.4.38",
+        "value": "0.4.44",
         "description": "Firmware Revision"
       }],
       "primary": false,
@@ -80,143 +80,6 @@
       "hidden": false
     }]
   }, {
-    "aid": 19,
-    "services": [{
-      "iid": 1,
-      "type": "0000003E-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 2,
-        "type": "00000014-0000-1000-8000-0026BB765291",
-        "perms": ["pw"],
-        "format": "bool",
-        "description": "Identify"
-      }, {
-        "iid": 3,
-        "type": "00000020-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "dht22",
-        "description": "Manufacturer"
-      }, {
-        "iid": 4,
-        "type": "00000021-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "dht22",
-        "description": "Model"
-      }, {
-        "iid": 5,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Test Temp",
-        "description": "Name"
-      }, {
-        "iid": 6,
-        "type": "00000030-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Maggie-Test Temp",
-        "description": "Serial Number"
-      }, {
-        "iid": 7,
-        "type": "00000052-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "0.1.22",
-        "description": "Firmware Revision"
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 8,
-      "type": "0000008A-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 9,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Test Temp",
-        "description": "Name"
-      }, {
-        "iid": 10,
-        "type": "00000011-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "ev"],
-        "format": "float",
-        "value": 8.5,
-        "description": "Current Temperature",
-        "unit": "celsius",
-        "maxValue": 100,
-        "minValue": -100,
-        "minStep": 0.1
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 11,
-      "type": "00000082-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 12,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Test Temp",
-        "description": "Name"
-      }, {
-        "iid": 13,
-        "type": "00000010-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "ev"],
-        "format": "float",
-        "value": 51,
-        "description": "Current Relative Humidity",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 14,
-      "type": "E863F007-079E-48FF-8F27-9C2605A29F52",
-      "characteristics": [{
-        "iid": 15,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Test Temp History",
-        "description": "Name"
-      }, {
-        "iid": 16,
-        "type": "E863F116-079E-48FF-8F27-9C2605A29F52",
-        "perms": ["pr", "ev", "hd"],
-        "format": "data",
-        "value": "vC0HAAAAAAD7joUgAwECAgIDAjcAwA8AAAAAAAAAAAEB",
-        "description": "S2R1"
-      }, {
-        "iid": 17,
-        "type": "E863F117-079E-48FF-8F27-9C2605A29F52",
-        "perms": ["pr", "ev", "hd"],
-        "format": "data",
-        "value": null,
-        "description": "S2R2"
-      }, {
-        "iid": 18,
-        "type": "E863F11C-079E-48FF-8F27-9C2605A29F52",
-        "perms": ["pw", "hd"],
-        "format": "data",
-        "description": "S2W1"
-      }, {
-        "iid": 19,
-        "type": "E863F121-079E-48FF-8F27-9C2605A29F52",
-        "perms": ["pw", "hd"],
-        "format": "data",
-        "description": "S2W2"
-      }],
-      "primary": false,
-      "hidden": false
-    }]
-  }, {
     "aid": 2,
     "services": [{
       "iid": 1,
@@ -232,35 +95,35 @@
         "type": "00000020-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "MCUIOT",
+        "value": "Apple",
         "description": "Manufacturer"
       }, {
         "iid": 4,
         "type": "00000021-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "MCUIOT Reset Switch",
+        "value": "Apple TV",
         "description": "Model"
       }, {
         "iid": 5,
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "MCUIOT Reset Switch",
+        "value": "Pair Netflix (3)",
         "description": "Name"
       }, {
         "iid": 6,
         "type": "00000030-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "123456",
+        "value": "f1969588-e804-4074-ac41-93f4a5edba35",
         "description": "Serial Number"
       }, {
         "iid": 7,
         "type": "00000052-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "",
+        "value": "1.0",
         "description": "Firmware Revision"
       }],
       "primary": false,
@@ -273,7 +136,7 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "MCUIOT Reset Switch",
+        "value": "Pair Netflix (3)",
         "description": "Name"
       }, {
         "iid": 10,
@@ -302,121 +165,56 @@
         "type": "00000020-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "MCUIOT",
+        "value": "Apple",
         "description": "Manufacturer"
       }, {
         "iid": 4,
         "type": "00000021-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "BME",
+        "value": "Apple TV",
         "description": "Model"
       }, {
         "iid": 5,
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "NODE-8F8FE",
+        "value": "Menu (TV)",
         "description": "Name"
       }, {
         "iid": 6,
         "type": "00000030-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Maggie-NODE-8F8FE",
+        "value": "38e266f1-3205-4153-989e-40e340990cfc",
         "description": "Serial Number"
       }, {
         "iid": 7,
         "type": "00000052-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "0.1.47",
+        "value": "1.0",
         "description": "Firmware Revision"
       }],
       "primary": false,
       "hidden": false
     }, {
       "iid": 8,
-      "type": "0000008A-0000-1000-8000-0026BB765291",
+      "type": "00000049-0000-1000-8000-0026BB765291",
       "characteristics": [{
         "iid": 9,
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Cold Cellar",
+        "value": "Menu (TV)",
         "description": "Name"
       }, {
         "iid": 10,
-        "type": "00000011-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "ev"],
-        "format": "float",
-        "value": 9.2,
-        "description": "Current Temperature",
-        "unit": "celsius",
-        "maxValue": 100,
-        "minValue": -100,
-        "minStep": 0.1
-      }, {
-        "iid": 11,
-        "type": "00000010-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "ev"],
-        "format": "float",
-        "value": 65,
-        "description": "Current Relative Humidity",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 12,
-        "type": "E863F10F-079E-48FF-8F27-9C2605A29F52",
-        "perms": ["pr", "ev"],
-        "format": "uint8",
-        "value": 1019,
-        "description": "Air Pressure",
-        "unit": "mbar",
-        "maxValue": 1200,
-        "minValue": 800,
-        "minStep": 1
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 13,
-      "type": "E863F007-079E-48FF-8F27-9C2605A29F52",
-      "characteristics": [{
-        "iid": 14,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "NODE-8F8FE History",
-        "description": "Name"
-      }, {
-        "iid": 15,
-        "type": "E863F116-079E-48FF-8F27-9C2605A29F52",
-        "perms": ["pr", "ev", "hd"],
-        "format": "data",
-        "value": "jUEHAAAAAAAqe4UgAwECAgIDAkoAwA8AAAAAAAAAAAEB",
-        "description": "S2R1"
-      }, {
-        "iid": 16,
-        "type": "E863F117-079E-48FF-8F27-9C2605A29F52",
-        "perms": ["pr", "ev", "hd"],
-        "format": "data",
-        "value": "EC0AAACkSQEAB7ICohzNJhAuAAAACEoBAAfuAisc1SYQLwAAAI5KAQAH5AJKHNUmEDAAAADySgEAB+MCVhzVJhAxAAAAVksBAAfkAnMc1iYQMgAAALpLAQAH5AJzHNYmEDMAAAAeTAEAB+QCcxzWJhA0AAAAgkwBAAfQAlsc1SYQNQAAADxOAQAHwgKxHNUm",
-        "description": "S2R2"
-      }, {
-        "iid": 17,
-        "type": "E863F11C-079E-48FF-8F27-9C2605A29F52",
-        "perms": ["pw", "hd"],
-        "format": "data",
-        "description": "S2W1"
-      }, {
-        "iid": 18,
-        "type": "E863F121-079E-48FF-8F27-9C2605A29F52",
-        "perms": ["pw", "hd"],
-        "format": "data",
-        "description": "S2W2"
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
       }],
       "primary": false,
       "hidden": false
@@ -437,121 +235,56 @@
         "type": "00000020-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "MCUIOT",
+        "value": "Apple",
         "description": "Manufacturer"
       }, {
         "iid": 4,
         "type": "00000021-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "BME",
+        "value": "Apple TV",
         "description": "Model"
       }, {
         "iid": 5,
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "NODE-2BA4CB",
+        "value": "TV/Home (TV)",
         "description": "Name"
       }, {
         "iid": 6,
         "type": "00000030-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Maggie-NODE-2BA4CB",
+        "value": "8f82ee59-e06c-46ba-b1cf-e410d11a7daa",
         "description": "Serial Number"
       }, {
         "iid": 7,
         "type": "00000052-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "0.1.47",
+        "value": "1.0",
         "description": "Firmware Revision"
       }],
       "primary": false,
       "hidden": false
     }, {
       "iid": 8,
-      "type": "0000008A-0000-1000-8000-0026BB765291",
+      "type": "00000049-0000-1000-8000-0026BB765291",
       "characteristics": [{
         "iid": 9,
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Front Yard",
+        "value": "TV/Home (TV)",
         "description": "Name"
       }, {
         "iid": 10,
-        "type": "00000011-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "ev"],
-        "format": "float",
-        "value": 8.5,
-        "description": "Current Temperature",
-        "unit": "celsius",
-        "maxValue": 100,
-        "minValue": -100,
-        "minStep": 0.1
-      }, {
-        "iid": 11,
-        "type": "00000010-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "ev"],
-        "format": "float",
-        "value": 46,
-        "description": "Current Relative Humidity",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 12,
-        "type": "E863F10F-079E-48FF-8F27-9C2605A29F52",
-        "perms": ["pr", "ev"],
-        "format": "uint8",
-        "value": 1019,
-        "description": "Air Pressure",
-        "unit": "mbar",
-        "maxValue": 1200,
-        "minValue": 800,
-        "minStep": 1
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 13,
-      "type": "E863F007-079E-48FF-8F27-9C2605A29F52",
-      "characteristics": [{
-        "iid": 14,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "NODE-2BA4CB History",
-        "description": "Name"
-      }, {
-        "iid": 15,
-        "type": "E863F116-079E-48FF-8F27-9C2605A29F52",
-        "perms": ["pr", "ev", "hd"],
-        "format": "data",
-        "value": "jUEHAAAAAAAqe4UgAwECAgIDAkoAwA8AAAAAAAAAAAEB",
-        "description": "S2R1"
-      }, {
-        "iid": 16,
-        "type": "E863F117-079E-48FF-8F27-9C2605A29F52",
-        "perms": ["pr", "ev", "hd"],
-        "format": "data",
-        "value": "EC0AAACkSQEAB9IAkBrGJhAuAAAACEoBAAcNARsb0CYQLwAAAI5KAQAHDgEpG88mEDAAAADySgEABw0BHRvQJhAxAAAAVksBAAcEAT8b0CYQMgAAALpLAQAHBAE/G9AmEDMAAAAeTAEABwQBPxvQJhA0AAAAgkwBAAf+AKMb0CYQNQAAADxOAQAH+gDYG9Am",
-        "description": "S2R2"
-      }, {
-        "iid": 17,
-        "type": "E863F11C-079E-48FF-8F27-9C2605A29F52",
-        "perms": ["pw", "hd"],
-        "format": "data",
-        "description": "S2W1"
-      }, {
-        "iid": 18,
-        "type": "E863F121-079E-48FF-8F27-9C2605A29F52",
-        "perms": ["pw", "hd"],
-        "format": "data",
-        "description": "S2W2"
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
       }],
       "primary": false,
       "hidden": false
@@ -572,86 +305,56 @@
         "type": "00000020-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "MCUIOT",
+        "value": "Apple",
         "description": "Manufacturer"
       }, {
         "iid": 4,
         "type": "00000021-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "BME-GD NODE-DC4492GD",
+        "value": "Apple TV",
         "description": "Model"
       }, {
         "iid": 5,
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "NODE-DC4492GD",
+        "value": "Mic/Siri (TV)",
         "description": "Name"
       }, {
         "iid": 6,
         "type": "00000030-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "http://NODE-DC4492.local.:80/",
+        "value": "48e93450-919b-4512-adfe-1fe3e329e690",
         "description": "Serial Number"
       }, {
         "iid": 7,
         "type": "00000052-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "",
+        "value": "1.0",
         "description": "Firmware Revision"
       }],
       "primary": false,
       "hidden": false
     }, {
       "iid": 8,
-      "type": "00000041-0000-1000-8000-0026BB765291",
+      "type": "00000049-0000-1000-8000-0026BB765291",
       "characteristics": [{
         "iid": 9,
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Garage Door",
+        "value": "Mic/Siri (TV)",
         "description": "Name"
       }, {
         "iid": 10,
-        "type": "0000000E-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "ev"],
-        "format": "uint8",
-        "value": 1,
-        "description": "Current Door State",
-        "valid-values": [0, 1, 2, 3, 4],
-        "maxValue": 4,
-        "minValue": 0
-      }, {
-        "iid": 11,
-        "type": "00000032-0000-1000-8000-0026BB765291",
+        "type": "00000025-0000-1000-8000-0026BB765291",
         "perms": ["pr", "pw", "ev"],
-        "format": "uint8",
-        "value": 1,
-        "description": "Target Door State",
-        "valid-values": [0, 1],
-        "maxValue": 1,
-        "minValue": 0
-      }, {
-        "iid": 12,
-        "type": "00000024-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "ev"],
         "format": "bool",
         "value": false,
-        "description": "Obstruction Detected"
-      }, {
-        "iid": 13,
-        "type": "00000079-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "ev"],
-        "format": "uint8",
-        "value": 0,
-        "description": "Status Low Battery",
-        "valid-values": [0, 1],
-        "maxValue": 1,
-        "minValue": 0
+        "description": "On"
       }],
       "primary": false,
       "hidden": false
@@ -672,141 +375,6 @@
         "type": "00000020-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "MCUIOT",
-        "description": "Manufacturer"
-      }, {
-        "iid": 4,
-        "type": "00000021-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "BME-GD",
-        "description": "Model"
-      }, {
-        "iid": 5,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "NODE-DC4492",
-        "description": "Name"
-      }, {
-        "iid": 6,
-        "type": "00000030-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Maggie-NODE-DC4492",
-        "description": "Serial Number"
-      }, {
-        "iid": 7,
-        "type": "00000052-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "0.1.47",
-        "description": "Firmware Revision"
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 8,
-      "type": "0000008A-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 9,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Inside",
-        "description": "Name"
-      }, {
-        "iid": 10,
-        "type": "00000011-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "ev"],
-        "format": "float",
-        "value": 19.5,
-        "description": "Current Temperature",
-        "unit": "celsius",
-        "maxValue": 100,
-        "minValue": -100,
-        "minStep": 0.1
-      }, {
-        "iid": 11,
-        "type": "00000010-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "ev"],
-        "format": "float",
-        "value": 42,
-        "description": "Current Relative Humidity",
-        "unit": "percentage",
-        "maxValue": 100,
-        "minValue": 0,
-        "minStep": 1
-      }, {
-        "iid": 12,
-        "type": "E863F10F-079E-48FF-8F27-9C2605A29F52",
-        "perms": ["pr", "ev"],
-        "format": "uint8",
-        "value": 1019,
-        "description": "Air Pressure",
-        "unit": "mbar",
-        "maxValue": 1200,
-        "minValue": 800,
-        "minStep": 1
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 13,
-      "type": "E863F007-079E-48FF-8F27-9C2605A29F52",
-      "characteristics": [{
-        "iid": 14,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "NODE-DC4492 History",
-        "description": "Name"
-      }, {
-        "iid": 15,
-        "type": "E863F116-079E-48FF-8F27-9C2605A29F52",
-        "perms": ["pr", "ev", "hd"],
-        "format": "data",
-        "value": "jUEHAAAAAAAqe4UgAwECAgIDAkoAwA8AAAAAAAAAAAEB",
-        "description": "S2R1"
-      }, {
-        "iid": 16,
-        "type": "E863F117-079E-48FF-8F27-9C2605A29F52",
-        "perms": ["pr", "ev", "hd"],
-        "format": "data",
-        "value": "EC0AAACkSQEAB2EH4BDQJhAuAAAACEoBAAdhB8EQ0SYQLwAAAI5KAQAHYQe/ENEmEDAAAADySgEAB2EHwBDRJhAxAAAAVksBAAdhB8AQ0SYQMgAAALpLAQAHYQfAENEmEDMAAAAeTAEAB2EHwBDRJhA0AAAAgkwBAAdhB7gQ0SYQNQAAADxOAQAHWAeuENIm",
-        "description": "S2R2"
-      }, {
-        "iid": 17,
-        "type": "E863F11C-079E-48FF-8F27-9C2605A29F52",
-        "perms": ["pw", "hd"],
-        "format": "data",
-        "description": "S2W1"
-      }, {
-        "iid": 18,
-        "type": "E863F121-079E-48FF-8F27-9C2605A29F52",
-        "perms": ["pw", "hd"],
-        "format": "data",
-        "description": "S2W2"
-      }],
-      "primary": false,
-      "hidden": false
-    }]
-  }, {
-    "aid": 23,
-    "services": [{
-      "iid": 1,
-      "type": "0000003E-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 2,
-        "type": "00000014-0000-1000-8000-0026BB765291",
-        "perms": ["pw"],
-        "format": "bool",
-        "description": "Identify"
-      }, {
-        "iid": 3,
-        "type": "00000020-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
         "value": "Apple",
         "description": "Manufacturer"
       }, {
@@ -821,14 +389,14 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Pair Family Room",
+        "value": "Play (TV)",
         "description": "Name"
       }, {
         "iid": 6,
         "type": "00000030-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "9bbaa2c0-d462-4b81-b74f-9344ba7ad0c2",
+        "value": "da664205-04ed-4e5b-8ea4-98bf0ac91e4a",
         "description": "Serial Number"
       }, {
         "iid": 7,
@@ -848,7 +416,7 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Pair Family Room",
+        "value": "Play (TV)",
         "description": "Name"
       }, {
         "iid": 10,
@@ -862,7 +430,7 @@
       "hidden": false
     }]
   }, {
-    "aid": 24,
+    "aid": 7,
     "services": [{
       "iid": 1,
       "type": "0000003E-0000-1000-8000-0026BB765291",
@@ -891,14 +459,14 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Menu (Family Room Apple TV)",
+        "value": "Pause (TV)",
         "description": "Name"
       }, {
         "iid": 6,
         "type": "00000030-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "c0531020-2f29-47d1-90f0-73493939a4ef",
+        "value": "fa85576f-1777-488d-8afd-cb622af99b89",
         "description": "Serial Number"
       }, {
         "iid": 7,
@@ -918,7 +486,7 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Menu (Family Room Apple TV)",
+        "value": "Pause (TV)",
         "description": "Name"
       }, {
         "iid": 10,
@@ -932,7 +500,7 @@
       "hidden": false
     }]
   }, {
-    "aid": 25,
+    "aid": 8,
     "services": [{
       "iid": 1,
       "type": "0000003E-0000-1000-8000-0026BB765291",
@@ -961,14 +529,14 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "TV/Home (Family Room Apple TV)",
+        "value": "Up (TV)",
         "description": "Name"
       }, {
         "iid": 6,
         "type": "00000030-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "99045609-9012-4b20-9848-9085d3547025",
+        "value": "20418d48-74ab-412d-93cf-abb4b7f4540d",
         "description": "Serial Number"
       }, {
         "iid": 7,
@@ -988,7 +556,7 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "TV/Home (Family Room Apple TV)",
+        "value": "Up (TV)",
         "description": "Name"
       }, {
         "iid": 10,
@@ -1002,7 +570,7 @@
       "hidden": false
     }]
   }, {
-    "aid": 26,
+    "aid": 9,
     "services": [{
       "iid": 1,
       "type": "0000003E-0000-1000-8000-0026BB765291",
@@ -1031,14 +599,14 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Mic/Siri (Family Room Apple TV)",
+        "value": "Down (TV)",
         "description": "Name"
       }, {
         "iid": 6,
         "type": "00000030-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "c565fb47-3e72-4ef7-a9c6-733971995806",
+        "value": "61196dd6-12f5-4dfd-b2d8-33c858366004",
         "description": "Serial Number"
       }, {
         "iid": 7,
@@ -1058,7 +626,7 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Mic/Siri (Family Room Apple TV)",
+        "value": "Down (TV)",
         "description": "Name"
       }, {
         "iid": 10,
@@ -1072,7 +640,7 @@
       "hidden": false
     }]
   }, {
-    "aid": 27,
+    "aid": 10,
     "services": [{
       "iid": 1,
       "type": "0000003E-0000-1000-8000-0026BB765291",
@@ -1101,14 +669,14 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Play (Family Room Apple TV)",
+        "value": "Left (TV)",
         "description": "Name"
       }, {
         "iid": 6,
         "type": "00000030-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "aabe05bf-749c-45ad-9cd4-7965eba39c0e",
+        "value": "2337d7aa-8914-4df6-b276-2cd80f729c57",
         "description": "Serial Number"
       }, {
         "iid": 7,
@@ -1128,7 +696,7 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Play (Family Room Apple TV)",
+        "value": "Left (TV)",
         "description": "Name"
       }, {
         "iid": 10,
@@ -1142,7 +710,7 @@
       "hidden": false
     }]
   }, {
-    "aid": 28,
+    "aid": 11,
     "services": [{
       "iid": 1,
       "type": "0000003E-0000-1000-8000-0026BB765291",
@@ -1171,14 +739,14 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Pause (Family Room Apple TV)",
+        "value": "Right (TV)",
         "description": "Name"
       }, {
         "iid": 6,
         "type": "00000030-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "d522e63a-38f1-4445-8fe1-17944f9dd5c5",
+        "value": "0a3c60e2-da90-4b0c-b091-a55383df79ee",
         "description": "Serial Number"
       }, {
         "iid": 7,
@@ -1198,7 +766,7 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Pause (Family Room Apple TV)",
+        "value": "Right (TV)",
         "description": "Name"
       }, {
         "iid": 10,
@@ -1212,7 +780,7 @@
       "hidden": false
     }]
   }, {
-    "aid": 29,
+    "aid": 12,
     "services": [{
       "iid": 1,
       "type": "0000003E-0000-1000-8000-0026BB765291",
@@ -1241,14 +809,14 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Up (Family Room Apple TV)",
+        "value": "Select (TV)",
         "description": "Name"
       }, {
         "iid": 6,
         "type": "00000030-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "edc859a7-a597-41af-8a4c-e790412cca15",
+        "value": "a16b627f-ece9-4c3e-bdb1-c1a142d8c7c2",
         "description": "Serial Number"
       }, {
         "iid": 7,
@@ -1268,7 +836,7 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Up (Family Room Apple TV)",
+        "value": "Select (TV)",
         "description": "Name"
       }, {
         "iid": 10,
@@ -1282,7 +850,7 @@
       "hidden": false
     }]
   }, {
-    "aid": 30,
+    "aid": 13,
     "services": [{
       "iid": 1,
       "type": "0000003E-0000-1000-8000-0026BB765291",
@@ -1311,14 +879,14 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Down (Family Room Apple TV)",
+        "value": "Sleep (TV)",
         "description": "Name"
       }, {
         "iid": 6,
         "type": "00000030-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "5b92f369-9a7e-4910-a3a8-e2413728e874",
+        "value": "c61abfa3-d4ec-414e-8a41-1a2cc3fa6955",
         "description": "Serial Number"
       }, {
         "iid": 7,
@@ -1338,7 +906,7 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Down (Family Room Apple TV)",
+        "value": "Sleep (TV)",
         "description": "Name"
       }, {
         "iid": 10,
@@ -1352,7 +920,7 @@
       "hidden": false
     }]
   }, {
-    "aid": 31,
+    "aid": 14,
     "services": [{
       "iid": 1,
       "type": "0000003E-0000-1000-8000-0026BB765291",
@@ -1381,14 +949,14 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Left (Family Room Apple TV)",
+        "value": "Rugby",
         "description": "Name"
       }, {
         "iid": 6,
         "type": "00000030-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "160ff153-3db8-4b60-96a9-5dc75bd895b6",
+        "value": "6e06cb57-ddbf-48d5-8283-f4eb8ad8a09e",
         "description": "Serial Number"
       }, {
         "iid": 7,
@@ -1408,7 +976,7 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Left (Family Room Apple TV)",
+        "value": "Rugby",
         "description": "Name"
       }, {
         "iid": 10,
@@ -1422,7 +990,7 @@
       "hidden": false
     }]
   }, {
-    "aid": 32,
+    "aid": 15,
     "services": [{
       "iid": 1,
       "type": "0000003E-0000-1000-8000-0026BB765291",
@@ -1451,14 +1019,14 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Right (Family Room Apple TV)",
+        "value": "Plex For Mel",
         "description": "Name"
       }, {
         "iid": 6,
         "type": "00000030-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "d3aaa301-a8f9-488d-964d-7b82963b7a0a",
+        "value": "306b374d-506a-4f39-9fef-2b667825082a",
         "description": "Serial Number"
       }, {
         "iid": 7,
@@ -1478,7 +1046,7 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Right (Family Room Apple TV)",
+        "value": "Plex For Mel",
         "description": "Name"
       }, {
         "iid": 10,
@@ -1492,7 +1060,7 @@
       "hidden": false
     }]
   }, {
-    "aid": 33,
+    "aid": 16,
     "services": [{
       "iid": 1,
       "type": "0000003E-0000-1000-8000-0026BB765291",
@@ -1521,14 +1089,14 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Select (Family Room Apple TV)",
+        "value": "Plex For James",
         "description": "Name"
       }, {
         "iid": 6,
         "type": "00000030-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "019a5e55-1649-4821-9302-ead4ce2b463e",
+        "value": "69d16e69-66ee-4f1e-a580-ab19e6caacdb",
         "description": "Serial Number"
       }, {
         "iid": 7,
@@ -1548,7 +1116,7 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Select (Family Room Apple TV)",
+        "value": "Plex For James",
         "description": "Name"
       }, {
         "iid": 10,
@@ -1562,7 +1130,7 @@
       "hidden": false
     }]
   }, {
-    "aid": 34,
+    "aid": 17,
     "services": [{
       "iid": 1,
       "type": "0000003E-0000-1000-8000-0026BB765291",
@@ -1591,14 +1159,14 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Sleep (Family Room Apple TV)",
+        "value": "Freeview",
         "description": "Name"
       }, {
         "iid": 6,
         "type": "00000030-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "a6eb18e9-617a-4bc3-91ca-854db6c0cde4",
+        "value": "29fb74c3-dd0a-4f6f-95fd-be0cb6e30e46",
         "description": "Serial Number"
       }, {
         "iid": 7,
@@ -1618,7 +1186,7 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Sleep (Family Room Apple TV)",
+        "value": "Freeview",
         "description": "Name"
       }, {
         "iid": 10,

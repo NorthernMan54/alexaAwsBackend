@@ -23,7 +23,11 @@ exports.handler = function(event, context, callback) {
     delete event.directive.endpoint.scope; // Remove oauth token from message body
     sendMessage(event, context, callback);
   } else if (event.directive.header.payloadVersion === '3') {
-    if (event.directive.endpoint !== undefined) {
+    // messages with an endpoint
+    if (event.directive.header.namespace === 'Alexa.Authorization') {
+      oAuthId = event.directive.payload.grantee.token;
+      delete event.directive.payload.grantee.token;
+    } else if (event.directive.endpoint !== undefined) {
       oAuthId = event.directive.endpoint.scope.token;
       delete event.directive.endpoint.scope;
     } else if (event.directive.payload !== undefined) {
@@ -59,13 +63,12 @@ function sendMessage(event, context, callback) {
       // Logging handled by error handler
       callback(err, null);
     } else if (response.statusCode === 200) {
-      var reply = JSON.parse(body);
-      log("Response: " + reply.event.header.namespace, reply);
-      // log('Alexa Directive', "success");
-      callback(null, reply);
+      log("Response", body);
+      log('Alexa Directive', "success");
+      callback(null, JSON.parse(body));
     } else if (response.statusCode === 401) {
-      log("Response: Error - Auth failure", body);
-      // log('Alexa Directive', "Auth failure");
+      log("Response", body);
+      log('Alexa Directive', "Auth failure");
 
       response = {
         header: {
@@ -82,8 +85,8 @@ function sendMessage(event, context, callback) {
       // context.succeed(response);
       callback(null, response);
     } else {
-      log("Response: Error " + response.statusCode, body);
-      // log('Unknown Response', response.statusCode);
+      log("Response", body);
+      log('Unknown Response', response.statusCode);
 
       response = {
         header: {

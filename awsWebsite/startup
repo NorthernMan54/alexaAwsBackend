@@ -5,4 +5,5 @@
 pkill node
 
 export DEBUG_HIDE_DATE
-DEBUG=-express:router,-body-parser:json,-body-parser:urlencoded,* node index.js
+#DEBUG=-express*,-body-parser:json,-body-parser:urlencoded,* node index.js
+node index.js

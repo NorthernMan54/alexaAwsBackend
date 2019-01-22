@@ -34,18 +34,15 @@ var AccessTokenSchema = new Schema({
 	grant: { type: Schema.Types.ObjectId, ref: 'GrantCode' },
 	scope: [ { type: String }],
 	expires: { type: Date, default: function(){
-		var today = new Date();
-		var length = 60 * 24 * 90; // Length (in minutes) of our access token
-		// var length = 60 * 24 * 365 * 100;
-		return new Date(today.getTime() + length*60000);
+		return new Date(0);
 	} },
-	active: { type: Boolean, get: function(value) {
-		if (this.expires < new Date() || !value) {
+	active: { type: Boolean, get: function() {
+		if (this.expires < new Date()) {
 			return false;
 		} else {
-			return value;
+			return true;
 		}
-	}, default: true }
+	}}
 });
 
 var RefreshTokenSchema = new Schema({

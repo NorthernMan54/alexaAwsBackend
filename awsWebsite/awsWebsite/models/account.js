@@ -22,7 +22,8 @@ var Account = new Schema({
     brokerCount: { type: Number, default: 0},
     lastUsedWebsite: { type: Date, default: function(){
         return new Date();
-    }}
+    }},
+
 });
 
 var options = {
