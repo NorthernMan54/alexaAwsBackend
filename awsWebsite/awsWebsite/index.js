@@ -112,6 +112,7 @@ var oauthModels = require('./models/oauth');
 var Devices = require('./models/devices');
 var Topics = require('./models/topics');
 var LostPassword = require('./models/lostPassword');
+var Usage = require('./models/usage');
 
 Account.findOne({
   username: mqtt_user
@@ -735,26 +736,34 @@ app.get('/status',
     Account.findOne({
       username: req.user.username
     }, function(error, data) {
-      var transform = {
-        "<>": "div",
-        "html": "<tr><td>${username}</td><td>${created}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td><td>${lastUsedBroker}</td><td>${brokerCount}</td></tr>"
-      };
-      res.send("<a href=\"/usage.csv\" download=\"/usage.csv\">Download the data</a><table border='1'>" + json2html.transform(data, transform) + "</table>");
+      if (!error) {
+        Usage.findOne({
+          user: data._id
+        }).populate('user', 'username').exec(function(error, data) {
+          if (!error) {
+            var transform = {
+              "<>": "div",
+              "html": "<tr><td>${user.username}</td><td>${created}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td><td>${lastUsedBroker}</td><td>${brokerCount}</td><td>${lastEvent}</td><td>${eventCount}</td></tr>"
+            };
+            res.send("<table border='1'><tr><th>Username</th><th>Created</th><th>Last Used Alexa</th><th>Alexa Count</th><th>Last Plugin Response</th><th>Response Count</th><th>Last Event</th><th>Event Count</th></tr>" + json2html.transform(data, transform) + "</table>");
+          }
+        });
+      }
     });
-
   });
-
 
 app.get('/admin/users',
   ensureAuthenticated,
   function(req, res) {
     if (req.user.username === mqtt_user) {
-      Account.find({}, function(error, data) {
-        var transform = {
-          "<>": "div",
-          "html": "<tr><td>${username}</td><td>${created}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td><td>${lastUsedBroker}</td><td>${brokerCount}</td></tr>"
-        };
-        res.send("<a href=\"/usage.csv\" download=\"/usage.csv\">Download the data</a><table border='1'>" + json2html.transform(data, transform) + "</table>");
+      Usage.find().populate('user', 'username').exec(function(error, data) {
+        if (!error) {
+          var transform = {
+            "<>": "div",
+            "html": "<tr><td>${user.username}</td><td>${created}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td><td>${lastUsedBroker}</td><td>${brokerCount}</td><td>${lastEvent}</td><td>${eventCount}</td></tr>"
+          };
+          res.send("<a href=\"/usage.csv\" download=\"/usage.csv\">Download the data</a><table border='1'><tr><th>Username</th><th>Created</th><th>Last Used Alexa</th><th>Alexa Count</th><th>Last Plugin Response</th><th>Response Count</th><th>Last Event</th><th>Event Count</th></tr>" + json2html.transform(data, transform) + "</table>");
+        }
       });
     } else {
       res.status(401).send();
@@ -797,8 +806,7 @@ app.get('/admin/devices',
 app.put('/services',
   ensureAuthenticated,
   function(req, res) {
-    if (req.user.username == mqtt_user) {
-
+    if (req.user.username === mqtt_user) {
       var application = oauthModels.Application(req.body);
       application.save(function(err, application) {
         if (!err) {
