@@ -497,8 +497,8 @@ app.get('/auth/start', function(req, res, next) {
 
 app.post('/auth/finish', function(req, res, next) {
   console.log("/auth/finish user: ", req.user);
-  //console.log(req.body);
-  //console.log(req.params);
+  // console.log(req.body);
+  // console.log(req.params);
   if (req.user) {
     next();
   } else {
@@ -519,9 +519,9 @@ app.post('/auth/finish', function(req, res, next) {
         });
         next();
       } else if (!error) {
-        console.log("not authed");
+        console.log("not authed"); // Login not found
         req.flash('error', 'Your logon or password was incorrect. Please try again.');
-        res.redirect(req.body['auth_url'])
+        res.redirect(req.body['auth_url']);
       }
     })(req, res, next);
   }
@@ -756,7 +756,7 @@ app.get('/admin/users',
   ensureAuthenticated,
   function(req, res) {
     if (req.user.username === mqtt_user) {
-      Usage.find().populate('user', 'username').exec(function(error, data) {
+      Usage.find().sort('-lastUsedBroker').populate('user', 'username').exec(function(error, data) {
         if (!error) {
           var transform = {
             "<>": "div",
