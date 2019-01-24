@@ -526,7 +526,7 @@ app.post('/auth/finish', function(req, res, next) {
     })(req, res, next);
   }
 }, oauthServer.decision(function(req, done) {
-  //console.log("decision user: ", req);
+  // console.log("decision user: ", req);
   done(null, {
     scope: req.oauth2.req.scope
   });
@@ -623,13 +623,13 @@ mqttClient.on('message', function(topic, message) {
 var timeout = setInterval(function() {
   var now = Date.now();
   var keys = Object.keys(onGoingCommands);
-  for (key in keys) {
+  for (var key in keys) {
     var waiting = onGoingCommands[keys[key]];
-    console.log(keys[key]);
+    // console.log(keys[key]);
     if (waiting) {
       var diff = now - waiting.timestamp;
       if (diff > 6000) {
-        console.log("timed out");
+        console.log("Broker timed out", waiting.user);
         waiting.res.status(504).send('{"error": "timeout"}');
         delete onGoingCommands[keys[key]];
         measurement.send({
