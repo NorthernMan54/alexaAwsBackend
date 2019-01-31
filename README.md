@@ -174,6 +174,11 @@ brew install mosquitto; brew services start mosquitto
 4. Existing Role - lambda_basic_execution
 5. Trigger - Alexa Smart Home
 
+# Historical Dates
+
+Beta test started - Feb 19, 2018
+Production launch - March 14, 2018
+Added Germany and France - March 28, 2018
 
 # Credits
 
