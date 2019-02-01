@@ -82,3 +82,37 @@ Alexa Message Validation Passed!
         }
     }
 }
+
+-----------------------------------------------------------
+
+{"host":"test","port":"12345","aid":2,"iid":10}
+{ endpointId: 'dGVzdDoxMjM0NSxhaWQ6IDIsaWlkOiAxMA==',
+  friendlyName: 'Motion',
+  description: 'Testing Motion Motion Sensor',
+  manufacturerName: 'sensor-stub',
+  displayCategories: [ 'MOTION_SENSOR' ],
+  cookie: 
+   { ReportState: '[{"interface":"Alexa.MotionSensor","host":"test","port":"12345","aid":2,"iid":10}]' },
+  capabilities: 
+   [ { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
+     { type: 'AlexaInterface',
+       interface: 'Alexa.MotionSensor',
+       version: '3',
+       properties: [Object] } ] }
+{"host":"test","port":"12345","aid":3,"iid":10}
+{ endpointId: 'dGVzdDoxMjM0NSxhaWQ6IDMsaWlkOiAxMA==',
+  friendlyName: 'Contact',
+  description: 'Testing Contact Contact Sensor',
+  manufacturerName: 'sensor-stub',
+  displayCategories: [ 'CONTACT_SENSOR' ],
+  cookie: 
+   { ReportState: '[{"interface":"Alexa.ContactSensor","host":"test","port":"12345","aid":3,"iid":10}]' },
+  capabilities: 
+   [ { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
+     { type: 'AlexaInterface',
+       interface: 'Alexa.ContactSensor',
+       version: '3',
+       properties: [Object] } ] }
+
+-----------------------------------------------------------
+
