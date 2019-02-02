@@ -13,15 +13,15 @@ Alexa Message Validation Passed!
         "payload": {
             "endpoints": [
                 {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDk4LGlpZDogOQ==",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVJhc3BiZXJyeS1SYXNwYmVycnkgUEkgVGVtcGVyYXR1cg==",
                     "friendlyName": "Raspberry PI Temperatur",
-                    "description": "Testing Raspberry PI Temperatur Temperature Sensor",
+                    "description": "parseTest Raspberry PI Temperatur Temperature Sensor",
                     "manufacturerName": "Raspberry",
                     "displayCategories": [
                         "TEMPERATURE_SENSOR"
                     ],
                     "cookie": {
-                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"test\",\"port\":\"12345\",\"aid\":98,\"iid\":9}]"
+                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":98,\"iid\":9}]"
                     },
                     "capabilities": [
                         {
@@ -39,22 +39,22 @@ Alexa Message Validation Passed!
                                         "name": "temperature"
                                     }
                                 ],
-                                "proactivelyReported": false,
+                                "proactivelyReported": true,
                                 "retrievable": true
                             }
                         }
                     ]
                 },
                 {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDE2NixpaWQ6IDEw",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLUR5c29uIFB1cmUgQ29vbCBMaW5r",
                     "friendlyName": "Dyson Pure Cool Link",
-                    "description": "Testing Dyson Pure Cool Link Temperature Sensor",
+                    "description": "parseTest Dyson Pure Cool Link Temperature Sensor",
                     "manufacturerName": "Default-Manufacturer",
                     "displayCategories": [
                         "TEMPERATURE_SENSOR"
                     ],
                     "cookie": {
-                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"test\",\"port\":\"12345\",\"aid\":166,\"iid\":10}]"
+                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":10}]"
                     },
                     "capabilities": [
                         {
@@ -72,26 +72,26 @@ Alexa Message Validation Passed!
                                         "name": "temperature"
                                     }
                                 ],
-                                "proactivelyReported": false,
+                                "proactivelyReported": true,
                                 "retrievable": true
                             }
                         }
                     ]
                 },
                 {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDE2NixpaWQ6IDM4",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLUR5c29uIFB1cmUgQ29vbCBMaW5rIEZhbg==",
                     "friendlyName": "Dyson Pure Cool Link Fan",
-                    "description": "Testing Dyson Pure Cool Link Fan Fan",
+                    "description": "parseTest Dyson Pure Cool Link Fan Fan",
                     "manufacturerName": "Default-Manufacturer",
                     "displayCategories": [
                         "OTHER"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":166,\"iid\":32,\"value\":1}",
-                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":166,\"iid\":32,\"value\":0}",
-                        "AdjustPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":166,\"iid\":34}",
-                        "SetPowerLevel": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":166,\"iid\":34}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":166,\"iid\":32},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":166,\"iid\":34}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":32,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":32,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":34}",
+                        "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":34}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":32},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":34}]"
                     },
                     "capabilities": [
                         {
@@ -130,17 +130,17 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDE2NixpaWQ6IDI5",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLU5pZ2h0IE1vZGUgLSBEeXNvbiBQdXJlIENvb2wgTGluaw==",
                     "friendlyName": "Night Mode - Dyson Pure Cool Link",
-                    "description": "Testing Night Mode - Dyson Pure Cool Link Switch",
+                    "description": "parseTest Night Mode - Dyson Pure Cool Link Switch",
                     "manufacturerName": "Default-Manufacturer",
                     "displayCategories": [
                         "SWITCH"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":166,\"iid\":29,\"value\":1}",
-                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":166,\"iid\":29,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":166,\"iid\":29}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":29,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":29,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":29}]"
                     },
                     "capabilities": [
                         {
@@ -165,15 +165,15 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDM4MSxpaWQ6IDEx",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWhvbWVicmlkZ2Utd3MtV2V0dGVyc3RhdGlvbg==",
                     "friendlyName": "Wetterstation",
-                    "description": "Testing Wetterstation Temperature Sensor",
+                    "description": "parseTest Wetterstation Temperature Sensor",
                     "manufacturerName": "homebridge-ws",
                     "displayCategories": [
                         "TEMPERATURE_SENSOR"
                     ],
                     "cookie": {
-                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"test\",\"port\":\"12345\",\"aid\":381,\"iid\":10}]"
+                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":381,\"iid\":10}]"
                     },
                     "capabilities": [
                         {
@@ -191,24 +191,24 @@ Alexa Message Validation Passed!
                                         "name": "temperature"
                                     }
                                 ],
-                                "proactivelyReported": false,
+                                "proactivelyReported": true,
                                 "retrievable": true
                             }
                         }
                     ]
                 },
                 {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDI5OSxpaWQ6IDk=",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLUFwcGxlIFRW",
                     "friendlyName": "Apple TV",
-                    "description": "Testing Apple TV Switch",
+                    "description": "parseTest Apple TV Switch",
                     "manufacturerName": "Logitech",
                     "displayCategories": [
                         "SWITCH"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":299,\"iid\":9,\"value\":1}",
-                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":299,\"iid\":9,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":299,\"iid\":9}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":299,\"iid\":9,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":299,\"iid\":9,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":299,\"iid\":9}]"
                     },
                     "capabilities": [
                         {
@@ -233,17 +233,17 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDMwMCxpaWQ6IDk=",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLUF1ZGlvIElu",
                     "friendlyName": "Audio In",
-                    "description": "Testing Audio In Switch",
+                    "description": "parseTest Audio In Switch",
                     "manufacturerName": "Logitech",
                     "displayCategories": [
                         "SWITCH"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":300,\"iid\":9,\"value\":1}",
-                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":300,\"iid\":9,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":300,\"iid\":9}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":300,\"iid\":9,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":300,\"iid\":9,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":300,\"iid\":9}]"
                     },
                     "capabilities": [
                         {
@@ -268,17 +268,17 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDMwMSxpaWQ6IDk=",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLUZlcm4tc2VoZW4=",
                     "friendlyName": "Fern-sehen",
-                    "description": "Testing Fern-sehen Switch",
+                    "description": "parseTest Fern-sehen Switch",
                     "manufacturerName": "Logitech",
                     "displayCategories": [
                         "SWITCH"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":301,\"iid\":9,\"value\":1}",
-                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":301,\"iid\":9,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":301,\"iid\":9}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":301,\"iid\":9,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":301,\"iid\":9,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":301,\"iid\":9}]"
                     },
                     "capabilities": [
                         {
@@ -303,17 +303,17 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDMwMixpaWQ6IDk=",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLUZlcm5zZWhlbiBTY2hsYWZ6aW1tZXI=",
                     "friendlyName": "Fernsehen Schlafzimmer",
-                    "description": "Testing Fernsehen Schlafzimmer Switch",
+                    "description": "parseTest Fernsehen Schlafzimmer Switch",
                     "manufacturerName": "Logitech",
                     "displayCategories": [
                         "SWITCH"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":302,\"iid\":9,\"value\":1}",
-                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":302,\"iid\":9,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":302,\"iid\":9}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":302,\"iid\":9,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":302,\"iid\":9,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":302,\"iid\":9}]"
                     },
                     "capabilities": [
                         {
@@ -338,17 +338,17 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDMwMyxpaWQ6IDk=",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLU11c2lrIGjDtnJlbg==",
                     "friendlyName": "Musik hören",
-                    "description": "Testing Musik hören Switch",
+                    "description": "parseTest Musik hören Switch",
                     "manufacturerName": "Logitech",
                     "displayCategories": [
                         "SWITCH"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":303,\"iid\":9,\"value\":1}",
-                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":303,\"iid\":9,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":303,\"iid\":9}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":303,\"iid\":9,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":303,\"iid\":9,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":303,\"iid\":9}]"
                     },
                     "capabilities": [
                         {
@@ -373,17 +373,17 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDMwNCxpaWQ6IDk=",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLVBsYXlTdGF0aW9uIDMgU2xpbQ==",
                     "friendlyName": "PlayStation 3 Slim",
-                    "description": "Testing PlayStation 3 Slim Switch",
+                    "description": "parseTest PlayStation 3 Slim Switch",
                     "manufacturerName": "Logitech",
                     "displayCategories": [
                         "SWITCH"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":304,\"iid\":9,\"value\":1}",
-                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":304,\"iid\":9,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":304,\"iid\":9}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":304,\"iid\":9,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":304,\"iid\":9,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":304,\"iid\":9}]"
                     },
                     "capabilities": [
                         {
@@ -408,17 +408,17 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "dGVzdDoxMjM0NSxhaWQ6IDMwNSxpaWQ6IDk=",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLVJhc3BiZXJyeSBQaSAz",
                     "friendlyName": "Raspberry Pi 3",
-                    "description": "Testing Raspberry Pi 3 Switch",
+                    "description": "parseTest Raspberry Pi 3 Switch",
                     "manufacturerName": "Logitech",
                     "displayCategories": [
                         "SWITCH"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":305,\"iid\":9,\"value\":1}",
-                        "TurnOff": "{\"host\":\"test\",\"port\":\"12345\",\"aid\":305,\"iid\":9,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"test\",\"port\":\"12345\",\"aid\":305,\"iid\":9}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":305,\"iid\":9,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":305,\"iid\":9,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":305,\"iid\":9}]"
                     },
                     "capabilities": [
                         {
@@ -446,3 +446,51 @@ Alexa Message Validation Passed!
         }
     }
 }
+
+-----------------------------------------------------------
+
+{"host":"127.0.0.1","port":51826,"aid":98,"iid":9}
+{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVJhc3BiZXJyeS1SYXNwYmVycnkgUEkgVGVtcGVyYXR1cg==',
+  friendlyName: 'Raspberry PI Temperatur',
+  description: 'parseTest Raspberry PI Temperatur Temperature Sensor',
+  manufacturerName: 'Raspberry',
+  displayCategories: [ 'TEMPERATURE_SENSOR' ],
+  cookie: 
+   { ReportState: '[{"interface":"Alexa.TemperatureSensor","host":"127.0.0.1","port":51826,"aid":98,"iid":9}]' },
+  capabilities: 
+   [ { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
+     { type: 'AlexaInterface',
+       interface: 'Alexa.TemperatureSensor',
+       version: '3',
+       properties: [Object] } ] }
+{"host":"127.0.0.1","port":51826,"aid":166,"iid":10}
+{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLUR5c29uIFB1cmUgQ29vbCBMaW5r',
+  friendlyName: 'Dyson Pure Cool Link',
+  description: 'parseTest Dyson Pure Cool Link Temperature Sensor',
+  manufacturerName: 'Default-Manufacturer',
+  displayCategories: [ 'TEMPERATURE_SENSOR' ],
+  cookie: 
+   { ReportState: '[{"interface":"Alexa.TemperatureSensor","host":"127.0.0.1","port":51826,"aid":166,"iid":10}]' },
+  capabilities: 
+   [ { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
+     { type: 'AlexaInterface',
+       interface: 'Alexa.TemperatureSensor',
+       version: '3',
+       properties: [Object] } ] }
+{"host":"127.0.0.1","port":51826,"aid":381,"iid":10}
+{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWhvbWVicmlkZ2Utd3MtV2V0dGVyc3RhdGlvbg==',
+  friendlyName: 'Wetterstation',
+  description: 'parseTest Wetterstation Temperature Sensor',
+  manufacturerName: 'homebridge-ws',
+  displayCategories: [ 'TEMPERATURE_SENSOR' ],
+  cookie: 
+   { ReportState: '[{"interface":"Alexa.TemperatureSensor","host":"127.0.0.1","port":51826,"aid":381,"iid":10}]' },
+  capabilities: 
+   [ { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
+     { type: 'AlexaInterface',
+       interface: 'Alexa.TemperatureSensor',
+       version: '3',
+       properties: [Object] } ] }
+
+-----------------------------------------------------------
+
