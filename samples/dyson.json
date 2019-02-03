@@ -13,7 +13,7 @@ Alexa Message Validation Passed!
         "payload": {
             "endpoints": [
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVJhc3BiZXJyeS1SYXNwYmVycnkgUEkgVGVtcGVyYXR1cg==",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVJhc3BiZXJyeS1SYXNwYmVycnkgUEkgVGVtcGVyYXR1ci0wMDAwMDA4QS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Raspberry PI Temperatur",
                     "description": "parseTest Raspberry PI Temperatur Temperature Sensor",
                     "manufacturerName": "Raspberry",
@@ -39,14 +39,14 @@ Alexa Message Validation Passed!
                                         "name": "temperature"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         }
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLUR5c29uIFB1cmUgQ29vbCBMaW5r",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLUR5c29uIFB1cmUgQ29vbCBMaW5rLTAwMDAwMDhBLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Dyson Pure Cool Link",
                     "description": "parseTest Dyson Pure Cool Link Temperature Sensor",
                     "manufacturerName": "Default-Manufacturer",
@@ -72,14 +72,14 @@ Alexa Message Validation Passed!
                                         "name": "temperature"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         }
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLUR5c29uIFB1cmUgQ29vbCBMaW5rIEZhbg==",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLUR5c29uIFB1cmUgQ29vbCBMaW5rIEZhbi0wMDAwMDBCNy0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Dyson Pure Cool Link Fan",
                     "description": "parseTest Dyson Pure Cool Link Fan Fan",
                     "manufacturerName": "Default-Manufacturer",
@@ -130,7 +130,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLU5pZ2h0IE1vZGUgLSBEeXNvbiBQdXJlIENvb2wgTGluaw==",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLU5pZ2h0IE1vZGUgLSBEeXNvbiBQdXJlIENvb2wgTGluay0wMDAwMDA0OS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Night Mode - Dyson Pure Cool Link",
                     "description": "parseTest Night Mode - Dyson Pure Cool Link Switch",
                     "manufacturerName": "Default-Manufacturer",
@@ -165,7 +165,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWhvbWVicmlkZ2Utd3MtV2V0dGVyc3RhdGlvbg==",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWhvbWVicmlkZ2Utd3MtV2V0dGVyc3RhdGlvbi0wMDAwMDA4QS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Wetterstation",
                     "description": "parseTest Wetterstation Temperature Sensor",
                     "manufacturerName": "homebridge-ws",
@@ -191,14 +191,14 @@ Alexa Message Validation Passed!
                                         "name": "temperature"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         }
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLUFwcGxlIFRW",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLUFwcGxlIFRWLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Apple TV",
                     "description": "parseTest Apple TV Switch",
                     "manufacturerName": "Logitech",
@@ -233,7 +233,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLUF1ZGlvIElu",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLUF1ZGlvIEluLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Audio In",
                     "description": "parseTest Audio In Switch",
                     "manufacturerName": "Logitech",
@@ -268,7 +268,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLUZlcm4tc2VoZW4=",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLUZlcm4tc2VoZW4tMDAwMDAwNDktMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Fern-sehen",
                     "description": "parseTest Fern-sehen Switch",
                     "manufacturerName": "Logitech",
@@ -303,7 +303,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLUZlcm5zZWhlbiBTY2hsYWZ6aW1tZXI=",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLUZlcm5zZWhlbiBTY2hsYWZ6aW1tZXItMDAwMDAwNDktMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Fernsehen Schlafzimmer",
                     "description": "parseTest Fernsehen Schlafzimmer Switch",
                     "manufacturerName": "Logitech",
@@ -338,7 +338,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLU11c2lrIGjDtnJlbg==",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLU11c2lrIGjDtnJlbi0wMDAwMDA0OS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Musik hören",
                     "description": "parseTest Musik hören Switch",
                     "manufacturerName": "Logitech",
@@ -373,7 +373,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLVBsYXlTdGF0aW9uIDMgU2xpbQ==",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLVBsYXlTdGF0aW9uIDMgU2xpbS0wMDAwMDA0OS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "PlayStation 3 Slim",
                     "description": "parseTest PlayStation 3 Slim Switch",
                     "manufacturerName": "Logitech",
@@ -408,7 +408,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLVJhc3BiZXJyeSBQaSAz",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLVJhc3BiZXJyeSBQaSAzLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Raspberry Pi 3",
                     "description": "parseTest Raspberry Pi 3 Switch",
                     "manufacturerName": "Logitech",
@@ -449,48 +449,6 @@ Alexa Message Validation Passed!
 
 -----------------------------------------------------------
 
-{"host":"127.0.0.1","port":51826,"aid":98,"iid":9}
-{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVJhc3BiZXJyeS1SYXNwYmVycnkgUEkgVGVtcGVyYXR1cg==',
-  friendlyName: 'Raspberry PI Temperatur',
-  description: 'parseTest Raspberry PI Temperatur Temperature Sensor',
-  manufacturerName: 'Raspberry',
-  displayCategories: [ 'TEMPERATURE_SENSOR' ],
-  cookie: 
-   { ReportState: '[{"interface":"Alexa.TemperatureSensor","host":"127.0.0.1","port":51826,"aid":98,"iid":9}]' },
-  capabilities: 
-   [ { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
-     { type: 'AlexaInterface',
-       interface: 'Alexa.TemperatureSensor',
-       version: '3',
-       properties: [Object] } ] }
-{"host":"127.0.0.1","port":51826,"aid":166,"iid":10}
-{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLUR5c29uIFB1cmUgQ29vbCBMaW5r',
-  friendlyName: 'Dyson Pure Cool Link',
-  description: 'parseTest Dyson Pure Cool Link Temperature Sensor',
-  manufacturerName: 'Default-Manufacturer',
-  displayCategories: [ 'TEMPERATURE_SENSOR' ],
-  cookie: 
-   { ReportState: '[{"interface":"Alexa.TemperatureSensor","host":"127.0.0.1","port":51826,"aid":166,"iid":10}]' },
-  capabilities: 
-   [ { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
-     { type: 'AlexaInterface',
-       interface: 'Alexa.TemperatureSensor',
-       version: '3',
-       properties: [Object] } ] }
-{"host":"127.0.0.1","port":51826,"aid":381,"iid":10}
-{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWhvbWVicmlkZ2Utd3MtV2V0dGVyc3RhdGlvbg==',
-  friendlyName: 'Wetterstation',
-  description: 'parseTest Wetterstation Temperature Sensor',
-  manufacturerName: 'homebridge-ws',
-  displayCategories: [ 'TEMPERATURE_SENSOR' ],
-  cookie: 
-   { ReportState: '[{"interface":"Alexa.TemperatureSensor","host":"127.0.0.1","port":51826,"aid":381,"iid":10}]' },
-  capabilities: 
-   [ { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
-     { type: 'AlexaInterface',
-       interface: 'Alexa.TemperatureSensor',
-       version: '3',
-       properties: [Object] } ] }
 
 -----------------------------------------------------------
 

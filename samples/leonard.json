@@ -13,7 +13,7 @@ Alexa Message Validation Passed!
         "payload": {
             "endpoints": [
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWhvbWVicmlkZ2UtcnRsXzQzMy1Gcm9udCBQb3JjaA==",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWhvbWVicmlkZ2UtcnRsXzQzMy1Gcm9udCBQb3JjaC0wMDAwMDA4NS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Front Porch",
                     "description": "parseTest Front Porch Motion Sensor",
                     "manufacturerName": "homebridge-rtl_433",
@@ -46,7 +46,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLUJhcnQ=",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLUJhcnQtMDAwMDAwNDktMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Bart",
                     "description": "parseTest Bart Switch",
                     "manufacturerName": "Default-Manufacturer",
@@ -81,7 +81,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLURyeWVy",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLURyeWVyLTAwMDAwMDg1LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Dryer",
                     "description": "parseTest Dryer Motion Sensor",
                     "manufacturerName": "WSSENSOR",
@@ -114,7 +114,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLURyeWVy",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLURyeWVyLTAwMDAwMDhBLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Dryer",
                     "description": "parseTest Dryer Temperature Sensor",
                     "manufacturerName": "WSSENSOR",
@@ -140,14 +140,14 @@ Alexa Message Validation Passed!
                                         "name": "temperature"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         }
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLUdhcmFnZQ==",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLUdhcmFnZS0wMDAwMDA4QS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Garage",
                     "description": "parseTest Garage Temperature Sensor",
                     "manufacturerName": "WSSENSOR",
@@ -173,14 +173,14 @@ Alexa Message Validation Passed!
                                         "name": "temperature"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         }
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLUdhcmFnZSBEb29y",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLUdhcmFnZSBEb29yLTAwMDAwMDQxLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Garage Door",
                     "description": "parseTest Garage Door Garage Door",
                     "manufacturerName": "WSSENSOR",
@@ -229,7 +229,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLVRlc3QgTW90aW9u",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLVRlc3QgTW90aW9uLTAwMDAwMDhBLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Test Motion",
                     "description": "parseTest Test Motion Temperature Sensor",
                     "manufacturerName": "WSSENSOR",
@@ -255,14 +255,14 @@ Alexa Message Validation Passed!
                                         "name": "temperature"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         }
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLVRlc3QgTW90aW9u",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLVRlc3QgTW90aW9uLTAwMDAwMDg1LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Test Motion",
                     "description": "parseTest Test Motion Motion Sensor",
                     "manufacturerName": "WSSENSOR",
@@ -295,7 +295,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1DVUxFRC1NQ1VMRUQgUmVzZXQgU3dpdGNo",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1DVUxFRC1NQ1VMRUQgUmVzZXQgU3dpdGNoLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "MCULED Reset Switch",
                     "description": "parseTest MCULED Reset Switch Switch",
                     "manufacturerName": "MCULED",
@@ -330,7 +330,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLUJlc2lkZSBTdGFpcnM=",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLUJlc2lkZSBTdGFpcnMtMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Beside Stairs",
                     "description": "parseTest Beside Stairs Light",
                     "manufacturerName": "Default-Manufacturer",
@@ -381,7 +381,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLU91dHNpZGUgT2ZmaWNl",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLU91dHNpZGUgT2ZmaWNlLTAwMDAwMDQzLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Outside Office",
                     "description": "parseTest Outside Office Light",
                     "manufacturerName": "Default-Manufacturer",
@@ -439,7 +439,7 @@ Alexa Message Validation Passed!
 -----------------------------------------------------------
 
 {"host":"127.0.0.1","port":51826,"aid":7,"iid":10}
-{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWhvbWVicmlkZ2UtcnRsXzQzMy1Gcm9udCBQb3JjaA==',
+{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWhvbWVicmlkZ2UtcnRsXzQzMy1Gcm9udCBQb3JjaC0wMDAwMDA4NS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=',
   friendlyName: 'Front Porch',
   description: 'parseTest Front Porch Motion Sensor',
   manufacturerName: 'homebridge-rtl_433',
@@ -453,7 +453,7 @@ Alexa Message Validation Passed!
        version: '3',
        properties: [Object] } ] }
 {"host":"127.0.0.1","port":51826,"aid":2,"iid":10}
-{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLURyeWVy',
+{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLURyeWVyLTAwMDAwMDg1LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==',
   friendlyName: 'Dryer',
   description: 'parseTest Dryer Motion Sensor',
   manufacturerName: 'WSSENSOR',
@@ -464,38 +464,10 @@ Alexa Message Validation Passed!
    [ { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
      { type: 'AlexaInterface',
        interface: 'Alexa.MotionSensor',
-       version: '3',
-       properties: [Object] } ] }
-{"host":"127.0.0.1","port":51826,"aid":2,"iid":16}
-{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLURyeWVy',
-  friendlyName: 'Dryer',
-  description: 'parseTest Dryer Motion Sensor',
-  manufacturerName: 'WSSENSOR',
-  displayCategories: [ 'MOTION_SENSOR' ],
-  cookie: 
-   { ReportState: '[{"interface":"Alexa.MotionSensor","host":"127.0.0.1","port":51826,"aid":2,"iid":10}]' },
-  capabilities: 
-   [ { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
-     { type: 'AlexaInterface',
-       interface: 'Alexa.MotionSensor',
-       version: '3',
-       properties: [Object] } ] }
-{"host":"127.0.0.1","port":51826,"aid":3,"iid":10}
-{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLUdhcmFnZQ==',
-  friendlyName: 'Garage',
-  description: 'parseTest Garage Temperature Sensor',
-  manufacturerName: 'WSSENSOR',
-  displayCategories: [ 'TEMPERATURE_SENSOR' ],
-  cookie: 
-   { ReportState: '[{"interface":"Alexa.TemperatureSensor","host":"127.0.0.1","port":51826,"aid":3,"iid":10}]' },
-  capabilities: 
-   [ { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
-     { type: 'AlexaInterface',
-       interface: 'Alexa.TemperatureSensor',
        version: '3',
        properties: [Object] } ] }
 {"host":"127.0.0.1","port":51826,"aid":3,"iid":16}
-{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLUdhcmFnZSBEb29y',
+{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLUdhcmFnZSBEb29yLTAwMDAwMDQxLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==',
   friendlyName: 'Garage Door',
   description: 'parseTest Garage Door Garage Door',
   manufacturerName: 'WSSENSOR',
@@ -514,32 +486,18 @@ Alexa Message Validation Passed!
        interface: 'Alexa.PowerController',
        version: '3',
        properties: [Object] } ] }
-{"host":"127.0.0.1","port":51826,"aid":4,"iid":10}
-{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLVRlc3QgTW90aW9u',
-  friendlyName: 'Test Motion',
-  description: 'parseTest Test Motion Temperature Sensor',
-  manufacturerName: 'WSSENSOR',
-  displayCategories: [ 'TEMPERATURE_SENSOR' ],
-  cookie: 
-   { ReportState: '[{"interface":"Alexa.TemperatureSensor","host":"127.0.0.1","port":51826,"aid":4,"iid":10}]' },
-  capabilities: 
-   [ { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
-     { type: 'AlexaInterface',
-       interface: 'Alexa.TemperatureSensor',
-       version: '3',
-       properties: [Object] } ] }
 {"host":"127.0.0.1","port":51826,"aid":4,"iid":16}
-{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLVRlc3QgTW90aW9u',
+{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLVRlc3QgTW90aW9uLTAwMDAwMDg1LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==',
   friendlyName: 'Test Motion',
-  description: 'parseTest Test Motion Temperature Sensor',
+  description: 'parseTest Test Motion Motion Sensor',
   manufacturerName: 'WSSENSOR',
-  displayCategories: [ 'TEMPERATURE_SENSOR' ],
+  displayCategories: [ 'MOTION_SENSOR' ],
   cookie: 
-   { ReportState: '[{"interface":"Alexa.TemperatureSensor","host":"127.0.0.1","port":51826,"aid":4,"iid":10}]' },
+   { ReportState: '[{"interface":"Alexa.MotionSensor","host":"127.0.0.1","port":51826,"aid":4,"iid":16}]' },
   capabilities: 
    [ { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
      { type: 'AlexaInterface',
-       interface: 'Alexa.TemperatureSensor',
+       interface: 'Alexa.MotionSensor',
        version: '3',
        properties: [Object] } ] }
 

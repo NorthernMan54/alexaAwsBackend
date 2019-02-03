@@ -13,7 +13,7 @@ Alexa Message Validation Passed!
         "payload": {
             "endpoints": [
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtRnJvbnQgUG9yY2g=",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtRnJvbnQgUG9yY2gtMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Front Porch",
                     "description": "parseTest Front Porch Light",
                     "manufacturerName": "Heyu",
@@ -64,7 +64,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtR2FyZGVuIFBhdGg=",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtR2FyZGVuIFBhdGgtMDAwMDAwNDctMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Garden Path",
                     "description": "parseTest Garden Path Outlet",
                     "manufacturerName": "Heyu",
@@ -99,7 +99,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtU2lkZSBEb29y",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtU2lkZSBEb29yLTAwMDAwMDQzLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Side Door",
                     "description": "parseTest Side Door Light",
                     "manufacturerName": "Heyu",
@@ -150,7 +150,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtUmVhciBEb29y",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtUmVhciBEb29yLTAwMDAwMDQzLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Rear Door",
                     "description": "parseTest Rear Door Light",
                     "manufacturerName": "Heyu",
@@ -201,7 +201,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtRmFtaWx5IHJvb20gUG90IGxpZ2h0cw==",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtRmFtaWx5IHJvb20gUG90IGxpZ2h0cy0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Family room Pot lights",
                     "description": "parseTest Family room Pot lights Light",
                     "manufacturerName": "Heyu",
@@ -252,7 +252,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtRmFtaWx5IHJvb20gTGFtcA==",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtRmFtaWx5IHJvb20gTGFtcC0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Family room Lamp",
                     "description": "parseTest Family room Lamp Light",
                     "manufacturerName": "Heyu",
@@ -303,7 +303,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtRmFtaWx5IHJvb20gb3V0bGV0",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtRmFtaWx5IHJvb20gb3V0bGV0LTAwMDAwMDQ3LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Family room outlet",
                     "description": "parseTest Family room outlet Outlet",
                     "manufacturerName": "Heyu",
@@ -338,7 +338,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtRnJvbnQgRG9vcg==",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtRnJvbnQgRG9vci0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Front Door",
                     "description": "parseTest Front Door Light",
                     "manufacturerName": "Heyu",
@@ -389,7 +389,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtQmFzZW1lbnQgU3RhaXI=",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtQmFzZW1lbnQgU3RhaXItMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Basement Stair",
                     "description": "parseTest Basement Stair Light",
                     "manufacturerName": "Heyu",
@@ -440,7 +440,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtS2l0Y2hlbiBDb3VudGVy",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtS2l0Y2hlbiBDb3VudGVyLTAwMDAwMDQzLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Kitchen Counter",
                     "description": "parseTest Kitchen Counter Light",
                     "manufacturerName": "Heyu",
@@ -491,7 +491,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtTGl2aW5nIFJvb20gTGFtcA==",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtTGl2aW5nIFJvb20gTGFtcC0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Living Room Lamp",
                     "description": "parseTest Living Room Lamp Light",
                     "manufacturerName": "Heyu",
@@ -542,7 +542,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtU3RhaXJjYXNlIExhbXA=",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtU3RhaXJjYXNlIExhbXAtMDAwMDAwNDctMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Staircase Lamp",
                     "description": "parseTest Staircase Lamp Outlet",
                     "manufacturerName": "Heyu",
@@ -577,7 +577,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtUG93ZGVyIFJvb20=",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtUG93ZGVyIFJvb20tMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Powder Room",
                     "description": "parseTest Powder Room Light",
                     "manufacturerName": "Heyu",
@@ -628,7 +628,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtR2FyYWdlIE91dGxldA==",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtR2FyYWdlIE91dGxldC0wMDAwMDA0Ny0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Garage Outlet",
                     "description": "parseTest Garage Outlet Outlet",
                     "manufacturerName": "Heyu",
@@ -663,7 +663,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtUG9yY2ggTW90aW9u",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtUG9yY2ggTW90aW9uLTAwMDAwMDg1LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Porch Motion",
                     "description": "parseTest Porch Motion Motion Sensor",
                     "manufacturerName": "Heyu",
@@ -696,7 +696,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtU3RlcmVv",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtU3RlcmVvLTAwMDAwMDQ3LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Stereo",
                     "description": "parseTest Stereo Outlet",
                     "manufacturerName": "Heyu",
@@ -731,7 +731,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtQWxsIERldmljZXM=",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtQWxsIERldmljZXMtMDAwMDAwNDktMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "All Devices",
                     "description": "parseTest All Devices Switch",
                     "manufacturerName": "Heyu",
@@ -766,7 +766,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtQWxsIExpZ2h0cw==",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtQWxsIExpZ2h0cy0wMDAwMDA0OS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "All Lights",
                     "description": "parseTest All Lights Switch",
                     "manufacturerName": "Heyu",
@@ -801,7 +801,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU5vcnRoZXJuTWFuNTQtQmFzZW1lbnQ=",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU5vcnRoZXJuTWFuNTQtQmFzZW1lbnQtMDAwMDAwOEEtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Basement",
                     "description": "parseTest Basement Temperature Sensor",
                     "manufacturerName": "NorthernMan54",
@@ -827,14 +827,14 @@ Alexa Message Validation Passed!
                                         "name": "temperature"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         }
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1DVUlPVC1NQ1VJT1QgUmVzZXQgU3dpdGNo",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1DVUlPVC1NQ1VJT1QgUmVzZXQgU3dpdGNoLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "MCUIOT Reset Switch",
                     "description": "parseTest MCUIOT Reset Switch Switch",
                     "manufacturerName": "MCUIOT",
@@ -869,7 +869,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1DVUlPVC1Db2xkIENlbGxhcg==",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1DVUlPVC1Db2xkIENlbGxhci0wMDAwMDA4QS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Cold Cellar",
                     "description": "parseTest Cold Cellar Temperature Sensor",
                     "manufacturerName": "MCUIOT",
@@ -895,14 +895,14 @@ Alexa Message Validation Passed!
                                         "name": "temperature"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         }
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1DVUlPVC1Gcm9udCBQb3JjaA==",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1DVUlPVC1Gcm9udCBQb3JjaC0wMDAwMDA4QS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Front Porch",
                     "description": "parseTest Front Porch Temperature Sensor",
                     "manufacturerName": "MCUIOT",
@@ -928,14 +928,14 @@ Alexa Message Validation Passed!
                                         "name": "temperature"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         }
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1DVUlPVC1HYXJhZ2UgRG9vcg==",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1DVUlPVC1HYXJhZ2UgRG9vci0wMDAwMDA0MS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Garage Door",
                     "description": "parseTest Garage Door Garage Door",
                     "manufacturerName": "MCUIOT",
@@ -984,7 +984,7 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1DVUlPVC1JbnNpZGU=",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1DVUlPVC1JbnNpZGUtMDAwMDAwOEEtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Inside",
                     "description": "parseTest Inside Temperature Sensor",
                     "manufacturerName": "MCUIOT",
@@ -1010,7 +1010,7 @@ Alexa Message Validation Passed!
                                         "name": "temperature"
                                     }
                                 ],
-                                "proactivelyReported": true,
+                                "proactivelyReported": false,
                                 "retrievable": true
                             }
                         }
@@ -1024,7 +1024,7 @@ Alexa Message Validation Passed!
 -----------------------------------------------------------
 
 {"host":"127.0.0.1","port":51826,"aid":16,"iid":11}
-{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtUG9yY2ggTW90aW9u',
+{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtUG9yY2ggTW90aW9uLTAwMDAwMDg1LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==',
   friendlyName: 'Porch Motion',
   description: 'parseTest Porch Motion Motion Sensor',
   manufacturerName: 'Heyu',
@@ -1037,50 +1037,8 @@ Alexa Message Validation Passed!
        interface: 'Alexa.MotionSensor',
        version: '3',
        properties: [Object] } ] }
-{"host":"127.0.0.1","port":51826,"aid":21,"iid":10}
-{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU5vcnRoZXJuTWFuNTQtQmFzZW1lbnQ=',
-  friendlyName: 'Basement',
-  description: 'parseTest Basement Temperature Sensor',
-  manufacturerName: 'NorthernMan54',
-  displayCategories: [ 'TEMPERATURE_SENSOR' ],
-  cookie: 
-   { ReportState: '[{"interface":"Alexa.TemperatureSensor","host":"127.0.0.1","port":51826,"aid":21,"iid":10}]' },
-  capabilities: 
-   [ { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
-     { type: 'AlexaInterface',
-       interface: 'Alexa.TemperatureSensor',
-       version: '3',
-       properties: [Object] } ] }
-{"host":"127.0.0.1","port":51826,"aid":23,"iid":10}
-{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1DVUlPVC1Db2xkIENlbGxhcg==',
-  friendlyName: 'Cold Cellar',
-  description: 'parseTest Cold Cellar Temperature Sensor',
-  manufacturerName: 'MCUIOT',
-  displayCategories: [ 'TEMPERATURE_SENSOR' ],
-  cookie: 
-   { ReportState: '[{"interface":"Alexa.TemperatureSensor","host":"127.0.0.1","port":51826,"aid":23,"iid":10}]' },
-  capabilities: 
-   [ { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
-     { type: 'AlexaInterface',
-       interface: 'Alexa.TemperatureSensor',
-       version: '3',
-       properties: [Object] } ] }
-{"host":"127.0.0.1","port":51826,"aid":24,"iid":10}
-{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1DVUlPVC1Gcm9udCBQb3JjaA==',
-  friendlyName: 'Front Porch',
-  description: 'parseTest Front Porch Temperature Sensor',
-  manufacturerName: 'MCUIOT',
-  displayCategories: [ 'TEMPERATURE_SENSOR' ],
-  cookie: 
-   { ReportState: '[{"interface":"Alexa.TemperatureSensor","host":"127.0.0.1","port":51826,"aid":24,"iid":10}]' },
-  capabilities: 
-   [ { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
-     { type: 'AlexaInterface',
-       interface: 'Alexa.TemperatureSensor',
-       version: '3',
-       properties: [Object] } ] }
 {"host":"127.0.0.1","port":51826,"aid":31,"iid":10}
-{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1DVUlPVC1HYXJhZ2UgRG9vcg==',
+{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1DVUlPVC1HYXJhZ2UgRG9vci0wMDAwMDA0MS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=',
   friendlyName: 'Garage Door',
   description: 'parseTest Garage Door Garage Door',
   manufacturerName: 'MCUIOT',
@@ -1097,20 +1055,6 @@ Alexa Message Validation Passed!
        properties: [Object] },
      { type: 'AlexaInterface',
        interface: 'Alexa.PowerController',
-       version: '3',
-       properties: [Object] } ] }
-{"host":"127.0.0.1","port":51826,"aid":32,"iid":10}
-{ endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1DVUlPVC1JbnNpZGU=',
-  friendlyName: 'Inside',
-  description: 'parseTest Inside Temperature Sensor',
-  manufacturerName: 'MCUIOT',
-  displayCategories: [ 'TEMPERATURE_SENSOR' ],
-  cookie: 
-   { ReportState: '[{"interface":"Alexa.TemperatureSensor","host":"127.0.0.1","port":51826,"aid":32,"iid":10}]' },
-  capabilities: 
-   [ { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
-     { type: 'AlexaInterface',
-       interface: 'Alexa.TemperatureSensor',
        version: '3',
        properties: [Object] } ] }
 
