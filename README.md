@@ -27,7 +27,7 @@ Alexa --> HomeBridge --(webservice)--> WebSite <--(MQTT)--> HomeBridge --(WebSer
           HomeSkill                                         Plugin
 ```
 
-![Diagram](docs/Homebridge Alexa/Homebridge Alexa.001.jpeg)
+![Diagram](docs/Homebridge-Alexa.001.jpeg)
 
 HomeBridge HomeSkill sends alexa directives to website, website uses endpoint.scope.token to lookup account, and mqtt topic of account.  Website sends alexa directive to HomeBridge plugin via MQTT.  Plugin uses endpoint.endpointid to determine HAP instance, and create HAP request.
 
