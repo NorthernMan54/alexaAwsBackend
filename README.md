@@ -4,7 +4,7 @@ This repository contains the backend code for homebridge-alexa
 
 These are my notes and backlog for the creating of the Skill Based approach for integrating Amazon Alexa with HomeBridge.  Also all code for this version will use this branch of the repository.
 
-# Design
+# Concept
 
           -------------------
           | Alexa HomeSkill |
@@ -27,7 +27,13 @@ Alexa --> HomeBridge --(webservice)--> WebSite <--(MQTT)--> HomeBridge --(WebSer
           HomeSkill                                         Plugin
 ```
 
+# End to End Design
+
 ![Diagram](docs/Homebridge-Alexa.001.jpeg)
+
+# Plugin Design
+
+![Diagram](docs/Homebridge-Alexa.002.jpeg)
 
 HomeBridge HomeSkill sends alexa directives to website, website uses endpoint.scope.token to lookup account, and mqtt topic of account.  Website sends alexa directive to HomeBridge plugin via MQTT.  Plugin uses endpoint.endpointid to determine HAP instance, and create HAP request.
 
