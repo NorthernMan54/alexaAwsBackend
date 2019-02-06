@@ -13,15 +13,15 @@ Alexa Message Validation Passed!
         "payload": {
             "endpoints": [
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVJhc3BiZXJyeS1SYXNwYmVycnkgUEkgVGVtcGVyYXR1ci0wMDAwMDA4QS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
-                    "friendlyName": "Raspberry PI Temperatur",
-                    "description": "parseTest Raspberry PI Temperatur Temperature Sensor",
-                    "manufacturerName": "Raspberry",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUJvc2NoLUZhbWlseSBSb29tLTAwMDAwMDhBLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
+                    "friendlyName": "Family Room",
+                    "description": "parseTest Family Room Temperature Sensor",
+                    "manufacturerName": "Bosch",
                     "displayCategories": [
                         "TEMPERATURE_SENSOR"
                     ],
                     "cookie": {
-                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":98,\"iid\":9}]"
+                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10}]"
                     },
                     "capabilities": [
                         {
@@ -46,52 +46,19 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLUR5c29uIFB1cmUgQ29vbCBMaW5rLTAwMDAwMDhBLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Dyson Pure Cool Link",
-                    "description": "parseTest Dyson Pure Cool Link Temperature Sensor",
-                    "manufacturerName": "Default-Manufacturer",
-                    "displayCategories": [
-                        "TEMPERATURE_SENSOR"
-                    ],
-                    "cookie": {
-                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.TemperatureSensor",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "temperature"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLUR5c29uIFB1cmUgQ29vbCBMaW5rIEZhbi0wMDAwMDBCNy0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
-                    "friendlyName": "Dyson Pure Cool Link Fan",
-                    "description": "parseTest Dyson Pure Cool Link Fan Fan",
-                    "manufacturerName": "Default-Manufacturer",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhUVFAtSVJCbGFzdGVyLUZpcmVwbGFjZS0wMDAwMDA0MC0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
+                    "friendlyName": "Fireplace",
+                    "description": "parseTest Fireplace Fan",
+                    "manufacturerName": "HTTP-IRBlaster",
                     "displayCategories": [
                         "OTHER"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":32,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":32,\"value\":0}",
-                        "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":34}",
-                        "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":34}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":32},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":34}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":4,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":4,\"iid\":10,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":4,\"iid\":11}",
+                        "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":4,\"iid\":11}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":4,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":4,\"iid\":11}]"
                     },
                     "capabilities": [
                         {
@@ -130,17 +97,68 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLU5pZ2h0IE1vZGUgLSBEeXNvbiBQdXJlIENvb2wgTGluay0wMDAwMDA0OS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
-                    "friendlyName": "Night Mode - Dyson Pure Cool Link",
-                    "description": "parseTest Night Mode - Dyson Pure Cool Link Switch",
-                    "manufacturerName": "Default-Manufacturer",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWhhbXB0b24tYmF5LU1hc3RlciBmYW4tMDAwMDAwNDAtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
+                    "friendlyName": "Master fan",
+                    "description": "parseTest Master fan Fan",
+                    "manufacturerName": "hampton-bay",
                     "displayCategories": [
-                        "SWITCH"
+                        "OTHER"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":29,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":29,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":29}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":14,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":14,\"iid\":10,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":14,\"iid\":11}",
+                        "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":14,\"iid\":11}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":14,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":14,\"iid\":11}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerLevelController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerLevel"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWhhbXB0b24tYmF5LU1hc3RlciBsaWdodC0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
+                    "friendlyName": "Master light",
+                    "description": "parseTest Master light Light",
+                    "manufacturerName": "hampton-bay",
+                    "displayCategories": [
+                        "LIGHT"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":14,\"iid\":14,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":14,\"iid\":14,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":14,\"iid\":14}]"
                     },
                     "capabilities": [
                         {
@@ -165,15 +183,243 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWhvbWVicmlkZ2Utd3MtV2V0dGVyc3RhdGlvbi0wMDAwMDA4QS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
-                    "friendlyName": "Wetterstation",
-                    "description": "parseTest Wetterstation Temperature Sensor",
-                    "manufacturerName": "homebridge-ws",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhUVFAtSVJCbGFzdGVyLUtPREktMDAwMDAwNDAtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
+                    "friendlyName": "KODI",
+                    "description": "parseTest KODI Speaker",
+                    "manufacturerName": "HTTP-IRBlaster",
                     "displayCategories": [
-                        "TEMPERATURE_SENSOR"
+                        "SPEAKER"
                     ],
                     "cookie": {
-                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":381,\"iid\":10}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":10,\"value\":0}",
+                        "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":11}",
+                        "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":11}",
+                        "SetMute": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":11}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":10},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":11}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.Speaker",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "volume"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUVDTyBQbHVncy1PZmZpY2UtMDAwMDAwNDctMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
+                    "friendlyName": "Office",
+                    "description": "parseTest Office Outlet",
+                    "manufacturerName": "ECO Plugs",
+                    "displayCategories": [
+                        "SMARTPLUG"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":10,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWVjb3BsdWctT3V0bGV0IFRocmVlLTAwMDAwMDQ3LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
+                    "friendlyName": "Outlet Three",
+                    "description": "parseTest Outlet Three Outlet",
+                    "manufacturerName": "ecoplug",
+                    "displayCategories": [
+                        "SMARTPLUG"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":17,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":17,\"iid\":10,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":17,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWVjb3BsdWctRmxvb3IgRmFuLTAwMDAwMDQ3LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
+                    "friendlyName": "Floor Fan",
+                    "description": "parseTest Floor Fan Outlet",
+                    "manufacturerName": "ecoplug",
+                    "displayCategories": [
+                        "SMARTPLUG"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":20,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":20,\"iid\":10,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":20,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWVjb3BsdWctUHJpbnRlci0wMDAwMDA0Ny0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
+                    "friendlyName": "Printer",
+                    "description": "parseTest Printer Outlet",
+                    "manufacturerName": "ecoplug",
+                    "displayCategories": [
+                        "SMARTPLUG"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":22,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":22,\"iid\":10,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":22,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWVjb3BsdWctT3V0bGV0IFR3by0wMDAwMDA0Ny0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
+                    "friendlyName": "Outlet Two",
+                    "description": "parseTest Outlet Two Outlet",
+                    "manufacturerName": "ecoplug",
+                    "displayCategories": [
+                        "SMARTPLUG"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":23,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":23,\"iid\":10,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":23,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU5vcnRoZXJuTWFuNTQtTGl2aW5nIFJvb20tMDAwMDAwNEEtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
+                    "friendlyName": "Living Room",
+                    "description": "parseTest Living Room Thermostat",
+                    "manufacturerName": "NorthernMan54",
+                    "displayCategories": [
+                        "THERMOSTAT"
+                    ],
+                    "cookie": {
+                        "SetTargetTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":13}",
+                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":12},{\"interface\":\"Alexa.ThermostatController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":13}]"
                     },
                     "capabilities": [
                         {
@@ -194,246 +440,18 @@ Alexa Message Validation Passed!
                                 "proactivelyReported": false,
                                 "retrievable": true
                             }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLUFwcGxlIFRWLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Apple TV",
-                    "description": "parseTest Apple TV Switch",
-                    "manufacturerName": "Logitech",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":299,\"iid\":9,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":299,\"iid\":9,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":299,\"iid\":9}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
                         },
                         {
                             "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
+                            "interface": "Alexa.ThermostatController",
                             "version": "3",
                             "properties": {
                                 "supported": [
                                     {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLUF1ZGlvIEluLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Audio In",
-                    "description": "parseTest Audio In Switch",
-                    "manufacturerName": "Logitech",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":300,\"iid\":9,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":300,\"iid\":9,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":300,\"iid\":9}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
+                                        "name": "targetSetpoint"
+                                    },
                                     {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLUZlcm4tc2VoZW4tMDAwMDAwNDktMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
-                    "friendlyName": "Fern-sehen",
-                    "description": "parseTest Fern-sehen Switch",
-                    "manufacturerName": "Logitech",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":301,\"iid\":9,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":301,\"iid\":9,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":301,\"iid\":9}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLUZlcm5zZWhlbiBTY2hsYWZ6aW1tZXItMDAwMDAwNDktMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
-                    "friendlyName": "Fernsehen Schlafzimmer",
-                    "description": "parseTest Fernsehen Schlafzimmer Switch",
-                    "manufacturerName": "Logitech",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":302,\"iid\":9,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":302,\"iid\":9,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":302,\"iid\":9}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLU11c2lrIGjDtnJlbi0wMDAwMDA0OS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
-                    "friendlyName": "Musik hören",
-                    "description": "parseTest Musik hören Switch",
-                    "manufacturerName": "Logitech",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":303,\"iid\":9,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":303,\"iid\":9,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":303,\"iid\":9}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLVBsYXlTdGF0aW9uIDMgU2xpbS0wMDAwMDA0OS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
-                    "friendlyName": "PlayStation 3 Slim",
-                    "description": "parseTest PlayStation 3 Slim Switch",
-                    "manufacturerName": "Logitech",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":304,\"iid\":9,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":304,\"iid\":9,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":304,\"iid\":9}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUxvZ2l0ZWNoLVJhc3BiZXJyeSBQaSAzLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Raspberry Pi 3",
-                    "description": "parseTest Raspberry Pi 3 Switch",
-                    "manufacturerName": "Logitech",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":305,\"iid\":9,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":305,\"iid\":9,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":305,\"iid\":9}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
+                                        "name": "thermostatMode"
                                     }
                                 ],
                                 "proactivelyReported": false,

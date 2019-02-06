@@ -27,10 +27,7 @@ Alexa --> HomeBridge --(webservice)--> WebSite <--(MQTT)--> HomeBridge --(WebSer
           HomeSkill                                         Plugin
 ```
 
-![Diagram](docs/homebridge-alexa.jpg)
-
-
-[draw.io file for above](docs/homebridge-alexa.xml)
+![Diagram](docs/Homebridge Alexa/Homebridge Alexa.001.jpeg)
 
 HomeBridge HomeSkill sends alexa directives to website, website uses endpoint.scope.token to lookup account, and mqtt topic of account.  Website sends alexa directive to HomeBridge plugin via MQTT.  Plugin uses endpoint.endpointid to determine HAP instance, and create HAP request.
 
@@ -174,6 +171,11 @@ brew install mosquitto; brew services start mosquitto
 4. Existing Role - lambda_basic_execution
 5. Trigger - Alexa Smart Home
 
+# Historical Dates
+
+Beta test started - Feb 19, 2018
+Production launch - March 14, 2018
+Added Germany and France - March 28, 2018
 
 # Credits
 

@@ -112,6 +112,7 @@ var oauthModels = require('./models/oauth');
 var Devices = require('./models/devices');
 var Topics = require('./models/topics');
 var LostPassword = require('./models/lostPassword');
+var Usage = require('./models/usage');
 
 Account.findOne({
   username: mqtt_user
@@ -496,8 +497,8 @@ app.get('/auth/start', function(req, res, next) {
 
 app.post('/auth/finish', function(req, res, next) {
   console.log("/auth/finish user: ", req.user);
-  //console.log(req.body);
-  //console.log(req.params);
+  // console.log(req.body);
+  // console.log(req.params);
   if (req.user) {
     next();
   } else {
@@ -518,14 +519,14 @@ app.post('/auth/finish', function(req, res, next) {
         });
         next();
       } else if (!error) {
-        console.log("not authed");
+        console.log("not authed"); // Login not found
         req.flash('error', 'Your logon or password was incorrect. Please try again.');
-        res.redirect(req.body['auth_url'])
+        res.redirect(req.body['auth_url']);
       }
     })(req, res, next);
   }
 }, oauthServer.decision(function(req, done) {
-  //console.log("decision user: ", req);
+  // console.log("decision user: ", req);
   done(null, {
     scope: req.oauth2.req.scope
   });
@@ -622,13 +623,13 @@ mqttClient.on('message', function(topic, message) {
 var timeout = setInterval(function() {
   var now = Date.now();
   var keys = Object.keys(onGoingCommands);
-  for (key in keys) {
+  for (var key in keys) {
     var waiting = onGoingCommands[keys[key]];
-    console.log(keys[key]);
+    // console.log(keys[key]);
     if (waiting) {
       var diff = now - waiting.timestamp;
       if (diff > 6000) {
-        console.log("timed out");
+        console.log("Broker timed out", waiting.user);
         waiting.res.status(504).send('{"error": "timeout"}');
         delete onGoingCommands[keys[key]];
         measurement.send({
@@ -735,26 +736,34 @@ app.get('/status',
     Account.findOne({
       username: req.user.username
     }, function(error, data) {
-      var transform = {
-        "<>": "div",
-        "html": "<tr><td>${username}</td><td>${created}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td><td>${lastUsedBroker}</td><td>${brokerCount}</td></tr>"
-      };
-      res.send("<a href=\"/usage.csv\" download=\"/usage.csv\">Download the data</a><table border='1'>" + json2html.transform(data, transform) + "</table>");
+      if (!error) {
+        Usage.findOne({
+          user: data._id
+        }).populate('user', 'username').exec(function(error, data) {
+          if (!error) {
+            var transform = {
+              "<>": "div",
+              "html": "<tr><td>${user.username}</td><td>${created}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td><td>${lastUsedBroker}</td><td>${brokerCount}</td><td>${lastEvent}</td><td>${eventCount}</td></tr>"
+            };
+            res.send("<table border='1'><tr><th>Username</th><th>Created</th><th>Last Used Alexa</th><th>Alexa Count</th><th>Last Plugin Response</th><th>Response Count</th><th>Last Event</th><th>Event Count</th></tr>" + json2html.transform(data, transform) + "</table>");
+          }
+        });
+      }
     });
-
   });
-
 
 app.get('/admin/users',
   ensureAuthenticated,
   function(req, res) {
     if (req.user.username === mqtt_user) {
-      Account.find({}, function(error, data) {
-        var transform = {
-          "<>": "div",
-          "html": "<tr><td>${username}</td><td>${created}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td><td>${lastUsedBroker}</td><td>${brokerCount}</td></tr>"
-        };
-        res.send("<a href=\"/usage.csv\" download=\"/usage.csv\">Download the data</a><table border='1'>" + json2html.transform(data, transform) + "</table>");
+      Usage.find().sort('-lastUsedBroker').populate('user', 'username').exec(function(error, data) {
+        if (!error) {
+          var transform = {
+            "<>": "div",
+            "html": "<tr><td>${user.username}</td><td>${created}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td><td>${lastUsedBroker}</td><td>${brokerCount}</td><td>${lastEvent}</td><td>${eventCount}</td></tr>"
+          };
+          res.send("<a href=\"/usage.csv\" download=\"/usage.csv\">Download the data</a><table border='1'><tr><th>Username</th><th>Created</th><th>Last Used Alexa</th><th>Alexa Count</th><th>Last Plugin Response</th><th>Response Count</th><th>Last Event</th><th>Event Count</th></tr>" + json2html.transform(data, transform) + "</table>");
+        }
       });
     } else {
       res.status(401).send();
@@ -797,8 +806,7 @@ app.get('/admin/devices',
 app.put('/services',
   ensureAuthenticated,
   function(req, res) {
-    if (req.user.username == mqtt_user) {
-
+    if (req.user.username === mqtt_user) {
       var application = oauthModels.Application(req.body);
       application.save(function(err, application) {
         if (!err) {

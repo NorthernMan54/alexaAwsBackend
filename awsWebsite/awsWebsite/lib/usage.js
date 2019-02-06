@@ -33,7 +33,7 @@ function lastUsedAlexa(username) {
 }
 
 function lastUsedBroker(username) {
-  console.log("lastUsedBroker", username);
+  // console.log("lastUsedBroker", username);
   getRecord(username, function(error, usage) {
     if (!error) {
       usage.lastUsedBroker = new Date();
