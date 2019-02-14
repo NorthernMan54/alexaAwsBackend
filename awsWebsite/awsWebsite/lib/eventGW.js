@@ -14,7 +14,7 @@ module.exports = {
   send: send
 };
 
-function send(user, message) {
+function send(user, message, callback) {
   // console.log(user, message);
   // console.log(req);
   // var body = "grant_type=authorization_code&code=" + message.directive.payload.grant.code + "&client_id=amzn1.application-oa2-client.8ff7ed85e0e1434f840a4f466ad34f7b&client_secret=60441f26e76a10e3d8a64945b7bd1284b24cd51d5b110b8a0c1be88ce72df7e0";
@@ -31,6 +31,10 @@ function send(user, message) {
           geoid: 'Amazon',
           uid: user
         });
+        if (!error) {
+          error = new Error("Token error");
+        }
+        callback(error);
       } else {
         // console.log("2", message.event.endpoint );
         message.event.endpoint.scope = {
@@ -61,6 +65,7 @@ function send(user, message) {
               geoid: 'Amazon',
               uid: user
             });
+            callback(null);
           } else if (!err && response.statusCode === 401) {
             console.log("Refresh Token required: ", response.body, response.statusCode);
             oauthClient.refresh(user, token);
@@ -73,6 +78,7 @@ function send(user, message) {
               geoid: 'Amazon',
               uid: user
             });
+            callback(null);
           } else if (!err && response.statusCode) {
             console.log("eventGW Error: ", response.body, response.statusCode);
             // oauthClient.refresh(user, token);
@@ -85,6 +91,7 @@ function send(user, message) {
               geoid: 'Amazon',
               uid: user
             });
+            callback(null);
           } else {
             console.log("Error: ", err);
             measurement.send({
@@ -96,6 +103,7 @@ function send(user, message) {
               geoid: 'Amazon',
               uid: user
             });
+            callback(err);
           }
         }); // end of request
       } // end of if else {

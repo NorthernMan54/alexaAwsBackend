@@ -47,6 +47,16 @@ var Usage = new Schema({
     default: function() {
       return new Date(0);
     }
+  },
+  presence: {
+    type: Date,
+    default: function() {
+      return new Date(0);
+    }
+  },
+  version: {
+    type: String,
+    default: ""
   }
 });
 

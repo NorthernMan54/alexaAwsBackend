@@ -5,8 +5,21 @@ module.exports = {
   lastUsedAlexa: lastUsedAlexa,
   lastUsedBroker: lastUsedBroker,
   lastUsedWebsite: lastUsedWebsite,
-  lastEvent: lastEvent
+  lastEvent: lastEvent,
+  presence: presence
 };
+
+function presence(username, version) {
+  getRecord(username, function(error, usage) {
+    if (!error) {
+      usage.presence = new Date();
+      usage.version = version;
+      usage.save();
+    } else {
+      // Error
+    }
+  });
+}
 
 function lastEvent(username) {
   getRecord(username, function(error, usage) {

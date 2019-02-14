@@ -23,8 +23,11 @@ function getAccessToken(username, callback) {
           user: user
         }, function(error, data) {
           if (error) {
-            console.log("getAccessToken Error: ", error);
+            console.log("getAccessToken Error: ", user.username, error);
             callback(error, null);
+          } else if (!data) {
+            console.log("getAccessToken No data Error: ", user.username);
+            callback(new Error("getAccessToken No data Error: " + user.username), null);
           } else {
             console.log("retrieveToken Result: ", user.username, data);
             if (data.token_expires < new Date()) {

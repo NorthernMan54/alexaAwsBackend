@@ -587,7 +587,20 @@ mqttClient.on('message', function(topic, message) {
     } else if (topic.startsWith('event/')) {
       var payload = JSON.parse(message.toString());
       var user = topic.split("/")[1];
-      eventGW.send(user, payload);
+      eventGW.send(user, payload, function(err) {
+        if (err) {
+          var topic = "command/" + user + "/1";
+          var message = {
+            directive: {
+              header: {
+                namespace: "System",
+                message: err
+              }
+            }
+          };
+          mqttClient.publish(topic, JSON.stringify(message));
+        }
+      });
       // should really parse uid out of topic
 
       usage.lastEvent(user);
@@ -599,7 +612,7 @@ mqttClient.on('message', function(topic, message) {
       measurement.send({
         t: 'event',
         ec: 'presence',
-        ea: payload.event.header.name,
+        ea: payload.version,
         el: user,
         sc: 'end',
         geoid: 'Amazon',

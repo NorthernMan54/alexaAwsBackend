@@ -1241,7 +1241,10 @@ Alexa Message Validation Passed!
                     "cookie": {
                         "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":139,\"iid\":10,\"value\":1}",
                         "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":139,\"iid\":10,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":139,\"iid\":10}]"
+                        "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":139,\"iid\":16}",
+                        "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":139,\"iid\":16}",
+                        "SetMute": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":139,\"iid\":16}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":139,\"iid\":10},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":139,\"iid\":16}]"
                     },
                     "capabilities": [
                         {
@@ -1257,6 +1260,20 @@ Alexa Message Validation Passed!
                                 "supported": [
                                     {
                                         "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.Speaker",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "volume"
                                     }
                                 ],
                                 "proactivelyReported": false,
@@ -1276,7 +1293,10 @@ Alexa Message Validation Passed!
                     "cookie": {
                         "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":140,\"iid\":10,\"value\":1}",
                         "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":140,\"iid\":10,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":140,\"iid\":10}]"
+                        "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":140,\"iid\":16}",
+                        "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":140,\"iid\":16}",
+                        "SetMute": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":140,\"iid\":16}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":140,\"iid\":10},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":140,\"iid\":16}]"
                     },
                     "capabilities": [
                         {
@@ -1292,6 +1312,20 @@ Alexa Message Validation Passed!
                                 "supported": [
                                     {
                                         "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.Speaker",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "volume"
                                     }
                                 ],
                                 "proactivelyReported": false,
@@ -1311,7 +1345,10 @@ Alexa Message Validation Passed!
                     "cookie": {
                         "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":141,\"iid\":10,\"value\":1}",
                         "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":141,\"iid\":10,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":141,\"iid\":10}]"
+                        "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":141,\"iid\":16}",
+                        "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":141,\"iid\":16}",
+                        "SetMute": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":141,\"iid\":16}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":141,\"iid\":10},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":141,\"iid\":16}]"
                     },
                     "capabilities": [
                         {
@@ -1332,6 +1369,20 @@ Alexa Message Validation Passed!
                                 "proactivelyReported": false,
                                 "retrievable": true
                             }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.Speaker",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "volume"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
                         }
                     ]
                 },
@@ -1346,7 +1397,10 @@ Alexa Message Validation Passed!
                     "cookie": {
                         "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":142,\"iid\":10,\"value\":1}",
                         "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":142,\"iid\":10,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":142,\"iid\":10}]"
+                        "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":142,\"iid\":16}",
+                        "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":142,\"iid\":16}",
+                        "SetMute": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":142,\"iid\":16}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":142,\"iid\":10},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":142,\"iid\":16}]"
                     },
                     "capabilities": [
                         {
@@ -1362,6 +1416,20 @@ Alexa Message Validation Passed!
                                 "supported": [
                                     {
                                         "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.Speaker",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "volume"
                                     }
                                 ],
                                 "proactivelyReported": false,
