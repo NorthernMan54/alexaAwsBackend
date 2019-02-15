@@ -61,7 +61,7 @@ mqttClient.on('reconnect', function() {
 
 mqttClient.on('connect', function() {
   mqttClient.subscribe('response/#');
-  mqttClient.subscribe('presense/#');
+  mqttClient.subscribe('presence/#');
   mqttClient.subscribe('event/#');
 });
 
@@ -594,10 +594,11 @@ mqttClient.on('message', function(topic, message) {
             directive: {
               header: {
                 namespace: "System",
-                message: err
+                message: err.toString()
               }
             }
           };
+          // console.log("Error", JSON.stringify(message), err);
           mqttClient.publish(topic, JSON.stringify(message));
         }
       });
@@ -607,7 +608,7 @@ mqttClient.on('message', function(topic, message) {
     } else if (topic.startsWith('presence/')) {
       var payload = JSON.parse(message.toString());
       var user = topic.split("/")[1];
-      usage.presence(user, payload);
+      usage.presence(user, payload.version);
       // should really parse uid out of topic
       measurement.send({
         t: 'event',
@@ -773,9 +774,9 @@ app.get('/admin/users',
         if (!error) {
           var transform = {
             "<>": "div",
-            "html": "<tr><td>${user.username}</td><td>${created}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td><td>${lastUsedBroker}</td><td>${brokerCount}</td><td>${lastEvent}</td><td>${eventCount}</td></tr>"
+            "html": "<tr><td>${user.username}</td><td>${created}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td><td>${lastUsedBroker}</td><td>${brokerCount}</td><td>${lastEvent}</td><td>${eventCount}</td><td>${presence}</td><td>${version}</td></tr>"
           };
-          res.send("<a href=\"/usage.csv\" download=\"/usage.csv\">Download the data</a><table border='1'><tr><th>Username</th><th>Created</th><th>Last Used Alexa</th><th>Alexa Count</th><th>Last Plugin Response</th><th>Response Count</th><th>Last Event</th><th>Event Count</th></tr>" + json2html.transform(data, transform) + "</table>");
+          res.send("<a href=\"/usage.csv\" download=\"/usage.csv\">Download the data</a><table border='1'><tr><th>Username</th><th>Created</th><th>Last Used Alexa</th><th>Alexa Count</th><th>Last Plugin Response</th><th>Response Count</th><th>Last Event</th><th>Event Count</th><th>Presence</th><th>Version</th></tr>" + json2html.transform(data, transform) + "</table>");
         }
       });
     } else {

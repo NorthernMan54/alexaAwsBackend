@@ -21,19 +21,19 @@ function send(user, message, callback) {
   oauthClient.getAccessToken(user, function(error, token) {
       if (error || !token.url || !token.access_token) {
         // Error already logged
-        console.log("eventGW Error sending event: ", user, token.url, token.access_token);
+        if (!error) {
+          error = "Token Error";
+        }
+        console.log("eventGW Error sending event:", user, token, error);
         measurement.send({
           t: 'event',
           ec: 'event',
-          ea: 'eventGW Error',
+          ea: error.toString(),
           el: user,
           sc: 'end',
           geoid: 'Amazon',
           uid: user
         });
-        if (!error) {
-          error = new Error("Token error");
-        }
         callback(error);
       } else {
         // console.log("2", message.event.endpoint );

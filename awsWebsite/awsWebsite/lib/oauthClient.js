@@ -51,8 +51,11 @@ function refreshExpired(username, token, callback) {
   console.log("Access Token Expired, refreshing: ", username);
   tokenRequest(username, token.region, 'grant_type=refresh_token&refresh_token=' + token.refresh_token, function(err, response) {
     //
-    console.log("tokenRefresh: ", username, err, response.statusCode);
-    if (err) {
+    // console.log("tokenRefresh: ", username, err, response.statusCode);
+    if (err || response.statusCode !== 200) {
+      if (!err) {
+        err = "Event gateway token refresh error: " + response.statusCode;
+      }
       callback(err);
     } else {
       var body = JSON.parse(response.body);
