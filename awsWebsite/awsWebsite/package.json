@@ -1,6 +1,6 @@
 {
   "name": "homebridgeWeb",
-  "version": "0.0.182",
+  "version": "0.0.184",
   "description": "Homebride-Alexa Skill Linking Website",
   "main": "index.js",
   "scripts": {

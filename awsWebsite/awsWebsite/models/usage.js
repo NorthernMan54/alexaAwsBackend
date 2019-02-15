@@ -56,7 +56,7 @@ var Usage = new Schema({
   },
   version: {
     type: String,
-    default: ""
+    default: "0.0.0"
   }
 });
 
