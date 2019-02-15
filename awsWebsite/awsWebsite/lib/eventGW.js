@@ -91,7 +91,7 @@ function send(user, message, callback) {
               geoid: 'Amazon',
               uid: user
             });
-            callback(null);
+            callback("Event Gateway Response Code: " + response.statusCode);
           } else {
             console.log("Error: ", err);
             measurement.send({
