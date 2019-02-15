@@ -788,16 +788,18 @@ app.get('/usage.csv',
   ensureAuthenticated,
   function(req, res) {
     if (req.user.username === mqtt_user) {
-      Account.find({}, function(error, data) {
-        try {
-          const fields = ['username', 'lastUsedWebsite', 'brokerCount', 'lastUsedBroker', 'alexaCount', 'lastUsedAlexa', 'created'];
-          const opts = {
-            fields
-          };
-          const parser = new Json2csvParser(opts);
-          res.send(parser.parse(data));
-        } catch (err) {
-          console.error(err);
+      Usage.find().sort('-lastUsedBroker').populate('user', 'username').exec(function(error, data) {
+        if (!error) {
+          try {
+            const fields = ['user.username', 'created', 'lastUsedAlexa', 'alexaCount', 'lastUsedBroker', 'brokerCount', 'lastEvent', 'eventCount', 'presence', 'version'];
+            const opts = {
+              fields
+            };
+            const parser = new Json2csvParser(opts);
+            res.send(parser.parse(data));
+          } catch (err) {
+            console.error(err);
+          }
         }
       });
     } else {
