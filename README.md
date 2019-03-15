@@ -179,10 +179,10 @@ brew install mosquitto; brew services start mosquitto
 
 # Historical Dates
 
-Beta test started - Feb 19, 2018
-Production launch - March 14, 2018
-Added Germany and France - March 28, 2018
-Added Italian (IT), German (DE), English (CA), English (US), English (IN), English (AU), Spanish (ES), French (FR), English (UK), Japanese (JP), Spanish (MX), French (CA) - Feb 13th, 2019
+* Beta test started - Feb 19, 2018
+* Production launch - March 14, 2018
+* Added Germany and France - March 28, 2018
+* Added Italian (IT), English (IN), English (AU), Spanish (ES), Japanese (JP), Spanish (MX), French (CA) - Feb 13th, 2019
 
 # Credits
 
