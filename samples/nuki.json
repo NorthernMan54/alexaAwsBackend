@@ -1,0 +1,24 @@
+ERROR: Combine files from  to undefined
+Alexa Message Validation Passed!
+
+-----------------------------------------------------------
+
+{
+    "event": {
+        "header": {
+            "namespace": "Alexa.Discovery",
+            "name": "Discover.Response",
+            "payloadVersion": "3",
+            "messageId": "1bd5d003-31b9-476f-ad03-71d471922820"
+        },
+        "payload": {
+            "endpoints": []
+        }
+    }
+}
+
+-----------------------------------------------------------
+
+
+-----------------------------------------------------------
+

@@ -1,3 +1,4 @@
+ERROR: Combine files from [object Object] to undefined
 Alexa Message Validation Passed!
 
 -----------------------------------------------------------
@@ -182,58 +183,7 @@ Alexa Message Validation Passed!
                         }
                     ]
                 },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhUVFAtSVJCbGFzdGVyLUtPREktMDAwMDAwNDAtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
-                    "friendlyName": "KODI",
-                    "description": "parseTest KODI Speaker",
-                    "manufacturerName": "HTTP-IRBlaster",
-                    "displayCategories": [
-                        "SPEAKER"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":10,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":10,\"value\":0}",
-                        "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":11}",
-                        "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":11}",
-                        "SetMute": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":11}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":10},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":11}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.Speaker",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "volume"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
+                null,
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUVDTyBQbHVncy1PZmZpY2UtMDAwMDAwNDctMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Office",
