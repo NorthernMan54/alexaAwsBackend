@@ -14,72 +14,6 @@ Alexa Message Validation Passed!
         "payload": {
             "endpoints": [
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXNlbnNvci1zdHViLU1vdGlvbi0wMDAwMDA4NS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
-                    "friendlyName": "Motion",
-                    "description": "parseTest Motion Motion Sensor",
-                    "manufacturerName": "sensor-stub",
-                    "displayCategories": [
-                        "MOTION_SENSOR"
-                    ],
-                    "cookie": {
-                        "ReportState": "[{\"interface\":\"Alexa.MotionSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":4,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.MotionSensor",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "detectionState"
-                                    }
-                                ],
-                                "proactivelyReported": true,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXNlbnNvci1zdHViLUNvbnRhY3QtMDAwMDAwODAtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
-                    "friendlyName": "Contact",
-                    "description": "parseTest Contact Contact Sensor",
-                    "manufacturerName": "sensor-stub",
-                    "displayCategories": [
-                        "CONTACT_SENSOR"
-                    ],
-                    "cookie": {
-                        "ReportState": "[{\"interface\":\"Alexa.ContactSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":5,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.ContactSensor",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "detectionState"
-                                    }
-                                ],
-                                "proactivelyReported": true,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUJvc2UgU291bmRUb3VjaC1Cb3NlIFNvdW5kVG91Y2ggMTAtMDAwMDAxMTMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Bose SoundTouch 10",
                     "description": "parseTest Bose SoundTouch 10 Speaker",
@@ -214,6 +148,72 @@ Alexa Message Validation Passed!
                                     }
                                 ],
                                 "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXNlbnNvci1zdHViLU1vdGlvbi0wMDAwMDA4NS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
+                    "friendlyName": "Motion",
+                    "description": "parseTest Motion Motion Sensor",
+                    "manufacturerName": "sensor-stub",
+                    "displayCategories": [
+                        "MOTION_SENSOR"
+                    ],
+                    "cookie": {
+                        "ReportState": "[{\"interface\":\"Alexa.MotionSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":4,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.MotionSensor",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "detectionState"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXNlbnNvci1zdHViLUNvbnRhY3QtMDAwMDAwODAtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
+                    "friendlyName": "Contact",
+                    "description": "parseTest Contact Contact Sensor",
+                    "manufacturerName": "sensor-stub",
+                    "displayCategories": [
+                        "CONTACT_SENSOR"
+                    ],
+                    "cookie": {
+                        "ReportState": "[{\"interface\":\"Alexa.ContactSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":5,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ContactSensor",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "detectionState"
+                                    }
+                                ],
+                                "proactivelyReported": true,
                                 "retrievable": true
                             }
                         }

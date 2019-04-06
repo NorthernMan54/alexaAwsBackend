@@ -14,172 +14,6 @@ Alexa Message Validation Passed!
         "payload": {
             "endpoints": [
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1pTGlnaHQtS2l0Y2hlbiBEb3dubGlnaHRlcnMtMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
-                    "friendlyName": "Kitchen Downlighters",
-                    "description": "parseTest Kitchen Downlighters Light",
-                    "manufacturerName": "MiLight",
-                    "displayCategories": [
-                        "LIGHT"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10,\"value\":0}",
-                        "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":11}",
-                        "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":11}",
-                        "IncreaseColorTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":14}",
-                        "DecreaseColorTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":14}",
-                        "SetColorTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":14}",
-                        "SetColor": "{\"host\":\"127.0.0.1\",\"port\":51826,\"hue\":{\"aid\":2,\"iid\":13},\"saturation\":{\"aid\":2,\"iid\":12},\"brightness\":{\"aid\":2,\"iid\":11},\"on\":{\"aid\":2,\"iid\":10}}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"127.0.0.1\",\"port\":51826,\"hue\":{\"aid\":2,\"iid\":13},\"saturation\":{\"aid\":2,\"iid\":12},\"brightness\":{\"aid\":2,\"iid\":11},\"on\":{\"aid\":2,\"iid\":10}}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerLevelController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerLevel"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.ColorTemperatureController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "colorTemperatureInKelvin"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.ColorController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "color"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1pTGlnaHQtS2l0Y2hlbiBCdWxicy0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
-                    "friendlyName": "Kitchen Bulbs",
-                    "description": "parseTest Kitchen Bulbs Light",
-                    "manufacturerName": "MiLight",
-                    "displayCategories": [
-                        "LIGHT"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10,\"value\":0}",
-                        "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":11}",
-                        "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":11}",
-                        "IncreaseColorTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":14}",
-                        "DecreaseColorTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":14}",
-                        "SetColorTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":14}",
-                        "SetColor": "{\"host\":\"127.0.0.1\",\"port\":51826,\"hue\":{\"aid\":3,\"iid\":13},\"saturation\":{\"aid\":3,\"iid\":12},\"brightness\":{\"aid\":3,\"iid\":11},\"on\":{\"aid\":3,\"iid\":10}}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"127.0.0.1\",\"port\":51826,\"hue\":{\"aid\":3,\"iid\":13},\"saturation\":{\"aid\":3,\"iid\":12},\"brightness\":{\"aid\":3,\"iid\":11},\"on\":{\"aid\":3,\"iid\":10}}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerLevelController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerLevel"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.ColorTemperatureController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "colorTemperatureInKelvin"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.ColorController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "color"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1pTGlnaHQtQmF0aHJvb20tMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Bathroom",
                     "description": "parseTest Bathroom Light",
@@ -512,23 +346,106 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1pTGlnaHQtV29ya3Nob3AtMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
-                    "friendlyName": "Workshop",
-                    "description": "parseTest Workshop Light",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1pTGlnaHQtS2l0Y2hlbiBCdWxicy0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
+                    "friendlyName": "Kitchen Bulbs",
+                    "description": "parseTest Kitchen Bulbs Light",
                     "manufacturerName": "MiLight",
                     "displayCategories": [
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":10,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":10,\"value\":0}",
-                        "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":11}",
-                        "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":11}",
-                        "IncreaseColorTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":14}",
-                        "DecreaseColorTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":14}",
-                        "SetColorTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":14}",
-                        "SetColor": "{\"host\":\"127.0.0.1\",\"port\":51826,\"hue\":{\"aid\":8,\"iid\":13},\"saturation\":{\"aid\":8,\"iid\":12},\"brightness\":{\"aid\":8,\"iid\":11},\"on\":{\"aid\":8,\"iid\":10}}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"127.0.0.1\",\"port\":51826,\"hue\":{\"aid\":8,\"iid\":13},\"saturation\":{\"aid\":8,\"iid\":12},\"brightness\":{\"aid\":8,\"iid\":11},\"on\":{\"aid\":8,\"iid\":10}}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":11}",
+                        "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":11}",
+                        "IncreaseColorTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":14}",
+                        "DecreaseColorTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":14}",
+                        "SetColorTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":14}",
+                        "SetColor": "{\"host\":\"127.0.0.1\",\"port\":51826,\"hue\":{\"aid\":3,\"iid\":13},\"saturation\":{\"aid\":3,\"iid\":12},\"brightness\":{\"aid\":3,\"iid\":11},\"on\":{\"aid\":3,\"iid\":10}}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"127.0.0.1\",\"port\":51826,\"hue\":{\"aid\":3,\"iid\":13},\"saturation\":{\"aid\":3,\"iid\":12},\"brightness\":{\"aid\":3,\"iid\":11},\"on\":{\"aid\":3,\"iid\":10}}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerLevelController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerLevel"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ColorTemperatureController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "colorTemperatureInKelvin"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ColorController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "color"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1pTGlnaHQtS2l0Y2hlbiBEb3dubGlnaHRlcnMtMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
+                    "friendlyName": "Kitchen Downlighters",
+                    "description": "parseTest Kitchen Downlighters Light",
+                    "manufacturerName": "MiLight",
+                    "displayCategories": [
+                        "LIGHT"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":11}",
+                        "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":11}",
+                        "IncreaseColorTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":14}",
+                        "DecreaseColorTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":14}",
+                        "SetColorTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":14}",
+                        "SetColor": "{\"host\":\"127.0.0.1\",\"port\":51826,\"hue\":{\"aid\":2,\"iid\":13},\"saturation\":{\"aid\":2,\"iid\":12},\"brightness\":{\"aid\":2,\"iid\":11},\"on\":{\"aid\":2,\"iid\":10}}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"127.0.0.1\",\"port\":51826,\"hue\":{\"aid\":2,\"iid\":13},\"saturation\":{\"aid\":2,\"iid\":12},\"brightness\":{\"aid\":2,\"iid\":11},\"on\":{\"aid\":2,\"iid\":10}}]"
                     },
                     "capabilities": [
                         {
@@ -661,17 +578,23 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUJyb2FkbGluay1MZWFybi0wMDAwMDA0OS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
-                    "friendlyName": "Learn",
-                    "description": "parseTest Learn Switch",
-                    "manufacturerName": "Broadlink",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1pTGlnaHQtV29ya3Nob3AtMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
+                    "friendlyName": "Workshop",
+                    "description": "parseTest Workshop Light",
+                    "manufacturerName": "MiLight",
                     "displayCategories": [
-                        "SWITCH"
+                        "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":10,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":10,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":10}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":10,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":11}",
+                        "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":11}",
+                        "IncreaseColorTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":14}",
+                        "DecreaseColorTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":14}",
+                        "SetColorTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":14}",
+                        "SetColor": "{\"host\":\"127.0.0.1\",\"port\":51826,\"hue\":{\"aid\":8,\"iid\":13},\"saturation\":{\"aid\":8,\"iid\":12},\"brightness\":{\"aid\":8,\"iid\":11},\"on\":{\"aid\":8,\"iid\":10}}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":11},{\"interface\":\"Alexa.ColorTemperatureController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":14},{\"interface\":\"Alexa.ColorController\",\"host\":\"127.0.0.1\",\"port\":51826,\"hue\":{\"aid\":8,\"iid\":13},\"saturation\":{\"aid\":8,\"iid\":12},\"brightness\":{\"aid\":8,\"iid\":11},\"on\":{\"aid\":8,\"iid\":10}}]"
                     },
                     "capabilities": [
                         {
@@ -692,36 +615,43 @@ Alexa Message Validation Passed!
                                 "proactivelyReported": false,
                                 "retrievable": true
                             }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUJyb2FkbGluay1TY2FuIEZyZXF1ZW5jeS0wMDAwMDA0OS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
-                    "friendlyName": "Scan Frequency",
-                    "description": "parseTest Scan Frequency Switch",
-                    "manufacturerName": "Broadlink",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":11,\"iid\":10,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":11,\"iid\":10,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":11,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
                         },
                         {
                             "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
+                            "interface": "Alexa.PowerLevelController",
                             "version": "3",
                             "properties": {
                                 "supported": [
                                     {
-                                        "name": "powerState"
+                                        "name": "powerLevel"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ColorTemperatureController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "colorTemperatureInKelvin"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ColorController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "color"
                                     }
                                 ],
                                 "proactivelyReported": false,
@@ -787,6 +717,76 @@ Alexa Message Validation Passed!
                                 "supported": [
                                     {
                                         "name": "powerLevel"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUJyb2FkbGluay1MZWFybi0wMDAwMDA0OS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
+                    "friendlyName": "Learn",
+                    "description": "parseTest Learn Switch",
+                    "manufacturerName": "Broadlink",
+                    "displayCategories": [
+                        "SWITCH"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":10,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUJyb2FkbGluay1TY2FuIEZyZXF1ZW5jeS0wMDAwMDA0OS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
+                    "friendlyName": "Scan Frequency",
+                    "description": "parseTest Scan Frequency Switch",
+                    "manufacturerName": "Broadlink",
+                    "displayCategories": [
+                        "SWITCH"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":11,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":11,\"iid\":10,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":11,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
                                     }
                                 ],
                                 "proactivelyReported": false,

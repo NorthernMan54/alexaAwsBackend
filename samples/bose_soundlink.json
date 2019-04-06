@@ -29,30 +29,30 @@
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Bart-Dev",
+        "value": "Homebridge",
         "description": "Name"
       }, {
         "iid": 6,
         "type": "00000030-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "BC:22:3D:E3:CE:30",
+        "value": "CC:22:3D:E3:CE:30",
         "description": "Serial Number"
       }, {
-        "iid": 7,
+        "iid": 11,
         "type": "00000052-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "0.4.46",
+        "value": "0.4.48",
         "description": "Firmware Revision"
       }],
       "primary": false,
       "hidden": false
     }, {
-      "iid": 2000000008,
+      "iid": 2000000007,
       "type": "49FB9D4D-0FEA-4BF1-8FA6-E7B18AB86DCE",
       "characteristics": [{
-        "iid": 9,
+        "iid": 8,
         "type": "77474A2F-FA98-485E-97BE-4762458774D8",
         "perms": ["pr", "ev"],
         "format": "uint8",
@@ -62,14 +62,14 @@
         "minValue": 0,
         "minStep": 1
       }, {
-        "iid": 10,
+        "iid": 9,
         "type": "FD9FE4CC-D06F-4FFE-96C6-595D464E1026",
         "perms": ["pr", "ev"],
         "format": "string",
         "value": "1.0",
         "description": "Version"
       }, {
-        "iid": 11,
+        "iid": 10,
         "type": "5819A4C2-E1B0-4C9D-B761-3EB1AFF43073",
         "perms": ["pr", "pw", "ev"],
         "format": "data",
@@ -80,7 +80,7 @@
       "hidden": false
     }]
   }, {
-    "aid": 4,
+    "aid": 382,
     "services": [{
       "iid": 1,
       "type": "0000003E-0000-1000-8000-0026BB765291",
@@ -95,135 +95,212 @@
         "type": "00000020-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "sensor-stub",
+        "value": "luftdaten.info",
         "description": "Manufacturer"
       }, {
         "iid": 4,
         "type": "00000021-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "motion",
+        "value": "Feinstaubsensor",
         "description": "Model"
       }, {
         "iid": 5,
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Motion",
+        "value": "Luftqualität",
         "description": "Name"
       }, {
         "iid": 6,
         "type": "00000030-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Bart-Motion",
+        "value": "5006",
         "description": "Serial Number"
       }, {
         "iid": 7,
         "type": "00000052-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "0.1.22",
+        "value": "1.0",
         "description": "Firmware Revision"
       }],
       "primary": false,
       "hidden": false
     }, {
-      "iid": 8,
-      "type": "00000085-0000-1000-8000-0026BB765291",
+      "iid": 14,
+      "type": "0000008D-0000-1000-8000-0026BB765291",
       "characteristics": [{
-        "iid": 9,
+        "iid": 15,
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
-        "value": "Motion",
+        "value": "Air quality Luftqualität",
         "description": "Name"
       }, {
-        "iid": 10,
-        "type": "00000022-0000-1000-8000-0026BB765291",
-        "perms": ["pr", "ev"],
-        "format": "bool",
-        "value": false,
-        "description": "Motion Detected"
-      }],
-      "primary": false,
-      "hidden": false
-    }]
-  }, {
-    "aid": 5,
-    "services": [{
-      "iid": 1,
-      "type": "0000003E-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 2,
-        "type": "00000014-0000-1000-8000-0026BB765291",
-        "perms": ["pw"],
-        "format": "bool",
-        "description": "Identify"
-      }, {
-        "iid": 3,
-        "type": "00000020-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "sensor-stub",
-        "description": "Manufacturer"
-      }, {
-        "iid": 4,
-        "type": "00000021-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Contact",
-        "description": "Model"
-      }, {
-        "iid": 5,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Contact",
-        "description": "Name"
-      }, {
-        "iid": 6,
-        "type": "00000030-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Bart-Contact",
-        "description": "Serial Number"
-      }, {
-        "iid": 7,
-        "type": "00000052-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "0.1.22",
-        "description": "Firmware Revision"
-      }],
-      "primary": false,
-      "hidden": false
-    }, {
-      "iid": 8,
-      "type": "00000080-0000-1000-8000-0026BB765291",
-      "characteristics": [{
-        "iid": 9,
-        "type": "00000023-0000-1000-8000-0026BB765291",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Contact",
-        "description": "Name"
-      }, {
-        "iid": 10,
-        "type": "0000006A-0000-1000-8000-0026BB765291",
+        "iid": 16,
+        "type": "00000095-0000-1000-8000-0026BB765291",
         "perms": ["pr", "ev"],
         "format": "uint8",
-        "value": 1,
-        "description": "Contact Sensor State",
-        "valid-values": [0, 1],
-        "maxValue": 1,
+        "value": 4,
+        "description": "Air Quality",
+        "valid-values": [0, 1, 2, 3, 4, 5],
+        "maxValue": 5,
         "minValue": 0
+      }, {
+        "iid": 17,
+        "type": "000000C6-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 19,
+        "description": "PM2.5 Density",
+        "maxValue": 1000,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 18,
+        "type": "000000C7-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 50,
+        "description": "PM10 Density",
+        "maxValue": 1000,
+        "minValue": 0,
+        "minStep": 1
       }],
       "primary": false,
       "hidden": false
     }]
   }, {
-    "aid": 6,
+    "aid": 456,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "RaspberryPi",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "3B",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "RaspberryPi Info",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "raspberrypi-RaspberryPi Info",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "0.0.3",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "E863F007-079E-48FF-8F27-9C2605A29F52",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "undefined History",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "E863F116-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pr", "ev", "hd"],
+        "format": "data",
+        "value": "3rtUAAAAAAAnDAQiAwECAgIDAsAPwA8KFAAAAAAAAAEB",
+        "description": "S2R1"
+      }, {
+        "iid": 11,
+        "type": "E863F117-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pr", "ev", "hd"],
+        "format": "data",
+        "value": null,
+        "description": "S2R2"
+      }, {
+        "iid": 12,
+        "type": "E863F11C-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pw", "hd"],
+        "format": "data",
+        "description": "S2W1"
+      }, {
+        "iid": 13,
+        "type": "E863F121-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pw", "hd"],
+        "format": "data",
+        "description": "S2W2"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 14,
+      "type": "0000008A-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 15,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "RaspberryPi Info",
+        "description": "Name"
+      }, {
+        "iid": 16,
+        "type": "00000011-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 56.9,
+        "description": "Current Temperature",
+        "unit": "celsius",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 0.1
+      }, {
+        "iid": 17,
+        "type": "db766c37-3a88-4587-8b69-19baf0af6337",
+        "perms": ["pr", "ev"],
+        "format": "string",
+        "value": "",
+        "description": "Uptime"
+      }, {
+        "iid": 18,
+        "type": "4146a74a-cdbc-41e6-9dac-946f55f31fbe",
+        "perms": ["pr", "ev"],
+        "format": "string",
+        "value": "",
+        "description": "Average Load"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 392,
     "services": [{
       "iid": 1,
       "type": "0000003E-0000-1000-8000-0026BB765291",
@@ -272,29 +349,29 @@
       "primary": false,
       "hidden": false
     }, {
-      "iid": 14,
-      "type": "00000113-0000-1000-8000-0026BB765291",
+      "iid": 13,
+      "type": "00000043-0000-1000-8000-0026BB765291",
       "characteristics": [{
-        "iid": 15,
+        "iid": 14,
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
         "value": "Bose SoundTouch 10",
         "description": "Name"
       }, {
-        "iid": 16,
-        "type": "0000011A-0000-1000-8000-0026BB765291",
+        "iid": 15,
+        "type": "00000025-0000-1000-8000-0026BB765291",
         "perms": ["pr", "pw", "ev"],
         "format": "bool",
         "value": false,
-        "description": "Mute"
+        "description": "On"
       }, {
-        "iid": 17,
-        "type": "00000119-0000-1000-8000-0026BB765291",
+        "iid": 16,
+        "type": "00000008-0000-1000-8000-0026BB765291",
         "perms": ["pr", "pw", "ev"],
-        "format": "uint8",
-        "value": 0,
-        "description": "Volume",
+        "format": "int",
+        "value": 15,
+        "description": "Brightness",
         "unit": "percentage",
         "maxValue": 100,
         "minValue": 0,
@@ -314,7 +391,7 @@
       "hidden": false
     }]
   }, {
-    "aid": 7,
+    "aid": 389,
     "services": [{
       "iid": 1,
       "type": "0000003E-0000-1000-8000-0026BB765291",
@@ -363,35 +440,35 @@
       "primary": false,
       "hidden": false
     }, {
-      "iid": 8,
+      "iid": 23,
       "type": "00000043-0000-1000-8000-0026BB765291",
       "characteristics": [{
-        "iid": 9,
+        "iid": 24,
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
         "value": "Bose SoundTouch 20",
         "description": "Name"
       }, {
-        "iid": 10,
+        "iid": 25,
         "type": "00000025-0000-1000-8000-0026BB765291",
         "perms": ["pr", "pw", "ev"],
         "format": "bool",
         "value": false,
         "description": "On"
       }, {
-        "iid": 11,
+        "iid": 26,
         "type": "00000008-0000-1000-8000-0026BB765291",
         "perms": ["pr", "pw", "ev"],
         "format": "int",
-        "value": 0,
+        "value": 23,
         "description": "Brightness",
         "unit": "percentage",
         "maxValue": 100,
         "minValue": 0,
         "minStep": 1
       }, {
-        "iid": 13,
+        "iid": 28,
         "type": "91288999-5678-49B2-8D22-F57BE995AA00",
         "perms": ["pr", "pw", "ev"],
         "format": "int",
@@ -405,7 +482,7 @@
       "hidden": false
     }]
   }, {
-    "aid": 8,
+    "aid": 388,
     "services": [{
       "iid": 1,
       "type": "0000003E-0000-1000-8000-0026BB765291",
@@ -454,35 +531,35 @@
       "primary": false,
       "hidden": false
     }, {
-      "iid": 14,
-      "type": "00000049-0000-1000-8000-0026BB765291",
+      "iid": 38,
+      "type": "00000043-0000-1000-8000-0026BB765291",
       "characteristics": [{
-        "iid": 15,
+        "iid": 39,
         "type": "00000023-0000-1000-8000-0026BB765291",
         "perms": ["pr"],
         "format": "string",
         "value": "Bose SoundTouch 300",
         "description": "Name"
       }, {
-        "iid": 16,
+        "iid": 40,
         "type": "00000025-0000-1000-8000-0026BB765291",
         "perms": ["pr", "pw", "ev"],
         "format": "bool",
         "value": false,
         "description": "On"
       }, {
-        "iid": 17,
-        "type": "91288267-5678-49B2-8D22-F57BE995AA00",
+        "iid": 41,
+        "type": "00000008-0000-1000-8000-0026BB765291",
         "perms": ["pr", "pw", "ev"],
         "format": "int",
-        "value": 0,
-        "description": "Volume",
+        "value": 15,
+        "description": "Brightness",
         "unit": "percentage",
         "maxValue": 100,
         "minValue": 0,
         "minStep": 1
       }, {
-        "iid": 18,
+        "iid": 43,
         "type": "91288999-5678-49B2-8D22-F57BE995AA00",
         "perms": ["pr", "pw", "ev"],
         "format": "int",
@@ -491,6 +568,1027 @@
         "maxValue": 6,
         "minValue": 1,
         "minStep": 1
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 457,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Synology",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "DS218+",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Homebase NAS",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "00:11:32:80:9A:F8",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "6.2.1",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Homebase NAS",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": true,
+        "description": "On"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 15,
+      "type": "0000008A-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 16,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Homebase NAS temperature",
+        "description": "Name"
+      }, {
+        "iid": 17,
+        "type": "00000011-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 29,
+        "description": "Current Temperature",
+        "unit": "celsius",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 0.1
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 11,
+      "type": "9d0ea4eb-31db-47e9-83ef-302193e669d8",
+      "characteristics": [{
+        "iid": 12,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Homebase NAS status",
+        "description": "Name"
+      }, {
+        "iid": 13,
+        "type": "de3c3d3d-6f86-446c-9dac-535858736ddd",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Disk Usage",
+        "unit": "percentage"
+      }, {
+        "iid": 14,
+        "type": "12d21a89-9466-4548-8edd-b05e6b93c23e",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "CPU Load",
+        "unit": "percentage"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 393,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Dyson",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Dyson 475",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Dyson Pure Cool Link",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "DYSON-NN3-EU-HKA0595A-475",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "0000008A-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Dyson Pure Cool Link",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000011-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 0,
+        "description": "Current Temperature",
+        "unit": "celsius",
+        "maxValue": 100,
+        "minValue": -50,
+        "minStep": 0.1
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 11,
+      "type": "00000082-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 12,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Dyson Pure Cool Link",
+        "description": "Name"
+      }, {
+        "iid": 13,
+        "type": "00000010-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 0,
+        "description": "Current Relative Humidity",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 14,
+      "type": "0000008D-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 15,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Dyson Pure Cool Link",
+        "description": "Name"
+      }, {
+        "iid": 16,
+        "type": "00000095-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 2,
+        "description": "Air Quality",
+        "valid-values": [0, 1, 2, 3, 4, 5],
+        "maxValue": 5,
+        "minValue": 0
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 17,
+      "type": "000000B7-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 18,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Dyson Pure Cool Link",
+        "description": "Name"
+      }, {
+        "iid": 19,
+        "type": "000000B0-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Active",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 20,
+        "type": "000000B6-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Swing Mode",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 21,
+        "type": "00000029-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "float",
+        "value": 40,
+        "description": "Rotation Speed",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 10
+      }, {
+        "iid": 22,
+        "type": "000000AC-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Filter Change Indication",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 23,
+        "type": "000000AB-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 0,
+        "description": "Filter Life Level",
+        "maxValue": 100,
+        "minValue": 0
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 24,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 25,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Night Mode - Dyson Pure Cool Link",
+        "description": "Name"
+      }, {
+        "iid": 26,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 27,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 28,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Auto - Dyson Pure Cool Link",
+        "description": "Name"
+      }, {
+        "iid": 29,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 455,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "homebridge-ws",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "OpenWeatherMap",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Erfurt",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "WS-OWM-ERFURT",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "0000008A-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Erfurt Temperature",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000011-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 17,
+        "description": "Current Temperature",
+        "unit": "celsius",
+        "maxValue": 100,
+        "minValue": -40,
+        "minStep": 0.1
+      }, {
+        "iid": 11,
+        "type": "00000036-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Temperature Display Units",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 12,
+      "type": "00000082-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 13,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Erfurt Humidity",
+        "description": "Name"
+      }, {
+        "iid": 14,
+        "type": "00000010-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 23,
+        "description": "Current Relative Humidity",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 15,
+      "type": "E863F00A-079E-48FF-8F27-9C2605A29F52",
+      "characteristics": [{
+        "iid": 16,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Erfurt Weather",
+        "description": "Name"
+      }, {
+        "iid": 17,
+        "type": "E863F10F-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pr", "ev"],
+        "format": "uint16",
+        "value": 1006,
+        "description": "Air Pressure",
+        "unit": "hPa",
+        "maxValue": 1100,
+        "minValue": 700,
+        "minStep": 1
+      }, {
+        "iid": 18,
+        "type": "E863F130-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pr", "ev", "pw"],
+        "value": 0,
+        "description": "Elevation",
+        "unit": "m",
+        "maxValue": 8850,
+        "minValue": -430,
+        "minStep": 10
+      }, {
+        "iid": 19,
+        "type": "CD65A9AB-85AD-494A-B2BD-2F380084134D",
+        "perms": ["pr", "ev"],
+        "format": "string",
+        "value": "Clear",
+        "description": "Condition"
+      }, {
+        "iid": 20,
+        "type": "D24ECC1E-6FAD-4FB5-8137-5AF88BD5E857",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 4,
+        "description": "Visibility",
+        "unit": "km",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 21,
+        "type": "46F1284C-1912-421B-82F5-EB75008B167E",
+        "perms": ["pr", "ev"],
+        "format": "string",
+        "value": "ENE",
+        "description": "Wind Direction"
+      }, {
+        "iid": 22,
+        "type": "49C8AE5A-A3A5-41AB-BF1F-12D5654F9F41",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 15.7,
+        "description": "Wind Speed",
+        "unit": "km/h",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 0.1
+      }, {
+        "iid": 23,
+        "type": "00000023-0000-1000-8000-656261617577",
+        "perms": ["pr", "ev"],
+        "format": "string",
+        "value": "Sat Apr 06 2019 13:30:44",
+        "description": "Last Updated"
+      }, {
+        "iid": 24,
+        "type": "00000024-0000-1000-8000-656261617577",
+        "perms": ["pr", "ev", "pw"],
+        "format": "uint8",
+        "value": 10,
+        "description": "Heartrate",
+        "unit": "min",
+        "maxValue": 120,
+        "minValue": 10,
+        "minStep": 10
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 25,
+      "type": "E863F007-079E-48FF-8F27-9C2605A29F52",
+      "characteristics": [{
+        "iid": 26,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Erfurt History",
+        "description": "Name"
+      }, {
+        "iid": 27,
+        "type": "E863F112-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pr", "ev", "pw"],
+        "format": "uint32",
+        "value": 0,
+        "description": "Reset Total"
+      }, {
+        "iid": 28,
+        "type": "E863F11C-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pw", "hd"],
+        "format": "data",
+        "description": "History Request"
+      }, {
+        "iid": 29,
+        "type": "E863F121-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pw", "hd"],
+        "format": "data",
+        "description": "SetTime"
+      }, {
+        "iid": 30,
+        "type": "E863F116-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pr", "ev", "hd"],
+        "format": "data",
+        "value": "FlOLAAAAAADHdM0hAwECAgIDAsAPwA+mKwAAAAAAAAEB",
+        "description": "History Status"
+      }, {
+        "iid": 31,
+        "type": "E863F117-079E-48FF-8F27-9C2605A29F52",
+        "perms": ["pr", "ev", "hd"],
+        "format": "data",
+        "value": "EGY6AADSEokAB3oD/CH8Jg==",
+        "description": "History Entries"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 463,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Nest",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Protect",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Hallway Nest Protect",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Hallway",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "3.1.4RC3",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000087-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000076-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Smoke Detected",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 10,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Hallway Smoke",
+        "description": "Name"
+      }, {
+        "iid": 11,
+        "type": "00000079-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Status Low Battery",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 12,
+        "type": "00000075-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": true,
+        "description": "Status Active"
+      }, {
+        "iid": 13,
+        "type": "D6D47D29-4643-4F44-B53C-D84015DAEBDB",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Manual Test Active"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 14,
+      "type": "0000007F-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 15,
+        "type": "00000069-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Carbon Monoxide Detected",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 16,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Hallway Carbon Monoxide",
+        "description": "Name"
+      }, {
+        "iid": 17,
+        "type": "00000079-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Status Low Battery",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 18,
+        "type": "00000075-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": true,
+        "description": "Status Active"
+      }, {
+        "iid": 19,
+        "type": "D6D47D29-4643-4F44-B53C-D84015DAEBDB",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Manual Test Active"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 464,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Nest",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Protect",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Bedroom Nest Protect",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Bedroom",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "3.1.4RC3",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000087-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000076-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Smoke Detected",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 10,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Bedroom Smoke",
+        "description": "Name"
+      }, {
+        "iid": 11,
+        "type": "00000079-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Status Low Battery",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 12,
+        "type": "00000075-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": true,
+        "description": "Status Active"
+      }, {
+        "iid": 13,
+        "type": "D6D47D29-4643-4F44-B53C-D84015DAEBDB",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Manual Test Active"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 14,
+      "type": "0000007F-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 15,
+        "type": "00000069-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Carbon Monoxide Detected",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 16,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Bedroom Carbon Monoxide",
+        "description": "Name"
+      }, {
+        "iid": 17,
+        "type": "00000079-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Status Low Battery",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 18,
+        "type": "00000075-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": true,
+        "description": "Status Active"
+      }, {
+        "iid": 19,
+        "type": "D6D47D29-4643-4F44-B53C-D84015DAEBDB",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Manual Test Active"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 462,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Nest",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Protect",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Kids Room Nest Protect",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Kids Room",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "3.1.4RC3",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000087-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000076-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Smoke Detected",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 10,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Kids Room Smoke",
+        "description": "Name"
+      }, {
+        "iid": 11,
+        "type": "00000079-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Status Low Battery",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 12,
+        "type": "00000075-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": true,
+        "description": "Status Active"
+      }, {
+        "iid": 13,
+        "type": "D6D47D29-4643-4F44-B53C-D84015DAEBDB",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Manual Test Active"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 14,
+      "type": "0000007F-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 15,
+        "type": "00000069-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Carbon Monoxide Detected",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 16,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Kids Room Carbon Monoxide",
+        "description": "Name"
+      }, {
+        "iid": 17,
+        "type": "00000079-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Status Low Battery",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 18,
+        "type": "00000075-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": true,
+        "description": "Status Active"
+      }, {
+        "iid": 19,
+        "type": "D6D47D29-4643-4F44-B53C-D84015DAEBDB",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Manual Test Active"
       }],
       "primary": false,
       "hidden": false

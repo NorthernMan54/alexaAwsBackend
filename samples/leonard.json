@@ -14,87 +14,19 @@ Alexa Message Validation Passed!
         "payload": {
             "endpoints": [
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWhvbWVicmlkZ2UtcnRsXzQzMy1Gcm9udCBQb3JjaC0wMDAwMDA4NS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
-                    "friendlyName": "Front Porch",
-                    "description": "parseTest Front Porch Motion Sensor",
-                    "manufacturerName": "homebridge-rtl_433",
-                    "displayCategories": [
-                        "MOTION_SENSOR"
-                    ],
-                    "cookie": {
-                        "ReportState": "[{\"interface\":\"Alexa.MotionSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.MotionSensor",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "detectionState"
-                                    }
-                                ],
-                                "proactivelyReported": true,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLUJhcnQtMDAwMDAwNDktMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
-                    "friendlyName": "Bart",
-                    "description": "parseTest Bart Switch",
-                    "manufacturerName": "Default-Manufacturer",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLVNlYW4tMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
-                    "friendlyName": "Sean",
-                    "description": "parseTest Sean Light",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLU1CUm9vbS0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
+                    "friendlyName": "MBRoom",
+                    "description": "parseTest MBRoom Light",
                     "manufacturerName": "Default-Manufacturer",
                     "displayCategories": [
                         "LIGHT"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":7,\"iid\":16,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":7,\"iid\":16,\"value\":0}",
-                        "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":7,\"iid\":17}",
-                        "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":7,\"iid\":17}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":7,\"iid\":16},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":7,\"iid\":17}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":13,\"iid\":16,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":13,\"iid\":16,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":13,\"iid\":17}",
+                        "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":13,\"iid\":17}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":13,\"iid\":16},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":13,\"iid\":17}]"
                     },
                     "capabilities": [
                         {
@@ -127,39 +59,6 @@ Alexa Message Validation Passed!
                                     }
                                 ],
                                 "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLVNlYW4tMDAwMDAwODAtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
-                    "friendlyName": "Sean",
-                    "description": "parseTest Sean Contact Sensor",
-                    "manufacturerName": "Default-Manufacturer",
-                    "displayCategories": [
-                        "CONTACT_SENSOR"
-                    ],
-                    "cookie": {
-                        "ReportState": "[{\"interface\":\"Alexa.ContactSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":7,\"iid\":13}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.ContactSensor",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "detectionState"
-                                    }
-                                ],
-                                "proactivelyReported": true,
                                 "retrievable": true
                             }
                         }
@@ -250,19 +149,17 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLU1CUm9vbS0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
-                    "friendlyName": "MBRoom",
-                    "description": "parseTest MBRoom Light",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLUJhcnQtMDAwMDAwNDktMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
+                    "friendlyName": "Bart",
+                    "description": "parseTest Bart Switch",
                     "manufacturerName": "Default-Manufacturer",
                     "displayCategories": [
-                        "LIGHT"
+                        "SWITCH"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":13,\"iid\":16,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":13,\"iid\":16,\"value\":0}",
-                        "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":13,\"iid\":17}",
-                        "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":13,\"iid\":17}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":13,\"iid\":16},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":13,\"iid\":17}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10}]"
                     },
                     "capabilities": [
                         {
@@ -278,20 +175,6 @@ Alexa Message Validation Passed!
                                 "supported": [
                                     {
                                         "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerLevelController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerLevel"
                                     }
                                 ],
                                 "proactivelyReported": false,
@@ -403,6 +286,156 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLVNlYW4tMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
+                    "friendlyName": "Sean",
+                    "description": "parseTest Sean Light",
+                    "manufacturerName": "Default-Manufacturer",
+                    "displayCategories": [
+                        "LIGHT"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":7,\"iid\":16,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":7,\"iid\":16,\"value\":0}",
+                        "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":7,\"iid\":17}",
+                        "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":7,\"iid\":17}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":7,\"iid\":16},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":7,\"iid\":17}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerLevelController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerLevel"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLVNlYW4tMDAwMDAwODAtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
+                    "friendlyName": "Sean",
+                    "description": "parseTest Sean Contact Sensor",
+                    "manufacturerName": "Default-Manufacturer",
+                    "displayCategories": [
+                        "CONTACT_SENSOR"
+                    ],
+                    "cookie": {
+                        "ReportState": "[{\"interface\":\"Alexa.ContactSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":7,\"iid\":13}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ContactSensor",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "detectionState"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLURyeWVyLTAwMDAwMDg1LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
+                    "friendlyName": "Dryer",
+                    "description": "parseTest Dryer Motion Sensor",
+                    "manufacturerName": "WSSENSOR",
+                    "displayCategories": [
+                        "MOTION_SENSOR"
+                    ],
+                    "cookie": {
+                        "ReportState": "[{\"interface\":\"Alexa.MotionSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.MotionSensor",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "detectionState"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLURyeWVyLTAwMDAwMDhBLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
+                    "friendlyName": "Dryer",
+                    "description": "parseTest Dryer Temperature Sensor",
+                    "manufacturerName": "WSSENSOR",
+                    "displayCategories": [
+                        "TEMPERATURE_SENSOR"
+                    ],
+                    "cookie": {
+                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":16}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.TemperatureSensor",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "temperature"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLUdhcmFnZS0wMDAwMDA4QS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Garage",
                     "description": "parseTest Garage Temperature Sensor",
@@ -485,39 +518,6 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLVRlc3QgTW90aW9uLTAwMDAwMDhBLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Test Motion",
-                    "description": "parseTest Test Motion Temperature Sensor",
-                    "manufacturerName": "WSSENSOR",
-                    "displayCategories": [
-                        "TEMPERATURE_SENSOR"
-                    ],
-                    "cookie": {
-                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":5,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.TemperatureSensor",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "temperature"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLVRlc3QgTW90aW9uLTAwMDAwMDg1LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Test Motion",
                     "description": "parseTest Test Motion Motion Sensor",
@@ -551,48 +551,15 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLURyeWVyLTAwMDAwMDg1LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Dryer",
-                    "description": "parseTest Dryer Motion Sensor",
-                    "manufacturerName": "WSSENSOR",
-                    "displayCategories": [
-                        "MOTION_SENSOR"
-                    ],
-                    "cookie": {
-                        "ReportState": "[{\"interface\":\"Alexa.MotionSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.MotionSensor",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "detectionState"
-                                    }
-                                ],
-                                "proactivelyReported": true,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLURyeWVyLTAwMDAwMDhBLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Dryer",
-                    "description": "parseTest Dryer Temperature Sensor",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLVRlc3QgTW90aW9uLTAwMDAwMDhBLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
+                    "friendlyName": "Test Motion",
+                    "description": "parseTest Test Motion Temperature Sensor",
                     "manufacturerName": "WSSENSOR",
                     "displayCategories": [
                         "TEMPERATURE_SENSOR"
                     ],
                     "cookie": {
-                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":16}]"
+                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":5,\"iid\":10}]"
                     },
                     "capabilities": [
                         {
@@ -617,17 +584,53 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLVBsYXkgKFlhbWFoYSktMDAwMDAwNDktMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
-                    "friendlyName": "Play (Yamaha)",
-                    "description": "parseTest Play (Yamaha) Switch",
-                    "manufacturerName": "yamaha-home",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWhvbWVicmlkZ2UtcnRsXzQzMy1Gcm9udCBQb3JjaC0wMDAwMDA4NS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
+                    "friendlyName": "Front Porch",
+                    "description": "parseTest Front Porch Motion Sensor",
+                    "manufacturerName": "homebridge-rtl_433",
                     "displayCategories": [
-                        "SWITCH"
+                        "MOTION_SENSOR"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":10,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":10,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":10}]"
+                        "ReportState": "[{\"interface\":\"Alexa.MotionSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.MotionSensor",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "detectionState"
+                                    }
+                                ],
+                                "proactivelyReported": true,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLUZyb250LTAwMDAwMDQwLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
+                    "friendlyName": "Front",
+                    "description": "parseTest Front Speaker",
+                    "manufacturerName": "yamaha-home",
+                    "displayCategories": [
+                        "SPEAKER"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":14,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":14,\"value\":0}",
+                        "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15}",
+                        "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15}",
+                        "SetMute": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":14},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15},{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15}]"
                     },
                     "capabilities": [
                         {
@@ -648,6 +651,32 @@ Alexa Message Validation Passed!
                                 "proactivelyReported": false,
                                 "retrievable": true
                             }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.Speaker",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "volume"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PlaybackController",
+                            "version": "3",
+                            "supportedOperations": [
+                                "Play",
+                                "Pause",
+                                "Stop",
+                                "Next",
+                                "Rewind"
+                            ]
                         }
                     ]
                 },
@@ -687,52 +716,17 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLVNraXAgRndkIChZYW1haGEpLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Skip Fwd (Yamaha)",
-                    "description": "parseTest Skip Fwd (Yamaha) Switch",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLVBsYXkgKFlhbWFoYSktMDAwMDAwNDktMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
+                    "friendlyName": "Play (Yamaha)",
+                    "description": "parseTest Play (Yamaha) Switch",
                     "manufacturerName": "yamaha-home",
                     "displayCategories": [
                         "SWITCH"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":16,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":16,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":16}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLVNraXAgUmV2IChZYW1haGEpLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Skip Rev (Yamaha)",
-                    "description": "parseTest Skip Rev (Yamaha) Switch",
-                    "manufacturerName": "yamaha-home",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":19,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":19,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":19}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":10,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":10}]"
                     },
                     "capabilities": [
                         {
@@ -891,20 +885,17 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLUZyb250LTAwMDAwMDQwLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Front",
-                    "description": "parseTest Front Speaker",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLVNraXAgRndkIChZYW1haGEpLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
+                    "friendlyName": "Skip Fwd (Yamaha)",
+                    "description": "parseTest Skip Fwd (Yamaha) Switch",
                     "manufacturerName": "yamaha-home",
                     "displayCategories": [
-                        "SPEAKER"
+                        "SWITCH"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":14,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":14,\"value\":0}",
-                        "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15}",
-                        "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15}",
-                        "SetMute": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":14},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15},{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":16,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":16,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":16}]"
                     },
                     "capabilities": [
                         {
@@ -925,32 +916,41 @@ Alexa Message Validation Passed!
                                 "proactivelyReported": false,
                                 "retrievable": true
                             }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLVNraXAgUmV2IChZYW1haGEpLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
+                    "friendlyName": "Skip Rev (Yamaha)",
+                    "description": "parseTest Skip Rev (Yamaha) Switch",
+                    "manufacturerName": "yamaha-home",
+                    "displayCategories": [
+                        "SWITCH"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":19,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":19,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":19}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
                         },
                         {
                             "type": "AlexaInterface",
-                            "interface": "Alexa.Speaker",
+                            "interface": "Alexa.PowerController",
                             "version": "3",
                             "properties": {
                                 "supported": [
                                     {
-                                        "name": "volume"
+                                        "name": "powerState"
                                     }
                                 ],
                                 "proactivelyReported": false,
                                 "retrievable": true
                             }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PlaybackController",
-                            "version": "3",
-                            "supportedOperations": [
-                                "Play",
-                                "Pause",
-                                "Stop",
-                                "Next",
-                                "Rewind"
-                            ]
                         }
                     ]
                 }

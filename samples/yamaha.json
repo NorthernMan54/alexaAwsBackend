@@ -14,17 +14,20 @@ Alexa Message Validation Passed!
         "payload": {
             "endpoints": [
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLVBsYXkgKFlhbWFoYSktMDAwMDAwNDktMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
-                    "friendlyName": "Play (Yamaha)",
-                    "description": "parseTest Play (Yamaha) Switch",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLUZyb250LTAwMDAwMDQwLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
+                    "friendlyName": "Front",
+                    "description": "parseTest Front Speaker",
                     "manufacturerName": "yamaha-home",
                     "displayCategories": [
-                        "SWITCH"
+                        "SPEAKER"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":13,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":13,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":13}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":14,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":14,\"value\":0}",
+                        "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":16}",
+                        "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":16}",
+                        "SetMute": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":16}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":14},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":16},{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":16}]"
                     },
                     "capabilities": [
                         {
@@ -45,6 +48,32 @@ Alexa Message Validation Passed!
                                 "proactivelyReported": false,
                                 "retrievable": true
                             }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.Speaker",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "volume"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PlaybackController",
+                            "version": "3",
+                            "supportedOperations": [
+                                "Play",
+                                "Pause",
+                                "Stop",
+                                "Next",
+                                "Rewind"
+                            ]
                         }
                     ]
                 },
@@ -84,52 +113,17 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLVNraXAgRndkIChZYW1haGEpLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Skip Fwd (Yamaha)",
-                    "description": "parseTest Skip Fwd (Yamaha) Switch",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLVBsYXkgKFlhbWFoYSktMDAwMDAwNDktMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
+                    "friendlyName": "Play (Yamaha)",
+                    "description": "parseTest Play (Yamaha) Switch",
                     "manufacturerName": "yamaha-home",
                     "displayCategories": [
                         "SWITCH"
                     ],
                     "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":19,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":19,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":19}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLVNraXAgUmV2IChZYW1haGEpLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Skip Rev (Yamaha)",
-                    "description": "parseTest Skip Rev (Yamaha) Switch",
-                    "manufacturerName": "yamaha-home",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":22,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":22,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":22}]"
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":13,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":13,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":13}]"
                     },
                     "capabilities": [
                         {
@@ -224,70 +218,6 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLUZyb250LTAwMDAwMDQwLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Front",
-                    "description": "parseTest Front Speaker",
-                    "manufacturerName": "yamaha-home",
-                    "displayCategories": [
-                        "SPEAKER"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":14,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":14,\"value\":0}",
-                        "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":16}",
-                        "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":16}",
-                        "SetMute": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":16}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":14},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":16},{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":16}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.Speaker",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "volume"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PlaybackController",
-                            "version": "3",
-                            "supportedOperations": [
-                                "Play",
-                                "Pause",
-                                "Stop",
-                                "Next",
-                                "Rewind"
-                            ]
-                        }
-                    ]
-                },
-                {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLVJlYXItMDAwMDAwNDAtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Rear",
                     "description": "parseTest Rear Speaker",
@@ -348,6 +278,76 @@ Alexa Message Validation Passed!
                                 "Next",
                                 "Rewind"
                             ]
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLVNraXAgRndkIChZYW1haGEpLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
+                    "friendlyName": "Skip Fwd (Yamaha)",
+                    "description": "parseTest Skip Fwd (Yamaha) Switch",
+                    "manufacturerName": "yamaha-home",
+                    "displayCategories": [
+                        "SWITCH"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":19,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":19,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":19}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLVNraXAgUmV2IChZYW1haGEpLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
+                    "friendlyName": "Skip Rev (Yamaha)",
+                    "description": "parseTest Skip Rev (Yamaha) Switch",
+                    "manufacturerName": "yamaha-home",
+                    "displayCategories": [
+                        "SWITCH"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":22,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":22,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":22}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
                         }
                     ]
                 }
