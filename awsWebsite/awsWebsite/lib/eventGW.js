@@ -80,7 +80,7 @@ function send(user, message, callback) {
             });
             callback(null);
           } else if (!err && response.statusCode) {
-            console.log("eventGW Error: ", response.body, response.statusCode);
+            console.log("eventGW Error: ", user, response.body, response.statusCode);
             // oauthClient.refresh(user, token);
             measurement.send({
               t: 'event',
