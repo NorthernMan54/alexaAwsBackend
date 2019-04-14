@@ -1012,7 +1012,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUZlaWJpdCBJbmMgY28uICAtRXh0ZW5kZWQgY29sb3IgbGlnaHQgMS0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Extended color light 1",
-                    "description": "parseTest Extended color light 1 Light",
+                    "description": "parseTest Extended color light 1 Lightbulb",
                     "manufacturerName": "Feibit Inc co.  ",
                     "displayCategories": [
                         "LIGHT"
@@ -1095,7 +1095,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUZlaWJpdCBJbmMgY28uICAtS3VnZWwgS8O8Y2hlLTAwMDAwMDQzLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Kugel Küche",
-                    "description": "parseTest Kugel Küche Light",
+                    "description": "parseTest Kugel Küche Lightbulb",
                     "manufacturerName": "Feibit Inc co.  ",
                     "displayCategories": [
                         "LIGHT"
@@ -1178,7 +1178,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUZlaWJpdCBJbmMgY28uICAtS3VnZWwgVGVycmFzc2UtMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Kugel Terrasse",
-                    "description": "parseTest Kugel Terrasse Light",
+                    "description": "parseTest Kugel Terrasse Lightbulb",
                     "manufacturerName": "Feibit Inc co.  ",
                     "displayCategories": [
                         "LIGHT"
@@ -1261,7 +1261,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUZlaWJpdCBJbmMgY28uICAtVFYgSGludGVyZ3J1bmQtMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "TV Hintergrund",
-                    "description": "parseTest TV Hintergrund Light",
+                    "description": "parseTest TV Hintergrund Lightbulb",
                     "manufacturerName": "Feibit Inc co.  ",
                     "displayCategories": [
                         "LIGHT"
@@ -1707,7 +1707,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUlLRUEgb2YgU3dlZGVuLUhhdXN0w7xyIGxpbmtzLTAwMDAwMDQzLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Haustür links",
-                    "description": "parseTest Haustür links Light",
+                    "description": "parseTest Haustür links Lightbulb",
                     "manufacturerName": "IKEA of Sweden",
                     "displayCategories": [
                         "LIGHT"
@@ -1758,7 +1758,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUlLRUEgb2YgU3dlZGVuLUhhdXN0w7xyIHJlY2h0cy0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Haustür rechts",
-                    "description": "parseTest Haustür rechts Light",
+                    "description": "parseTest Haustür rechts Lightbulb",
                     "manufacturerName": "IKEA of Sweden",
                     "displayCategories": [
                         "LIGHT"
@@ -1809,7 +1809,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUlLRUEgb2YgU3dlZGVuLUtsZWlkZXJzY2hyYW5rLTAwMDAwMDQzLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Kleiderschrank",
-                    "description": "parseTest Kleiderschrank Light",
+                    "description": "parseTest Kleiderschrank Lightbulb",
                     "manufacturerName": "IKEA of Sweden",
                     "displayCategories": [
                         "LIGHT"
@@ -1860,7 +1860,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUlLRUEgb2YgU3dlZGVuLVN0ZWhsYW1wZSBPYmVuLTAwMDAwMDQzLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Stehlampe Oben",
-                    "description": "parseTest Stehlampe Oben Light",
+                    "description": "parseTest Stehlampe Oben Lightbulb",
                     "manufacturerName": "IKEA of Sweden",
                     "displayCategories": [
                         "LIGHT"
@@ -1911,7 +1911,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUlLRUEgb2YgU3dlZGVuLVN0ZWhsYW1wZSBVbnRlbi0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Stehlampe Unten",
-                    "description": "parseTest Stehlampe Unten Light",
+                    "description": "parseTest Stehlampe Unten Lightbulb",
                     "manufacturerName": "IKEA of Sweden",
                     "displayCategories": [
                         "LIGHT"
@@ -1962,7 +1962,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUlLRUEgb2YgU3dlZGVuLVdvaG56aW1tZXIgV2FuZCA0LTAwMDAwMDQzLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Wohnzimmer Wand 4",
-                    "description": "parseTest Wohnzimmer Wand 4 Light",
+                    "description": "parseTest Wohnzimmer Wand 4 Lightbulb",
                     "manufacturerName": "IKEA of Sweden",
                     "displayCategories": [
                         "LIGHT"
@@ -2028,7 +2028,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUlLRUEgb2YgU3dlZGVuLVdvaG56aW1tZXIgV2FuZCAxLTAwMDAwMDQzLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Wohnzimmer Wand 1",
-                    "description": "parseTest Wohnzimmer Wand 1 Light",
+                    "description": "parseTest Wohnzimmer Wand 1 Lightbulb",
                     "manufacturerName": "IKEA of Sweden",
                     "displayCategories": [
                         "LIGHT"
@@ -2094,7 +2094,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUlLRUEgb2YgU3dlZGVuLVdvaG56aW1tZXIgV2FuZCAyLTAwMDAwMDQzLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Wohnzimmer Wand 2",
-                    "description": "parseTest Wohnzimmer Wand 2 Light",
+                    "description": "parseTest Wohnzimmer Wand 2 Lightbulb",
                     "manufacturerName": "IKEA of Sweden",
                     "displayCategories": [
                         "LIGHT"
@@ -2160,7 +2160,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUlLRUEgb2YgU3dlZGVuLVdvaG56aW1tZXIgV2FuZCAzLTAwMDAwMDQzLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Wohnzimmer Wand 3",
-                    "description": "parseTest Wohnzimmer Wand 3 Light",
+                    "description": "parseTest Wohnzimmer Wand 3 Lightbulb",
                     "manufacturerName": "IKEA of Sweden",
                     "displayCategories": [
                         "LIGHT"
@@ -2226,7 +2226,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUlLRUEgb2YgU3dlZGVuLVdvaG56aW1tZXJ0aXNjaC0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Wohnzimmertisch",
-                    "description": "parseTest Wohnzimmertisch Light",
+                    "description": "parseTest Wohnzimmertisch Lightbulb",
                     "manufacturerName": "IKEA of Sweden",
                     "displayCategories": [
                         "LIGHT"

@@ -81,7 +81,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1DVUlPVC1HYXJhZ2UgRG9vci0wMDAwMDA0MS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Garage Door",
-                    "description": "parseTest Garage Door Garage Door",
+                    "description": "parseTest Garage Door Garage Door Opener",
                     "manufacturerName": "MCUIOT",
                     "displayCategories": [
                         "DOOR"
@@ -301,7 +301,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtQmFzZW1lbnQgU3RhaXItMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Basement Stair",
-                    "description": "parseTest Basement Stair Light",
+                    "description": "parseTest Basement Stair Lightbulb",
                     "manufacturerName": "Heyu",
                     "displayCategories": [
                         "LIGHT"
@@ -422,7 +422,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtRmFtaWx5IHJvb20gTGFtcC0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Family room Lamp",
-                    "description": "parseTest Family room Lamp Light",
+                    "description": "parseTest Family room Lamp Lightbulb",
                     "manufacturerName": "Heyu",
                     "displayCategories": [
                         "LIGHT"
@@ -473,7 +473,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtRmFtaWx5IHJvb20gUG90IGxpZ2h0cy0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Family room Pot lights",
-                    "description": "parseTest Family room Pot lights Light",
+                    "description": "parseTest Family room Pot lights Lightbulb",
                     "manufacturerName": "Heyu",
                     "displayCategories": [
                         "LIGHT"
@@ -559,7 +559,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtRnJvbnQgRG9vci0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Front Door",
-                    "description": "parseTest Front Door Light",
+                    "description": "parseTest Front Door Lightbulb",
                     "manufacturerName": "Heyu",
                     "displayCategories": [
                         "LIGHT"
@@ -610,7 +610,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtRnJvbnQgUG9yY2gtMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Front Porch",
-                    "description": "parseTest Front Porch Light",
+                    "description": "parseTest Front Porch Lightbulb",
                     "manufacturerName": "Heyu",
                     "displayCategories": [
                         "LIGHT"
@@ -661,7 +661,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtS2l0Y2hlbiBDb3VudGVyLTAwMDAwMDQzLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Kitchen Counter",
-                    "description": "parseTest Kitchen Counter Light",
+                    "description": "parseTest Kitchen Counter Lightbulb",
                     "manufacturerName": "Heyu",
                     "displayCategories": [
                         "LIGHT"
@@ -712,7 +712,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtTGl2aW5nIFJvb20gTGFtcC0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Living Room Lamp",
-                    "description": "parseTest Living Room Lamp Light",
+                    "description": "parseTest Living Room Lamp Lightbulb",
                     "manufacturerName": "Heyu",
                     "displayCategories": [
                         "LIGHT"
@@ -763,7 +763,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtU2lkZSBEb29yLTAwMDAwMDQzLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Side Door",
-                    "description": "parseTest Side Door Light",
+                    "description": "parseTest Side Door Lightbulb",
                     "manufacturerName": "Heyu",
                     "displayCategories": [
                         "LIGHT"
@@ -884,7 +884,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtUG93ZGVyIFJvb20tMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Powder Room",
-                    "description": "parseTest Powder Room Light",
+                    "description": "parseTest Powder Room Lightbulb",
                     "manufacturerName": "Heyu",
                     "displayCategories": [
                         "LIGHT"
@@ -968,7 +968,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUhleXUtUmVhciBEb29yLTAwMDAwMDQzLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Rear Door",
-                    "description": "parseTest Rear Door Light",
+                    "description": "parseTest Rear Door Lightbulb",
                     "manufacturerName": "Heyu",
                     "displayCategories": [
                         "LIGHT"
@@ -1040,7 +1040,7 @@ Alexa Message Validation Passed!
 {"host":"127.0.0.1","port":51826,"aid":31,"iid":10}
 { endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1DVUlPVC1HYXJhZ2UgRG9vci0wMDAwMDA0MS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=',
   friendlyName: 'Garage Door',
-  description: 'parseTest Garage Door Garage Door',
+  description: 'parseTest Garage Door Garage Door Opener',
   manufacturerName: 'MCUIOT',
   displayCategories: [ 'DOOR' ],
   cookie: 

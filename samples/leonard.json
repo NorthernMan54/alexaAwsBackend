@@ -15,7 +15,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLU1CUm9vbS0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "MBRoom",
-                    "description": "parseTest MBRoom Light",
+                    "description": "parseTest MBRoom Lightbulb",
                     "manufacturerName": "Default-Manufacturer",
                     "displayCategories": [
                         "LIGHT"
@@ -66,7 +66,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLUFsaWNlLTAwMDAwMDQzLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Alice",
-                    "description": "parseTest Alice Light",
+                    "description": "parseTest Alice Lightbulb",
                     "manufacturerName": "Default-Manufacturer",
                     "displayCategories": [
                         "LIGHT"
@@ -185,7 +185,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLUZIYWxsLTAwMDAwMDQzLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "FHall",
-                    "description": "parseTest FHall Light",
+                    "description": "parseTest FHall Lightbulb",
                     "manufacturerName": "Default-Manufacturer",
                     "displayCategories": [
                         "LIGHT"
@@ -236,7 +236,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLUZSb29tLTAwMDAwMDQzLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "FRoom",
-                    "description": "parseTest FRoom Light",
+                    "description": "parseTest FRoom Lightbulb",
                     "manufacturerName": "Default-Manufacturer",
                     "displayCategories": [
                         "LIGHT"
@@ -287,7 +287,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlZmF1bHQtTWFudWZhY3R1cmVyLVNlYW4tMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Sean",
-                    "description": "parseTest Sean Light",
+                    "description": "parseTest Sean Lightbulb",
                     "manufacturerName": "Default-Manufacturer",
                     "displayCategories": [
                         "LIGHT"
@@ -470,7 +470,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLUdhcmFnZSBEb29yLTAwMDAwMDQxLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Garage Door",
-                    "description": "parseTest Garage Door Garage Door",
+                    "description": "parseTest Garage Door Garage Door Opener",
                     "manufacturerName": "WSSENSOR",
                     "displayCategories": [
                         "DOOR"
@@ -629,7 +629,12 @@ Alexa Message Validation Passed!
                         "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15}",
                         "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15}",
                         "SetMute": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":14},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15},{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15}]"
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":14},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15},{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":19}]",
+                        "Play": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":10,\"value\":1}",
+                        "Pause": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":13,\"value\":1}",
+                        "Stop": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":13,\"value\":1}",
+                        "Next": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":16,\"value\":1}",
+                        "Previous": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":19,\"value\":1}"
                     },
                     "capabilities": [
                         {
@@ -674,78 +679,8 @@ Alexa Message Validation Passed!
                                 "Pause",
                                 "Stop",
                                 "Next",
-                                "Rewind"
+                                "Previous"
                             ]
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLVBhdXNlIChZYW1haGEpLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Pause (Yamaha)",
-                    "description": "parseTest Pause (Yamaha) Switch",
-                    "manufacturerName": "yamaha-home",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":13,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":13,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":13}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLVBsYXkgKFlhbWFoYSktMDAwMDAwNDktMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
-                    "friendlyName": "Play (Yamaha)",
-                    "description": "parseTest Play (Yamaha) Switch",
-                    "manufacturerName": "yamaha-home",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":10,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":10,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
                         }
                     ]
                 },
@@ -833,7 +768,12 @@ Alexa Message Validation Passed!
                         "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":19,\"iid\":15}",
                         "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":19,\"iid\":15}",
                         "SetMute": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":19,\"iid\":15}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":19,\"iid\":14},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":19,\"iid\":15},{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":19,\"iid\":15}]"
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":19,\"iid\":14},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":19,\"iid\":15},{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":19}]",
+                        "Play": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":10,\"value\":1}",
+                        "Pause": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":13,\"value\":1}",
+                        "Stop": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":13,\"value\":1}",
+                        "Next": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":16,\"value\":1}",
+                        "Previous": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":19,\"value\":1}"
                     },
                     "capabilities": [
                         {
@@ -878,78 +818,8 @@ Alexa Message Validation Passed!
                                 "Pause",
                                 "Stop",
                                 "Next",
-                                "Rewind"
+                                "Previous"
                             ]
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLVNraXAgRndkIChZYW1haGEpLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Skip Fwd (Yamaha)",
-                    "description": "parseTest Skip Fwd (Yamaha) Switch",
-                    "manufacturerName": "yamaha-home",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":16,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":16,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":16}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS1ob21lLVNraXAgUmV2IChZYW1haGEpLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Skip Rev (Yamaha)",
-                    "description": "parseTest Skip Rev (Yamaha) Switch",
-                    "manufacturerName": "yamaha-home",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":19,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":19,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":19}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
                         }
                     ]
                 }
@@ -1005,7 +875,7 @@ Alexa Message Validation Passed!
 {"host":"127.0.0.1","port":51826,"aid":4,"iid":16}
 { endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVdTU0VOU09SLUdhcmFnZSBEb29yLTAwMDAwMDQxLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==',
   friendlyName: 'Garage Door',
-  description: 'parseTest Garage Door Garage Door',
+  description: 'parseTest Garage Door Garage Door Opener',
   manufacturerName: 'WSSENSOR',
   displayCategories: [ 'DOOR' ],
   cookie: 

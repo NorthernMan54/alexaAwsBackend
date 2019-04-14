@@ -239,9 +239,42 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUR5c29uLUR5c29uIFB1cmUgQ29vbCBMaW5rIEZhbi0wMDAwMDBCNy0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
-                    "friendlyName": "Dyson Pure Cool Link Fan",
-                    "description": "parseTest Dyson Pure Cool Link Fan Fan",
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUR5c29uLUR5c29uIFB1cmUgQ29vbCBMaW5rLTAwMDAwMDhBLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
+                    "friendlyName": "Dyson Pure Cool Link",
+                    "description": "parseTest Dyson Pure Cool Link Temperature Sensor",
+                    "manufacturerName": "Dyson",
+                    "displayCategories": [
+                        "TEMPERATURE_SENSOR"
+                    ],
+                    "cookie": {
+                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":393,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.TemperatureSensor",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "temperature"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUR5c29uLUR5c29uIFB1cmUgQ29vbCBMaW5rLTAwMDAwMEI3LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
+                    "friendlyName": "Dyson Pure Cool Link",
+                    "description": "parseTest Dyson Pure Cool Link Fan v2",
                     "manufacturerName": "Dyson",
                     "displayCategories": [
                         "OTHER"
@@ -281,39 +314,6 @@ Alexa Message Validation Passed!
                                 "supported": [
                                     {
                                         "name": "powerLevel"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUR5c29uLUR5c29uIFB1cmUgQ29vbCBMaW5rLTAwMDAwMDhBLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Dyson Pure Cool Link",
-                    "description": "parseTest Dyson Pure Cool Link Temperature Sensor",
-                    "manufacturerName": "Dyson",
-                    "displayCategories": [
-                        "TEMPERATURE_SENSOR"
-                    ],
-                    "cookie": {
-                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":393,\"iid\":10}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.TemperatureSensor",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "temperature"
                                     }
                                 ],
                                 "proactivelyReported": false,

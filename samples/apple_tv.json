@@ -48,6 +48,41 @@ Alexa Message Validation Passed!
                     ]
                 },
                 {
+                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUFwcGxlLVBhaXIgTmV0ZmxpeCAoMyktMDAwMDAwNDktMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
+                    "friendlyName": "Pair Netflix (3)",
+                    "description": "parseTest Pair Netflix (3) Switch",
+                    "manufacturerName": "Apple",
+                    "displayCategories": [
+                        "SWITCH"
+                    ],
+                    "cookie": {
+                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10,\"value\":1}",
+                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10,\"value\":0}",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10}]"
+                    },
+                    "capabilities": [
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa",
+                            "version": "3"
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.PowerController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "powerState"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            }
+                        }
+                    ]
+                },
+                {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUFwcGxlLVBsZXggRm9yIE1lbC0wMDAwMDA0OS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Plex For Mel",
                     "description": "parseTest Plex For Mel Switch",
@@ -161,19 +196,10 @@ Alexa Message Validation Passed!
                         "TV"
                     ],
                     "cookie": {
-                        "Pair": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10,\"value\":1}",
                         "Stop": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10,\"value\":1}",
-                        "TV/Home": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":4,\"iid\":10,\"value\":1}",
-                        "Mic/Siri": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":5,\"iid\":10,\"value\":1}",
+                        "ReportState": "[{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":7,\"iid\":10}]",
                         "Play": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":10,\"value\":1}",
-                        "Pause": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":7,\"iid\":10,\"value\":1}",
-                        "Up": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":8,\"iid\":10,\"value\":1}",
-                        "Down": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":9,\"iid\":10,\"value\":1}",
-                        "Left": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":10,\"value\":1}",
-                        "Right": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":11,\"iid\":10,\"value\":1}",
-                        "Select": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":12,\"iid\":10,\"value\":1}",
-                        "Sleep": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":13,\"iid\":10,\"value\":1}",
-                        "ReportState": "[{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":13,\"iid\":10}]"
+                        "Pause": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":7,\"iid\":10,\"value\":1}"
                     },
                     "capabilities": [
                         {
@@ -186,9 +212,9 @@ Alexa Message Validation Passed!
                             "interface": "Alexa.PlaybackController",
                             "version": "3",
                             "supportedOperations": [
+                                "Stop",
                                 "Play",
-                                "Pause",
-                                "Stop"
+                                "Pause"
                             ]
                         }
                     ]

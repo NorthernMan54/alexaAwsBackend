@@ -15,7 +15,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1pTGlnaHQtQmF0aHJvb20tMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Bathroom",
-                    "description": "parseTest Bathroom Light",
+                    "description": "parseTest Bathroom Lightbulb",
                     "manufacturerName": "MiLight",
                     "displayCategories": [
                         "LIGHT"
@@ -98,7 +98,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1pTGlnaHQtQmVkc2lkZSBEb3dubGlnaHRlcnMtMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Bedside Downlighters",
-                    "description": "parseTest Bedside Downlighters Light",
+                    "description": "parseTest Bedside Downlighters Lightbulb",
                     "manufacturerName": "MiLight",
                     "displayCategories": [
                         "LIGHT"
@@ -181,7 +181,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1pTGlnaHQtQmVkc2lkZSBMYW1wcy0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Bedside Lamps",
-                    "description": "parseTest Bedside Lamps Light",
+                    "description": "parseTest Bedside Lamps Lightbulb",
                     "manufacturerName": "MiLight",
                     "displayCategories": [
                         "LIGHT"
@@ -264,7 +264,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1pTGlnaHQtR3Vlc3QgQmF0aHJvb20tMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Guest Bathroom",
-                    "description": "parseTest Guest Bathroom Light",
+                    "description": "parseTest Guest Bathroom Lightbulb",
                     "manufacturerName": "MiLight",
                     "displayCategories": [
                         "LIGHT"
@@ -347,7 +347,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1pTGlnaHQtS2l0Y2hlbiBCdWxicy0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Kitchen Bulbs",
-                    "description": "parseTest Kitchen Bulbs Light",
+                    "description": "parseTest Kitchen Bulbs Lightbulb",
                     "manufacturerName": "MiLight",
                     "displayCategories": [
                         "LIGHT"
@@ -430,7 +430,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1pTGlnaHQtS2l0Y2hlbiBEb3dubGlnaHRlcnMtMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Kitchen Downlighters",
-                    "description": "parseTest Kitchen Downlighters Light",
+                    "description": "parseTest Kitchen Downlighters Lightbulb",
                     "manufacturerName": "MiLight",
                     "displayCategories": [
                         "LIGHT"
@@ -513,7 +513,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1pTGlnaHQtS2l0Y2hlbiBMRUQgU3RyaXBzLTAwMDAwMDQzLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
                     "friendlyName": "Kitchen LED Strips",
-                    "description": "parseTest Kitchen LED Strips Light",
+                    "description": "parseTest Kitchen LED Strips Lightbulb",
                     "manufacturerName": "MiLight",
                     "displayCategories": [
                         "LIGHT"
@@ -579,7 +579,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LU1pTGlnaHQtV29ya3Nob3AtMDAwMDAwNDMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Workshop",
-                    "description": "parseTest Workshop Light",
+                    "description": "parseTest Workshop Lightbulb",
                     "manufacturerName": "MiLight",
                     "displayCategories": [
                         "LIGHT"
@@ -662,7 +662,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUJyb2FkbGluay1DdXJ0YWlucy0wMDAwMDA4Qy0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Curtains",
-                    "description": "parseTest Curtains Blinds",
+                    "description": "parseTest Curtains Window Covering",
                     "manufacturerName": "Broadlink",
                     "displayCategories": [
                         "OTHER"
@@ -804,7 +804,7 @@ Alexa Message Validation Passed!
 {"host":"127.0.0.1","port":51826,"aid":12,"iid":10}
 { endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUJyb2FkbGluay1DdXJ0YWlucy0wMDAwMDA4Qy0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=',
   friendlyName: 'Curtains',
-  description: 'parseTest Curtains Blinds',
+  description: 'parseTest Curtains Window Covering',
   manufacturerName: 'Broadlink',
   displayCategories: [ 'OTHER' ],
   cookie: 

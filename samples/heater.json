@@ -15,7 +15,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVtvYmplY3QgT2JqZWN0XS1DYW1lcmEtMDAwMDAwQkMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Camera",
-                    "description": "parseTest Camera Heater/Cooler",
+                    "description": "parseTest Camera Heater Cooler",
                     "manufacturerName": "[object Object]",
                     "displayCategories": [
                         "THERMOSTAT"
@@ -23,9 +23,15 @@ Alexa Message Validation Passed!
                     "cookie": {
                         "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10,\"value\":1}",
                         "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10,\"value\":0}",
+                        "thermostatModeOFF": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":12,\"value\":0}",
+                        "thermostatModeHEAT": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":12,\"value\":1}",
+                        "thermostatModeCOOL": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":12,\"value\":2}",
+                        "thermostatModeAUTO": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":12,\"value\":3}",
+                        "upperSetpoint": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":14}",
+                        "lowerSetpoint": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":15}",
                         "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":17}",
                         "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":17}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10},{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":13},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":17}]"
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10},{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":13},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":17},{\"interface\":\"Alexa.ThermostatController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2}]"
                     },
                     "capabilities": [
                         {
@@ -73,6 +79,35 @@ Alexa Message Validation Passed!
                                 ],
                                 "proactivelyReported": false,
                                 "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ThermostatController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "thermostatMode"
+                                    },
+                                    {
+                                        "name": "upperSetpoint"
+                                    },
+                                    {
+                                        "name": "lowerSetpoint"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            },
+                            "configuration": {
+                                "supportsScheduling": false,
+                                "supportedModes": [
+                                    "HEAT",
+                                    "COOL",
+                                    "AUTO",
+                                    "OFF"
+                                ]
                             }
                         }
                     ]
@@ -80,7 +115,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVtvYmplY3QgT2JqZWN0XS1DYW1lcmV0dGEtMDAwMDAwQkMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
                     "friendlyName": "Cameretta",
-                    "description": "parseTest Cameretta Heater/Cooler",
+                    "description": "parseTest Cameretta Heater Cooler",
                     "manufacturerName": "[object Object]",
                     "displayCategories": [
                         "THERMOSTAT"
@@ -88,9 +123,15 @@ Alexa Message Validation Passed!
                     "cookie": {
                         "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10,\"value\":1}",
                         "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10,\"value\":0}",
+                        "thermostatModeOFF": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":12,\"value\":0}",
+                        "thermostatModeHEAT": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":12,\"value\":1}",
+                        "thermostatModeCOOL": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":12,\"value\":2}",
+                        "thermostatModeAUTO": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":12,\"value\":3}",
+                        "upperSetpoint": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":14}",
+                        "lowerSetpoint": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":15}",
                         "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":17}",
                         "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":17}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10},{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":13},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":17}]"
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10},{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":13},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":17},{\"interface\":\"Alexa.ThermostatController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3}]"
                     },
                     "capabilities": [
                         {
@@ -138,6 +179,35 @@ Alexa Message Validation Passed!
                                 ],
                                 "proactivelyReported": false,
                                 "retrievable": true
+                            }
+                        },
+                        {
+                            "type": "AlexaInterface",
+                            "interface": "Alexa.ThermostatController",
+                            "version": "3",
+                            "properties": {
+                                "supported": [
+                                    {
+                                        "name": "thermostatMode"
+                                    },
+                                    {
+                                        "name": "upperSetpoint"
+                                    },
+                                    {
+                                        "name": "lowerSetpoint"
+                                    }
+                                ],
+                                "proactivelyReported": false,
+                                "retrievable": true
+                            },
+                            "configuration": {
+                                "supportsScheduling": false,
+                                "supportedModes": [
+                                    "HEAT",
+                                    "COOL",
+                                    "AUTO",
+                                    "OFF"
+                                ]
                             }
                         }
                     ]
