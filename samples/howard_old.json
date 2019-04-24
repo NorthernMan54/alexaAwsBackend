@@ -21,13 +21,8 @@ Alexa Message Validation Passed!
                         "THERMOSTAT"
                     ],
                     "cookie": {
-                        "thermostatMode": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":10}",
-                        "thermostatModeOFF": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":11,\"value\":0}",
-                        "thermostatModeHEAT": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":11,\"value\":1}",
-                        "thermostatModeCOOL": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":11,\"value\":2}",
-                        "thermostatModeAUTO": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":11,\"value\":3}",
-                        "targetSetpoint": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":13}",
-                        "ReportState": "[{\"interface\":\"Alexa.ThermostatControllerthermostatMode\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":11},{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":12},{\"interface\":\"Alexa.ThermostatControllertargetSetpoint\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":13}]"
+                        "SetTargetTemperature": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":13}",
+                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":12},{\"interface\":\"Alexa.ThermostatController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":13}]"
                     },
                     "capabilities": [
                         {
@@ -56,23 +51,14 @@ Alexa Message Validation Passed!
                             "properties": {
                                 "supported": [
                                     {
-                                        "name": "thermostatMode"
+                                        "name": "targetSetpoint"
                                     },
                                     {
-                                        "name": "targetSetpoint"
+                                        "name": "thermostatMode"
                                     }
                                 ],
                                 "proactivelyReported": false,
                                 "retrievable": true
-                            },
-                            "configuration": {
-                                "supportsScheduling": false,
-                                "supportedModes": [
-                                    "HEAT",
-                                    "COOL",
-                                    "AUTO",
-                                    "OFF"
-                                ]
                             }
                         }
                     ]
@@ -390,7 +376,7 @@ Alexa Message Validation Passed!
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWhhbXB0b24tYmF5LU1hc3RlciBsaWdodC0wMDAwMDA0My0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
                     "friendlyName": "Master light",
-                    "description": "parseTest Master light Lightbulb",
+                    "description": "parseTest Master light Light",
                     "manufacturerName": "hampton-bay",
                     "displayCategories": [
                         "LIGHT"

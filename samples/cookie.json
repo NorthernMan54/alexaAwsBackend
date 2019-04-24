@@ -167,7 +167,7 @@ Alexa Message Validation Passed!
                         "thermostatModeCOOL": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":47,\"iid\":16,\"value\":2}",
                         "thermostatModeAUTO": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":47,\"iid\":16,\"value\":3}",
                         "targetSetpoint": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":47,\"iid\":18}",
-                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":47,\"iid\":17},{\"interface\":\"Alexa.ThermostatController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":47}]"
+                        "ReportState": "[{\"interface\":\"Alexa.ThermostatControllerthermostatMode\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":47,\"iid\":16},{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":47,\"iid\":17},{\"interface\":\"Alexa.ThermostatControllertargetSetpoint\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":47,\"iid\":18}]"
                     },
                     "capabilities": [
                         {
@@ -991,7 +991,7 @@ Alexa Message Validation Passed!
                         "thermostatModeCOOL": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":391,\"iid\":11,\"value\":2}",
                         "thermostatModeAUTO": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":391,\"iid\":11,\"value\":3}",
                         "targetSetpoint": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":391,\"iid\":13}",
-                        "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":391,\"iid\":12},{\"interface\":\"Alexa.ThermostatController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":391}]"
+                        "ReportState": "[{\"interface\":\"Alexa.ThermostatControllerthermostatMode\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":391,\"iid\":11},{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":391,\"iid\":12},{\"interface\":\"Alexa.ThermostatControllertargetSetpoint\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":391,\"iid\":13}]"
                     },
                     "capabilities": [
                         {
