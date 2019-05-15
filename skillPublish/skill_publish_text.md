@@ -17,7 +17,7 @@
 | Language | Example 1 | Example 2 | Example 3 |
 | -------- | --------- | --------- | --------- |
 | English | Alexa, turn on Living Room Lamp | Alexa, set Living Room Lamp to 50 percent | Alexa, turn off Living Room Lamp |
-| German | Alexa, schalte die Wohnzimmerlampe ein | Alexa, setzte die Wohnzimmerlampe auf 50% | Alexa, schalte die Wohnzimmerlampe aus |
+| German | Alexa, schalte die Wohnzimmerlampe ein | Alexa, setze die Wohnzimmerlampe auf 50% | Alexa, schalte die Wohnzimmerlampe aus |
 | French | Alexa, allume la lampe de salon | Alexa, règle la lampe de salon à 50 % | Alexa, éteins la lampe de salon |
 | Japanese | アレクサ、リビングの電気をつけて | アレクサ、リビングの電気を50％に設定 | アレクサ、リビングの電気を消して |
 | Italian | Alexa, accendi la lampada del soggiorno | Alexa, imposta la lampada del soggiorno al 50 per cento | Alexa, spegni la lampada del soggiorno |
