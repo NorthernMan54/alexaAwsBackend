@@ -160,6 +160,15 @@ sudo systemd-tmpfiles --create --prefix /var/log/journal
 sudo systemctl restart systemd-journald
 ```
 
+## awsWebsite UFW Rules
+
+```
+ufw allow 22
+ufw allow 443/tcp
+ufw allow 1883/tcp
+ufw allow 80/tcp
+```
+
 ## Local version of awsWebsite
 
 ```
