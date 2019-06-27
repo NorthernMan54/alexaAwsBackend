@@ -22,9 +22,9 @@ function send(user, message, callback) {
       if (error || !token.url || !token.access_token) {
         // Error already logged
         if (!error) {
-          error = "Token Error";
+          error = new Error("Token Error");
         }
-        console.log("eventGW Error sending event:", user, token, error);
+        console.log("eventGW Error sending event:", user, token, error.toString());
         measurement.send({
           t: 'event',
           ec: 'event',
