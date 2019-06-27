@@ -5,7 +5,8 @@ var Account = require('../models/account');
 
 module.exports = {
   retrieve: retrieve,
-  getAccessToken: getAccessToken
+  getAccessToken: getAccessToken,
+  refreshExpired: refreshExpired
 };
 
 function getAccessToken(username, callback) {

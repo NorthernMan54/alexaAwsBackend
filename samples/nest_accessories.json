@@ -1,0 +1,1773 @@
+{
+  "accessories": [{
+    "aid": 1,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Nick Farina",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Homebridge",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Homebridge",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "DD:42:6D:E5:BE:60",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "0.4.49",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 2000000008,
+      "type": "49FB9D4D-0FEA-4BF1-8FA6-E7B18AB86DCE",
+      "characteristics": [{
+        "iid": 9,
+        "type": "77474A2F-FA98-485E-97BE-4762458774D8",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "State",
+        "maxValue": 1,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 10,
+        "type": "FD9FE4CC-D06F-4FFE-96C6-595D464E1026",
+        "perms": ["pr", "ev"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Version"
+      }, {
+        "iid": 11,
+        "type": "5819A4C2-E1B0-4C9D-B761-3EB1AFF43073",
+        "perms": ["pr", "pw", "ev"],
+        "format": "data",
+        "value": null,
+        "description": "Control Point"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 12,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "SeydX",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "BRAVIA",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "TV",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "psk-t4lltree-6",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "3.0.1",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000043-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "TV Volume",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }, {
+        "iid": 11,
+        "type": "00000008-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "int",
+        "value": 0,
+        "description": "Brightness",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 13,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "SeydX",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "BRAVIA",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "TV",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "psk-t4lltree-3",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "3.0.1",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }, {
+        "iid": 11,
+        "type": "e2454387-a3e9-44a9-82f2-852f9628ecbc",
+        "perms": ["pr", "ev"],
+        "format": "string",
+        "value": "Play Store",
+        "description": "App"
+      }, {
+        "iid": 12,
+        "type": "613f5692-4713-4743-85ca-627e8f17d3bf",
+        "perms": ["pr", "pw", "ev"],
+        "format": "int",
+        "value": 0,
+        "description": "App",
+        "maxValue": 34,
+        "minValue": 0,
+        "minStep": 1
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 14,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "SeydX",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "BRAVIA",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "TV",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "psk-t4lltree-2",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "3.0.1",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }, {
+        "iid": 11,
+        "type": "0910d522-3c0f-441d-8167-4961de164ee8",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "HDMI 1",
+        "unit": "meta:hdmi"
+      }, {
+        "iid": 12,
+        "type": "be1f81c8-152e-4e4a-910c-65afb1255df3",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "HDMI 3/ARC",
+        "unit": "meta:hdmi"
+      }, {
+        "iid": 13,
+        "type": "90cac535-f893-4ae4-bd0f-71926de391d2",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "HDMI 4",
+        "unit": "meta:hdmi"
+      }, {
+        "iid": 14,
+        "type": "8b197250-eb16-4cfb-a7e9-e4ddf0abfd68",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "HT-NT5",
+        "unit": "meta:playbackdevice"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 15,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "SeydX",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "BRAVIA",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "TV",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "psk-t4lltree-1",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "3.0.1",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "TV Power",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }, {
+        "iid": 11,
+        "type": "158e647d-1d2f-4067-825c-3b58a009f4ce",
+        "perms": ["pr", "pw", "ev"],
+        "format": "int",
+        "value": 97,
+        "description": "Max Volume",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 12,
+        "type": "994310e0-27b6-4a13-9497-4954fa97645b",
+        "perms": ["pr", "pw", "ev"],
+        "format": "int",
+        "value": 2,
+        "description": "Favourite Input",
+        "maxValue": 8,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 13,
+        "type": "4ace2c60-fd9e-4046-912b-fd03802f8617",
+        "perms": ["pr", "ev"],
+        "format": "string",
+        "value": "HDMI 1",
+        "description": "Favourite Input"
+      }, {
+        "iid": 14,
+        "type": "1ecf82e7-84e5-4584-8b49-d05a93ec3da3",
+        "perms": ["pr", "pw", "ev"],
+        "format": "int",
+        "value": 20,
+        "description": "Favourite App",
+        "maxValue": 34,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 15,
+        "type": "efe5fd27-1dba-4b55-a243-25e5005434a6",
+        "perms": ["pr", "ev"],
+        "format": "string",
+        "value": "BBC iPlayer",
+        "description": "Favourite App"
+      }, {
+        "iid": 16,
+        "type": "9648ec76-6139-4de2-8ecb-90be2420e33c",
+        "perms": ["pr", "pw", "ev"],
+        "format": "int",
+        "value": 0,
+        "description": "Off State",
+        "maxValue": 2,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 17,
+        "type": "cc7d8f38-54f8-4b9f-9204-5a2d91ac0a8d",
+        "perms": ["pr", "ev"],
+        "format": "string",
+        "value": "OFF",
+        "description": "Off State"
+      }, {
+        "iid": 18,
+        "type": "39208fb8-6675-4be6-8c6d-6a5af3253dd4",
+        "perms": ["pr", "pw", "ev"],
+        "format": "int",
+        "value": 10,
+        "description": "Polling Interval",
+        "maxValue": 100,
+        "minValue": 10,
+        "minStep": 1
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 35,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Somfy",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Alarm",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Alarm",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "internal://1208-5883-3473/alarm/0",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "0000007E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Alarm",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "00000066-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 3,
+        "description": "Security System Current State",
+        "valid-values": [0, 1, 2, 3, 4],
+        "maxValue": 4,
+        "minValue": 0
+      }, {
+        "iid": 11,
+        "type": "00000067-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "uint8",
+        "value": 3,
+        "description": "Security System Target State",
+        "valid-values": [0, 1, 2, 3],
+        "maxValue": 3,
+        "minValue": 0
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 36,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Somfy",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Gate",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Main Gate",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "rts://1208-5883-3473/16727199",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000041-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Main Gate",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "0000000E-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 1,
+        "description": "Current Door State",
+        "valid-values": [0, 1, 2, 3, 4],
+        "maxValue": 4,
+        "minValue": 0
+      }, {
+        "iid": 11,
+        "type": "00000032-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "uint8",
+        "value": 1,
+        "description": "Target Door State",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 12,
+        "type": "00000024-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Obstruction Detected"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 37,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Somfy",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Gate",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "My Gate",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "rts://1208-5883-3473/16761829",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "00000041-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "My Gate",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "0000000E-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 1,
+        "description": "Current Door State",
+        "valid-values": [0, 1, 2, 3, 4],
+        "maxValue": 4,
+        "minValue": 0
+      }, {
+        "iid": 11,
+        "type": "00000032-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "uint8",
+        "value": 1,
+        "description": "Target Door State",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 12,
+        "type": "00000024-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Obstruction Detected"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 38,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Somfy",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Screen",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Right Blind",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "rts://1208-5883-3473/16764813",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "0000008C-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Right Blind",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "0000006D-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 50,
+        "description": "Current Position",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 11,
+        "type": "0000007C-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "uint8",
+        "value": 50,
+        "description": "Target Position",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 12,
+        "type": "00000072-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 2,
+        "description": "Position State",
+        "valid-values": [0, 1, 2],
+        "maxValue": 2,
+        "minValue": 0
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 39,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Somfy",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Curtain",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Left Curtain",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "rts://1208-5883-3473/16765745",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "0000008C-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Left Curtain",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "0000006D-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 50,
+        "description": "Current Position",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 11,
+        "type": "0000007C-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "uint8",
+        "value": 50,
+        "description": "Target Position",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 12,
+        "type": "00000072-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 2,
+        "description": "Position State",
+        "valid-values": [0, 1, 2],
+        "maxValue": 2,
+        "minValue": 0
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 40,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Somfy",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Curtain",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Right Curtain",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "rts://1208-5883-3473/16769092",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "0000008C-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Right Curtain",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "0000006D-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 50,
+        "description": "Current Position",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 11,
+        "type": "0000007C-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "uint8",
+        "value": 50,
+        "description": "Target Position",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 12,
+        "type": "00000072-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 2,
+        "description": "Position State",
+        "valid-values": [0, 1, 2],
+        "maxValue": 2,
+        "minValue": 0
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 41,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Somfy",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Generic",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Left SkyLight",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "rts://1208-5883-3473/16770340",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "0000008C-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Left SkyLight",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "0000006D-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 50,
+        "description": "Current Position",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 11,
+        "type": "0000007C-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "uint8",
+        "value": 50,
+        "description": "Target Position",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 12,
+        "type": "00000072-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 2,
+        "description": "Position State",
+        "valid-values": [0, 1, 2],
+        "maxValue": 2,
+        "minValue": 0
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 42,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Somfy",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Generic",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Right SkyLight",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "rts://1208-5883-3473/16773534",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "0000008C-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Right SkyLight",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "0000006D-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 50,
+        "description": "Current Position",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 11,
+        "type": "0000007C-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "uint8",
+        "value": 50,
+        "description": "Target Position",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 12,
+        "type": "00000072-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 2,
+        "description": "Position State",
+        "valid-values": [0, 1, 2],
+        "maxValue": 2,
+        "minValue": 0
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 43,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Somfy",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Screen",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Left Blind",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "rts://1208-5883-3473/16774504",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "0000008C-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Left Blind",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "0000006D-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 50,
+        "description": "Current Position",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 11,
+        "type": "0000007C-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "uint8",
+        "value": 50,
+        "description": "Target Position",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 12,
+        "type": "00000072-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 2,
+        "description": "Position State",
+        "valid-values": [0, 1, 2],
+        "maxValue": 2,
+        "minValue": 0
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 17,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Nest",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Thermostat",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Living Room Thermostat",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Living Room",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "5.9.3-6",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "0000004A-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "0000000F-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Current Heating Cooling State",
+        "valid-values": [0, 1, 2],
+        "maxValue": 2,
+        "minValue": 0
+      }, {
+        "iid": 10,
+        "type": "00000033-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "uint8",
+        "value": 1,
+        "description": "Target Heating Cooling State",
+        "valid-values": [0, 1],
+        "maxValue": 3,
+        "minValue": 0
+      }, {
+        "iid": 11,
+        "type": "00000011-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 23.5,
+        "description": "Current Temperature",
+        "unit": "celsius",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 0.5
+      }, {
+        "iid": 12,
+        "type": "00000035-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "float",
+        "value": 23,
+        "description": "Target Temperature",
+        "unit": "celsius",
+        "maxValue": 38,
+        "minValue": 10,
+        "minStep": 0.5
+      }, {
+        "iid": 13,
+        "type": "00000036-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Temperature Display Units",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 14,
+        "type": "00000010-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 40,
+        "description": "Current Relative Humidity",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 15,
+        "type": "0000000D-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "float",
+        "value": 24,
+        "description": "Cooling Threshold Temperature",
+        "unit": "celsius",
+        "maxValue": 35,
+        "minValue": 10,
+        "minStep": 0.5
+      }, {
+        "iid": 16,
+        "type": "00000012-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "float",
+        "value": 20,
+        "description": "Heating Threshold Temperature",
+        "unit": "celsius",
+        "maxValue": 25,
+        "minValue": 0,
+        "minStep": 0.5
+      }, {
+        "iid": 17,
+        "type": "D6D47D29-4638-4F44-B53C-D84015DAEBDB",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Away"
+      }, {
+        "iid": 18,
+        "type": "D6D47D29-4639-4F44-B53C-D84015DAEBDB",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Eco Mode"
+      }, {
+        "iid": 19,
+        "type": "D6D47D29-4642-4F44-B53C-D84015DAEBDB",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Has Leaf"
+      }, {
+        "iid": 20,
+        "type": "D6D47D29-4644-4F44-B53C-D84015DAEBDB",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": true,
+        "description": "Sunlight Correction Enabled"
+      }, {
+        "iid": 21,
+        "type": "D6D47D29-4645-4F44-B53C-D84015DAEBDB",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Sunlight Correction Active"
+      }, {
+        "iid": 22,
+        "type": "D6D47D29-4646-4F44-B53C-D84015DAEBDB",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Using Emergency Heat"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 23,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 24,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Home Occupied",
+        "description": "Name"
+      }, {
+        "iid": 25,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": true,
+        "description": "On"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 26,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 27,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Eco Mode",
+        "description": "Name"
+      }, {
+        "iid": 28,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }, {
+    "aid": 18,
+    "services": [{
+      "iid": 1,
+      "type": "0000003E-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 2,
+        "type": "00000014-0000-1000-8000-0026BB765291",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "00000020-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Nest",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "00000021-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Thermostat",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "First Floor Thermostat",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "00000030-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "First Floor",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "00000052-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "5.9.3-6",
+        "description": "Firmware Revision"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 8,
+      "type": "0000004A-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 9,
+        "type": "0000000F-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Current Heating Cooling State",
+        "valid-values": [0, 1, 2],
+        "maxValue": 2,
+        "minValue": 0
+      }, {
+        "iid": 10,
+        "type": "00000033-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "uint8",
+        "value": 1,
+        "description": "Target Heating Cooling State",
+        "valid-values": [0, 1],
+        "maxValue": 3,
+        "minValue": 0
+      }, {
+        "iid": 11,
+        "type": "00000011-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 23.5,
+        "description": "Current Temperature",
+        "unit": "celsius",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 0.5
+      }, {
+        "iid": 12,
+        "type": "00000035-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "float",
+        "value": 23,
+        "description": "Target Temperature",
+        "unit": "celsius",
+        "maxValue": 38,
+        "minValue": 10,
+        "minStep": 0.5
+      }, {
+        "iid": 13,
+        "type": "00000036-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "uint8",
+        "value": 0,
+        "description": "Temperature Display Units",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }, {
+        "iid": 14,
+        "type": "00000010-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "ev"],
+        "format": "float",
+        "value": 35,
+        "description": "Current Relative Humidity",
+        "unit": "percentage",
+        "maxValue": 100,
+        "minValue": 0,
+        "minStep": 1
+      }, {
+        "iid": 15,
+        "type": "0000000D-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "float",
+        "value": 24,
+        "description": "Cooling Threshold Temperature",
+        "unit": "celsius",
+        "maxValue": 35,
+        "minValue": 10,
+        "minStep": 0.5
+      }, {
+        "iid": 16,
+        "type": "00000012-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "float",
+        "value": 20,
+        "description": "Heating Threshold Temperature",
+        "unit": "celsius",
+        "maxValue": 25,
+        "minValue": 0,
+        "minStep": 0.5
+      }, {
+        "iid": 17,
+        "type": "D6D47D29-4638-4F44-B53C-D84015DAEBDB",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Away"
+      }, {
+        "iid": 18,
+        "type": "D6D47D29-4639-4F44-B53C-D84015DAEBDB",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Eco Mode"
+      }, {
+        "iid": 19,
+        "type": "D6D47D29-4642-4F44-B53C-D84015DAEBDB",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Has Leaf"
+      }, {
+        "iid": 20,
+        "type": "D6D47D29-4644-4F44-B53C-D84015DAEBDB",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": true,
+        "description": "Sunlight Correction Enabled"
+      }, {
+        "iid": 21,
+        "type": "D6D47D29-4645-4F44-B53C-D84015DAEBDB",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Sunlight Correction Active"
+      }, {
+        "iid": 22,
+        "type": "D6D47D29-4646-4F44-B53C-D84015DAEBDB",
+        "perms": ["pr", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Using Emergency Heat"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 23,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 24,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Home Occupied",
+        "description": "Name"
+      }, {
+        "iid": 25,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": true,
+        "description": "On"
+      }],
+      "primary": false,
+      "hidden": false
+    }, {
+      "iid": 26,
+      "type": "00000049-0000-1000-8000-0026BB765291",
+      "characteristics": [{
+        "iid": 27,
+        "type": "00000023-0000-1000-8000-0026BB765291",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Eco Mode",
+        "description": "Name"
+      }, {
+        "iid": 28,
+        "type": "00000025-0000-1000-8000-0026BB765291",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }],
+      "primary": false,
+      "hidden": false
+    }]
+  }]
+}

@@ -67,8 +67,8 @@ function send(user, message, callback) {
             });
             callback(null);
           } else if (!err && response.statusCode === 401) {
-            console.log("Refresh Token required: ", response.body, response.statusCode);
-            oauthClient.refresh(user, token);
+            console.log("Refresh Token required: ", user, response.body, response.statusCode);
+            // oauthClient.refresh(user, token);
             measurement.send({
               t: 'event',
               ec: 'event',
