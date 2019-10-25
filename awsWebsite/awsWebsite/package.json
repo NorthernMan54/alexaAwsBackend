@@ -23,7 +23,7 @@
     "ejs": "^2.5.2",
     "express": "^4.14.0",
     "express-session": "^1.14.1",
-    "mongoose": "^4.6.5",
+    "mongoose": "^5.7.7",
     "mongoose-sequence": "^4.0.1",
     "morgan": "^1.7.0",
     "mqtt": "^2.0.1",
