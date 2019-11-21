@@ -517,6 +517,7 @@ app.post('/auth/finish', function(req, res, next) {
           geoid: 'Amazon',
           uid: user.username
         });
+        usage.enabled(req.user.username);
         next();
       } else if (!error) {
         console.log("not authed"); // Login not found
@@ -774,9 +775,9 @@ app.get('/admin/users',
         if (!error) {
           var transform = {
             "<>": "div",
-            "html": "<tr><td>${user.username}</td><td>${created}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td><td>${lastUsedBroker}</td><td>${brokerCount}</td><td>${lastEvent}</td><td>${eventCount}</td><td>${presence}</td><td>${version}</td></tr>"
+            "html": "<tr><td>${user.username}</td><td>${created}</td><td>${lastUsedWebsite}</td><td>${enabled}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td><td>${lastUsedBroker}</td><td>${brokerCount}</td><td>${lastEvent}</td><td>${eventCount}</td><td>${presence}</td><td>${version}</td></tr>"
           };
-          res.send("<a href=\"/usage.csv\" download=\"/usage.csv\">Download the data</a><table border='1'><tr><th>Username</th><th>Created</th><th>Last Used Alexa</th><th>Alexa Count</th><th>Last Plugin Response</th><th>Response Count</th><th>Last Event</th><th>Event Count</th><th>Presence</th><th>Version</th></tr>" + json2html.transform(data, transform) + "</table>");
+          res.send("<a href=\"/usage.csv\" download=\"/usage.csv\">Download the data</a><table border='1'><tr><th>Username</th><th>Created</th><th>Last Used Website</th><th>Enabled</th><th>Last Used Alexa</th><th>Alexa Count</th><th>Last Plugin Response</th><th>Response Count</th><th>Last Event</th><th>Event Count</th><th>Presence</th><th>Version</th></tr>" + json2html.transform(data, transform) + "</table>");
         }
       });
     } else {
@@ -791,7 +792,7 @@ app.get('/usage.csv',
       Usage.find().sort('-lastUsedBroker').populate('user', 'username').exec(function(error, data) {
         if (!error) {
           try {
-            const fields = ['user.username', 'created', 'lastUsedAlexa', 'alexaCount', 'lastUsedBroker', 'brokerCount', 'lastEvent', 'eventCount', 'presence', 'version'];
+            const fields = ['user.username', 'created', 'lastUsedWebsite', 'enabled', 'lastUsedAlexa', 'alexaCount', 'lastUsedBroker', 'brokerCount', 'lastEvent', 'eventCount', 'presence', 'version'];
             const opts = {
               fields
             };

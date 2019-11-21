@@ -6,7 +6,8 @@ module.exports = {
   lastUsedBroker: lastUsedBroker,
   lastUsedWebsite: lastUsedWebsite,
   lastEvent: lastEvent,
-  presence: presence
+  presence: presence,
+  enabled: enabled
 };
 
 function presence(username, version) {
@@ -62,6 +63,17 @@ function lastUsedWebsite(username) {
   getRecord(username, function(error, usage) {
     if (!error) {
       usage.lastUsedWebsite = new Date();
+      usage.save();
+    } else {
+      // Error
+    }
+  });
+}
+
+function enabled(username) {
+  getRecord(username, function(error, usage) {
+    if (!error) {
+      usage.enabled = new Date();
       usage.save();
     } else {
       // Error

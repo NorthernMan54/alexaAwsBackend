@@ -57,6 +57,12 @@ var Usage = new Schema({
   version: {
     type: String,
     default: "0.0.0"
+  },
+  enabled: {
+    type: Date,
+    default: function() {
+      return new Date(0);
+    }
   }
 });
 
