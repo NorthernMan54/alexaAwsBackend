@@ -53,6 +53,12 @@ Moved to https://github.com/NorthernMan54/alexaAwsBackend/issues/6
 
 1 - Name - AlexaHome
 2 - Runtime - NodeJS 6.10
+
+```
+deb https://deb.nodesource.com/node_7.x xenial main
+deb-src https://deb.nodesource.com/node_7.x xenial main
+```
+
 3 - Role - Choose existing
 4 - Existing Role - lamba_basic_execution
 Create function

@@ -25,6 +25,8 @@ const Json2csvParser = require('json2csv').Parser;
 
 var port = (process.env.VCAP_APP_PORT || process.env.PORT || 3000);
 var host = (process.env.VCAP_APP_HOST || '0.0.0.0');
+var app_id = (process.env.APP_URL || 'https://localhost:') + port;
+
 var mongo_url = (process.env.MONGO_URL || 'mongodb://localhost/users');
 
 var mqtt_url = (process.env.MQTT_URL || 'mqtt://localhost:1883');
@@ -73,6 +75,8 @@ var mongoose_options = {
     autoReconnect: true,
     reconnectTries: Number.MAX_VALUE,
     reconnectInterval: 1000,
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 //    socketOptions: {
 //      autoReconnect: true
 //    }
@@ -165,7 +169,7 @@ Account.findOne({
   }
 });
 
-var app_id = 'https://localhost:' + port;
+
 
 var cookieSecret = 'ihytsrf334';
 
