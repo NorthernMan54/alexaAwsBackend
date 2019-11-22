@@ -10,7 +10,7 @@ echo "========================== Preparing to Publish ==========================
 echo
 npm version patch
 npm install
-npm audit
+#npm audit
 echo
 echo "========================== Starting Packaging ============================="
 echo
