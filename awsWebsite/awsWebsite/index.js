@@ -70,17 +70,18 @@ mqttClient.on('connect', function() {
 console.log(mongo_url);
 mongoose.Promise = global.Promise;
 var mongoose_options = {
-//  server: {
-//    auto_reconnect: true,
-    autoReconnect: true,
-    reconnectTries: Number.MAX_VALUE,
-    reconnectInterval: 1000,
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-//    socketOptions: {
-//      autoReconnect: true
-//    }
-//  }
+  //  server: {
+  //    auto_reconnect: true,
+  autoReconnect: true,
+  reconnectTries: Number.MAX_VALUE,
+  reconnectInterval: 1000,
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true
+  //    socketOptions: {
+  //      autoReconnect: true
+  //    }
+  //  }
 };
 var mongoose_connection = mongoose.connection;
 

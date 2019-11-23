@@ -4,6 +4,41 @@ This repository contains the backend code for homebridge-alexa
 
 These are my notes and backlog for the creating of the Skill Based approach for integrating Amazon Alexa with HomeBridge.  Also all code for this version will use this branch of the repository.
 
+<!--ts-->
+   * [homebridge-alexa](#homebridge-alexa)
+   * [Concept](#concept)
+   * [End to End Design](#end-to-end-design)
+   * [Plugin Design](#plugin-design)
+   * [backlog](#backlog)
+   * [Setup Development Toolchain](#setup-development-toolchain)
+      * [Alexa Lambda HomeSkill](#alexa-lambda-homeskill)
+   * [aws LightSail web website](#aws-lightsail-web-website)
+      * [Inital Build](#inital-build)
+         * [mosquitto Config](#mosquitto-config)
+         * [Growing over 1024 Users](#growing-over-1024-users)
+         * [Apache SSL Config](#apache-ssl-config)
+         * [Enable storage of more logs](#enable-storage-of-more-logs)
+         * [awsWebsite UFW Rules](#awswebsite-ufw-rules)
+      * [Nov 2019 Software Upgrades](#nov-2019-software-upgrades)
+         * [MongoDB Tuning](#mongodb-tuning)
+         * [NodeJS update to 10.17.0](#nodejs-update-to-10170)
+         * [mongodb update to 3.4](#mongodb-update-to-34)
+         * [mongodb update 3.4 to 3.6](#mongodb-update-34-to-36)
+         * [DB Maintenance](#db-maintenance)
+            * [Create a BU first](#create-a-bu-first)
+            * [Maintenance Commands using mongo](#maintenance-commands-using-mongo)
+            * [Update to WiredTiger Storage Engine](#update-to-wiredtiger-storage-engine)
+   * [Local version of awsWebsite](#local-version-of-awswebsite)
+   * [Amazon AWS Lambda function](#amazon-aws-lambda-function)
+      * [Create AWS Lambda function](#create-aws-lambda-function)
+   * [Historical Dates](#historical-dates)
+   * [Credits](#credits)
+
+<!-- Added by: sgracey, at:  -->
+
+<!--te-->
+
+
 # Concept
 
           -------------------
@@ -77,7 +112,9 @@ DEBUG - ( empty or true )
 
 
 
-## aws LightSail web website
+# aws LightSail web website
+
+## Inital Build
 
 * Selected Ubuntu OS image, and installed nodejs
 
@@ -108,7 +145,7 @@ vi config.mk - enable mongo and files
 make
 sudo cp auth-plug.so /usr/lib/mosquitto-auth-plugin/auth-plugin.so
 
-## mosquitto Config
+### mosquitto Config
 
 cp mosquitto/conf/mosquitto.conf /etc/mosquitto/conf.d/mosquitto.conf
 
@@ -123,7 +160,7 @@ mosquitto 	hard	nofile 		10000000
 mosquitto 	soft	nofile 		10000000
 ```
 
-## Apache SSL Config
+### Apache SSL Config
 
 * Registered IP Address at freeDNS - homebridge.cloudwatch.net
 
@@ -158,7 +195,7 @@ sudo certbot certonly
 From https://docs.bitnami.com/google/how-to/generate-install-lets-encrypt-ssl/
 ```
 
-## Enable storage of more logs ##
+### Enable storage of more logs ##
 
 ```
 sudo mkdir /var/log/journal
@@ -166,7 +203,7 @@ sudo systemd-tmpfiles --create --prefix /var/log/journal
 sudo systemctl restart systemd-journald
 ```
 
-## awsWebsite UFW Rules
+### awsWebsite UFW Rules
 
 ```
 ufw allow 22
@@ -175,7 +212,193 @@ ufw allow 1883/tcp
 ufw allow 80/tcp
 ```
 
-## Local version of awsWebsite
+## Nov 2019 Software Upgrades
+
+### MongoDB Tuning
+
+Add these to "/etc/sysctl.d/15-mongodb.conf"
+```
+vm.swappiness = 1
+net.ipv4.tcp_keepalive_time = 600
+```
+
+Create a new file "/etc/init.d/disable-transparent-hugepages"
+$ sudo vi /etc/init.d/disable-transparent-hugepages
+Add these in it;
+```
+#!/bin/bash
+### BEGIN INIT INFO
+# Provides:          disable-transparent-hugepages
+# Required-Start:    $local_fs
+# Required-Stop:
+# X-Start-Before:    mongod mongodb-mms-automation-agent
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Disable Linux transparent huge pages
+# Description:       Disable Linux transparent huge pages, to improve
+#                    database performance.
+### END INIT INFO
+case $1 in
+  start)
+    if [ -d /sys/kernel/mm/transparent_hugepage ]; then
+      thp_path=/sys/kernel/mm/transparent_hugepage
+    elif [ -d /sys/kernel/mm/redhat_transparent_hugepage ]; then
+      thp_path=/sys/kernel/mm/redhat_transparent_hugepage
+    else
+      return 0
+    fi
+echo 'never' > ${thp_path}/enabled
+    echo 'never' > ${thp_path}/defrag
+re='^[0-1]+$'
+    if [[ $(cat ${thp_path}/khugepaged/defrag) =~ $re ]]
+    then
+      # RHEL 7
+      echo 0  > ${thp_path}/khugepaged/defrag
+    else
+      # RHEL 6
+      echo 'no' > ${thp_path}/khugepaged/defrag
+    fi
+unset re
+    unset thp_path
+    ;;
+esac
+```
+change permission and add this script to boot time
+$ sudo chmod 755 /etc/init.d/disable-transparent-hugepages
+$ sudo update-rc.d disable-transparent-hugepages defaults
+
+
+### NodeJS update to 10.17.0
+
+```
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+
+### mongodb update to 3.4
+
+```
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
+
+echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-3.4.list
+
+apt update
+
+apt install mongodb-org -y
+
+sudo systemctl enable mongod.service
+sudo systemctl start mongod
+
+mongo
+db.adminCommand( { setFeatureCompatibilityVersion: "3.4" } )
+```
+
+### mongodb update 3.4 to 3.6
+
+```
+echo 'deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiverse' | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
+sudo rm /etc/apt/sources.list.d/mongodb-org-3.4.list
+sudo apt-get update
+sudo systemctl stop homebridge
+sudo pkill node
+sudo apt-get remove mongodb-org
+sudo apt autoremove
+sudo apt-get install -y mongodb-org
+mongo --version
+sudo systemctl enable mongod.service
+sudo systemctl restart mongod
+sudo systemctl start homebridge
+
+mongo
+db.adminCommand( { setFeatureCompatibilityVersion: "3.6" } )
+```
+
+### DB Maintenance
+
+#### Create a BU first
+
+```
+cd /var/lib
+sudo systemctl stop mongod
+sudo tar cvf ./mongodb_bu.tar mongodb
+sudo systemctl start mongod
+```
+
+#### Maintenance Commands using mongo
+
+```
+use admin
+db.createUser(
+  {
+    user: "XXXXX",
+    pwd: "XXXXXX",
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+  }
+)
+db.createUser(
+  {
+    user: "XXXXX",
+    pwd: "XXXXXX",
+    roles: [ { role: "root", db: "admin" } ]
+  }
+)
+db.createUser(
+  {
+    user: "XXXXXXXX",
+    pwd: "XXXXXXXX",
+    roles: [ { role: "readWrite", db: "users" } ]
+  }
+)
+```
+
+To /etc/mongod.conf add
+
+```
+security:
+  authorization: enabled
+```
+
+sudo systemctl restart mongod
+
+Add to ~/passwordAwsWebsite
+
+```
+export MONGO_URL=mongodb://XXXXXXX:XXXXXXX@localhost/users?authSource=admin
+```
+
+#### Update to WiredTiger Storage Engine
+
+```
+sudo mkdir /var/lib/mongodbWired
+sudo chown mongodb.mongodb /var/lib/mongodbWired
+sudo systemctl stop homebridge
+sudo pkill node
+sudo systemctl stop mongod
+mongodump -u XXXXX -p XXXXXX --out=/home/ubuntu/preUpgradeDump
+mongod --storageEngine wiredTiger --dbpath /var/lib/mongodbWired --bind_ip localhost
+```
+
+In a different window
+```
+mongorestore /home/ubuntu/preUpgradeDump
+```
+Kill mongod
+
+sudo vi /etc/mongod.conf
+
+Change dbPath to
+```
+dbPath: /var/lib/mongodbWired
+```
+
+```
+sudo chown -R mongodb.mongodb /var/lib/mongodbWired
+sudo systemctl start mongod
+sudo systemctl start homebridge
+```
+
+# Local version of awsWebsite
 
 ```
 brew install mongo; brew services start mongodb
@@ -195,9 +418,13 @@ brew install mosquitto; brew services start mosquitto
 # Historical Dates
 
 * Beta test started - Feb 19, 2018
-* Production launch - March 14, 2018
+* Initial Lightsail Server - Small 512 Mb Ram / 1 vCPU / 20 Gb SSD
+* Production launch - English (CA), English (US) and English (UK) - March 14, 2018
 * Added Germany and France - March 28, 2018
+* Moved from cloudwatch.net to homebridge.ca - Dec 2018
 * Added Italian (IT), English (IN), English (AU), Spanish (ES), Japanese (JP), Spanish (MX), French (CA) - Feb 13th, 2019
+* Upgraded lightsail server to Large - 4Gb / 2 vCPUs / 80 Gb SSD - April 20, 2019
+* Added Portuguese (BR), Spanish (US) - May 16th, 2019
 
 # Credits
 
