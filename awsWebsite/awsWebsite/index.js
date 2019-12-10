@@ -501,10 +501,11 @@ app.get('/auth/start', function(req, res, next) {
 });
 
 app.post('/auth/finish', function(req, res, next) {
-  console.log("/auth/finish user: ", req.user);
+  // console.log("/auth/finish user: ", req.user.username);
   // console.log(req.body);
   // console.log(req.params);
   if (req.user) {
+    console.log("/auth/finish user: ", req.user.username);
     next();
   } else {
     passport.authenticate('local', {
@@ -512,17 +513,9 @@ app.post('/auth/finish', function(req, res, next) {
     }, function(error, user, info) {
       // console.log("/auth/finish authenting");
       if (user) {
-        console.log(user.username);
+        console.log("/auth/finish user: ", user.username);
+        // console.log(user.username);
         req.user = user;
-        measurement.send({
-          t: 'event',
-          ec: 'web',
-          ea: 'Linked',
-          el: user.username,
-          geoid: 'Amazon',
-          uid: user.username
-        });
-        usage.enabled(req.user.username);
         next();
       } else if (!error) {
         console.log("not authed"); // Login not found
@@ -532,7 +525,16 @@ app.post('/auth/finish', function(req, res, next) {
     })(req, res, next);
   }
 }, oauthServer.decision(function(req, done) {
-  // console.log("decision user: ", req);
+  console.log("decision user: ", req.user.username);
+  measurement.send({
+    t: 'event',
+    ec: 'web',
+    ea: 'Linked',
+    el: req.user.username,
+    geoid: 'Amazon',
+    uid: req.user.username
+  });
+  usage.enabled(req.user.username);
   done(null, {
     scope: req.oauth2.req.scope
   });

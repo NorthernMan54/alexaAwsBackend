@@ -7,7 +7,7 @@ const expires_in = 60*60*24*7; // Measured in seconds
 server.grant(oauth2orize.grant.code({
 	scopeSeparator: [ ' ', ',' ]
 }, function(application, redirectURI, user, ares, done) {
-	console.log("grant user: ", user);
+	console.log("grant user: ", user.username);
 	OAuth.GrantCode.findOne({application: application, user: user},function(error,grant){
 		if (!error && grant) {
 			done(null,grant.code);
