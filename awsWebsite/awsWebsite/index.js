@@ -262,30 +262,52 @@ app.get('/', function(req, res) {
         }).populate('user', 'username').exec(function(error, data) {
           // console.log("Data-2", data.presence);
           // default to yellow status
-          data.enabled.colour = "/images/yellow.png";
-          data.lastUsedAlexa.colour = "/images/yellow.png";
-          data.lastUsedBroker.colour = "/images/yellow.png";
+
+          data.created_colour = "/images/green.png";
+          data.enabled_colour = "/images/yellow.png";
+          data.lastUsedAlexa_colour = "/images/yellow.png";
+          data.lastUsedBroker_colour = "/images/yellow.png";
+          // Plugin needs to be configured and connected
           if (data.presence < 1) {
-            // Plugin needs to be configured and enabled prior to success
-            data.presence.colour = "/images/red.png";
+            data.presence = "";
+            data.presence_colour = "/images/red.png";
           } else {
-            data.presence.colour = "/images/green.png";
+            data.presence_colour = "/images/green.png";
+            // Has the skill been linked ( Since Nov 2019 )
             if (data.enabled < 1) {
               // Skill needs to be linked
-              data.enabled.colour = "/images/red.png";
+              data.enabled_colour = "/images/red.png";
             } else {
-              data.enabled.colour = "/images/green.png";
-              if (data.lastUsedAlexa < 1) {
-                data.lastUsedAlexa.colour = "/images/red.png";
+              data.enabled_colour = "/images/green.png";
+            }
+
+            if (data.lastUsedAlexa < 1) {
+              data.lastUsedAlexa_colour = "/images/red.png";
+            } else {
+              data.lastUsedAlexa_colour = "/images/green.png";
+              if (data.lastUsedBroker < data.lastUsedAlexa) {
+                data.lastUsedBroker_colour = "/images/red.png";
               } else {
-                data.lastUsedAlexa.colour = "/images/green.png";
-                if (data.lastUsedBroker < data.lastUsedAlexa) {
-                  data.lastUsedBroker.colour = "/images/red.png";
-                } else {
-                  data.lastUsedBroker.colour = "/images/green.png";
-                }
+                data.lastUsedBroker_colour = "/images/green.png";
               }
             }
+          }
+
+          if (data.enabled < 1) {
+            // Skill needs to be linked
+            data.enabled = "";
+          }
+
+          if (data.lastUsedAlexa < 1) {
+            data.lastUsedAlexa = "";
+          }
+
+          if (data.lastUsedBroker < 1) {
+            data.lastUsedBroker = "";
+          }
+
+          if (data.lastEvent < 1) {
+            data.lastEvent = "";
           }
 
           if (!error) {
