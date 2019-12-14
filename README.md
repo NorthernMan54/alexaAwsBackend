@@ -425,6 +425,8 @@ brew install mosquitto; brew services start mosquitto
 * Added Italian (IT), English (IN), English (AU), Spanish (ES), Japanese (JP), Spanish (MX), French (CA) - Feb 13th, 2019
 * Upgraded lightsail server to Large - 4Gb / 2 vCPUs / 80 Gb SSD - April 20, 2019
 * Added Portuguese (BR), Spanish (US) - May 16th, 2019
+* Software currency updates - November 2019
+* Account Status and Statistics Display - December 2019
 
 # Credits
 

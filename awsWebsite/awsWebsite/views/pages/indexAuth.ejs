@@ -23,7 +23,7 @@
       <td><%=user.username %></td>
     </tr>
     <tr>
-      <th>1 - Account Created</th>
+      <th>1 - Date Account Created</th>
       <td><%= status.created %></td>
     </tr>
     <tr>
@@ -31,7 +31,7 @@
       <td><%= status.presence %></td>
     </tr>
     <tr>
-      <th>3 - Skill linked</th>
+      <th>3 - Date Skill linked</th>
       <td><%= status.enabled %></td>
     </tr>
     <tr>
@@ -47,18 +47,18 @@
       <td><%= status.lastEvent %></td>
     </tr>
     <tr>
-      <th>Last Used Website</th>
+      <th>7 - Date Last Used Website</th>
       <td><%= status.lastUsedWebsite %></td>
     </tr>
   </table>
   <h2>Account Statistics</h2>
   <table border='2'>
     <tr>
-      <th>How many Alexa commands to homebridge-alexa</th>
+      <th>How many Alexa commands have been sent to homebridge-alexa</th>
       <td><%= status.alexaCount %></td>
     </tr>
     <tr>
-      <th>How many plugin responses</th>
+      <th>How many Plugin responses have been sent back to Alexa</th>
       <td><%= status.brokerCount %></td>
     </tr>
 
@@ -72,5 +72,9 @@
       <td><%= status.version %></td>
     </tr>
   </table>
+
+<br><b>Notes:</b><br>
+  2 - This is only for plugin version 0.2.4 or newer ( Feb 2019 ), older plugin versions will show "Thu Jan 01 1970 00:00:00 GMT+0000 (Coordinated Universal Time)"<br>
+  3 - This is only for accounts that enabled the skill after November 20,2019, acccounts enabled prior to that will show "Thu Jan 01 1970 00:00:00 GMT+0000 (Coordinated Universal Time)"
 
 </div <% include ../fragments/footer.ejs %>

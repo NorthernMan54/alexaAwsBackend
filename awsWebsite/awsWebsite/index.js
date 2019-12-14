@@ -251,23 +251,17 @@ passport.use(accessTokenStrategy);
 app.get('/', function(req, res) {
   var status = {};
   if (req.user) {
-    console.log("Status");
+    // console.log("Status");
     Account.findOne({
       username: req.user.username
     }, function(error, data) {
+      // console.log("Data-1", data, error, req.user.username);
       if (!error) {
         Usage.findOne({
           user: data._id
         }).populate('user', 'username').exec(function(error, data) {
+          // console.log("Data-2", data, error, req.user.username);
           if (!error) {
-            console.log("Data", data);
-            var transform = {
-              "<>": "div",
-              "html": "<table border='1'><tr><td>${user.username}</td><td>${created}</td><td>${lastUsedWebsite}</td><td>${enabled}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td><td>${lastUsedBroker}</td><td>${brokerCount}</td><td>${lastEvent}</td><td>${eventCount}</td><td>${presence}</td><td>${version}</td></tr></table>"
-            };
-            // res.send("<table border='1'><tr><th>Username</th><th>Created</th><th>Last Used Alexa</th><th>Alexa Count</th><th>Last Plugin Response</th><th>Response Count</th><th>Last Event</th><th>Event Count</th></tr>" + json2html.transform(data, transform) + "</table>");
-            status = json2html.transform(data, transform);
-            console.log("Status-user", status);
             res.render('pages/indexAuth', {
               user: req.user,
               home: true,
@@ -285,8 +279,7 @@ app.get('/', function(req, res) {
     console.log("Status", status);
     res.render('pages/index', {
       user: req.user,
-      home: true,
-      status: status
+      home: true
     });
   }
 });
@@ -398,6 +391,7 @@ app.post('/newuser', function(req, res) {
 
     passport.authenticate('local')(req, res, function() {
       console.log("created new user %s", req.body.username);
+      usage.lastUsedWebsite(req.body.username);
       measurement.send({
         t: 'event',
         ec: 'web',
