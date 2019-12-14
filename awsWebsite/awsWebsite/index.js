@@ -260,7 +260,34 @@ app.get('/', function(req, res) {
         Usage.findOne({
           user: data._id
         }).populate('user', 'username').exec(function(error, data) {
-          // console.log("Data-2", data, error, req.user.username);
+          // console.log("Data-2", data.presence);
+          // default to yellow status
+          data.enabled.colour = "/images/yellow.png";
+          data.lastUsedAlexa.colour = "/images/yellow.png";
+          data.lastUsedBroker.colour = "/images/yellow.png";
+          if (data.presence < 1) {
+            // Plugin needs to be configured and enabled prior to success
+            data.presence.colour = "/images/red.png";
+          } else {
+            data.presence.colour = "/images/green.png";
+            if (data.enabled < 1) {
+              // Skill needs to be linked
+              data.enabled.colour = "/images/red.png";
+            } else {
+              data.enabled.colour = "/images/green.png";
+              if (data.lastUsedAlexa < 1) {
+                data.lastUsedAlexa.colour = "/images/red.png";
+              } else {
+                data.lastUsedAlexa.colour = "/images/green.png";
+                if (data.lastUsedBroker < data.lastUsedAlexa) {
+                  data.lastUsedBroker.colour = "/images/red.png";
+                } else {
+                  data.lastUsedBroker.colour = "/images/green.png";
+                }
+              }
+            }
+          }
+
           if (!error) {
             res.render('pages/indexAuth', {
               user: req.user,

@@ -18,39 +18,42 @@
   <h2>Account Status</h2>
 
   <table border='2'>
-    <tr>
-      <th>Username</th>
-      <td><%=user.username %></td>
-    </tr>
+
     <tr>
       <th>1 - Date Account Created</th>
-      <td><%= status.created %></td>
+      <td><%= status.created %></td><td><img height="20" width="20" src="/images/green.png" /></td>
     </tr>
     <tr>
       <th>2 - Date of last plugin login</th>
-      <td><%= status.presence %></td>
+      <td><%= status.presence %></td><td><img height="20" width="20" src="<%= status.presence.colour %>" /></td>
     </tr>
     <tr>
       <th>3 - Date Skill linked</th>
-      <td><%= status.enabled %></td>
+      <td><%= status.enabled %></td><td><img height="20" width="20" src="<%= status.enabled.colour %>" /></td>
     </tr>
     <tr>
       <th>4 - Date of last Alexa command</th>
-      <td><%= status.lastUsedAlexa %></td>
+      <td><%= status.lastUsedAlexa %></td><td><img height="20" width="20" src="<%= status.lastUsedAlexa.colour %>" /></td>
     </tr>
     <tr>
       <th>5 - Date of last plugin response</th>
-      <td><%= status.lastUsedBroker %></td>
+      <td><%= status.lastUsedBroker %></td><td><img height="20" width="20" src="<%= status.lastUsedBroker.colour %>" /></td>
     </tr>
     <tr>
       <th>6 - Date of last sensor event message</th>
-      <td><%= status.lastEvent %></td>
+      <td><%= status.lastEvent %></td><td></td>
     </tr>
     <tr>
       <th>7 - Date Last Used Website</th>
-      <td><%= status.lastUsedWebsite %></td>
+      <td><%= status.lastUsedWebsite %></td><td><img height="20" width="20" src="/images/green.png" /></td>
     </tr>
   </table>
+  <br><b>Notes:</b><br>
+    <img height="20" width="20" src="/images/red.png" /> - This is an issue<br>
+    <img height="20" width="20" src="/images/yellow.png" /> - Another is item is blocking<br>
+    <img height="20" width="20" src="/images/green.png" /> - This is okay<br><br>
+    2 - This is only for plugin version 0.2.4 or newer ( Feb 2019 ), older plugin versions will show "Thu Jan 01 1970 00:00:00 GMT+0000 (Coordinated Universal Time)"<br>
+    3 - This is only for accounts that enabled the skill after November 20,2019, acccounts enabled prior to that will show "Thu Jan 01 1970 00:00:00 GMT+0000 (Coordinated Universal Time)"
   <h2>Account Statistics</h2>
   <table border='2'>
     <tr>
@@ -72,9 +75,5 @@
       <td><%= status.version %></td>
     </tr>
   </table>
-
-<br><b>Notes:</b><br>
-  2 - This is only for plugin version 0.2.4 or newer ( Feb 2019 ), older plugin versions will show "Thu Jan 01 1970 00:00:00 GMT+0000 (Coordinated Universal Time)"<br>
-  3 - This is only for accounts that enabled the skill after November 20,2019, acccounts enabled prior to that will show "Thu Jan 01 1970 00:00:00 GMT+0000 (Coordinated Universal Time)"
 
 </div <% include ../fragments/footer.ejs %>
