@@ -249,10 +249,46 @@ var accessTokenStrategy = new PassportOAuthBearer(function(token, done) {
 passport.use(accessTokenStrategy);
 
 app.get('/', function(req, res) {
-  res.render('pages/index', {
-    user: req.user,
-    home: true
-  });
+  var status = {};
+  if (req.user) {
+    console.log("Status");
+    Account.findOne({
+      username: req.user.username
+    }, function(error, data) {
+      if (!error) {
+        Usage.findOne({
+          user: data._id
+        }).populate('user', 'username').exec(function(error, data) {
+          if (!error) {
+            console.log("Data", data);
+            var transform = {
+              "<>": "div",
+              "html": "<table border='1'><tr><td>${user.username}</td><td>${created}</td><td>${lastUsedWebsite}</td><td>${enabled}</td><td>${lastUsedAlexa}</td><td>${alexaCount}</td><td>${lastUsedBroker}</td><td>${brokerCount}</td><td>${lastEvent}</td><td>${eventCount}</td><td>${presence}</td><td>${version}</td></tr></table>"
+            };
+            // res.send("<table border='1'><tr><th>Username</th><th>Created</th><th>Last Used Alexa</th><th>Alexa Count</th><th>Last Plugin Response</th><th>Response Count</th><th>Last Event</th><th>Event Count</th></tr>" + json2html.transform(data, transform) + "</table>");
+            status = json2html.transform(data, transform);
+            console.log("Status-user", status);
+            res.render('pages/indexAuth', {
+              user: req.user,
+              home: true,
+              status: data
+            });
+          } else {
+            console.log("Error", error);
+          }
+        });
+      } else {
+        console.log("Error findOne", error);
+      }
+    });
+  } else {
+    console.log("Status", status);
+    res.render('pages/index', {
+      user: req.user,
+      home: true,
+      status: status
+    });
+  }
 });
 
 app.get('/docs', function(req, res) {
@@ -297,7 +333,7 @@ app.post('/login',
     if (req.query.next) {
       res.reconnect(req.query.next);
     } else {
-      res.redirect('/about');
+      res.redirect('/');
     }
   });
 

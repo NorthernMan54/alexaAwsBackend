@@ -1,0 +1,76 @@
+<% include ../fragments/header.ejs %>
+<div class="container main-content">
+  <img align="left" height="75" width="75" src="/images/HOMEBRIDGE 108.jpg" />
+  <h1>Homebridge Smart Home Skill Registration Site</h1>
+  <p>Please note that in order to use the Homebridge Amazon Alexa Smart Home Skill you must have installed <a href="https://homebridge.io/">HomeBridge</a> and the <a href="https://github.com/NorthernMan54/homebridge-alexa">homebridge-alexa</a>
+    plugin. To setup and configure this service, please follow the instructions <a href="https://github.com/NorthernMan54/homebridge-alexa">here</a>.</p>
+  <p>This Smart Home Skill allows you to control your HomeBridge enabled devices via Amazon Alexa. Supported devices are Lights, Outlets, Switches, Temperature Sensors, Window Coverings and Fans. To setup this service, please follow the instructions
+    <a href="https://github.com/NorthernMan54/homebridge-alexa">here</a></p>
+
+  <b>Voice commands supported</b>
+
+  <p>* Alexa discover devices</p>
+  <p>* Alexa, turn on _______</p>
+  <p>* Alexa, turn off _______</p>
+  <p>* Alexa, set ______ to 50</p>
+  <p>* Alexa, what is the temperature in the ______</p>
+
+  <h2>Account Status</h2>
+
+  <table border='2'>
+    <tr>
+      <th>Username</th>
+      <td><%=user.username %></td>
+    </tr>
+    <tr>
+      <th>1 - Account Created</th>
+      <td><%= status.created %></td>
+    </tr>
+    <tr>
+      <th>2 - Date of last plugin login</th>
+      <td><%= status.presence %></td>
+    </tr>
+    <tr>
+      <th>3 - Skill linked</th>
+      <td><%= status.enabled %></td>
+    </tr>
+    <tr>
+      <th>4 - Date of last Alexa command</th>
+      <td><%= status.lastUsedAlexa %></td>
+    </tr>
+    <tr>
+      <th>5 - Date of last plugin response</th>
+      <td><%= status.lastUsedBroker %></td>
+    </tr>
+    <tr>
+      <th>6 - Date of last sensor event message</th>
+      <td><%= status.lastEvent %></td>
+    </tr>
+    <tr>
+      <th>Last Used Website</th>
+      <td><%= status.lastUsedWebsite %></td>
+    </tr>
+  </table>
+  <h2>Account Statistics</h2>
+  <table border='2'>
+    <tr>
+      <th>How many Alexa commands to homebridge-alexa</th>
+      <td><%= status.alexaCount %></td>
+    </tr>
+    <tr>
+      <th>How many plugin responses</th>
+      <td><%= status.brokerCount %></td>
+    </tr>
+
+    <tr>
+      <th>How many sensor events</th>
+      <td><%= status.eventCount %></td>
+    </tr>
+
+    <tr>
+      <th>Plugin version</th>
+      <td><%= status.version %></td>
+    </tr>
+  </table>
+
+</div <% include ../fragments/footer.ejs %>
