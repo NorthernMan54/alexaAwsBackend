@@ -276,6 +276,7 @@ app.get('/', function(req, res) {
             // Has the skill been linked ( Since Nov 2019 )
             if (data.enabled < 1) {
               // Skill needs to be linked
+              // If created is < Fri Nov 22 2019 03:18:10 GMT+0000 (Coordinated Universal Time), show blank......
               data.enabled_colour = "/images/red.png";
             } else {
               data.enabled_colour = "/images/green.png";
