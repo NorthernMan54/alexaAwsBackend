@@ -969,52 +969,65 @@ function accountStatus(data) {
   // console.log("Data-2", data.presence);
   // default to yellow status
 
-  data.created_colour = "/images/green.png";
-  data.enabled_colour = "/images/yellow.png";
-  data.lastUsedAlexa_colour = "/images/yellow.png";
-  data.lastUsedBroker_colour = "/images/yellow.png";
+  var response = {};
+
+  response.created_colour = "/images/green.png";
+  response.enabled_colour = "/images/yellow.png";
+  response.lastUsedAlexa_colour = "/images/yellow.png";
+  response.lastUsedBroker_colour = "/images/yellow.png";
   // Plugin needs to be configured and connected
   if (data.presence < 1) {
-    data.presence = "";
-    data.presence_colour = "/images/red.png";
+    response.presence_colour = "/images/red.png";
   } else {
-    data.presence_colour = "/images/green.png";
+    response.presence_colour = "/images/green.png";
     // Has the skill been linked ( Since Nov 2019 )
     if (data.enabled < 1) {
       // Skill needs to be linked
       // If created is < Fri Nov 22 2019 03:18:10 GMT+0000 (Coordinated Universal Time), show blank......
-      data.enabled_colour = "/images/red.png";
+      if (data.created > new Date("Fri Nov 22 2019 00:00:00")) {
+        response.enabled_colour = "/images/red.png";
+      } else {
+        response.enabled_colour = "";
+      }
     } else {
-      data.enabled_colour = "/images/green.png";
+      response.enabled_colour = "/images/green.png";
     }
 
     if (data.lastUsedAlexa < 1) {
-      data.lastUsedAlexa_colour = "/images/red.png";
+      response.lastUsedAlexa_colour = "/images/red.png";
     } else {
-      data.lastUsedAlexa_colour = "/images/green.png";
+      response.lastUsedAlexa_colour = "/images/green.png";
       if (data.lastUsedBroker < data.lastUsedAlexa) {
-        data.lastUsedBroker_colour = "/images/red.png";
+        response.lastUsedBroker_colour = "/images/red.png";
       } else {
-        data.lastUsedBroker_colour = "/images/green.png";
+        response.lastUsedBroker_colour = "/images/green.png";
       }
     }
   }
 
-  if (data.enabled < 1) {
-    // Skill needs to be linked
-    data.enabled = "";
-  }
+  response.created = dateCleanup(data.created);
+  response.presence = dateCleanup(data.presence);
+  response.enabled = dateCleanup(data.enabled);
+  response.lastUsedAlexa = dateCleanup(data.lastUsedAlexa);
+  response.lastUsedBroker = dateCleanup(data.lastUsedBroker);
+  response.lastEvent = dateCleanup(data.lastEvent);
+  response.lastUsedWebsite = dateCleanup(data.lastUsedWebsite);
+  response.alexaCount = data.alexaCount;
+  response.brokerCount = data.brokerCount;
+  response.eventCount = data.eventCount;
+  response.version = data.version;
 
-  if (data.lastUsedAlexa < 1) {
-    data.lastUsedAlexa = "";
-  }
+  // console.log("DATA", data, response);
 
-  if (data.lastUsedBroker < 1) {
-    data.lastUsedBroker = "";
-  }
+  return response;
+}
 
-  if (data.lastEvent < 1) {
-    data.lastEvent = "";
+function dateCleanup(date) {
+  var response;
+  if (date < 1) {
+    response = "";
+  } else {
+    response = date.toString().substring(0, date.toString().search("GMT") + 3);
   }
-  return data;
+  return response;
 }
