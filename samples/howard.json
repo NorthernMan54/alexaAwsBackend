@@ -1,3 +1,4 @@
+alexaDiscovery - returned 10 devices
 Alexa Message Validation Passed!
 
 -----------------------------------------------------------
@@ -151,7 +152,7 @@ Alexa Message Validation Passed!
                     "description": "parseTest Fireplace Fan",
                     "manufacturerName": "HTTP-IRBlaster",
                     "displayCategories": [
-                        "OTHER"
+                        "SWITCH"
                     ],
                     "cookie": {
                         "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":4,\"iid\":10,\"value\":1}",
@@ -342,7 +343,7 @@ Alexa Message Validation Passed!
                     "description": "parseTest Master fan Fan",
                     "manufacturerName": "hampton-bay",
                     "displayCategories": [
-                        "OTHER"
+                        "SWITCH"
                     ],
                     "cookie": {
                         "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":14,\"iid\":10,\"value\":1}",

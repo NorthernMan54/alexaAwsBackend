@@ -1,3 +1,4 @@
+alexaDiscovery - returned 11 devices
 Alexa Message Validation Passed!
 
 -----------------------------------------------------------
@@ -282,8 +283,8 @@ Alexa Message Validation Passed!
                 },
                 {
                     "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUR5c29uLUR5c29uIFB1cmUgQ29vbCBMaW5rLTAwMDAwMDhBLTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Dyson Pure Cool Link",
-                    "description": "parseTest Dyson Pure Cool Link Temperature Sensor",
+                    "friendlyName": "Dyson Pure Cool Link Temperature Sensor",
+                    "description": "parseTest Dyson Pure Cool Link Temperature Sensor Temperature Sensor",
                     "manufacturerName": "Dyson",
                     "displayCategories": [
                         "TEMPERATURE_SENSOR"
@@ -319,7 +320,7 @@ Alexa Message Validation Passed!
                     "description": "parseTest Dyson Pure Cool Link Fan v2",
                     "manufacturerName": "Dyson",
                     "displayCategories": [
-                        "OTHER"
+                        "SWITCH"
                     ],
                     "cookie": {
                         "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":393,\"iid\":19,\"value\":1}",

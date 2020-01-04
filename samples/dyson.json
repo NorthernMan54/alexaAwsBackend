@@ -1,3 +1,5 @@
+WARNING: Duplicate device name Dyson Pure Cool Link
+alexaDiscovery - returned 12 devices
 Alexa Message Validation Passed!
 
 -----------------------------------------------------------
@@ -86,7 +88,7 @@ Alexa Message Validation Passed!
                     "description": "parseTest Dyson Pure Cool Link Fan v2",
                     "manufacturerName": "Default-Manufacturer",
                     "displayCategories": [
-                        "OTHER"
+                        "SWITCH"
                     ],
                     "cookie": {
                         "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":166,\"iid\":32,\"value\":1}",
