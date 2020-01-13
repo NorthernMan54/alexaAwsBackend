@@ -64,14 +64,14 @@ try {
         if (line.startsWith(" New client connected from")) {
           //New client connected from ##.##.##.## as NNN (c1, k60, u'NNN').
           var fields = line.split(" ");
-
+          var uid = fields[10].split("'")[1];
           measurement.send({
             t: 'event',
             ec: 'broker',
             ea: 'Connect',
-            el: fields[7],
+            el: uid,
             sc: 'start',
-            uid: fields[7],
+            uid: uid,
             uip: fields[5]
           });
         } else if (line.startsWith(' New connection from')) {
