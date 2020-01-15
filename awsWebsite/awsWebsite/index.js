@@ -55,10 +55,12 @@ if (mqtt_user) {
 
 mqttClient = mqtt.connect(mqtt_url, mqttOptions);
 
-mqttClient.on('error', function(err) {});
+mqttClient.on('error', function(err) {
+  console.log('ERROR: mqttClient', err);
+});
 
-mqttClient.on('reconnect', function() {
-
+mqttClient.on('reconnect', function(err) {
+  console.log('ERROR: mqttClient reconnect', err);
 });
 
 mqttClient.on('connect', function() {
