@@ -29,10 +29,11 @@ Alexa Message Validation Passed!
                         "thermostatModeCOOL": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":12,\"value\":2}",
                         "thermostatModeAUTO": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":12,\"value\":3}",
                         "upperSetpoint": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":14}",
+                        "targetSetpoint": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":14}",
                         "lowerSetpoint": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":15}",
                         "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":17}",
                         "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":17}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10},{\"interface\":\"Alexa.ThermostatControllerthermostatMode\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":12},{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":13},{\"interface\":\"Alexa.ThermostatControllerupperSetpoint\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":14},{\"interface\":\"Alexa.ThermostatControllerlowerSetpoint\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":15},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":17}]"
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10},{\"interface\":\"Alexa.ThermostatControllerthermostatMode\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":12},{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":13},{\"interface\":\"Alexa.ThermostatControllerupperSetpoint\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":14},{\"interface\":\"Alexa.ThermostatControllertargetSetpoint\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":14},{\"interface\":\"Alexa.ThermostatControllerlowerSetpoint\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":15},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":17}]"
                     },
                     "capabilities": [
                         {
@@ -93,6 +94,9 @@ Alexa Message Validation Passed!
                                     },
                                     {
                                         "name": "upperSetpoint"
+                                    },
+                                    {
+                                        "name": "targetSetpoint"
                                     },
                                     {
                                         "name": "lowerSetpoint"
@@ -129,10 +133,11 @@ Alexa Message Validation Passed!
                         "thermostatModeCOOL": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":12,\"value\":2}",
                         "thermostatModeAUTO": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":12,\"value\":3}",
                         "upperSetpoint": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":14}",
+                        "targetSetpoint": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":14}",
                         "lowerSetpoint": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":15}",
                         "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":17}",
                         "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":17}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10},{\"interface\":\"Alexa.ThermostatControllerthermostatMode\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":12},{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":13},{\"interface\":\"Alexa.ThermostatControllerupperSetpoint\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":14},{\"interface\":\"Alexa.ThermostatControllerlowerSetpoint\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":15},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":17}]"
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10},{\"interface\":\"Alexa.ThermostatControllerthermostatMode\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":12},{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":13},{\"interface\":\"Alexa.ThermostatControllerupperSetpoint\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":14},{\"interface\":\"Alexa.ThermostatControllertargetSetpoint\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":14},{\"interface\":\"Alexa.ThermostatControllerlowerSetpoint\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":15},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":17}]"
                     },
                     "capabilities": [
                         {
@@ -193,6 +198,9 @@ Alexa Message Validation Passed!
                                     },
                                     {
                                         "name": "upperSetpoint"
+                                    },
+                                    {
+                                        "name": "targetSetpoint"
                                     },
                                     {
                                         "name": "lowerSetpoint"

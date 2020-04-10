@@ -134,7 +134,7 @@ WARNING - Bad message [
                                 "Stop": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":17,\"value\":9}",
                                 "Next": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":17,\"value\":7}",
                                 "Previous": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":17,\"value\":6}",
-                                "ReportState": "[[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":13}],[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":289},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":291},{\"interface\":\"Alexa.StepSpeaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":292}],{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":307}]",
+                                "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":13},{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":289},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":291},{\"interface\":\"Alexa.StepSpeaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":292},{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":307}]",
                                 "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":292}",
                                 "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":291}"
                             },
