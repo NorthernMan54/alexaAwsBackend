@@ -674,7 +674,7 @@ Alexa Message Validation Passed!
                     "description": "parseTest Curtains Window Covering",
                     "manufacturerName": "Broadlink",
                     "displayCategories": [
-                        "OTHER"
+                        "INTERIOR_BLIND"
                     ],
                     "cookie": {
                         "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":12,\"iid\":11,\"value\":100}",
@@ -816,7 +816,7 @@ Alexa Message Validation Passed!
   friendlyName: 'Curtains',
   description: 'parseTest Curtains Window Covering',
   manufacturerName: 'Broadlink',
-  displayCategories: [ 'OTHER' ],
+  displayCategories: [ 'INTERIOR_BLIND' ],
   cookie:
    { TurnOn:
       '{"host":"127.0.0.1","port":51826,"aid":12,"iid":11,"value":100}',

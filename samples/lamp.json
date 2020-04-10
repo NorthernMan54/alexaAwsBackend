@@ -156,7 +156,7 @@ Alexa Message Validation Passed!
                     "description": "parseTest Somfy - 0 Window Covering",
                     "manufacturerName": "Default-Manufacturer",
                     "displayCategories": [
-                        "OTHER"
+                        "INTERIOR_BLIND"
                     ],
                     "cookie": {
                         "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":7,\"iid\":10,\"value\":100}",
@@ -1031,7 +1031,7 @@ Alexa Message Validation Passed!
   friendlyName: 'Somfy - 0',
   description: 'parseTest Somfy - 0 Window Covering',
   manufacturerName: 'Default-Manufacturer',
-  displayCategories: [ 'OTHER' ],
+  displayCategories: [ 'INTERIOR_BLIND' ],
   cookie:
    { TurnOn:
       '{"host":"127.0.0.1","port":51826,"aid":7,"iid":10,"value":100}',

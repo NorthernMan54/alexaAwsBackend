@@ -26,12 +26,12 @@ Alexa Message Validation Passed!
                         "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":5,\"iid\":10,\"value\":0}",
                         "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":5,\"iid\":11}",
                         "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":5,\"iid\":11}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":5,\"iid\":10},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":5,\"iid\":11},{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":9,\"iid\":19}]",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":5,\"iid\":10},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":5,\"iid\":11},{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":9,\"iid\":13}]",
                         "Play": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":9,\"iid\":10,\"value\":1}",
                         "Pause": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":9,\"iid\":13,\"value\":1}",
                         "Stop": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":9,\"iid\":13,\"value\":1}",
                         "Next": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":9,\"iid\":16,\"value\":1}",
-                        "Previous": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":9,\"iid\":19,\"value\":1}"
+                        "Rewind": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":9,\"iid\":19,\"value\":1}"
                     },
                     "capabilities": [
                         {
@@ -76,7 +76,7 @@ Alexa Message Validation Passed!
                                 "Pause",
                                 "Stop",
                                 "Next",
-                                "Previous"
+                                "Rewind"
                             ]
                         }
                     ]
@@ -269,12 +269,12 @@ Alexa Message Validation Passed!
                         "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":4,\"iid\":10,\"value\":0}",
                         "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":4,\"iid\":11}",
                         "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":4,\"iid\":11}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":4,\"iid\":10},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":4,\"iid\":11},{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":9,\"iid\":19}]",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":4,\"iid\":10},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":4,\"iid\":11},{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":9,\"iid\":13}]",
                         "Play": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":9,\"iid\":10,\"value\":1}",
                         "Pause": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":9,\"iid\":13,\"value\":1}",
                         "Stop": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":9,\"iid\":13,\"value\":1}",
                         "Next": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":9,\"iid\":16,\"value\":1}",
-                        "Previous": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":9,\"iid\":19,\"value\":1}"
+                        "Rewind": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":9,\"iid\":19,\"value\":1}"
                     },
                     "capabilities": [
                         {
@@ -319,7 +319,7 @@ Alexa Message Validation Passed!
                                 "Pause",
                                 "Stop",
                                 "Next",
-                                "Previous"
+                                "Rewind"
                             ]
                         }
                     ]

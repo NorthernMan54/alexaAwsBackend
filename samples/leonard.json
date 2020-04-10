@@ -483,7 +483,7 @@ Alexa Message Validation Passed!
                     "description": "parseTest Garage Door Garage Door Opener",
                     "manufacturerName": "WSSENSOR",
                     "displayCategories": [
-                        "DOOR"
+                        "GARAGE_DOOR"
                     ],
                     "cookie": {
                         "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":4,\"iid\":17,\"value\":0}",
@@ -638,12 +638,12 @@ Alexa Message Validation Passed!
                         "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":14,\"value\":0}",
                         "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15}",
                         "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":14},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15},{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":19}]",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":14},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":18,\"iid\":15},{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":13}]",
                         "Play": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":10,\"value\":1}",
                         "Pause": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":13,\"value\":1}",
                         "Stop": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":13,\"value\":1}",
                         "Next": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":16,\"value\":1}",
-                        "Previous": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":19,\"value\":1}"
+                        "Rewind": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":19,\"value\":1}"
                     },
                     "capabilities": [
                         {
@@ -688,7 +688,7 @@ Alexa Message Validation Passed!
                                 "Pause",
                                 "Stop",
                                 "Next",
-                                "Previous"
+                                "Rewind"
                             ]
                         }
                     ]
@@ -776,12 +776,12 @@ Alexa Message Validation Passed!
                         "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":19,\"iid\":14,\"value\":0}",
                         "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":19,\"iid\":15}",
                         "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":19,\"iid\":15}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":19,\"iid\":14},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":19,\"iid\":15},{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":19}]",
+                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":19,\"iid\":14},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":19,\"iid\":15},{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":13}]",
                         "Play": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":10,\"value\":1}",
                         "Pause": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":13,\"value\":1}",
                         "Stop": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":13,\"value\":1}",
                         "Next": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":16,\"value\":1}",
-                        "Previous": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":19,\"value\":1}"
+                        "Rewind": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":24,\"iid\":19,\"value\":1}"
                     },
                     "capabilities": [
                         {
@@ -826,7 +826,7 @@ Alexa Message Validation Passed!
                                 "Pause",
                                 "Stop",
                                 "Next",
-                                "Previous"
+                                "Rewind"
                             ]
                         }
                     ]
@@ -892,7 +892,7 @@ Alexa Message Validation Passed!
   friendlyName: 'Garage Door',
   description: 'parseTest Garage Door Garage Door Opener',
   manufacturerName: 'WSSENSOR',
-  displayCategories: [ 'DOOR' ],
+  displayCategories: [ 'GARAGE_DOOR' ],
   cookie:
    { TurnOn:
       '{"host":"127.0.0.1","port":51826,"aid":4,"iid":17,"value":0}',

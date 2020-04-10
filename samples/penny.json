@@ -85,7 +85,7 @@ Alexa Message Validation Passed!
                     "description": "parseTest Garage Door Garage Door Opener",
                     "manufacturerName": "MCUIOT",
                     "displayCategories": [
-                        "DOOR"
+                        "GARAGE_DOOR"
                     ],
                     "cookie": {
                         "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":31,\"iid\":11,\"value\":0}",
@@ -1056,7 +1056,7 @@ Alexa Message Validation Passed!
   friendlyName: 'Garage Door',
   description: 'parseTest Garage Door Garage Door Opener',
   manufacturerName: 'MCUIOT',
-  displayCategories: [ 'DOOR' ],
+  displayCategories: [ 'GARAGE_DOOR' ],
   cookie:
    { TurnOn:
       '{"host":"127.0.0.1","port":51826,"aid":31,"iid":11,"value":0}',

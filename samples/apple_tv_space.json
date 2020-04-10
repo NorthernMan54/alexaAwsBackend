@@ -23,9 +23,11 @@ Alexa Message Validation Passed!
                     ],
                     "cookie": {
                         "Stop": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10,\"value\":1}",
-                        "ReportState": "[{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":10}]",
+                        "ReportState": "[{\"interface\":\"Alexa.PlaybackController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":10}]",
                         "Play": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":5,\"iid\":10,\"value\":1}",
-                        "Pause": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":10,\"value\":1}"
+                        "Pause": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":6,\"iid\":10,\"value\":1}",
+                        "Rewind": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":9,\"iid\":10,\"value\":1}",
+                        "Next": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":10,\"iid\":10,\"value\":1}"
                     },
                     "capabilities": [
                         {
@@ -40,7 +42,9 @@ Alexa Message Validation Passed!
                             "supportedOperations": [
                                 "Stop",
                                 "Play",
-                                "Pause"
+                                "Pause",
+                                "Rewind",
+                                "Next"
                             ]
                         }
                     ]
