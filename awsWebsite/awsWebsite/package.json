@@ -38,7 +38,7 @@
     "request": "^2.79.0",
     "uid2": "0.0.3",
     "node-json2html": "^=1.2.0",
-    "json2csv": "^=4.0.2"
+    "json2csv": "^=5.0.1"
   },
   "devDependencies": {
     "passport-oauth2": "^1.3.0"
