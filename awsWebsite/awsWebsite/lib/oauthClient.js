@@ -12,43 +12,45 @@ module.exports = {
 function getAccessToken(username, callback) {
   // get Event GW access token for a user
   // returns object containing token, and url
-  Account.findOne({
-    username: username
-  }, function(error, user) {
-    if (error) {
-      console.log("getUser Error: ", error);
-      callback(error, null);
-    } else {
-      // lookup access token for user
-      OauthClient.findOne({
-          user: user
-        }, function(error, data) {
-          if (error) {
-            console.log("getAccessToken Error: ", user.username, error);
-            callback(error, null);
-          } else if (!data) {
-            console.log("getAccessToken Token not found: ", user.username);
-            callback(new Error("getAccessToken Token not found"), null);
-          } else {
-            console.log("retrieveToken Result: ", user.username, data);
-            if (data.token_expires < new Date()) {
-              // Token is expired, need to refresh_token
-              refreshExpired(username, data, callback);
+  return new Promise((resolve, reject) => {
+    Account.findOne({
+      username: username
+    }, function(error, user) {
+      if (error) {
+        console.log("getUser Error: ", error);
+        reject(error);
+      } else {
+        // lookup access token for user
+        OauthClient.findOne({
+            user: user
+          }, function(error, data) {
+            if (error) {
+              console.log("getAccessToken Error: ", user.username, error);
+              reject(error);
+            } else if (!data) {
+              console.log("getAccessToken Token not found: ", user.username);
+              reject(new Error("getAccessToken Token not found"), null);
             } else {
-              callback(null, {
-                "access_token": data.access_token,
-                "refresh_token": data.refresh_token,
-                "url": getEventUrl(data.region)
-              });
+              console.log("retrieveToken Result: ", user.username, data);
+              if (data.token_expires < new Date()) {
+                // Token is expired, need to refresh_token
+                refreshExpired(username, data, resolve, reject);
+              } else {
+                resolve({
+                  access_token: data.access_token,
+                  refresh_token: data.refresh_token,
+                  url: getEventUrl(data.region)
+                });
+              }
             }
-          }
-        } // End of function
-      );
-    }
+          } // End of function
+        );
+      }
+    });
   });
 }
 
-function refreshExpired(username, token, callback) {
+function refreshExpired(username, token, resolve, reject) {
   console.log("Access Token Expired, refreshing: ", username);
   tokenRequest(username, token.region, 'grant_type=refresh_token&refresh_token=' + token.refresh_token, function(err, response) {
     //
@@ -57,13 +59,13 @@ function refreshExpired(username, token, callback) {
       if (!err) {
         err = "Event gateway token refresh error: " + response.statusCode;
       }
-      callback(err);
+      reject(err);
     } else {
       var body = JSON.parse(response.body);
-      callback(null, {
-        "access_token": body.access_token,
-        "refresh_token": body.refresh_token,
-        "url": getEventUrl(token.region)
+      resolve({
+        access_token: body.access_token,
+        refresh_token: body.refresh_token,
+        url: getEventUrl(token.region)
       });
     }
   });
