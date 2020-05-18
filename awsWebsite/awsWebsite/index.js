@@ -225,27 +225,37 @@ passport.use(new BasicStrategy(Account.authenticate()));
 passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
 
+var cache = [];
+
 var accessTokenStrategy = new PassportOAuthBearer(function(token, done) {
-  oauthModels.AccessToken.findOne({
-    token: token
-  }).populate('user').populate('grant').exec(function(error, token) {
-    // console.log("Passport: ", token);
-    if (!error && token && !token.grant) {
-      console.log("missing grant token: %j", token);
-    }
-    if (!error && token && token.active && token.grant && token.grant.active && token.user) {
-      // console.log("Token is GOOD!");
-      done(null, token.user, {
-        scope: token.scope
-      });
-    } else if (!error) {
-      // console.log("TOKEN PROBLEM", token.active );
-      done(null, false);
-    } else {
-      // console.log("TOKEN PROBLEM 2");
-      done(error);
-    }
-  });
+  if (cache[token]) {
+    token = cache[token];
+    done(null, token.user, {
+      scope: token.scope
+    });
+  } else {
+    oauthModels.AccessToken.findOne({
+      token: token
+    }).populate('user').populate('grant').exec(function(error, token) {
+      // console.log("Passport: ", token);
+      if (!error && token && !token.grant) {
+        console.log("missing grant token: %j", token);
+      }
+      if (!error && token && token.active && token.grant && token.grant.active && token.user) {
+        // console.log("Token is GOOD!");
+        cache[token.token] = token;
+        done(null, token.user, {
+          scope: token.scope
+        });
+      } else if (!error) {
+        // console.log("TOKEN PROBLEM", token.active );
+        done(null, false);
+      } else {
+        // console.log("TOKEN PROBLEM 2");
+        done(error);
+      }
+    });
+  }
 });
 
 passport.use(accessTokenStrategy);
