@@ -26,6 +26,9 @@ async function send(user, message, callback) {
     if (!cache[user]) {
       token = await oauthClient.getAccessToken(user);
       cache[user] = token;
+    } else if (cache[user].token_expires < new Date()) {
+      token = await oauthClient.getAccessToken(user);
+      cache[user] = token;
     } else {
       token = cache[user];
     }

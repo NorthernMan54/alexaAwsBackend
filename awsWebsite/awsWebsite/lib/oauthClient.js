@@ -39,7 +39,8 @@ function getAccessToken(username, callback) {
                 resolve({
                   access_token: data.access_token,
                   refresh_token: data.refresh_token,
-                  url: getEventUrl(data.region)
+                  url: getEventUrl(data.region),
+                  token_expires: data.token_expires
                 });
               }
             }
@@ -65,7 +66,8 @@ function refreshExpired(username, token, resolve, reject) {
       resolve({
         access_token: body.access_token,
         refresh_token: body.refresh_token,
-        url: getEventUrl(token.region)
+        url: getEventUrl(token.region),
+        token_expires: (new Date().getTime() / 1000 + (body.expires_in - 60)) * 1000
       });
     }
   });
