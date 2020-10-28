@@ -26,7 +26,7 @@
     "mongoose": "^5.7.12",
     "mongoose-sequence": "^5.2.2",
     "morgan": "^1.7.0",
-    "mqtt": "^3.0.0",
+    "mqtt": "^4.2.3",
     "oauth2orize": "^1.5.1",
     "passport": "^0.4.0",
     "passport-http": "^0.3.0",
