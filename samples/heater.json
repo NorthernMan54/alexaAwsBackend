@@ -4,226 +4,228 @@ Alexa Message Validation Passed!
 -----------------------------------------------------------
 
 {
-    "event": {
-        "header": {
-            "namespace": "Alexa.Discovery",
-            "name": "Discover.Response",
-            "payloadVersion": "3",
-            "messageId": "1bd5d003-31b9-476f-ad03-71d471922820"
+  "event": {
+    "header": {
+      "namespace": "Alexa.Discovery",
+      "name": "Discover.Response",
+      "payloadVersion": "3",
+      "messageId": "1bd5d003-31b9-476f-ad03-71d471922820"
+    },
+    "payload": {
+      "endpoints": [
+        {
+          "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVtvYmplY3QgT2JqZWN0XS1DYW1lcmEtMDAwMDAwQkMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
+          "friendlyName": "Camera",
+          "description": "parseTest Camera Heater Cooler",
+          "manufacturerName": "[object Object]",
+          "displayCategories": [
+            "THERMOSTAT"
+          ],
+          "cookie": {
+            "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":10,\"value\":1}",
+            "TurnOff": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":10,\"value\":0}",
+            "thermostatMode": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":12}",
+            "thermostatModeOFF": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":12,\"value\":0}",
+            "thermostatModeHEAT": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":12,\"value\":1}",
+            "thermostatModeCOOL": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":12,\"value\":2}",
+            "thermostatModeAUTO": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":12,\"value\":3}",
+            "upperSetpoint": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":14}",
+            "targetSetpoint": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":14}",
+            "lowerSetpoint": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":15}",
+            "AdjustPowerLevel": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":17}",
+            "SetPowerLevel": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":17}",
+            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":10},{\"interface\":\"Alexa.ThermostatControllerthermostatMode\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":12},{\"interface\":\"Alexa.TemperatureSensor\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":13},{\"interface\":\"Alexa.ThermostatControllerupperSetpoint\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":14},{\"interface\":\"Alexa.ThermostatControllertargetSetpoint\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":14},{\"interface\":\"Alexa.ThermostatControllerlowerSetpoint\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":15},{\"interface\":\"Alexa.PowerLevelController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":17}]"
+          },
+          "capabilities": [
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa",
+              "version": "3"
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "properties": {
+                "supported": [
+                  {
+                    "name": "powerState"
+                  }
+                ],
+                "proactivelyReported": false,
+                "retrievable": true
+              }
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.TemperatureSensor",
+              "version": "3",
+              "properties": {
+                "supported": [
+                  {
+                    "name": "temperature"
+                  }
+                ],
+                "proactivelyReported": false,
+                "retrievable": true
+              }
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.PowerLevelController",
+              "version": "3",
+              "properties": {
+                "supported": [
+                  {
+                    "name": "powerLevel"
+                  }
+                ],
+                "proactivelyReported": false,
+                "retrievable": true
+              }
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.ThermostatController",
+              "version": "3",
+              "properties": {
+                "supported": [
+                  {
+                    "name": "thermostatMode"
+                  },
+                  {
+                    "name": "upperSetpoint"
+                  },
+                  {
+                    "name": "targetSetpoint"
+                  },
+                  {
+                    "name": "lowerSetpoint"
+                  }
+                ],
+                "proactivelyReported": false,
+                "retrievable": true
+              },
+              "configuration": {
+                "supportsScheduling": false,
+                "supportedModes": [
+                  "HEAT",
+                  "COOL",
+                  "AUTO",
+                  "OFF"
+                ]
+              }
+            }
+          ]
         },
-        "payload": {
-            "endpoints": [
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVtvYmplY3QgT2JqZWN0XS1DYW1lcmEtMDAwMDAwQkMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
-                    "friendlyName": "Camera",
-                    "description": "parseTest Camera Heater Cooler",
-                    "manufacturerName": "[object Object]",
-                    "displayCategories": [
-                        "THERMOSTAT"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10,\"value\":0}",
-                        "thermostatModeOFF": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":12,\"value\":0}",
-                        "thermostatModeHEAT": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":12,\"value\":1}",
-                        "thermostatModeCOOL": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":12,\"value\":2}",
-                        "thermostatModeAUTO": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":12,\"value\":3}",
-                        "upperSetpoint": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":14}",
-                        "targetSetpoint": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":14}",
-                        "lowerSetpoint": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":15}",
-                        "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":17}",
-                        "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":17}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10},{\"interface\":\"Alexa.ThermostatControllerthermostatMode\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":12},{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":13},{\"interface\":\"Alexa.ThermostatControllerupperSetpoint\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":14},{\"interface\":\"Alexa.ThermostatControllertargetSetpoint\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":14},{\"interface\":\"Alexa.ThermostatControllerlowerSetpoint\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":15},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":17}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.TemperatureSensor",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "temperature"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerLevelController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerLevel"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.ThermostatController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "thermostatMode"
-                                    },
-                                    {
-                                        "name": "upperSetpoint"
-                                    },
-                                    {
-                                        "name": "targetSetpoint"
-                                    },
-                                    {
-                                        "name": "lowerSetpoint"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            },
-                            "configuration": {
-                                "supportsScheduling": false,
-                                "supportedModes": [
-                                    "HEAT",
-                                    "COOL",
-                                    "AUTO",
-                                    "OFF"
-                                ]
-                            }
-                        }
-                    ]
-                },
-                {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVtvYmplY3QgT2JqZWN0XS1DYW1lcmV0dGEtMDAwMDAwQkMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
-                    "friendlyName": "Cameretta",
-                    "description": "parseTest Cameretta Heater Cooler",
-                    "manufacturerName": "[object Object]",
-                    "displayCategories": [
-                        "THERMOSTAT"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10,\"value\":0}",
-                        "thermostatModeOFF": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":12,\"value\":0}",
-                        "thermostatModeHEAT": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":12,\"value\":1}",
-                        "thermostatModeCOOL": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":12,\"value\":2}",
-                        "thermostatModeAUTO": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":12,\"value\":3}",
-                        "upperSetpoint": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":14}",
-                        "targetSetpoint": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":14}",
-                        "lowerSetpoint": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":15}",
-                        "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":17}",
-                        "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":17}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10},{\"interface\":\"Alexa.ThermostatControllerthermostatMode\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":12},{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":13},{\"interface\":\"Alexa.ThermostatControllerupperSetpoint\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":14},{\"interface\":\"Alexa.ThermostatControllertargetSetpoint\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":14},{\"interface\":\"Alexa.ThermostatControllerlowerSetpoint\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":15},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":17}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.TemperatureSensor",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "temperature"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerLevelController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerLevel"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.ThermostatController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "thermostatMode"
-                                    },
-                                    {
-                                        "name": "upperSetpoint"
-                                    },
-                                    {
-                                        "name": "targetSetpoint"
-                                    },
-                                    {
-                                        "name": "lowerSetpoint"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            },
-                            "configuration": {
-                                "supportsScheduling": false,
-                                "supportedModes": [
-                                    "HEAT",
-                                    "COOL",
-                                    "AUTO",
-                                    "OFF"
-                                ]
-                            }
-                        }
-                    ]
-                }
-            ]
+        {
+          "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LVtvYmplY3QgT2JqZWN0XS1DYW1lcmV0dGEtMDAwMDAwQkMtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
+          "friendlyName": "Cameretta",
+          "description": "parseTest Cameretta Heater Cooler",
+          "manufacturerName": "[object Object]",
+          "displayCategories": [
+            "THERMOSTAT"
+          ],
+          "cookie": {
+            "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":10,\"value\":1}",
+            "TurnOff": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":10,\"value\":0}",
+            "thermostatMode": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":12}",
+            "thermostatModeOFF": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":12,\"value\":0}",
+            "thermostatModeHEAT": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":12,\"value\":1}",
+            "thermostatModeCOOL": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":12,\"value\":2}",
+            "thermostatModeAUTO": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":12,\"value\":3}",
+            "upperSetpoint": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":14}",
+            "targetSetpoint": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":14}",
+            "lowerSetpoint": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":15}",
+            "AdjustPowerLevel": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":17}",
+            "SetPowerLevel": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":17}",
+            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":10},{\"interface\":\"Alexa.ThermostatControllerthermostatMode\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":12},{\"interface\":\"Alexa.TemperatureSensor\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":13},{\"interface\":\"Alexa.ThermostatControllerupperSetpoint\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":14},{\"interface\":\"Alexa.ThermostatControllertargetSetpoint\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":14},{\"interface\":\"Alexa.ThermostatControllerlowerSetpoint\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":15},{\"interface\":\"Alexa.PowerLevelController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":17}]"
+          },
+          "capabilities": [
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa",
+              "version": "3"
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "properties": {
+                "supported": [
+                  {
+                    "name": "powerState"
+                  }
+                ],
+                "proactivelyReported": false,
+                "retrievable": true
+              }
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.TemperatureSensor",
+              "version": "3",
+              "properties": {
+                "supported": [
+                  {
+                    "name": "temperature"
+                  }
+                ],
+                "proactivelyReported": false,
+                "retrievable": true
+              }
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.PowerLevelController",
+              "version": "3",
+              "properties": {
+                "supported": [
+                  {
+                    "name": "powerLevel"
+                  }
+                ],
+                "proactivelyReported": false,
+                "retrievable": true
+              }
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.ThermostatController",
+              "version": "3",
+              "properties": {
+                "supported": [
+                  {
+                    "name": "thermostatMode"
+                  },
+                  {
+                    "name": "upperSetpoint"
+                  },
+                  {
+                    "name": "targetSetpoint"
+                  },
+                  {
+                    "name": "lowerSetpoint"
+                  }
+                ],
+                "proactivelyReported": false,
+                "retrievable": true
+              },
+              "configuration": {
+                "supportsScheduling": false,
+                "supportedModes": [
+                  "HEAT",
+                  "COOL",
+                  "AUTO",
+                  "OFF"
+                ]
+              }
+            }
+          ]
         }
+      ]
     }
+  }
 }
 
 -----------------------------------------------------------

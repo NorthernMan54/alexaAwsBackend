@@ -22,7 +22,7 @@ Alexa Message Validation Passed!
             "MOTION_SENSOR"
           ],
           "cookie": {
-            "ReportState": "[{\"interface\":\"Alexa.MotionSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10}]"
+            "ReportState": "[{\"interface\":\"Alexa.MotionSensor\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":10}]"
           },
           "capabilities": [
             {
@@ -55,7 +55,7 @@ Alexa Message Validation Passed!
             "CONTACT_SENSOR"
           ],
           "cookie": {
-            "ReportState": "[{\"interface\":\"Alexa.ContactSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":3,\"iid\":10}]"
+            "ReportState": "[{\"interface\":\"Alexa.ContactSensor\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":3,\"iid\":10}]"
           },
           "capabilities": [
             {
@@ -86,38 +86,58 @@ Alexa Message Validation Passed!
 
 -----------------------------------------------------------
 
-{"host":"127.0.0.1","port":51826,"aid":2,"iid":10}
-{ endpointId:
-   'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXNlbnNvci1zdHViLU1vdGlvbi0wMDAwMDA4NS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=',
+{"deviceID":"CC:22:3D:E3:CE:30","aid":2,"iid":10}
+{
+  endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXNlbnNvci1zdHViLU1vdGlvbi0wMDAwMDA4NS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=',
+  true: 'DETECTED',
+  false: 'NOT_DETECTED',
+  template: 'MotionSensor'
+}
+{
+  endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXNlbnNvci1zdHViLU1vdGlvbi0wMDAwMDA4NS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=',
   friendlyName: 'Motion',
   description: 'parseTest Motion Motion Sensor',
   manufacturerName: 'sensor-stub',
   displayCategories: [ 'MOTION_SENSOR' ],
-  cookie:
-   { ReportState:
-      '[{"interface":"Alexa.MotionSensor","host":"127.0.0.1","port":51826,"aid":2,"iid":10}]' },
-  capabilities:
-   [ { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
-     { type: 'AlexaInterface',
-       interface: 'Alexa.MotionSensor',
-       version: '3',
-       properties: [Object] } ] }
-{"host":"127.0.0.1","port":51826,"aid":3,"iid":10}
-{ endpointId:
-   'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXNlbnNvci1zdHViLUNvbnRhY3QtMDAwMDAwODAtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx',
+  cookie: {
+    ReportState: '[{"interface":"Alexa.MotionSensor","deviceID":"CC:22:3D:E3:CE:30","aid":2,"iid":10}]'
+  },
+  capabilities: [
+    { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
+    {
+      type: 'AlexaInterface',
+      interface: 'Alexa.MotionSensor',
+      version: '3',
+      properties: [Object]
+    }
+  ]
+}
+{"deviceID":"CC:22:3D:E3:CE:30","aid":3,"iid":10}
+{
+  '0': 'NOT_DETECTED',
+  '1': 'DETECTED',
+  endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXNlbnNvci1zdHViLUNvbnRhY3QtMDAwMDAwODAtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx',
+  template: 'ContactSensor'
+}
+{
+  endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXNlbnNvci1zdHViLUNvbnRhY3QtMDAwMDAwODAtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx',
   friendlyName: 'Contact',
   description: 'parseTest Contact Contact Sensor',
   manufacturerName: 'sensor-stub',
   displayCategories: [ 'CONTACT_SENSOR' ],
-  cookie:
-   { ReportState:
-      '[{"interface":"Alexa.ContactSensor","host":"127.0.0.1","port":51826,"aid":3,"iid":10}]' },
-  capabilities:
-   [ { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
-     { type: 'AlexaInterface',
-       interface: 'Alexa.ContactSensor',
-       version: '3',
-       properties: [Object] } ] }
+  cookie: {
+    ReportState: '[{"interface":"Alexa.ContactSensor","deviceID":"CC:22:3D:E3:CE:30","aid":3,"iid":10}]'
+  },
+  capabilities: [
+    { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
+    {
+      type: 'AlexaInterface',
+      interface: 'Alexa.ContactSensor',
+      version: '3',
+      properties: [Object]
+    }
+  ]
+}
 
 -----------------------------------------------------------
 

@@ -22,12 +22,17 @@ Alexa Message Validation Passed!
             "SPEAKER"
           ],
           "cookie": {
-            "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":392,\"iid\":15,\"value\":1}",
-            "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":392,\"iid\":15,\"value\":0}",
-            "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":392,\"iid\":16}",
-            "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":392,\"iid\":16}",
-            "ChangeChannel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":392,\"iid\":18}",
-            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":392,\"iid\":15},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":392,\"iid\":16},{\"interface\":\"Alexa.ChannelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":392,\"iid\":18}]"
+            "1": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":392,\"iid\":18,\"value\":1}",
+            "2": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":392,\"iid\":18,\"value\":2}",
+            "3": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":392,\"iid\":18,\"value\":3}",
+            "4": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":392,\"iid\":18,\"value\":4}",
+            "5": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":392,\"iid\":18,\"value\":5}",
+            "6": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":392,\"iid\":18,\"value\":6}",
+            "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":392,\"iid\":15,\"value\":1}",
+            "TurnOff": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":392,\"iid\":15,\"value\":0}",
+            "AdjustVolume": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":392,\"iid\":16}",
+            "SetVolume": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":392,\"iid\":16}",
+            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":392,\"iid\":15},{\"interface\":\"Alexa.Speaker\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":392,\"iid\":16},{\"interface\":\"Alexa.ChannelController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":392,\"iid\":18}]"
           },
           "capabilities": [
             {
@@ -88,12 +93,17 @@ Alexa Message Validation Passed!
             "SPEAKER"
           ],
           "cookie": {
-            "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":389,\"iid\":25,\"value\":1}",
-            "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":389,\"iid\":25,\"value\":0}",
-            "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":389,\"iid\":26}",
-            "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":389,\"iid\":26}",
-            "ChangeChannel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":389,\"iid\":28}",
-            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":389,\"iid\":25},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":389,\"iid\":26},{\"interface\":\"Alexa.ChannelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":389,\"iid\":28}]"
+            "1": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":389,\"iid\":28,\"value\":1}",
+            "2": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":389,\"iid\":28,\"value\":2}",
+            "3": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":389,\"iid\":28,\"value\":3}",
+            "4": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":389,\"iid\":28,\"value\":4}",
+            "5": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":389,\"iid\":28,\"value\":5}",
+            "6": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":389,\"iid\":28,\"value\":6}",
+            "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":389,\"iid\":25,\"value\":1}",
+            "TurnOff": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":389,\"iid\":25,\"value\":0}",
+            "AdjustVolume": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":389,\"iid\":26}",
+            "SetVolume": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":389,\"iid\":26}",
+            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":389,\"iid\":25},{\"interface\":\"Alexa.Speaker\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":389,\"iid\":26},{\"interface\":\"Alexa.ChannelController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":389,\"iid\":28}]"
           },
           "capabilities": [
             {
@@ -154,12 +164,17 @@ Alexa Message Validation Passed!
             "SPEAKER"
           ],
           "cookie": {
-            "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":388,\"iid\":40,\"value\":1}",
-            "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":388,\"iid\":40,\"value\":0}",
-            "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":388,\"iid\":41}",
-            "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":388,\"iid\":41}",
-            "ChangeChannel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":388,\"iid\":43}",
-            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":388,\"iid\":40},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":388,\"iid\":41},{\"interface\":\"Alexa.ChannelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":388,\"iid\":43}]"
+            "1": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":388,\"iid\":43,\"value\":1}",
+            "2": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":388,\"iid\":43,\"value\":2}",
+            "3": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":388,\"iid\":43,\"value\":3}",
+            "4": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":388,\"iid\":43,\"value\":4}",
+            "5": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":388,\"iid\":43,\"value\":5}",
+            "6": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":388,\"iid\":43,\"value\":6}",
+            "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":388,\"iid\":40,\"value\":1}",
+            "TurnOff": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":388,\"iid\":40,\"value\":0}",
+            "AdjustVolume": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":388,\"iid\":41}",
+            "SetVolume": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":388,\"iid\":41}",
+            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":388,\"iid\":40},{\"interface\":\"Alexa.Speaker\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":388,\"iid\":41},{\"interface\":\"Alexa.ChannelController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":388,\"iid\":43}]"
           },
           "capabilities": [
             {
@@ -220,9 +235,9 @@ Alexa Message Validation Passed!
             "SWITCH"
           ],
           "cookie": {
-            "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":393,\"iid\":26,\"value\":1}",
-            "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":393,\"iid\":26,\"value\":0}",
-            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":393,\"iid\":26}]"
+            "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":393,\"iid\":26,\"value\":1}",
+            "TurnOff": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":393,\"iid\":26,\"value\":0}",
+            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":393,\"iid\":26}]"
           },
           "capabilities": [
             {
@@ -255,9 +270,9 @@ Alexa Message Validation Passed!
             "SWITCH"
           ],
           "cookie": {
-            "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":393,\"iid\":29,\"value\":1}",
-            "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":393,\"iid\":29,\"value\":0}",
-            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":393,\"iid\":29}]"
+            "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":393,\"iid\":29,\"value\":1}",
+            "TurnOff": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":393,\"iid\":29,\"value\":0}",
+            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":393,\"iid\":29}]"
           },
           "capabilities": [
             {
@@ -290,7 +305,7 @@ Alexa Message Validation Passed!
             "TEMPERATURE_SENSOR"
           ],
           "cookie": {
-            "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":393,\"iid\":10}]"
+            "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":393,\"iid\":10}]"
           },
           "capabilities": [
             {
@@ -323,11 +338,11 @@ Alexa Message Validation Passed!
             "SWITCH"
           ],
           "cookie": {
-            "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":393,\"iid\":19,\"value\":1}",
-            "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":393,\"iid\":19,\"value\":0}",
-            "AdjustPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":393,\"iid\":21}",
-            "SetPowerLevel": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":393,\"iid\":21}",
-            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":393,\"iid\":19},{\"interface\":\"Alexa.PowerLevelController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":393,\"iid\":21}]"
+            "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":393,\"iid\":19,\"value\":1}",
+            "TurnOff": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":393,\"iid\":19,\"value\":0}",
+            "AdjustPowerLevel": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":393,\"iid\":21}",
+            "SetPowerLevel": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":393,\"iid\":21}",
+            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":393,\"iid\":19},{\"interface\":\"Alexa.PowerLevelController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":393,\"iid\":21}]"
           },
           "capabilities": [
             {
@@ -374,7 +389,7 @@ Alexa Message Validation Passed!
             "TEMPERATURE_SENSOR"
           ],
           "cookie": {
-            "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":456,\"iid\":16}]"
+            "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":456,\"iid\":16}]"
           },
           "capabilities": [
             {
@@ -407,9 +422,9 @@ Alexa Message Validation Passed!
             "SWITCH"
           ],
           "cookie": {
-            "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":457,\"iid\":10,\"value\":1}",
-            "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":457,\"iid\":10,\"value\":0}",
-            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":457,\"iid\":10}]"
+            "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":457,\"iid\":10,\"value\":1}",
+            "TurnOff": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":457,\"iid\":10,\"value\":0}",
+            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":457,\"iid\":10}]"
           },
           "capabilities": [
             {
@@ -442,7 +457,7 @@ Alexa Message Validation Passed!
             "TEMPERATURE_SENSOR"
           ],
           "cookie": {
-            "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":457,\"iid\":17}]"
+            "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":457,\"iid\":17}]"
           },
           "capabilities": [
             {
@@ -475,7 +490,7 @@ Alexa Message Validation Passed!
             "TEMPERATURE_SENSOR"
           ],
           "cookie": {
-            "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":455,\"iid\":10}]"
+            "ReportState": "[{\"interface\":\"Alexa.TemperatureSensor\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":455,\"iid\":10}]"
           },
           "capabilities": [
             {

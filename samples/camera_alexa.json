@@ -1,0 +1,119 @@
+alexaDiscovery - returned 2 devices
+Alexa Message Validation Passed!
+
+-----------------------------------------------------------
+
+{
+  "event": {
+    "header": {
+      "namespace": "Alexa.Discovery",
+      "name": "Discover.Response",
+      "payloadVersion": "3",
+      "messageId": "1bd5d003-31b9-476f-ad03-71d471922820"
+    },
+    "payload": {
+      "endpoints": [
+        {
+          "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWNhbWVyYS1mZm1wZWctRnJvbnQgUG9yY2ggLSBEdW1teS0wMDAwMDA4NS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=",
+          "friendlyName": "Front Porch - Dummy",
+          "description": "parseTest Front Porch - Dummy Motion Sensor",
+          "manufacturerName": "camera-ffmpeg",
+          "displayCategories": [
+            "MOTION_SENSOR"
+          ],
+          "cookie": {
+            "ReportState": "[{\"interface\":\"Alexa.MotionSensor\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":13}]"
+          },
+          "capabilities": [
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa",
+              "version": "3"
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.MotionSensor",
+              "version": "3",
+              "properties": {
+                "supported": [
+                  {
+                    "name": "detectionState"
+                  }
+                ],
+                "proactivelyReported": true,
+                "retrievable": true
+              }
+            }
+          ]
+        },
+        {
+          "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWNhbWVyYS1mZm1wZWctRnJvbnQgUG9yY2ggTW90aW9uIFRyaWdnZXItMDAwMDAwNDktMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
+          "friendlyName": "Front Porch Motion Trigger",
+          "description": "parseTest Front Porch Motion Trigger Switch",
+          "manufacturerName": "camera-ffmpeg",
+          "displayCategories": [
+            "SWITCH"
+          ],
+          "cookie": {
+            "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":10,\"value\":1}",
+            "TurnOff": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":10,\"value\":0}",
+            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":10}]"
+          },
+          "capabilities": [
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa",
+              "version": "3"
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "properties": {
+                "supported": [
+                  {
+                    "name": "powerState"
+                  }
+                ],
+                "proactivelyReported": false,
+                "retrievable": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+
+-----------------------------------------------------------
+
+{"deviceID":"CC:22:3D:E3:CE:30","aid":1,"iid":13}
+{
+  endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWNhbWVyYS1mZm1wZWctRnJvbnQgUG9yY2ggLSBEdW1teS0wMDAwMDA4NS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=',
+  true: 'DETECTED',
+  false: 'NOT_DETECTED',
+  template: 'MotionSensor'
+}
+{
+  endpointId: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWNhbWVyYS1mZm1wZWctRnJvbnQgUG9yY2ggLSBEdW1teS0wMDAwMDA4NS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=',
+  friendlyName: 'Front Porch - Dummy',
+  description: 'parseTest Front Porch - Dummy Motion Sensor',
+  manufacturerName: 'camera-ffmpeg',
+  displayCategories: [ 'MOTION_SENSOR' ],
+  cookie: {
+    ReportState: '[{"interface":"Alexa.MotionSensor","deviceID":"CC:22:3D:E3:CE:30","aid":1,"iid":13}]'
+  },
+  capabilities: [
+    { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
+    {
+      type: 'AlexaInterface',
+      interface: 'Alexa.MotionSensor',
+      version: '3',
+      properties: [Object]
+    }
+  ]
+}
+
+-----------------------------------------------------------
+

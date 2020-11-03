@@ -4,211 +4,359 @@ WARNING - Bad message
 -----------------------------------------------------------
 
 {
-    "event": {
-        "header": {
-            "namespace": "Alexa.Discovery",
-            "name": "Discover.Response",
-            "payloadVersion": "3",
-            "messageId": "1bd5d003-31b9-476f-ad03-71d471922820"
+  "event": {
+    "header": {
+      "namespace": "Alexa.Discovery",
+      "name": "Discover.Response",
+      "payloadVersion": "3",
+      "messageId": "1bd5d003-31b9-476f-ad03-71d471922820"
+    },
+    "payload": {
+      "endpoints": [
+        {
+          "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS16b25lLXR2LVBhcnR5LTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
+          "friendlyName": "Party",
+          "description": "parseTest Party Switch",
+          "manufacturerName": "yamaha-zone-tv",
+          "displayCategories": [
+            "SWITCH"
+          ],
+          "cookie": {
+            "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":295,\"value\":1}",
+            "TurnOff": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":295,\"value\":0}",
+            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":295}]"
+          },
+          "capabilities": [
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa",
+              "version": "3"
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "properties": {
+                "supported": [
+                  {
+                    "name": "powerState"
+                  }
+                ],
+                "proactivelyReported": false,
+                "retrievable": true
+              }
+            }
+          ]
         },
-        "payload": {
-            "endpoints": [
+        {
+          "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS16b25lLXR2LVByZXNldCAxLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
+          "friendlyName": "Preset 1",
+          "description": "parseTest Preset 1 Switch",
+          "manufacturerName": "yamaha-zone-tv",
+          "displayCategories": [
+            "SWITCH"
+          ],
+          "cookie": {
+            "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":298,\"value\":1}",
+            "TurnOff": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":298,\"value\":0}",
+            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":298}]"
+          },
+          "capabilities": [
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa",
+              "version": "3"
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "properties": {
+                "supported": [
+                  {
+                    "name": "powerState"
+                  }
+                ],
+                "proactivelyReported": false,
+                "retrievable": true
+              }
+            }
+          ]
+        },
+        {
+          "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS16b25lLXR2LVByZXNldCAyLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
+          "friendlyName": "Preset 2",
+          "description": "parseTest Preset 2 Switch",
+          "manufacturerName": "yamaha-zone-tv",
+          "displayCategories": [
+            "SWITCH"
+          ],
+          "cookie": {
+            "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":301,\"value\":1}",
+            "TurnOff": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":301,\"value\":0}",
+            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":301}]"
+          },
+          "capabilities": [
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa",
+              "version": "3"
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "properties": {
+                "supported": [
+                  {
+                    "name": "powerState"
+                  }
+                ],
+                "proactivelyReported": false,
+                "retrievable": true
+              }
+            }
+          ]
+        },
+        {
+          "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS16b25lLXR2LVJlYXItMDAwMDAwRDgtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
+          "friendlyName": "Rear",
+          "description": "parseTest Rear Television",
+          "manufacturerName": "yamaha-zone-tv",
+          "displayCategories": [
+            "TV"
+          ],
+          "cookie": {
+            "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":13,\"value\":1}",
+            "TurnOff": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":13,\"value\":0}",
+            "Active Identifier": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":14}",
+            "Pause": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":17,\"value\":11}",
+            "Play": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":17,\"value\":8}",
+            "Stop": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":17,\"value\":9}",
+            "Next": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":17,\"value\":7}",
+            "Previous": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":17,\"value\":6}",
+            "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":13},{\"interface\":\"Alexa.PowerController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":289},{\"interface\":\"Alexa.Speaker\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":291},{\"interface\":\"Alexa.StepSpeaker\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":292}]",
+            "AdjustVolume": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":292}",
+            "SetVolume": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"iid\":291}",
+            "TUNER": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":0,\"iid\":14}",
+            "MULTI CH": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":1,\"iid\":14}",
+            "PHONO": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":2,\"iid\":14}",
+            "HDMI 1": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":3,\"iid\":14}",
+            "HDMI 2": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":4,\"iid\":14}",
+            "HDMI 3": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":5,\"iid\":14}",
+            "HDMI 4": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":6,\"iid\":14}",
+            "HDMI5": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":7,\"iid\":14}",
+            "HDMI6": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":8,\"iid\":14}",
+            "HDMI7": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":9,\"iid\":14}",
+            "AV1": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":10,\"iid\":14}",
+            "AV2": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":11,\"iid\":14}",
+            "AV3": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":12,\"iid\":14}",
+            "AV4": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":13,\"iid\":14}",
+            "AV5": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":14,\"iid\":14}",
+            "AV6": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":15,\"iid\":14}",
+            "AV7": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":16,\"iid\":14}",
+            "V-AUX": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":17,\"iid\":14}",
+            "AUDIO1": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":18,\"iid\":14}",
+            "AUDIO2": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":19,\"iid\":14}",
+            "AUDIO3": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":20,\"iid\":14}",
+            "AUDIO4": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":21,\"iid\":14}",
+            "USB/NET": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":22,\"iid\":14}",
+            "Rhapsody": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":23,\"iid\":14}",
+            "Napster": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":24,\"iid\":14}",
+            "SiriusXM": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":25,\"iid\":14}",
+            "Pandora": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":26,\"iid\":14}",
+            "Spotify": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":27,\"iid\":14}",
+            "AirPlay": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":28,\"iid\":14}",
+            "SERVER": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":29,\"iid\":14}",
+            "NET RADIO": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":30,\"iid\":14}",
+            "USB": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":31,\"iid\":14}",
+            "iPod (USB)": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":1,\"value\":32,\"iid\":14}"
+          },
+          "capabilities": [
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa",
+              "version": "3"
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "properties": {
+                "supported": [
+                  {
+                    "name": "powerState"
+                  }
+                ],
+                "proactivelyReported": false,
+                "retrievable": true
+              }
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.PlaybackController",
+              "version": "3",
+              "supportedOperations": [
+                "Play",
+                "Pause",
+                "Stop",
+                "Next",
+                "Rewind"
+              ]
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.Speaker",
+              "version": "3",
+              "properties": {
+                "supported": [
+                  {
+                    "name": "volume"
+                  }
+                ],
+                "proactivelyReported": false,
+                "retrievable": true
+              }
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.StepSpeaker",
+              "version": "3"
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.InputController",
+              "version": "3",
+              "properties": {
+                "supported": [
+                  {
+                    "name": "input"
+                  }
+                ],
+                "proactivelyReported": false,
+                "retrievable": true
+              },
+              "inputs": [
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS16b25lLXR2LVBhcnR5LTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Party",
-                    "description": "parseTest Party Switch",
-                    "manufacturerName": "yamaha-zone-tv",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":295,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":295,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":295}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
+                  "name": "TUNER"
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS16b25lLXR2LVByZXNldCAxLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Preset 1",
-                    "description": "parseTest Preset 1 Switch",
-                    "manufacturerName": "yamaha-zone-tv",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":298,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":298,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":298}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
+                  "name": "MULTI CH"
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS16b25lLXR2LVByZXNldCAyLTAwMDAwMDQ5LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==",
-                    "friendlyName": "Preset 2",
-                    "description": "parseTest Preset 2 Switch",
-                    "manufacturerName": "yamaha-zone-tv",
-                    "displayCategories": [
-                        "SWITCH"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":301,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":301,\"value\":0}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":301}]"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
+                  "name": "PHONO"
                 },
                 {
-                    "endpointId": "Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LXlhbWFoYS16b25lLXR2LVJlYXItMDAwMDAwRDgtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx",
-                    "friendlyName": "Rear",
-                    "description": "parseTest Rear Television",
-                    "manufacturerName": "yamaha-zone-tv",
-                    "displayCategories": [
-                        "TV"
-                    ],
-                    "cookie": {
-                        "TurnOn": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":13,\"value\":1}",
-                        "TurnOff": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":13,\"value\":0}",
-                        "Pause": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":17,\"value\":11}",
-                        "Play": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":17,\"value\":8}",
-                        "Stop": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":17,\"value\":9}",
-                        "Next": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":17,\"value\":7}",
-                        "Previous": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":17,\"value\":6}",
-                        "ReportState": "[{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":13},{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":289},{\"interface\":\"Alexa.Speaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":291},{\"interface\":\"Alexa.StepSpeaker\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":292},{\"interface\":\"Alexa.PowerController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":307}]",
-                        "AdjustVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":292}",
-                        "SetVolume": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":1,\"iid\":291}"
-                    },
-                    "capabilities": [
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa",
-                            "version": "3"
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PlaybackController",
-                            "version": "3",
-                            "supportedOperations": [
-                                "Play",
-                                "Pause",
-                                "Stop",
-                                "Next",
-                                "Rewind"
-                            ]
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.Speaker",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "volume"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.StepSpeaker",
-                            "version": "3",
-                            "properties": {}
-                        },
-                        {
-                            "type": "AlexaInterface",
-                            "interface": "Alexa.PowerController",
-                            "version": "3",
-                            "properties": {
-                                "supported": [
-                                    {
-                                        "name": "powerState"
-                                    }
-                                ],
-                                "proactivelyReported": false,
-                                "retrievable": true
-                            }
-                        }
-                    ]
+                  "name": "HDMI 1"
+                },
+                {
+                  "name": "HDMI 2"
+                },
+                {
+                  "name": "HDMI 3"
+                },
+                {
+                  "name": "HDMI 4"
+                },
+                {
+                  "name": "HDMI5"
+                },
+                {
+                  "name": "HDMI6"
+                },
+                {
+                  "name": "HDMI7"
+                },
+                {
+                  "name": "AV1"
+                },
+                {
+                  "name": "AV2"
+                },
+                {
+                  "name": "AV3"
+                },
+                {
+                  "name": "AV4"
+                },
+                {
+                  "name": "AV5"
+                },
+                {
+                  "name": "AV6"
+                },
+                {
+                  "name": "AV7"
+                },
+                {
+                  "name": "V-AUX"
+                },
+                {
+                  "name": "AUDIO1"
+                },
+                {
+                  "name": "AUDIO2"
+                },
+                {
+                  "name": "AUDIO3"
+                },
+                {
+                  "name": "AUDIO4"
+                },
+                {
+                  "name": "USB/NET"
+                },
+                {
+                  "name": "Rhapsody"
+                },
+                {
+                  "name": "Napster"
+                },
+                {
+                  "name": "SiriusXM"
+                },
+                {
+                  "name": "Pandora"
+                },
+                {
+                  "name": "Spotify"
+                },
+                {
+                  "name": "AirPlay"
+                },
+                {
+                  "name": "SERVER"
+                },
+                {
+                  "name": "NET RADIO"
+                },
+                {
+                  "name": "USB"
+                },
+                {
+                  "name": "iPod (USB)"
                 }
-            ]
+              ]
+            },
+            {
+              "type": "AlexaInterface",
+              "interface": "Alexa.ChannelController",
+              "version": "3",
+              "properties": {
+                "supported": [
+                  {
+                    "name": "channel"
+                  }
+                ],
+                "proactivelyReported": false,
+                "retrievable": true
+              }
+            }
+          ]
         }
+      ]
     }
+  }
 }
 
 -----------------------------------------------------------

@@ -22,9 +22,9 @@ Alexa Message Validation Passed!
             "SMARTLOCK"
           ],
           "cookie": {
-            "Lock": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":19,\"value\":1}",
-            "Unlock": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":19,\"value\":0}",
-            "ReportState": "[{\"interface\":\"Alexa.LockController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":18}]"
+            "Lock": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":19,\"value\":1}",
+            "Unlock": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":19,\"value\":0}",
+            "ReportState": "[{\"interface\":\"Alexa.LockController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":18}]"
           },
           "capabilities": [
             {
@@ -57,9 +57,9 @@ Alexa Message Validation Passed!
             "SMARTLOCK"
           ],
           "cookie": {
-            "Lock": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":15,\"value\":1}",
-            "Unlock": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":15,\"value\":0}",
-            "ReportState": "[{\"interface\":\"Alexa.LockController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":14}]"
+            "Lock": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":15,\"value\":1}",
+            "Unlock": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":15,\"value\":0}",
+            "ReportState": "[{\"interface\":\"Alexa.LockController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":14}]"
           },
           "capabilities": [
             {
@@ -92,9 +92,9 @@ Alexa Message Validation Passed!
             "SMARTLOCK"
           ],
           "cookie": {
-            "Lock": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":11,\"value\":1}",
-            "Unlock": "{\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":11,\"value\":0}",
-            "ReportState": "[{\"interface\":\"Alexa.LockController\",\"host\":\"127.0.0.1\",\"port\":51826,\"aid\":2,\"iid\":10}]"
+            "Lock": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":11,\"value\":1}",
+            "Unlock": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":11,\"value\":0}",
+            "ReportState": "[{\"interface\":\"Alexa.LockController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":2,\"iid\":10}]"
           },
           "capabilities": [
             {

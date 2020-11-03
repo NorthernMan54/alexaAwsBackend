@@ -1,0 +1,235 @@
+{
+  "accessories": [{
+    "aid": 1,
+    "services": [{
+      "iid": 1,
+      "type": "3E",
+      "characteristics": [{
+        "iid": 2,
+        "type": "14",
+        "perms": ["pw"],
+        "format": "bool",
+        "description": "Identify"
+      }, {
+        "iid": 3,
+        "type": "20",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "camera-ffmpeg",
+        "description": "Manufacturer"
+      }, {
+        "iid": 4,
+        "type": "21",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Wyze Cam V2 Doorbell",
+        "description": "Model"
+      }, {
+        "iid": 5,
+        "type": "23",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Doorbell CB27",
+        "description": "Name"
+      }, {
+        "iid": 6,
+        "type": "30",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Walter-Doorbell",
+        "description": "Serial Number"
+      }, {
+        "iid": 7,
+        "type": "52",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.0",
+        "description": "Firmware Revision"
+      }]
+    }, {
+      "iid": 8,
+      "type": "121",
+      "characteristics": [{
+        "iid": 9,
+        "type": "23",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Doorbell Doorbell",
+        "description": "Name"
+      }, {
+        "iid": 10,
+        "type": "73",
+        "perms": ["pr", "ev"],
+        "format": "uint8",
+        "value": null,
+        "description": "Programmable Switch Event",
+        "valid-values": [0, 1, 2],
+        "maxValue": 2,
+        "minValue": 0
+      }]
+    }, {
+      "iid": 11,
+      "type": "49",
+      "characteristics": [{
+        "iid": 12,
+        "type": "23",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Doorbell Doorbell Trigger",
+        "description": "Name"
+      }, {
+        "iid": 13,
+        "type": "25",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }]
+    }, {
+      "iid": 14,
+      "type": "110",
+      "characteristics": [{
+        "iid": 15,
+        "type": "114",
+        "perms": ["pr"],
+        "format": "tlv8",
+        "value": "AacBAQACHQEBAAAAAQEBAAABAQICAQAAAAIBAQAAAgECAwEAAwsBAkABAgLwAAMBDwAAAwsBAkABAgK0AAMBDwAAAwsBAuABAgJoAQMBDwAAAwsBAuABAgIOAQMBDwAAAwsBAoACAgLgAQMBDwAAAwsBAoACAgJoAQMBDwAAAwsBAgAFAgLAAwMBDwAAAwsBAgAFAgLQAgMBDwAAAwsBAoAHAgI4BAMBDw==",
+        "description": "Supported Video Stream Configuration"
+      }, {
+        "iid": 16,
+        "type": "115",
+        "perms": ["pr"],
+        "format": "tlv8",
+        "value": "AQ4BAQMCCQEBAQIBAAMBAgAAAQ4BAQICCQEBAQIBAAMBAQIBAA==",
+        "description": "Supported Audio Stream Configuration"
+      }, {
+        "iid": 17,
+        "type": "116",
+        "perms": ["pr"],
+        "format": "tlv8",
+        "value": "AgEA",
+        "description": "Supported RTP Configuration"
+      }, {
+        "iid": 18,
+        "type": "117",
+        "perms": ["pr", "pw"],
+        "format": "tlv8",
+        "value": "ARUCAQQBED5FXI4uNkPGuLZzHuegxhMCGQMLAQKAAgICaAEDAQ8ECgMChAAEBAAAAAA=",
+        "description": "Selected RTP Stream Configuration"
+      }, {
+        "iid": 19,
+        "type": "120",
+        "perms": ["pr", "ev"],
+        "format": "tlv8",
+        "value": "AQEA",
+        "description": "Streaming Status"
+      }, {
+        "iid": 20,
+        "type": "118",
+        "perms": ["pr", "pw"],
+        "format": "tlv8",
+        "value": "ARA+RVyOLjZDxri2cx7noMYTAgEAAxkBAQACDDE5Mi4xNjguMS4xMwMC2uEEAmH2BCUBAQACEGBfszrrMUgyQ/hpI60hoUgDDkvQbbVhGEgpdW3k0zAgBSUBAQACENg1ZFUKzukfj2gUms+KlmwDDkgRCMogAHyc76r3YcojBgSJ+QIABwQJxlAA",
+        "description": "Setup Endpoints"
+      }, {
+        "iid": 21,
+        "type": "B0",
+        "perms": ["pr", "pw", "ev"],
+        "format": "uint8",
+        "value": 1,
+        "description": "Active",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }]
+    }, {
+      "iid": 22,
+      "type": "110",
+      "characteristics": [{
+        "iid": 23,
+        "type": "114",
+        "perms": ["pr"],
+        "format": "tlv8",
+        "value": "AacBAQACHQEBAAAAAQEBAAABAQICAQAAAAIBAQAAAgECAwEAAwsBAkABAgLwAAMBDwAAAwsBAkABAgK0AAMBDwAAAwsBAuABAgJoAQMBDwAAAwsBAuABAgIOAQMBDwAAAwsBAoACAgLgAQMBDwAAAwsBAoACAgJoAQMBDwAAAwsBAgAFAgLAAwMBDwAAAwsBAgAFAgLQAgMBDwAAAwsBAoAHAgI4BAMBDw==",
+        "description": "Supported Video Stream Configuration"
+      }, {
+        "iid": 24,
+        "type": "115",
+        "perms": ["pr"],
+        "format": "tlv8",
+        "value": "AQ4BAQMCCQEBAQIBAAMBAgAAAQ4BAQICCQEBAQIBAAMBAQIBAA==",
+        "description": "Supported Audio Stream Configuration"
+      }, {
+        "iid": 25,
+        "type": "116",
+        "perms": ["pr"],
+        "format": "tlv8",
+        "value": "AgEA",
+        "description": "Supported RTP Configuration"
+      }, {
+        "iid": 26,
+        "type": "117",
+        "perms": ["pr", "pw"],
+        "format": "tlv8",
+        "value": "ARUCAQABEHiQoxRItE/amKqTLgJOeTY=",
+        "description": "Selected RTP Stream Configuration"
+      }, {
+        "iid": 27,
+        "type": "120",
+        "perms": ["pr", "ev"],
+        "format": "tlv8",
+        "value": "AQEA",
+        "description": "Streaming Status"
+      }, {
+        "iid": 28,
+        "type": "118",
+        "perms": ["pr", "pw"],
+        "format": "tlv8",
+        "value": "ARB4kKMUSLRP2piqky4k55MAAgEAAxkBAQACDDE5Mi4xNjguMS4xMwMCvNYEAivVBCUBAQACECu53zjWEJm8f5rBDkK4K7ADDlzU9suyYo10+M3KPvc5BSUBAQACEHirRtLbCAOy3QfF2Fwms4QDDgbG7iQEfZggL+PppvfjBgRrt2AABwTPfTUA",
+        "description": "Setup Endpoints"
+      }, {
+        "iid": 29,
+        "type": "B0",
+        "perms": ["pr", "pw", "ev"],
+        "format": "uint8",
+        "value": 1,
+        "description": "Active",
+        "valid-values": [0, 1],
+        "maxValue": 1,
+        "minValue": 0
+      }]
+    }, {
+      "iid": 30,
+      "type": "111",
+      "characteristics": [{
+        "iid": 31,
+        "type": "25",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "On"
+      }]
+    }, {
+      "iid": 32,
+      "type": "112",
+      "characteristics": [{
+        "iid": 33,
+        "type": "11A",
+        "perms": ["pr", "pw", "ev"],
+        "format": "bool",
+        "value": false,
+        "description": "Mute"
+      }]
+    }, {
+      "iid": 34,
+      "type": "A2",
+      "characteristics": [{
+        "iid": 35,
+        "type": "37",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "1.1.0",
+        "description": "Version"
+      }]
+    }]
+  }]
+}
