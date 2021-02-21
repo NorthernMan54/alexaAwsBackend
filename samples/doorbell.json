@@ -50,13 +50,6 @@
       "iid": 8,
       "type": "121",
       "characteristics": [{
-        "iid": 9,
-        "type": "23",
-        "perms": ["pr"],
-        "format": "string",
-        "value": "Doorbell Doorbell",
-        "description": "Name"
-      }, {
         "iid": 10,
         "type": "73",
         "perms": ["pr", "ev"],
@@ -66,6 +59,13 @@
         "valid-values": [0, 1, 2],
         "maxValue": 2,
         "minValue": 0
+      }, {
+        "iid": 9,
+        "type": "23",
+        "perms": ["pr"],
+        "format": "string",
+        "value": "Doorbell Doorbell",
+        "description": "Name"
       }]
     }, {
       "iid": 11,
