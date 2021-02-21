@@ -159,11 +159,9 @@ Alexa Message Validation Passed!
             "INTERIOR_BLIND"
           ],
           "cookie": {
-            "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":7,\"iid\":10,\"value\":100}",
-            "TurnOff": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":7,\"iid\":10,\"value\":0}",
-            "AdjustPowerLevel": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":7,\"iid\":10}",
-            "SetPowerLevel": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":7,\"iid\":10}",
-            "ReportState": "[{\"interface\":\"Alexa.ContactSensor\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":7,\"iid\":9},{\"interface\":\"Alexa.PowerController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":7,\"iid\":10},{\"interface\":\"Alexa.PowerLevelController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":7,\"iid\":10}]"
+            "SetRangeValue": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":7,\"iid\":10}",
+            "AdjustRangeValue": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":7,\"iid\":10}",
+            "ReportState": "[{\"interface\":\"Alexa.ContactSensor\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":7,\"iid\":9},{\"interface\":\"Alexa.RangeController\",\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":7,\"iid\":10}]"
           },
           "capabilities": [
             {
@@ -187,30 +185,108 @@ Alexa Message Validation Passed!
             },
             {
               "type": "AlexaInterface",
-              "interface": "Alexa.PowerController",
+              "interface": "Alexa.RangeController",
+              "instance": "Blind.Lift",
               "version": "3",
               "properties": {
                 "supported": [
                   {
-                    "name": "powerState"
+                    "name": "rangeValue"
                   }
                 ],
                 "proactivelyReported": false,
                 "retrievable": true
-              }
-            },
-            {
-              "type": "AlexaInterface",
-              "interface": "Alexa.PowerLevelController",
-              "version": "3",
-              "properties": {
-                "supported": [
+              },
+              "capabilityResources": {
+                "friendlyNames": [
                   {
-                    "name": "powerLevel"
+                    "@type": "asset",
+                    "value": {
+                      "assetId": "Alexa.Setting.Opening"
+                    }
+                  }
+                ]
+              },
+              "configuration": {
+                "supportedRange": {
+                  "minimumValue": 0,
+                  "maximumValue": 100,
+                  "precision": 1
+                },
+                "unitOfMeasure": "Alexa.Unit.Percent"
+              },
+              "semantics": {
+                "actionMappings": [
+                  {
+                    "@type": "ActionsToDirective",
+                    "actions": [
+                      "Alexa.Actions.Close"
+                    ],
+                    "directive": {
+                      "name": "SetRangeValue",
+                      "payload": {
+                        "rangeValue": 0
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ActionsToDirective",
+                    "actions": [
+                      "Alexa.Actions.Open"
+                    ],
+                    "directive": {
+                      "name": "SetRangeValue",
+                      "payload": {
+                        "rangeValue": 100
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ActionsToDirective",
+                    "actions": [
+                      "Alexa.Actions.Lower"
+                    ],
+                    "directive": {
+                      "name": "AdjustRangeValue",
+                      "payload": {
+                        "rangeValueDelta": -10,
+                        "rangeValueDeltaDefault": false
+                      }
+                    }
+                  },
+                  {
+                    "@type": "ActionsToDirective",
+                    "actions": [
+                      "Alexa.Actions.Raise"
+                    ],
+                    "directive": {
+                      "name": "AdjustRangeValue",
+                      "payload": {
+                        "rangeValueDelta": 10,
+                        "rangeValueDeltaDefault": false
+                      }
+                    }
                   }
                 ],
-                "proactivelyReported": false,
-                "retrievable": true
+                "stateMappings": [
+                  {
+                    "@type": "StatesToValue",
+                    "states": [
+                      "Alexa.States.Closed"
+                    ],
+                    "value": 0
+                  },
+                  {
+                    "@type": "StatesToRange",
+                    "states": [
+                      "Alexa.States.Open"
+                    ],
+                    "range": {
+                      "minimumValue": 1,
+                      "maximumValue": 100
+                    }
+                  }
+                ]
               }
             }
           ]
@@ -1039,11 +1115,9 @@ Alexa Message Validation Passed!
   manufacturerName: 'Default-Manufacturer',
   displayCategories: [ 'INTERIOR_BLIND' ],
   cookie: {
-    TurnOn: '{"deviceID":"CC:22:3D:E3:CE:30","aid":7,"iid":10,"value":100}',
-    TurnOff: '{"deviceID":"CC:22:3D:E3:CE:30","aid":7,"iid":10,"value":0}',
-    AdjustPowerLevel: '{"deviceID":"CC:22:3D:E3:CE:30","aid":7,"iid":10}',
-    SetPowerLevel: '{"deviceID":"CC:22:3D:E3:CE:30","aid":7,"iid":10}',
-    ReportState: '[{"interface":"Alexa.ContactSensor","deviceID":"CC:22:3D:E3:CE:30","aid":7,"iid":9},{"interface":"Alexa.PowerController","deviceID":"CC:22:3D:E3:CE:30","aid":7,"iid":10},{"interface":"Alexa.PowerLevelController","deviceID":"CC:22:3D:E3:CE:30","aid":7,"iid":10}]'
+    SetRangeValue: '{"deviceID":"CC:22:3D:E3:CE:30","aid":7,"iid":10}',
+    AdjustRangeValue: '{"deviceID":"CC:22:3D:E3:CE:30","aid":7,"iid":10}',
+    ReportState: '[{"interface":"Alexa.ContactSensor","deviceID":"CC:22:3D:E3:CE:30","aid":7,"iid":9},{"interface":"Alexa.RangeController","deviceID":"CC:22:3D:E3:CE:30","aid":7,"iid":10}]'
   },
   capabilities: [
     { type: 'AlexaInterface', interface: 'Alexa', version: '3' },
@@ -1055,15 +1129,13 @@ Alexa Message Validation Passed!
     },
     {
       type: 'AlexaInterface',
-      interface: 'Alexa.PowerController',
+      interface: 'Alexa.RangeController',
+      instance: 'Blind.Lift',
       version: '3',
-      properties: [Object]
-    },
-    {
-      type: 'AlexaInterface',
-      interface: 'Alexa.PowerLevelController',
-      version: '3',
-      properties: [Object]
+      properties: [Object],
+      capabilityResources: [Object],
+      configuration: [Object],
+      semantics: [Object]
     }
   ]
 }
