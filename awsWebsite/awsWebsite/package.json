@@ -37,7 +37,7 @@
     "querystring": "^0.2.0",
     "request": "^2.79.0",
     "uid2": "0.0.3",
-    "node-json2html": "^=1.2.0",
+    "node-json2html": "^=2.1.0",
     "json2csv": ">5.0.2"
   },
   "devDependencies": {
