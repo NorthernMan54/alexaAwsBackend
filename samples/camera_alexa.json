@@ -90,6 +90,8 @@ Alexa Message Validation Passed!
 
 {"deviceID":"CC:22:3D:E3:CE:30","aid":1,"iid":13}
 {
+  '0': 'NOT_DETECTED',
+  '1': 'DETECTED',
   endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LWNhbWVyYS1mZm1wZWctRnJvbnQgUG9yY2ggLSBEdW1teS0wMDAwMDA4NS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=',
   true: 'DETECTED',
   false: 'NOT_DETECTED',

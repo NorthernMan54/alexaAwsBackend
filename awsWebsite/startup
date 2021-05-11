@@ -6,4 +6,4 @@ pkill node
 
 export DEBUG_HIDE_DATE
 #DEBUG=-express*,-body-parser:json,-body-parser:urlencoded,* node index.js
-node index.js
+node --max-old-space-size=2048 index.js

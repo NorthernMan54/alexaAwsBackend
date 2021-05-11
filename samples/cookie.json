@@ -260,7 +260,7 @@ WARNING - Bad message
           "description": "parseTest Moodo Fan v2",
           "manufacturerName": "Agan Aroma & Fine Chemicals Ltd.",
           "displayCategories": [
-            "SWITCH"
+            "FAN"
           ],
           "cookie": {
             "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":280,\"iid\":9,\"value\":1}",
@@ -2172,7 +2172,7 @@ WARNING - Bad message
           "description": "parseTest Ventilator Fan Fan",
           "manufacturerName": "Default-Manufacturer",
           "displayCategories": [
-            "SWITCH"
+            "FAN"
           ],
           "cookie": {
             "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":27,\"iid\":10,\"value\":1}",
@@ -5755,7 +5755,7 @@ WARNING - Bad message
           "description": "parseTest Standventilator Fan v2",
           "manufacturerName": "XiaoMi",
           "displayCategories": [
-            "SWITCH"
+            "FAN"
           ],
           "cookie": {
             "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":111,\"iid\":10,\"value\":1}",
@@ -6484,6 +6484,8 @@ WARNING - Bad message
 }
 {"deviceID":"CC:22:3D:E3:CE:30","aid":54,"iid":13}
 {
+  '0': 'NOT_DETECTED',
+  '1': 'DETECTED',
   endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlbGF5IE1hbnVmYWN0dXJlci1EZWxheVN3aXRjaCA1IE1pbiBUcmlnZ2VyLTAwMDAwMDg1LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==',
   true: 'DETECTED',
   false: 'NOT_DETECTED',
@@ -6510,6 +6512,8 @@ WARNING - Bad message
 }
 {"deviceID":"CC:22:3D:E3:CE:30","aid":318,"iid":13}
 {
+  '0': 'NOT_DETECTED',
+  '1': 'DETECTED',
   endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlbGF5IE1hbnVmYWN0dXJlci1CbGlua2VuU3dpdGNoIDUgTWluIFRyaWdnZXItMDAwMDAwODUtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx',
   true: 'DETECTED',
   false: 'NOT_DETECTED',
@@ -6536,6 +6540,8 @@ WARNING - Bad message
 }
 {"deviceID":"CC:22:3D:E3:CE:30","aid":319,"iid":13}
 {
+  '0': 'NOT_DETECTED',
+  '1': 'DETECTED',
   endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlbGF5IE1hbnVmYWN0dXJlci1GbGlwU3dpdGNoIDEgU2VjIFRyaWdnZXItMDAwMDAwODUtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx',
   true: 'DETECTED',
   false: 'NOT_DETECTED',
@@ -6562,6 +6568,8 @@ WARNING - Bad message
 }
 {"deviceID":"CC:22:3D:E3:CE:30","aid":320,"iid":13}
 {
+  '0': 'NOT_DETECTED',
+  '1': 'DETECTED',
   endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlbGF5IE1hbnVmYWN0dXJlci1GbG9wU3dpdGNoIDEgU2VjIFRyaWdnZXItMDAwMDAwODUtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx',
   true: 'DETECTED',
   false: 'NOT_DETECTED',
@@ -6588,6 +6596,8 @@ WARNING - Bad message
 }
 {"deviceID":"CC:22:3D:E3:CE:30","aid":200,"iid":13}
 {
+  '0': 'NOT_DETECTED',
+  '1': 'DETECTED',
   endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlbGF5IE1hbnVmYWN0dXJlci1EZWxheVN3aXRjaCAxMCBNaW4gVHJpZ2dlci0wMDAwMDA4NS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=',
   true: 'DETECTED',
   false: 'NOT_DETECTED',
@@ -6614,6 +6624,8 @@ WARNING - Bad message
 }
 {"deviceID":"CC:22:3D:E3:CE:30","aid":55,"iid":13}
 {
+  '0': 'NOT_DETECTED',
+  '1': 'DETECTED',
   endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlbGF5IE1hbnVmYWN0dXJlci1EZWxheVN3aXRjaCBUcmlnZ2VyLTAwMDAwMDg1LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==',
   true: 'DETECTED',
   false: 'NOT_DETECTED',
@@ -6640,6 +6652,8 @@ WARNING - Bad message
 }
 {"deviceID":"CC:22:3D:E3:CE:30","aid":282,"iid":13}
 {
+  '0': 'NOT_DETECTED',
+  '1': 'DETECTED',
   endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlbGF5IE1hbnVmYWN0dXJlci1Nb29kbyBEZWxheVN3aXRjaCA0NSBUcmlnZ2VyLTAwMDAwMDg1LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==',
   true: 'DETECTED',
   false: 'NOT_DETECTED',
@@ -6666,6 +6680,8 @@ WARNING - Bad message
 }
 {"deviceID":"CC:22:3D:E3:CE:30","aid":56,"iid":13}
 {
+  '0': 'NOT_DETECTED',
+  '1': 'DETECTED',
   endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlbGF5IE1hbnVmYWN0dXJlci1EZWxheVN3aXRjaCBXb2hudW5nc3TDvHIgVHJpZ2dlci0wMDAwMDA4NS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=',
   true: 'DETECTED',
   false: 'NOT_DETECTED',
@@ -6692,6 +6708,8 @@ WARNING - Bad message
 }
 {"deviceID":"CC:22:3D:E3:CE:30","aid":80,"iid":13}
 {
+  '0': 'NOT_DETECTED',
+  '1': 'DETECTED',
   endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlbGF5IE1hbnVmYWN0dXJlci1EZWxheVN3aXRjaCBIYXVzdMO8ciBUcmlnZ2VyLTAwMDAwMDg1LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==',
   true: 'DETECTED',
   false: 'NOT_DETECTED',
@@ -6718,6 +6736,8 @@ WARNING - Bad message
 }
 {"deviceID":"CC:22:3D:E3:CE:30","aid":156,"iid":13}
 {
+  '0': 'NOT_DETECTED',
+  '1': 'DETECTED',
   endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlbGF5IE1hbnVmYWN0dXJlci1EZWxheVN3aXRjaCBXZWNrZXIgVHJpZ2dlci0wMDAwMDA4NS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=',
   true: 'DETECTED',
   false: 'NOT_DETECTED',
@@ -6744,6 +6764,8 @@ WARNING - Bad message
 }
 {"deviceID":"CC:22:3D:E3:CE:30","aid":246,"iid":13}
 {
+  '0': 'NOT_DETECTED',
+  '1': 'DETECTED',
   endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlbGF5IE1hbnVmYWN0dXJlci1Eb29yIERyb3AgMTAgTWluIFRyaWdnZXItMDAwMDAwODUtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx',
   true: 'DETECTED',
   false: 'NOT_DETECTED',
@@ -6770,6 +6792,8 @@ WARNING - Bad message
 }
 {"deviceID":"CC:22:3D:E3:CE:30","aid":326,"iid":13}
 {
+  '0': 'NOT_DETECTED',
+  '1': 'DETECTED',
   endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LURlbGF5IE1hbnVmYWN0dXJlci1Ib21lUG9kIERlbGF5U3dpdGNoIFRyaWdnZXItMDAwMDAwODUtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx',
   true: 'DETECTED',
   false: 'NOT_DETECTED',
@@ -6822,6 +6846,8 @@ WARNING - Bad message
 }
 {"deviceID":"CC:22:3D:E3:CE:30","aid":14,"iid":10}
 {
+  '0': 'NOT_DETECTED',
+  '1': 'DETECTED',
   endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUFxYXJhLU1vdGlvblNlbnNvcjJfTW90aW9uU2Vuc29yX2MwYjYtMDAwMDAwODUtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx',
   true: 'DETECTED',
   false: 'NOT_DETECTED',
@@ -6848,6 +6874,8 @@ WARNING - Bad message
 }
 {"deviceID":"CC:22:3D:E3:CE:30","aid":204,"iid":9}
 {
+  '0': 'NOT_DETECTED',
+  '1': 'DETECTED',
   endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LW5lbGxvLmlvLURldXRzY2hoZXJybnVmZXIgRnJhbmtmdXJ0IGFtIE1haW4tMDAwMDAwODUtMDAwMC0xMDAwLTgwMDAtMDAyNkJCNzY1Mjkx',
   true: 'DETECTED',
   false: 'NOT_DETECTED',
@@ -6900,6 +6928,8 @@ WARNING - Bad message
 }
 {"deviceID":"CC:22:3D:E3:CE:30","aid":221,"iid":10}
 {
+  '0': 'NOT_DETECTED',
+  '1': 'DETECTED',
   endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUFxYXJhLVZpYnJhdGlvblNlbnNvcl9Nb3Rpb25TZW5zb3JfVmlicmF0ZV8xZTgyLTAwMDAwMDg1LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==',
   true: 'DETECTED',
   false: 'NOT_DETECTED',
@@ -6926,6 +6956,8 @@ WARNING - Bad message
 }
 {"deviceID":"CC:22:3D:E3:CE:30","aid":222,"iid":10}
 {
+  '0': 'NOT_DETECTED',
+  '1': 'DETECTED',
   endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUFxYXJhLVZpYnJhdGlvblNlbnNvcl9Nb3Rpb25TZW5zb3JfVGlsdF8xZTgyLTAwMDAwMDg1LTAwMDAtMTAwMC04MDAwLTAwMjZCQjc2NTI5MQ==',
   true: 'DETECTED',
   false: 'NOT_DETECTED',
@@ -6952,6 +6984,8 @@ WARNING - Bad message
 }
 {"deviceID":"CC:22:3D:E3:CE:30","aid":223,"iid":10}
 {
+  '0': 'NOT_DETECTED',
+  '1': 'DETECTED',
   endpointID: 'Q0M6MjI6M0Q6RTM6Q0U6MzAtcGFyc2VUZXN0LUFxYXJhLVZpYnJhdGlvblNlbnNvcl9Nb3Rpb25TZW5zb3JfRnJlZUZhbGxfMWU4Mi0wMDAwMDA4NS0wMDAwLTEwMDAtODAwMC0wMDI2QkI3NjUyOTE=',
   true: 'DETECTED',
   false: 'NOT_DETECTED',

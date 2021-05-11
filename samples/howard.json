@@ -152,7 +152,7 @@ Alexa Message Validation Passed!
           "description": "parseTest Fireplace Fan",
           "manufacturerName": "HTTP-IRBlaster",
           "displayCategories": [
-            "SWITCH"
+            "FAN"
           ],
           "cookie": {
             "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":4,\"iid\":10,\"value\":1}",
@@ -343,7 +343,7 @@ Alexa Message Validation Passed!
           "description": "parseTest Master fan Fan",
           "manufacturerName": "hampton-bay",
           "displayCategories": [
-            "SWITCH"
+            "FAN"
           ],
           "cookie": {
             "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":14,\"iid\":10,\"value\":1}",

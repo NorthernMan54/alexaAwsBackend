@@ -335,7 +335,7 @@ Alexa Message Validation Passed!
           "description": "parseTest Dyson Pure Cool Link Fan v2",
           "manufacturerName": "Dyson",
           "displayCategories": [
-            "SWITCH"
+            "FAN"
           ],
           "cookie": {
             "TurnOn": "{\"deviceID\":\"CC:22:3D:E3:CE:30\",\"aid\":393,\"iid\":19,\"value\":1}",
